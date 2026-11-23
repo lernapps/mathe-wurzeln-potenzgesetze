@@ -7,8 +7,8 @@
     <rect x="50" y="150" width="60" height="60"/><rect x="110" y="150" width="60" height="60"/><rect x="170" y="150" width="60" height="60"/>
   </g>
   <g font-family="sans-serif" font-size="18" fill="#111827" text-anchor="middle">
-    <text x="140" y="233">Seite 3 m</text>
-    <text x="25" y="125" transform="rotate(-90 25 125)">Seite 3 m</text>
-    <text x="140" y="256">Fläche 3 · 3 = 9 m²</text>
+    <text x="140" y="233">Seite 3 m</text>
+    <text x="25" y="125" transform="rotate(-90 25 125)">Seite 3 m</text>
+    <text x="140" y="256">Fläche 3 · 3 = 9 m²</text>
   </g>
 </svg>

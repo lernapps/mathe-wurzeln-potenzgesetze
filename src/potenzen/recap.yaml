@@ -13,7 +13,9 @@ blocks:
         text:
           "Für die Potenzgesetze brauchst du zwei Dinge: Terme umformen und Potenzen mit natürlichen Exponenten. Lies jeden
           Abschnitt kurz und beantworte die Kurztests. Sie zählen nichts und speichern nichts. Unter jedem Abschnitt steht, was
-          du wiederholen kannst, wenn du unsicher warst. Hast du alle Kurztests richtig, bist du bereit."
+          du wiederholen kannst, wenn du unsicher warst. Hast du alle Kurztests richtig, bist du bereit. Die dritte Wurzel baut
+          auf der Quadratwurzel aus dem Kapitel „Wurzeln und neue Zahlen“ auf; lies dort zuerst „Quadratwurzel bestimmen“, falls
+          du sie noch nicht kennst."
   - type: section
     id: terme-umformen
     title: Terme umformen
@@ -62,6 +64,9 @@ blocks:
         props:
           question: Welcher Term ist 6x + 9, ausgeklammert?
           options:
+            - text: 9 · (6x + 1)
+              correct: false
+              info: Ausmultipliziert gäbe das 54x + 9.
             - text: 3 · (2x + 3)
               correct: true
               info: "Ausmultipliziert: 3 · 2x = 6x und 3 · 3 = 9."
@@ -71,9 +76,6 @@ blocks:
             - text: 6 · (x + 9)
               correct: false
               info: Ausmultipliziert gäbe das 6x + 54.
-            - text: 9 · (6x + 1)
-              correct: false
-              info: Ausmultipliziert gäbe das 54x + 9.
           right: Richtig.
           wrong: Nicht richtig.
         nojs:
@@ -96,18 +98,18 @@ blocks:
         props:
           question: Was ist 2⁵?
           options:
-            - text: "32"
-              correct: true
-              info: 2⁵ = 2 · 2 · 2 · 2 · 2 = 32.
-            - text: "10"
-              correct: false
-              info: Das ist 2 · 5. Der Exponent sagt, wie oft die Basis als Faktor steht.
             - text: "25"
               correct: false
               info: Das ist 5². Basis und Exponent sind vertauscht.
             - text: "16"
               correct: false
               info: Das ist 2⁴. Es sind fünf Faktoren, nicht vier.
+            - text: "32"
+              correct: true
+              info: 2⁵ = 2 · 2 · 2 · 2 · 2 = 32.
+            - text: "10"
+              correct: false
+              info: Das ist 2 · 5. Der Exponent sagt, wie oft die Basis als Faktor steht.
           right: Richtig.
           wrong: Nicht richtig.
         nojs:
@@ -119,18 +121,18 @@ blocks:
         props:
           question: Wie viele Nullen hat 10⁴ ausgeschrieben?
           options:
-            - text: "4"
-              correct: true
-              info: "10⁴ = 10 000: eine 1 mit vier Nullen."
-            - text: "3"
-              correct: false
-              info: 10³ = 1000 hat drei Nullen. Der Exponent 4 zählt vier Nullen.
             - text: "5"
               correct: false
               info: 10⁵ hat fünf Nullen. Der Exponent ist 4.
             - text: "40"
               correct: false
               info: Das wäre 10 · 4. Der Exponent zählt die Nullen, er wird nicht mit 10 malgenommen.
+            - text: "4"
+              correct: true
+              info: "10⁴ = 10 000: eine 1 mit vier Nullen."
+            - text: "3"
+              correct: false
+              info: 10³ = 1000 hat drei Nullen. Der Exponent 4 zählt vier Nullen.
           right: Richtig.
           wrong: Nicht richtig.
         nojs:

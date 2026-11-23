@@ -20,13 +20,13 @@ blocks:
         options:
           - text: zwischen 3 und 4
             correct: false
-            info: 3·3 = 9 und 4·4 = 16. Beides ist kleiner als 20.
+            info: 3 · 3 = 9 und 4 · 4 = 16. Beides ist kleiner als 20.
           - text: zwischen 4 und 5
             correct: true
-            info: 4·4 = 16 ist kleiner als 20 und 5·5 = 25 ist größer.
+            info: 4 · 4 = 16 ist kleiner als 20 und 5 · 5 = 25 ist größer.
           - text: zwischen 5 und 6
             correct: false
-            info: 5·5 = 25 ist schon größer als 20.
+            info: 5 · 5 = 25 ist schon größer als 20.
           - text: zwischen 9 und 10
             correct: false
             info: Das wäre eine Fläche von über 80 m².

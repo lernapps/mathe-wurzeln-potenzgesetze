@@ -76,6 +76,9 @@ blocks:
         props:
           question: Was ist 12²?
           options:
+            - text: "14"
+              correct: false
+              info: Das ist 12 + 2. Eine Potenz ist ein Produkt.
             - text: "24"
               correct: false
               info: Das ist 12 · 2. Das Quadrat ist 12 · 12.
@@ -85,9 +88,6 @@ blocks:
             - text: "122"
               correct: false
               info: "Das ist keine Rechnung: Der Exponent 2 steht für den Faktor 12 zweimal."
-            - text: "14"
-              correct: false
-              info: Das ist 12 + 2. Eine Potenz ist ein Produkt.
           right: Richtig.
           wrong: Nicht richtig.
         nojs: "Kurztest: Was ist 12 zum Quadrat? Zur Wahl stehen 24, 144, 122 und 14. Richtig ist 144, denn 12 mal 12 ist 144."
@@ -189,6 +189,9 @@ blocks:
         props:
           question: Was ist 0,3 · 0,2?
           options:
+            - text: 0,006
+              correct: false
+              info: Das wären drei Stellen. Die Faktoren haben zusammen nur zwei.
             - text: 0,6
               correct: false
               info: Ohne Komma ist 3 · 2 = 6. Beide Faktoren haben aber zusammen zwei Stellen hinter dem Komma.
@@ -198,9 +201,6 @@ blocks:
             - text: 0,5
               correct: false
               info: Das ist 0,3 + 0,2. Hier wird aber malgenommen.
-            - text: 0,006
-              correct: false
-              info: Das wären drei Stellen. Die Faktoren haben zusammen nur zwei.
           right: Richtig.
           wrong: Nicht richtig.
         nojs:
@@ -212,6 +212,9 @@ blocks:
         props:
           question: Was ist 1,5 · 1,5?
           options:
+            - text: 0,225
+              correct: false
+              info: Das wären drei Stellen. Die Faktoren haben zusammen zwei.
             - text: 2,25
               correct: true
               info: "15 · 15 = 225, zwei Stellen hinter dem Komma: 2,25."
@@ -221,9 +224,6 @@ blocks:
             - text: "3"
               correct: false
               info: Das ist 1,5 + 1,5. Hier wird malgenommen.
-            - text: 0,225
-              correct: false
-              info: Das wären drei Stellen. Die Faktoren haben zusammen zwei.
           right: Richtig.
           wrong: Nicht richtig.
         nojs:
@@ -242,6 +242,10 @@ blocks:
         explanation:
           'Beim Malnehmen und Teilen gilt: gleiche Vorzeichen ergeben plus, verschiedene Vorzeichen ergeben minus.
           Zum Beispiel ist $(-3) \cdot (-4) = 12$ und $(-3) \cdot 4 = -12$.'
+      - type: text
+        text:
+          'Auf der Seite zu den reellen Zahlen kommen Brüche vor: Ein Bruch wie $\frac{6}{8}$ lässt sich zu $\frac{3}{4}$
+          kürzen. Gerade Zahlen sind durch 2 teilbar, ungerade nicht.'
       - type: text
         text:
           Eine negative Zahl in einer Rechnung steht in Klammern. Beim Addieren einer negativen Zahl gehst du auf der Zahlengerade
@@ -280,18 +284,18 @@ blocks:
         props:
           question: Was ist 5 + (−8)?
           options:
-            - text: −3
-              correct: true
-              info: "Du startest bei 5 und gehst 8 Schritte nach links: −3."
-            - text: "3"
-              correct: false
-              info: Das Ergebnis ist negativ, denn du gehst weiter nach links als bis 0.
             - text: "13"
               correct: false
               info: Du hast 5 + 8 gerechnet. Die Klammer (−8) bedeutet, dass du 8 abziehst.
             - text: −13
               correct: false
               info: Das wäre −5 − 8. Hier startest du bei +5.
+            - text: −3
+              correct: true
+              info: "Du startest bei 5 und gehst 8 Schritte nach links: −3."
+            - text: "3"
+              correct: false
+              info: Das Ergebnis ist negativ, denn du gehst weiter nach links als bis 0.
           right: Richtig.
           wrong: Nicht richtig.
         nojs:

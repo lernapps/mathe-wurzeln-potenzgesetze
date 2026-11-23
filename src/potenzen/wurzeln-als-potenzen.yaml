@@ -179,7 +179,7 @@ blocks:
             url: https://lernapps.net/apps/map/mathematik/c/n-te-wurzeln/
       - type: number
         id: wuerfel-343
-        text: Ein Würfel hat 343 cm³. Seine Kante ist $343^{\frac{1}{3}}$ cm lang. Wie viele Zentimeter sind das?
+        text: Ein Würfel hat 343 cm³. Seine Kante ist $343^{\frac{1}{3}}$ cm lang. Wie viele Zentimeter sind das?
         answer: 7
         tolerance: 0
         unit: cm

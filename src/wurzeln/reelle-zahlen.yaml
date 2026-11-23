@@ -12,8 +12,8 @@ blocks:
     blocks:
       - type: text
         text:
-          Auf der Lupe hast du gesehen, dass die Stellen von √2 nie aufhören. Am Ende dieser Seite weißt du, welche Zahlen
-          sich als Bruch schreiben lassen und welche nicht, und wie die Zahlengerade am Ende keine Lücken mehr hat.
+          Auf der Lupe hast du gesehen, dass jede Stufe eine Stelle von √2 mehr liefert. Am Ende dieser Seite weißt du, welche
+          Zahlen sich als Bruch schreiben lassen und welche nicht, und wie die Zahlengerade am Ende keine Lücken mehr hat.
       - type: multiple-choice
         id: bruch-erkennen
         text: Welche dieser Zahlen lassen sich als Bruch zweier ganzer Zahlen schreiben?
@@ -65,7 +65,7 @@ blocks:
       - type: figure
         image: images/zahlengerade-reell.svg
         alt:
-          Eine Zahlengerade von minus 2 bis 4. Die Zahlen minus 0,5 und 0,75 sind gefüllte Punkte, die Zahlen Wurzel aus 2
+          Eine Zahlengerade von minus 2 bis 3. Die Zahlen minus 0,5 und 0,75 sind gefüllte Punkte, die Zahlen Wurzel aus 2
           und Pi sind offene Punkte mit rotem Rand.
         caption: Gefüllte Punkte sind rational, offene sind irrational. Beide liegen auf derselben Zahlengerade.
         source: eigene Zeichnung
@@ -92,8 +92,8 @@ blocks:
       - type: text
         text:
           "Jede Menge steckt in der nächsten: ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ. Mit den reellen Zahlen hat die Zahlengerade keine Lücken mehr:
-          In diesem Kurs wachsen die Zahlen damit ein letztes Mal. Für Wurzeln aus natürlichen Zahlen gilt: √a ist rational genau
-          dann, wenn a eine Quadratzahl ist."
+          In diesem Kurs wachsen die Zahlen damit ein letztes Mal. Für Wurzeln aus natürlichen Zahlen gilt (hier ohne Beweis,
+          anders als bei √2): √a ist rational genau dann, wenn a eine Quadratzahl ist."
       - type: note
         title: "Denkweg: Warum √2 kein Bruch ist"
         blocks:

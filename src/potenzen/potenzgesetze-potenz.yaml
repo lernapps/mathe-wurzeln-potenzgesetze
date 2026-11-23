@@ -10,7 +10,7 @@ blocks:
     blocks:
       - type: text
         text:
-          "Auf der Reise rechnest du in größeren Einheiten: 1 km = $10^3$ m. Am Ende dieser Seite weißt du, wie eine Potenz
+          "Auf der Reise rechnest du in größeren Einheiten: 1 km = $10^3$ m. Am Ende dieser Seite weißt du, wie eine Potenz
           von einer Potenz und ein Produkt in der Klammer mit Exponent gerechnet werden."
       - type: number
         id: zweier-potenz
@@ -21,7 +21,7 @@ blocks:
           - answer: 5
             message: "Du hast 3 + 2 gerechnet. (2³)² heißt 2³ mal 2³: zwei Gruppen mit je 3 Zweien."
         hint: "(2³)² heißt: 2³ wird zweimal als Faktor geschrieben."
-        explanation: (2³)² = 2³ · 2³ = (2·2·2) · (2·2·2). Das sind 6 Zweien.
+        explanation: (2³)² = 2³ · 2³ = (2 · 2 · 2) · (2 · 2 · 2). Das sind 6 Zweien.
         links:
           - title: Baustein auf der Lernlandkarte
             url: https://lernapps.net/apps/map/mathematik/c/potenzgesetze/
@@ -64,11 +64,11 @@ blocks:
         title: Quadratkilometer und Kubikkilometer
         blocks:
           - type: text
-            text: "1 km = $10^3$ m. Ein Quadratkilometer ist ein Quadrat mit der Seite $10^3$ m:"
+            text: "1 km = $10^3$ m. Ein Quadratkilometer ist ein Quadrat mit der Seite $10^3$ m:"
           - type: formula
             formula: (10^3)^2 = 10^{3 \cdot 2} = 10^6
           - type: text
-            text: Ein Quadratkilometer hat also $10^6$ m². Ein Würfel mit der Kante $10^3$ m hat $(10^3)^3 = 10^9$ m³.
+            text: Ein Quadratkilometer hat also $10^6$ m². Ein Würfel mit der Kante $10^3$ m hat $(10^3)^3 = 10^9$ m³.
   - type: section
     id: uebung
     title: Übung
@@ -104,7 +104,7 @@ blocks:
           - value: m + n
             message: Du hast addiert. Bei einer Potenz einer Potenz werden die Exponenten multipliziert.
           - value: pow(m, n)
-            message: Du hast m hoch n gerechnet. Die Exponenten werden einfach malgenommen.
+            message: Du hast {{m}} hoch {{n}} gerechnet. Die Exponenten werden einfach malgenommen.
         hint: "{{b}} hoch {{m}} steht {{n}}-mal als Faktor da."
         steps:
           - $({{b}}^{{{m}}})^{{{n}}} = {{b}}^{{{m}} \cdot {{n}}}$
@@ -179,7 +179,7 @@ blocks:
             right: 2² · 3²
         distractors:
           - 2⁸
-        explanation: (2³)² = 2⁶, 2³·2² = 2⁵, 2⁶:2² = 2⁴ und (2·3)² = 2²·3².
+        explanation: (2³)² = 2⁶, 2³·2² = 2⁵, 2⁶:2² = 2⁴ und (2 · 3)² = 2²·3².
         links:
           - title: Baustein auf der Lernlandkarte
             url: https://lernapps.net/apps/map/mathematik/c/potenzgesetze/

@@ -10,8 +10,8 @@ blocks:
     blocks:
       - type: text
         text:
-          Die Reise beginnt bei der Erde. Ihr Durchmesser ist rund 10 000 000 m, also rund $10^7$ m. Die Sonne ist rund $10^{11}$
-          m entfernt. Am Ende dieser Seite kannst du solche Zahlen miteinander malnehmen und teilen, ohne die Nullen zu zählen.
+          Die Reise beginnt bei der Erde. Ihr Durchmesser ist rund 10 000 000 m, also rund $10^7$ m. Die Sonne ist rund $10^{11}$ m
+          entfernt. Am Ende dieser Seite kannst du solche Zahlen miteinander malnehmen und teilen, ohne die Nullen zu zählen.
       - type: number
         id: zweier-zaehlen
         text: Schreibe 2³ · 2⁴ als Produkt aus lauter Zweien. Wie viele Zweien sind es?
@@ -21,7 +21,7 @@ blocks:
           - answer: 12
             message: "Du hast 3 mal 4 gerechnet. Zähle die Faktoren: 3 Zweien und 4 Zweien stehen nebeneinander."
         hint: Schreibe beide Potenzen aus und zähle alle Zweien.
-        explanation: 2³ = 2·2·2 und 2⁴ = 2·2·2·2. Zusammen stehen 3 + 4 = 7 Zweien in einer Reihe.
+        explanation: 2³ = 2 · 2 · 2 und 2⁴ = 2 · 2 · 2 · 2. Zusammen stehen 3 + 4 = 7 Zweien in einer Reihe.
         links:
           - title: Baustein auf der Lernlandkarte
             url: https://lernapps.net/apps/map/mathematik/c/potenzgesetze/
@@ -57,7 +57,7 @@ blocks:
         title: Von der Erde zur Sonne
         blocks:
           - type: text
-            text: "Wie oft passt der Erddurchmesser $10^7$ m in die Entfernung $10^{11}$ m? Du teilst:"
+            text: "Wie oft passt der Erddurchmesser $10^7$ m in die Entfernung $10^{11}$ m? Du teilst:"
           - type: formula
             formula: "10^{11} : 10^{7} = 10^{11-7} = 10^4"
           - type: text
@@ -129,7 +129,7 @@ blocks:
           - value: m + n
             message: Du hast addiert. Das passiert beim Malnehmen. Beim Teilen kürzt du Faktoren.
           - value: m * n
-            message: Du hast die Exponenten multipliziert. Beim Teilen bleiben nach dem Kürzen m minus n Faktoren übrig.
+            message: Du hast die Exponenten multipliziert. Beim Teilen bleiben nach dem Kürzen {{m}} minus {{n}} Faktoren übrig.
         hint: Streiche gleiche Faktoren im Zähler und im Nenner. Wie viele bleiben übrig?
         steps:
           - "${{b}}^{{{m}}} : {{b}}^{{{n}}} = {{b}}^{{{m}} - {{n}}}$"

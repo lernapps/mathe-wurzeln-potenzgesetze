@@ -12,7 +12,7 @@
     <line x1="140" y1="140" x2="200" y2="95"/><line x1="170" y1="77.5" x2="170" y2="157.5"/>
   </g>
   <g font-family="sans-serif" font-size="16" fill="#111827" text-anchor="middle">
-    <text x="100" y="204">Kante 2 cm</text>
-    <text x="150" y="232">Volumen 2 · 2 · 2 = 8 cm³</text>
+    <text x="100" y="204">Kante 2 cm</text>
+    <text x="150" y="232">Volumen 2 · 2 · 2 = 8 cm³</text>
   </g>
 </svg>

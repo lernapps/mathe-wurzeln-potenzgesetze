@@ -21,7 +21,7 @@ blocks:
             info: √25 = 5, und das Produktgesetz gibt √(25 · 2) = √25 · √2 = 5 · √2.
           - text: "25"
             correct: false
-            info: 25 ist der Faktor, der unter der Wurzel bleibt. Herausgezogen wird seine Wurzel.
+            info: 25 ist der Quadratfaktor. Herausgezogen wird seine Wurzel 5, unter der Wurzel bleibt 2.
           - text: "2"
             correct: false
             info: "2 bleibt unter der Wurzel: Es ist keine Quadratzahl."
@@ -160,7 +160,7 @@ blocks:
         distractors:
           - 4√5
           - 2√10
-        explanation: √20 = √(4·5), √45 = √(9·5), √75 = √(25·3), √98 = √(49·2).
+        explanation: √20 = √(4 · 5), √45 = √(9 · 5), √75 = √(25 · 3), √98 = √(49 · 2).
         links:
           - title: Baustein auf der Lernlandkarte
             url: https://lernapps.net/apps/map/mathematik/c/wurzelgesetze/
@@ -180,7 +180,7 @@ blocks:
           - text: √8 + √18
             correct: false
             info: "Das lässt sich noch vereinfachen: Nach dem Vereinfachen sind beide Wurzeln gleichartig."
-        explanation: "Erst vereinfachen: √8 = √(4·2) = 2√2 und √18 = √(9·2) = 3√2, dann zusammenfassen."
+        explanation: "Erst vereinfachen: √8 = √(4 · 2) = 2√2 und √18 = √(9 · 2) = 3√2, dann zusammenfassen."
         links:
           - title: Baustein auf der Lernlandkarte
             url: https://lernapps.net/apps/map/mathematik/c/wurzelgesetze/
