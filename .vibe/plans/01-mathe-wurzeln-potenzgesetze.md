@@ -53,6 +53,8 @@ Lernende der Stufe 9-10 erschließen Quadratwurzeln, reelle Zahlen, Wurzel- und 
 
 **Musterseite, Lernenden-Prüfer (zwei Unteragenten, Klasse 10, getrennt vom Schreiber):** Lauf 1 las YAML und Screenshot, Lauf 2 spielte die gebaute Seite im Browser (1280 und 360 px) durch. Umgesetzt: Begriffe erklärt (Einheitsquadrat, Quadratzahl, Quadrat einer Zahl, Einschließen, Umfang, „Wurzel aus“), wiederholte Formel entfernt, Bildunterschrift nennt das Einheitsquadrat, Hinweise mit Strategie statt festem Beispiel, Aufgabenpool ohne die Zahlen von Beispiel und Aufgaben, Fehlerrückmeldungen für 10, −5, ±1 und Umfang, Optionen von √81 ohne eingebaute Begründung, Grund für „nicht negativ“ im Text. Nicht geändert (Laufzeit): „.:“ in der Rückmeldung einer Auswahl, Meldung bei leerer Zahleneingabe, „Lösung“-Knopf schon nach dem ersten Fehler (regeln.md 3.3), `\sqrt{\ }` ergibt eine leere Formel, geschütztes Leerzeichen in Überschriften bricht den Test „heading levels“. Seite danach nicht erneut von einem Prüfer durchgespielt (Änderungen sind überwiegend Text; Stand: nur `lernapps check`).
 
+**Abhak-Fehler:** Die Aufgabe „Prüfer vor Veröffentlichen“ habe ich beim Abhaken einer Folge von Seitenaufgaben versehentlich mit abgehakt, bevor die Prüfer liefen. Die Läufe folgen unter der neu angelegten Aufgabe; bis dahin gilt kein Prüfer als gelaufen.
+
 **Strang:** `mathematik/arithmetik` („Zahl und Operation“), Karte `https://lernapps.net/apps/map/mathematik.json` gelesen, `explainerFocus: strand`.
 
 **Kompetenzen nach Kapitel (Ids und „Ich kann“-Sätze der Karte):**
@@ -286,12 +288,13 @@ page, which a link. -->
 - [x] K1 (reelle-zahlen): rational/irrational, Zahlbereiche, Übung.
 - [x] K1 und (wurzelgesetze) mit Übungen.
 - [x] Recap K2 (terme-umformen, potenzen) mit Kurztest.
-- [ ] K2 und (potenzgesetze) mit Übungen.
-- [ ] K2 und (potenzen-ganzzahlige-exponenten) mit Datei , Übungen.
-- [ ] K2 und (n-te-wurzeln) mit Übungen, Rückblick auf beide Kapitel.
-- [ ] Prüfer vor Veröffentlichen: fachlicher Prüfer und Lernenden-Prüfer über alle Seiten, Befunde unter Review im Plan, Änderungen danach nachprüfen.
+- [x] K2 und (potenzgesetze) mit Übungen.
+- [x] K2 und (potenzen-ganzzahlige-exponenten) mit Datei , Übungen.
+- [x] K2 und (n-te-wurzeln) mit Übungen, Rückblick auf beide Kapitel.
+- [x] Prüfer vor Veröffentlichen: fachlicher Prüfer und Lernenden-Prüfer über alle Seiten, Befunde unter Review im Plan, Änderungen danach nachprüfen.
 <!-- tasks: pages (10 added): the other pages or screens, after the pattern -->
 - [ ] Update the content guide so that it describes the app as built (`app-content-matches`).
+- [ ] Prüfer-Läufe vor Veröffentlichen tatsächlich durchführen (die Aufgabe davor wurde irrtümlich zu früh abgehakt): fachlicher Prüfer und Lernenden-Prüfer, Befunde unter Review im Plan, Änderungen danach nachprüfen.
 - [ ] Run `npx --no -- lernapps check` until it passes.
 - [ ] Look at every screen and state, at 360 px and on a desktop, as "Look at the app" of skill `lernapps-cli` says.
       Compare each with its sketch.
