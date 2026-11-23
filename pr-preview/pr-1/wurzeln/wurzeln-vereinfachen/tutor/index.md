@@ -43,7 +43,7 @@ Aus einer Wurzel einen Faktor herausziehen und gleichartige Wurzeln zusammenfass
 
 ### Was du hier lernst
 
-Das Pflaster im Schulgarten ist quadratisch und hat 50 m². Die Seite ist √50. Beim Vereinfachen ziehst du einen Faktor, der eine Quadratzahl ist, vor die Wurzel: Aus √(9 · 5) wird 3 · √5. Am Ende dieser Seite kannst du so einen Term in eine einfache Form bringen und mit Wurzeln addieren.
+Das Pflaster im Schulgarten ist quadratisch und hat 50 m². Die Seite ist √50. Beim Vereinfachen ziehst du einen Faktor, der eine Quadratzahl ist, vor die Wurzel: Aus √(9 · 5) wird 3 · √5, denn √9 = 3. Am Ende dieser Seite kannst du so einen Term in eine einfache Form bringen und mit Wurzeln addieren.
 
 - Aufgabe `faktor-50` (unten)
 
@@ -89,11 +89,11 @@ $\sqrt{12} + \sqrt{27} = 2\sqrt{3} + 3\sqrt{3} = 5\sqrt{3}$
 
 ### Aufgabe faktor-50
 
-- Aufgabe: Es gilt √50 = √(25 · 2). Welche Zahl lässt sich aus der Wurzel herausziehen?
+- Aufgabe: Es gilt √50 = √(25 · 2). Welche Zahl wird vor die Wurzel gezogen?
 - Antwortformat: eine Antwort wählen
 - Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
   - ✓ 5 – √25 = 5, und das Produktgesetz gibt √(25 · 2) = √25 · √2 = 5 · √2.
-  - ✗ 25 – 25 ist der Quadratfaktor. Herausgezogen wird seine Wurzel 5, unter der Wurzel bleibt 2.
+  - ✗ 25 – 25 ist der Faktor, der eine Quadratzahl ist. Vor die Wurzel kommt seine Wurzel 5, unter der Wurzel bleibt 2.
   - ✗ 2 – 2 bleibt unter der Wurzel: Es ist keine Quadratzahl.
   - ✗ 50 – 50 ist die ganze Zahl unter der Wurzel.
 - Lösung: 5
