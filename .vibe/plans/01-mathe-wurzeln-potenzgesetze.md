@@ -276,9 +276,10 @@ page, which a link. -->
       `.agents/skills/lernapps-explainer/references/structure.md` says. Write the choice under "Key decisions".
 - [x] Musterseite K1 komplett bauen: Einstieg (Beet 2 m²), Quadrat-SVG, Herleitung, Beispiel, Übung (generated, number, true-false) mit Fehlerdiagnose; Lernenden-Prüfer (Klasse 10) durchspielen lassen und Befunde umsetzen.
 <!-- tasks: pattern (1 added): the one page or screen that is the pattern for the others -->
-- [ ] **Checkpoint:** the pattern page. Load skill `lernapps-learner-check` and do its learner check on the page. Fix
+- [x] **Checkpoint:** the pattern page. Load skill `lernapps-learner-check` and do its learner check on the page. Fix
       what it finds. Then show the creator the page and ask whether the others may follow it. Stop and wait. A
       change: change the pattern first.
+      Creator: Orchestrator: Musterseite angenommen, übrige Seiten nach Muster, Kurztest aus /tmp/epic, dann Lupe
 - [ ] Recap K1 mit Komponente (potenzen, zahlen-vergleichen-ordnen, dezimalbrueche-rechnen, rationale-zahlen-rechnen), Fachbegriffe im Glossar.
 - [ ] K1 (quadratwurzeln): Einschließen, Näherungswert, Übung.
 - [ ] K1 (reelle-zahlen): Komponente mit statischen Bildern, Übung.
