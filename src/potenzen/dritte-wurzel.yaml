@@ -54,7 +54,12 @@ blocks:
         term: n-te Wurzel
         explanation:
           Die n-te Wurzel aus einer Zahl $a \ge 0$ ist die nicht negative Zahl, die n-mal als Faktor $a$ ergibt. Die
-          dritte Wurzel von 8 ist 2, weil $2^3 = 8$ gilt. Die Zahl $n$ heißt Wurzelexponent.
+          dritte Wurzel von 8 ist 2, weil $2^3 = 8$ gilt.
+      - type: definition
+        term: Wurzelexponent
+        explanation:
+          "Der Wurzelexponent $n$ sagt, welche Wurzel gemeint ist: bei der dritten Wurzel ist $n = 3$, bei der Quadratwurzel
+          $n = 2$ (er wird nicht geschrieben)."
       - type: formula
         formula: \sqrt[3]{8} = 2 \quad \text{denn} \quad 2^3 = 8
       - type: text
@@ -136,11 +141,11 @@ blocks:
             right: "2"
           - left: die vierte Wurzel aus 81
             right: "3"
-          - left: die dritte Wurzel aus 64
-            right: "4"
+          - left: die dritte Wurzel aus 125
+            right: "5"
           - left: die dritte Wurzel aus 1000
             right: "10"
-        explanation: 2³ = 8, 3⁴ = 81, 4³ = 64 und 10³ = 1000.
+        explanation: 2³ = 8, 3⁴ = 81, 5³ = 125 und 10³ = 1000.
         links:
           - title: Baustein auf der Lernlandkarte
             url: https://lernapps.net/apps/map/mathematik/c/n-te-wurzeln/
@@ -153,22 +158,22 @@ blocks:
           - title: Baustein auf der Lernlandkarte
             url: https://lernapps.net/apps/map/mathematik/c/n-te-wurzeln/
       - type: single-choice
-        id: wuerfel-125
-        text: Ein würfelförmiger Behälter fasst 125 Liter. Wie lang ist seine Kante?
+        id: wuerfel-216
+        text: Ein würfelförmiger Behälter fasst 216 Liter. Wie lang ist seine Kante?
         options:
-          - text: 5 dm
+          - text: 6 dm
             correct: true
-            info: 125 Liter sind 125 dm³, und 5 · 5 · 5 = 125.
-          - text: 25 dm
+            info: 216 Liter sind 216 dm³, und 6 · 6 · 6 = 216.
+          - text: 36 dm
             correct: false
-            info: 25 dm · 25 dm ist schon 625 dm².
-          - text: 41,7 dm
+            info: 36 dm · 36 dm ist schon 1296 dm².
+          - text: 72 dm
             correct: false
-            info: Du hast 125 durch 3 geteilt. Die Kante steht dreimal als Faktor da.
-          - text: 12,5 dm
+            info: Du hast 216 durch 3 geteilt. Die Kante steht dreimal als Faktor da.
+          - text: 21,6 dm
             correct: false
-            info: "Das wäre 125 : 10. Gesucht ist die dritte Wurzel."
-        explanation: 1 Liter ist 1 dm³. Die Kante a erfüllt a³ = 125, also a = 5 dm.
+            info: "Das wäre 216 : 10. Gesucht ist die dritte Wurzel."
+        explanation: 1 Liter ist 1 dm³. Die Kante a erfüllt a³ = 216, also a = 6 dm.
         links:
           - title: Baustein auf der Lernlandkarte
             url: https://lernapps.net/apps/map/mathematik/c/n-te-wurzeln/

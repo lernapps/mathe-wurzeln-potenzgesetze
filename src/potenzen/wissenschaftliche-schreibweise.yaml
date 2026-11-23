@@ -39,20 +39,15 @@ blocks:
       - type: text
         text:
           'Die **wissenschaftliche Schreibweise** schreibt jede positive Zahl als $m \cdot 10^n$ mit $1 \le m < 10$ und ganzem
-          $n$. Die Zahl $m$ heißt Mantisse. Du verschiebst dazu das Komma:'
-      - type: table
-        caption: Das Komma verschieben
-        header:
-          - Zahl
-          - Komma verschieben
-          - Wissenschaftlich
-        rows:
-          - - 45 000
-            - 4 Stellen nach links
-            - $4{,}5 \cdot 10^4$
-          - - 0,00072
-            - 4 Stellen nach rechts
-            - $7{,}2 \cdot 10^{-4}$
+          $n$. Du verschiebst dazu das Komma:'
+      - type: formula
+        formula: 45\,000 = 4{,}5 \cdot 10^4
+      - type: text
+        text: Das Komma wandert 4 Stellen nach links, der Exponent ist 4.
+      - type: formula
+        formula: 0{,}00072 = 7{,}2 \cdot 10^{-4}
+      - type: text
+        text: Das Komma wandert 4 Stellen nach rechts, der Exponent ist −4.
       - type: text
         text: Nach links verschoben wird der Exponent positiv, nach rechts negativ.
   - type: section
@@ -67,13 +62,17 @@ blocks:
       - type: formula
         formula: (a \cdot 10^m) \cdot (b \cdot 10^n) = (a \cdot b) \cdot 10^{m+n}
       - type: text
-        text: Ist $a \cdot b$ größer als 10, verschiebst du das Komma noch einmal und erhöhst den Exponenten um 1.
+        text:
+          Ist $a \cdot b$ größer als 10, verschiebst du das Komma noch einmal und erhöhst den Exponenten um 1. Zum Umrechnen
+          brauchst du 1 m = 1000 mm = $10^3$ mm. Die Tabelle zeigt die Größen der Reise, die du in den Aufgaben brauchst.
       - type: table
         caption: Die Größen der Reise
         header:
           - Größe
           - Länge
         rows:
+          - - Proton (Atomkern)
+            - $1 \cdot 10^{-15}$ m
           - - Atom
             - $1 \cdot 10^{-10}$ m
           - - Haardicke

@@ -51,25 +51,23 @@ blocks:
         source: eigene Zeichnung
         licence: CC-BY-4.0
       - type: text
-        text: "Das gilt für alle Zahlen a und b größer oder gleich 0. Du rechnest das Quadrat von √a · √b nach:"
-      - type: table
-        caption: Warum $\sqrt{a} \cdot \sqrt{b}$ die Wurzel von $a \cdot b$ ist
-        header:
-          - Rechnung
-          - Begründung
-        rows:
-          - - $(\sqrt{a} \cdot \sqrt{b})^2 = \sqrt{a} \cdot \sqrt{b} \cdot \sqrt{a} \cdot \sqrt{b}$
-            - Quadrieren heißt mit sich selbst malnehmen.
-          - - $= (\sqrt{a} \cdot \sqrt{a}) \cdot (\sqrt{b} \cdot \sqrt{b})$
-            - Faktoren tauschen.
-          - - $= a \cdot b$
-            - $\sqrt{a} \cdot \sqrt{a} = a$.
+        text:
+          "Du zeigst jetzt, dass für alle nicht negativen Zahlen a und b gilt: √a · √b ist die Wurzel aus a · b. Dafür rechnest
+          du das Quadrat von √a · √b nach. Quadrieren heißt mit sich selbst malnehmen:"
+      - type: formula
+        formula: (\sqrt{a} \cdot \sqrt{b})^2 = \sqrt{a} \cdot \sqrt{b} \cdot \sqrt{a} \cdot \sqrt{b}
+      - type: text
+        text: "Du tauschst die Faktoren, dann stehen die gleichen Wurzeln nebeneinander:"
+      - type: formula
+        formula: = (\sqrt{a} \cdot \sqrt{a}) \cdot (\sqrt{b} \cdot \sqrt{b}) = a \cdot b
       - type: text
         text: Das Produkt √a · √b ist nicht negativ und hat das Quadrat a · b. Also ist es die Wurzel aus a · b.
   - type: section
     id: regel
     title: Die Wurzelgesetze
     blocks:
+      - type: text
+        text: "Das **Produktgesetz** und das **Quotientengesetz**:"
       - type: formula
         formula: \sqrt{a} \cdot \sqrt{b} = \sqrt{a \cdot b}
       - type: formula

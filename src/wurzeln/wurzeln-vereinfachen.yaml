@@ -38,23 +38,20 @@ blocks:
     blocks:
       - type: text
         text:
-          "Du suchst unter der Wurzel einen Faktor, der eine Quadratzahl ist: 4, 9, 16, 25, 36, …. Mit dem Produktgesetz ziehst
-          du seine Wurzel vor die Wurzel."
-      - type: table
-        caption: So vereinfachst du $\sqrt{72}$
-        header:
-          - Schritt
-          - Rechnung
-        rows:
-          - - Quadratfaktor suchen
-            - $72 = 36 \cdot 2$
-          - - Produktgesetz
-            - $\sqrt{72} = \sqrt{36} \cdot \sqrt{2}$
-          - - Wurzel ziehen
-            - $= 6 \cdot \sqrt{2}$
+          "Du suchst unter der Wurzel einen Faktor, der eine Quadratzahl ist: 4, 9, 16, 25, 36, …. Mit dem Produktgesetz von
+          der letzten Seite ziehst du seine Wurzel vor die Wurzel."
+      - type: definition
+        term: Quadratfaktor
+        explanation:
+          Ein Quadratfaktor ist ein Faktor unter der Wurzel, der eine Quadratzahl ist, zum Beispiel 16 in $\sqrt{16
+          \cdot 7}$.
+      - type: text
+        text: 'So vereinfachst du $\sqrt{112}$: Zerlege 112 in $16 \cdot 7$ und ziehe die Wurzel aus dem Quadratfaktor.'
+      - type: formula
+        formula: \sqrt{112} = \sqrt{16 \cdot 7} = \sqrt{16} \cdot \sqrt{7} = 4 \cdot \sqrt{7}
       - type: text
         text:
-          Schreibe $6 \cdot \sqrt{2}$ kurz als $6\sqrt{2}$. Unter der Wurzel soll am Ende keine Quadratzahl als Faktor mehr
+          Schreibe $4 \cdot \sqrt{7}$ kurz als $4\sqrt{7}$. Unter der Wurzel soll am Ende keine Quadratzahl als Faktor mehr
           stecken.
   - type: section
     id: regel

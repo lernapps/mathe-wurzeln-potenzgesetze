@@ -31,19 +31,10 @@ blocks:
     blocks:
       - type: text
         text: "Du schreibst die Potenzen aus. Bei gleicher Basis stehen die Faktoren in einer Reihe, und du zählst sie:"
-      - type: table
-        caption: Produkt und Quotient bei gleicher Basis
-        header:
-          - Aufgabe
-          - Ausgeschrieben
-          - Ergebnis
-        rows:
-          - - $a^3 \cdot a^4$
-            - $(a \cdot a \cdot a) \cdot (a \cdot a \cdot a \cdot a)$
-            - $a^7$
-          - - "$a^5 : a^2$"
-            - $\frac{a \cdot a \cdot a \cdot a \cdot a}{a \cdot a}$
-            - $a^3$
+      - type: formula
+        formula: a^3 \cdot a^4 = a \cdot a \cdot a \cdot a \cdot a \cdot a \cdot a = a^7
+      - type: formula
+        formula: 'a^5 : a^2 = \frac{a \cdot a \cdot a \cdot a \cdot a}{a \cdot a} = a^3'
       - type: text
         text:
           "Beim Malnehmen werden die Exponenten addiert: 3 + 4 = 7. Beim Teilen kürzt du gleiche Faktoren, die Exponenten
@@ -57,7 +48,7 @@ blocks:
       - type: formula
         formula: "a^m : a^n = a^{m-n}"
       - type: text
-        text: Beim Teilen ist $m$ größer als $n$. Was passiert, wenn $m$ kleiner ist, siehst du auf einer der nächsten Seiten.
+        text: Beim Teilen ist $m$ größer als $n$. Was bei $m$ kleiner als $n$ passiert, zeigt die Seite zu den negativen Exponenten.
   - type: section
     id: beispiel
     title: Beispiel
@@ -174,22 +165,22 @@ blocks:
       - type: single-choice
         id: erde-sonne
         text:
-          Der Erddurchmesser ist rund 10⁷ m, die Entfernung zur Sonne rund 10¹¹ m. Wie oft passt der Durchmesser ungefähr
-          in die Entfernung?
+          Der Sonnendurchmesser ist rund 10⁹ m, die Entfernung der Erde zur Sonne rund 10¹¹ m. Wie oft passt der Sonnendurchmesser
+          ungefähr in diese Entfernung?
         options:
-          - text: 10⁴-mal
+          - text: 10²-mal
             correct: true
-            info: "10¹¹ : 10⁷ = 10¹¹⁻⁷ = 10⁴."
-          - text: 10¹⁸-mal
+            info: "10¹¹ : 10⁹ = 10¹¹⁻⁹ = 10²."
+          - text: 10²⁰-mal
             correct: false
             info: Du hast die Exponenten addiert. Beim Teilen werden sie subtrahiert.
-          - text: 10⁷⁷-mal
+          - text: 10⁹⁹-mal
             correct: false
             info: Du hast die Exponenten multipliziert. Beim Teilen werden sie subtrahiert.
-          - text: 10⁻⁴-mal
+          - text: 10⁻²-mal
             correct: false
             info: "Du hast in die falsche Richtung gerechnet: Die Entfernung ist größer als der Durchmesser."
-        explanation: "Entfernung durch Durchmesser: 10¹¹ : 10⁷ = 10⁴. Die Zehnerpotenzen zeigen die Größenordnung."
+        explanation: "Entfernung durch Durchmesser: 10¹¹ : 10⁹ = 10². Die Sonne passt rund hundertmal in die Entfernung zur Erde."
         links:
           - title: Baustein auf der Lernlandkarte
             url: https://lernapps.net/apps/map/mathematik/c/potenzgesetze/

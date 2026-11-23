@@ -1,5 +1,5 @@
 # yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
-title: Das brauchst du für dieses Kapitel
+title: Das brauchst du für Wurzeln und reelle Zahlen
 description: Vier Bausteine aus früheren Jahren, die du für Wurzeln und reelle Zahlen brauchst, mit Kurztests zum Prüfen.
 recap:
   - mathematik/potenzen
@@ -14,8 +14,9 @@ blocks:
       - type: text
         text:
           "Für Wurzeln und reelle Zahlen brauchst du vier Dinge aus früheren Jahren: Potenzen, Zahlen ordnen, Dezimalbrüche
-          und negative Zahlen. Lies jeden Abschnitt kurz und beantworte den Kurztest. Er zählt nichts und speichert nichts, er
-          zeigt dir nur, ob du es kannst. Bei einer falschen Antwort steht darunter, was du wiederholen kannst."
+          und negative Zahlen. Lies jeden Abschnitt kurz und beantworte die Kurztests. Sie zählen nichts und speichern nichts,
+          sie zeigen dir nur, ob du es kannst. Unter jedem Abschnitt steht, was du wiederholen kannst, wenn du unsicher warst.
+          Hast du alle Kurztests richtig, bist du bereit."
   - type: section
     id: potenzen
     title: Potenzen und Zehnerpotenzen
@@ -33,7 +34,7 @@ blocks:
         term: Quadratzahl
         explanation:
           Eine Quadratzahl ist das Quadrat einer natürlichen Zahl, zum Beispiel $7^2 = 49$. Die ersten Quadratzahlen
-          sind 1, 4, 9, 16, 25, 36, 49, 64, 81 und 100.
+          sind 1, 4, 9, 16, 25, 36, 49, 64, 81 und 100. Später brauchst du auch 121, 144, 169, 196, 225, 256 und 400.
       - type: definition
         term: Zehnerpotenz
         explanation:
@@ -69,6 +70,27 @@ blocks:
         nojs:
           "Kurztest: Was ist 4 hoch 3? Zur Wahl stehen 12, 64, 81 und 7. Richtig ist 64, denn 4 mal 4 mal 4 ist 64. 12 ist
           4 mal 3, 81 ist 3 hoch 4, 7 ist 4 plus 3."
+      - type: vue-component
+        id: test-quadratzahl
+        component: Kurztest
+        props:
+          question: Was ist 12²?
+          options:
+            - text: "24"
+              correct: false
+              info: Das ist 12 · 2. Das Quadrat ist 12 · 12.
+            - text: "144"
+              correct: true
+              info: 12² = 12 · 12 = 144.
+            - text: "122"
+              correct: false
+              info: "Das ist keine Rechnung: Der Exponent 2 steht für den Faktor 12 zweimal."
+            - text: "14"
+              correct: false
+              info: Das ist 12 + 2. Eine Potenz ist ein Produkt.
+          right: Richtig.
+          wrong: Nicht richtig.
+        nojs: "Kurztest: Was ist 12 zum Quadrat? Zur Wahl stehen 24, 144, 122 und 14. Richtig ist 144, denn 12 mal 12 ist 144."
       - type: text
         text:
           "Wenn du hier unsicher warst: Wiederhole den Baustein „Potenzen und Zehnerpotenzen“ auf seiner Kartenseite: [Potenzen
@@ -116,6 +138,27 @@ blocks:
         nojs:
           "Kurztest: Welche Zahl ist die größte? 987, 999, 1009 oder 989. Richtig ist 1009, weil sie vier Stellen hat und
           die anderen nur drei."
+      - type: vue-component
+        id: test-dezimal-ordnen
+        component: Kurztest
+        props:
+          question: "Welche Zahl ist größer: 1,41 oder 1,5?"
+          options:
+            - text: 1,41
+              correct: false
+              info: "Du hast 41 und 5 verglichen. Vergleiche Stelle für Stelle: Bei den Zehnteln steht 4 gegen 5."
+            - text: 1,5
+              correct: true
+              info: Bei den Zehnteln ist 5 größer als 4, also 1,5 > 1,41.
+            - text: beide sind gleich
+              correct: false
+              info: 1,5 ist 1,50, und 1,50 ist größer als 1,41.
+            - text: das lässt sich nicht sagen
+              correct: false
+              info: Du kannst Dezimalzahlen Stelle für Stelle vergleichen.
+          right: Richtig.
+          wrong: Nicht richtig.
+        nojs: "Kurztest: Welche Zahl ist größer, 1,41 oder 1,5? Richtig ist 1,5, denn bei den Zehnteln ist 5 größer als 4."
       - type: text
         text:
           "Wenn du hier unsicher warst: Wiederhole den Baustein „Zahlen vergleichen und ordnen“ auf seiner Kartenseite: [Zahlen
@@ -163,6 +206,29 @@ blocks:
         nojs:
           "Kurztest: Was ist 0,3 mal 0,2? Zur Wahl stehen 0,6, 0,06, 0,5 und 0,006. Richtig ist 0,06, denn 3 mal 2 ist 6 und
           es gibt zusammen zwei Stellen hinter dem Komma."
+      - type: vue-component
+        id: test-dezimal-quadrat
+        component: Kurztest
+        props:
+          question: Was ist 1,5 · 1,5?
+          options:
+            - text: 2,25
+              correct: true
+              info: "15 · 15 = 225, zwei Stellen hinter dem Komma: 2,25."
+            - text: 2,5
+              correct: false
+              info: Zwei Faktoren haben zusammen zwei Stellen hinter dem Komma, also 2,25 und nicht 2,5.
+            - text: "3"
+              correct: false
+              info: Das ist 1,5 + 1,5. Hier wird malgenommen.
+            - text: 0,225
+              correct: false
+              info: Das wären drei Stellen. Die Faktoren haben zusammen zwei.
+          right: Richtig.
+          wrong: Nicht richtig.
+        nojs:
+          "Kurztest: Was ist 1,5 mal 1,5? Zur Wahl stehen 2,25, 2,5, 3 und 0,225. Richtig ist 2,25, denn 15 mal 15 ist 225
+          und es gibt zusammen zwei Stellen hinter dem Komma."
       - type: text
         text:
           "Wenn du hier unsicher warst: Wiederhole den Baustein „Rechnen mit Dezimalbrüchen“ auf seiner Kartenseite: [Rechnen
@@ -208,6 +274,29 @@ blocks:
         nojs:
           "Kurztest: Was ist minus 6 mal minus 2? Zur Wahl stehen 12, minus 12, minus 8 und 8. Richtig ist 12, denn minus
           mal minus ergibt plus."
+      - type: vue-component
+        id: test-negativ-addieren
+        component: Kurztest
+        props:
+          question: Was ist 5 + (−8)?
+          options:
+            - text: −3
+              correct: true
+              info: "Du startest bei 5 und gehst 8 Schritte nach links: −3."
+            - text: "3"
+              correct: false
+              info: Das Ergebnis ist negativ, denn du gehst weiter nach links als bis 0.
+            - text: "13"
+              correct: false
+              info: Du hast 5 + 8 gerechnet. Die Klammer (−8) bedeutet, dass du 8 abziehst.
+            - text: −13
+              correct: false
+              info: Das wäre −5 − 8. Hier startest du bei +5.
+          right: Richtig.
+          wrong: Nicht richtig.
+        nojs:
+          "Kurztest: Was ist 5 plus minus 8? Zur Wahl stehen minus 3, 3, 13 und minus 13. Richtig ist minus 3, denn du startest
+          bei 5 und gehst 8 Schritte nach links."
       - type: text
         text:
           "Wenn du hier unsicher warst: Wiederhole den Baustein „Rechnen mit negativen Zahlen“ auf seiner Kartenseite: [Rechnen
@@ -227,4 +316,5 @@ blocks:
           - mit negativen Zahlen rechnen und dabei Vorzeichen- und Klammerregeln beachten kannst.
 
 
-          Dann geht es auf der nächsten Seite los: Zur Fläche eines Quadrats ist die Seite gesucht."
+          Hattest du bei jedem Kurztest alles richtig, geht es weiter: Zur Fläche eines Quadrats ist die Seite gesucht. Sonst
+          wiederhole zuerst den Baustein, bei dem du unsicher warst."

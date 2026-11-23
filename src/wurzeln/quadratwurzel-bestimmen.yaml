@@ -51,6 +51,9 @@ blocks:
     title: Die Quadratwurzel
     blocks:
       - type: definition
+        term: Quadrieren
+        explanation: Quadrieren heißt, eine Zahl mit sich selbst malzunehmen, zum Beispiel $5^2 = 5 \cdot 5 = 25$.
+      - type: definition
         term: Quadratwurzel
         explanation: "Die Quadratwurzel $\\sqrt{a}$ (gesprochen: Wurzel aus $a$) ist die nicht negative Zahl, deren Quadrat $a$ ist. Dabei gilt $a \\ge 0$. Das Zeichen vor dem $a$ heißt Wurzelzeichen."
       - type: definition
@@ -64,7 +67,7 @@ blocks:
         title: Kein negativer Radikand
         blocks:
           - type: text
-            text: Jede Zahl mal sich selbst ist nicht negativ, denn minus mal minus ergibt plus. Darum gibt es zum Beispiel $\sqrt{-4}$ unter den Zahlen, die du kennst, nicht.
+            text: "Jede Zahl mal sich selbst ist nicht negativ, denn minus mal minus ergibt plus. Darum gibt es $\\sqrt{-4}$ nicht: Keine Zahl ergibt mit sich selbst malgenommen −4."
   - type: section
     id: beispiel
     title: Beispiel

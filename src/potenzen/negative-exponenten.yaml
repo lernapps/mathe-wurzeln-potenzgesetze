@@ -102,7 +102,7 @@ blocks:
         given:
           n:
             int:
-              - 2
+              - 4
               - 6
         task:
           text: Schreibe 10^−{{n}} als Dezimalzahl.

@@ -43,8 +43,13 @@ blocks:
           'Weil 16 < 20 < 25 gilt, liegt $\sqrt{20}$ zwischen $\sqrt{16} = 4$ und $\sqrt{25} = 5$. Du **schließt** die Wurzel
           zwischen zwei ganzen Zahlen **ein**. Dann probierst du Zahlen dazwischen aus, quadrierst sie und vergleichst mit 20:
           erst in Zehnteln, dann in Hundertsteln.'
+      - type: definition
+        term: Einschließen
+        explanation:
+          Beim Einschließen suchst du eine Zahl, die zu klein ist, und eine, die zu groß ist. Die gesuchte Zahl liegt
+          dazwischen. Dann rückst du beide Zahlen näher zusammen.
       - type: table
-        caption: Wie du $\sqrt{20}$ einschließt
+        caption: Wie du √20 einschließt
         header:
           - Probe
           - Quadrat
@@ -70,8 +75,9 @@ blocks:
             - zu groß
       - type: text
         text:
-          'Aus der Tabelle folgt: $4{,}47 < \sqrt{20} < 4{,}48$. Auf zwei Stellen nach dem Komma genau ist die Seite also
-          etwa 4,47. Dein Taschenrechner kann das mit der Taste √ viel schneller.'
+          'Du suchst die Stelle, an der das Quadrat von zu klein zu zu groß wechselt: erst bei den Zehnteln (4,4 und 4,5),
+          dann bei den Hundertsteln (4,47 und 4,48). Aus der Tabelle folgt: $4{,}47 < \sqrt{20} < 4{,}48$. Auf zwei Stellen nach
+          dem Komma genau ist die Seite also etwa 4,47. Dein Taschenrechner kann das mit der Taste √ viel schneller.'
   - type: section
     id: regel
     title: Näherungswert
@@ -97,8 +103,8 @@ blocks:
           - type: text
             text:
               'Gesucht: die Seite $s = \sqrt{50}$ auf zwei Stellen. Es gilt $7^2 = 49 < 50 < 64 = 8^2$, also liegt $s$ zwischen
-              7 und 8. Probe in der Mitte: $7{,}1^2 = 50{,}41$ ist zu groß. Weiter: $7{,}07^2 = 49{,}9849$ ist zu klein, $7{,}08^2
-              = 50{,}1264$ ist zu groß.'
+              7 und 8. Zehntel: $7{,}1^2 = 50{,}41$ ist zu groß, also liegt $s$ zwischen 7,0 und 7,1. Hundertstel: $7{,}07^2 = 49{,}9849$
+              ist zu klein und $7{,}08^2 = 50{,}1264$ ist zu groß.'
           - type: formula
             formula: \sqrt{50} \approx 7{,}07
   - type: section

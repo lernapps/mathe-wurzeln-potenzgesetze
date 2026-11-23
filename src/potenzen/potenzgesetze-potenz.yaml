@@ -29,19 +29,10 @@ blocks:
     id: idee
     title: Gruppen von Faktoren
     blocks:
-      - type: table
-        caption: Potenz einer Potenz und Produkt in der Klammer
-        header:
-          - Aufgabe
-          - Ausgeschrieben
-          - Ergebnis
-        rows:
-          - - $(a^3)^2$
-            - $a^3 \cdot a^3 = (a \cdot a \cdot a) \cdot (a \cdot a \cdot a)$
-            - $a^6$
-          - - $(a \cdot b)^3$
-            - $(a \cdot b) \cdot (a \cdot b) \cdot (a \cdot b)$
-            - $a^3 \cdot b^3$
+      - type: formula
+        formula: (a^3)^2 = a^3 \cdot a^3 = a \cdot a \cdot a \cdot a \cdot a \cdot a = a^6
+      - type: formula
+        formula: (a \cdot b)^3 = (a \cdot b) \cdot (a \cdot b) \cdot (a \cdot b) = a^3 \cdot b^3
       - type: text
         text:
           'Bei $(a^3)^2$ stehen zwei Gruppen mit je drei Faktoren: 3 · 2 = 6. Bei $(a \cdot b)^3$ steht das Paar $a \cdot
@@ -201,22 +192,22 @@ blocks:
           - title: Baustein auf der Lernlandkarte
             url: https://lernapps.net/apps/map/mathematik/c/potenzgesetze/
       - type: single-choice
-        id: quadratkilometer
-        text: 1 km = 10³ m. Wie viele Quadratmeter hat 1 km²?
+        id: kubikmeter
+        text: 1 m = 10² cm. Wie viele Kubikzentimeter hat 1 m³?
         options:
-          - text: 10⁶ m²
+          - text: 10⁶ cm³
             correct: true
-            info: 1 km² = (10³ m)² = 10⁶ m².
-          - text: 10⁵ m²
+            info: 1 m³ = (10² cm)³ = 10⁶ cm³.
+          - text: 10⁵ cm³
             correct: false
-            info: "Du hast 3 + 2 gerechnet. Bei (10³)² werden die Exponenten multipliziert: 3 · 2 = 6."
-          - text: 10⁹ m²
+            info: "Du hast 2 + 3 gerechnet. Bei (10²)³ werden die Exponenten multipliziert: 2 · 3 = 6."
+          - text: 10⁸ cm³
             correct: false
-            info: 10⁹ wäre ein Kubikkilometer, also ein Volumen.
-          - text: 2 · 10³ m²
+            info: Du hast 2 hoch 3 gerechnet. Die Exponenten werden einfach malgenommen.
+          - text: 3 · 10² cm³
             correct: false
-            info: Du hast die Seite verdoppelt statt quadriert.
-        explanation: Ein Quadrat mit der Seite 10³ m hat die Fläche (10³)² = 10⁶ m².
+            info: Du hast die Kante verdreifacht statt hoch 3 genommen.
+        explanation: Ein Würfel mit der Kante 10² cm hat das Volumen (10²)³ = 10⁶ cm³.
         links:
           - title: Baustein auf der Lernlandkarte
             url: https://lernapps.net/apps/map/mathematik/c/potenzgesetze/

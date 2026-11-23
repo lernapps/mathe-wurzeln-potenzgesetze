@@ -34,9 +34,11 @@ blocks:
     blocks:
       - type: text
         text:
-          'Die Seite $s$ des Beets erfüllt $s \cdot s = 2$. Du suchst also die Zahl $\sqrt{2}$. Die Lupe zoomt in die Zahlengerade.
-          Schiebe den Regler: Auf jeder Stufe wird der Bereich zehnmal kleiner. Das Quadrat der linken Grenze ist immer kleiner
-          als 2, das Quadrat der rechten größer.'
+          'Die Seite $s$ des Beets erfüllt $s \cdot s = 2$. Du suchst also die Zahl $\sqrt{2}$. Die Lupe zeigt einen Ausschnitt
+          der Zahlengerade zwischen zwei Grenzen. Jeder der zehn Abschnitte zwischen den Strichen ist ein Zehntel davon, und der
+          Punkt mit der Beschriftung √2 zeigt, wo √2 liegt. Mit dem Regler wählst du die Stufe: Stufe 0 ist der große Ausschnitt,
+          jede höhere Stufe zoomt zehnmal weiter hinein. Das Quadrat der linken Grenze ist immer kleiner als 2, das Quadrat der
+          rechten größer.'
       - type: vue-component
         id: lupe
         component: Lupe
@@ -119,6 +121,9 @@ blocks:
     id: regel
     title: Intervallschachtelung
     blocks:
+      - type: definition
+        term: Intervall
+        explanation: Ein Intervall ist der Bereich der Zahlengerade zwischen zwei Zahlen, zum Beispiel zwischen 1,41 und 1,42.
       - type: definition
         term: Intervallschachtelung
         explanation:

@@ -1,5 +1,5 @@
 # yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
-title: Das brauchst du für dieses Kapitel
+title: Das brauchst du für die Potenzgesetze
 description: "Zwei Bausteine, die du für die Potenzgesetze brauchst: Terme umformen und Potenzen, mit Kurztests zum Prüfen."
 recap:
   - mathematik/terme-umformen
@@ -12,8 +12,8 @@ blocks:
       - type: text
         text:
           "Für die Potenzgesetze brauchst du zwei Dinge: Terme umformen und Potenzen mit natürlichen Exponenten. Lies jeden
-          Abschnitt kurz und beantworte den Kurztest. Er zählt nichts und speichert nichts. Bei einer falschen Antwort steht darunter,
-          was du wiederholen kannst."
+          Abschnitt kurz und beantworte die Kurztests. Sie zählen nichts und speichern nichts. Unter jedem Abschnitt steht, was
+          du wiederholen kannst, wenn du unsicher warst. Hast du alle Kurztests richtig, bist du bereit."
   - type: section
     id: terme-umformen
     title: Terme umformen
@@ -113,6 +113,29 @@ blocks:
         nojs:
           "Kurztest: Was ist 2 hoch 5? Zur Wahl stehen 32, 10, 25 und 16. Richtig ist 32, denn 2 mal 2 mal 2 mal 2 mal 2 ist
           32."
+      - type: vue-component
+        id: test-zehnerpotenz
+        component: Kurztest
+        props:
+          question: Wie viele Nullen hat 10⁴ ausgeschrieben?
+          options:
+            - text: "4"
+              correct: true
+              info: "10⁴ = 10 000: eine 1 mit vier Nullen."
+            - text: "3"
+              correct: false
+              info: 10³ = 1000 hat drei Nullen. Der Exponent 4 zählt vier Nullen.
+            - text: "5"
+              correct: false
+              info: 10⁵ hat fünf Nullen. Der Exponent ist 4.
+            - text: "40"
+              correct: false
+              info: Das wäre 10 · 4. Der Exponent zählt die Nullen, er wird nicht mit 10 malgenommen.
+          right: Richtig.
+          wrong: Nicht richtig.
+        nojs:
+          "Kurztest: Wie viele Nullen hat 10 hoch 4 ausgeschrieben? Zur Wahl stehen 4, 3, 5 und 40. Richtig ist 4, denn 10
+          hoch 4 ist 10 000."
       - type: text
         text:
           "Wenn du hier unsicher warst: Wiederhole den Baustein „Potenzen und Zehnerpotenzen“ auf seiner Kartenseite: [Potenzen
@@ -127,4 +150,5 @@ blocks:
           - Potenzen mit natürlichen Exponenten berechnen und Zehnerpotenzen zum Schreiben großer Zahlen nutzen kannst.
 
 
-          Dann beginnt die Reise: Vom Atom bis zum Universum, mit Zehnerpotenzen."
+          Hattest du bei jedem Kurztest alles richtig, beginnt die Reise: vom Proton bis zum Universum, mit Zehnerpotenzen. Sonst
+          wiederhole zuerst den Baustein, bei dem du unsicher warst."
