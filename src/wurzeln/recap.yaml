@@ -32,8 +32,8 @@ blocks:
       - type: definition
         term: Quadratzahl
         explanation:
-          Eine Quadratzahl ist eine Zahl mit dem Exponenten 2, zum Beispiel $7^2 = 49$. Die ersten Quadratzahlen sind
-          1, 4, 9, 16, 25, 36, 49, 64, 81 und 100.
+          Eine Quadratzahl ist das Quadrat einer natürlichen Zahl, zum Beispiel $7^2 = 49$. Die ersten Quadratzahlen
+          sind 1, 4, 9, 16, 25, 36, 49, 64, 81 und 100.
       - type: definition
         term: Zehnerpotenz
         explanation:
@@ -127,8 +127,8 @@ blocks:
       - type: definition
         term: Dezimalbruch
         explanation:
-          Ein Dezimalbruch ist eine Zahl mit Komma, zum Beispiel 3,25. Hinter dem Komma stehen Zehntel, Hundertstel,
-          Tausendstel und so weiter.
+          Ein Dezimalbruch (eine Dezimalzahl) ist eine Zahl mit Komma, zum Beispiel 3,25. Hinter dem Komma stehen Zehntel,
+          Hundertstel, Tausendstel und so weiter.
       - type: text
         text:
           Beim Malnehmen rechnest du erst ohne Komma. Dann setzt du im Ergebnis so viele Stellen hinter das Komma, wie beide
@@ -181,7 +181,7 @@ blocks:
           Eine negative Zahl in einer Rechnung steht in Klammern. Beim Addieren einer negativen Zahl gehst du auf der Zahlengerade
           nach links.
       - type: example
-        title: 5 plus minus 8
+        title: 5 + (−8)
         blocks:
           - type: text
             text: "Du startest bei 5 und gehst 8 Schritte nach links: $5 + (-8) = -3$."

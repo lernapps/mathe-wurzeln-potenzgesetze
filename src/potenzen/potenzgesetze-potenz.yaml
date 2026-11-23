@@ -10,7 +10,7 @@ blocks:
     blocks:
       - type: text
         text:
-          "Auf der Reise rechnest du in größeren Einheiten: 1 km = $10^3$ m. Am Ende dieser Seite weißt du, wie eine Potenz
+          "Auf der Reise rechnest du in größeren Einheiten: 1 km = $10^3$ m. Am Ende dieser Seite weißt du, wie eine Potenz
           von einer Potenz und ein Produkt in der Klammer mit Exponent gerechnet werden."
       - type: number
         id: zweier-potenz
@@ -56,6 +56,8 @@ blocks:
         formula: (a \cdot b)^n = a^n \cdot b^n
       - type: formula
         formula: "(a : b)^n = a^n : b^n"
+      - type: text
+        text: Beim Teilen ist $b$ ungleich 0.
       - type: note
         title: "Achtung: Bei Plus gilt das nicht"
         blocks:
@@ -71,7 +73,7 @@ blocks:
         title: Quadratkilometer und Kubikkilometer
         blocks:
           - type: text
-            text: "1 km = $10^3$ m. Ein Quadratkilometer ist ein Quadrat mit der Seite $10^3$ m:"
+            text: "1 km = $10^3$ m. Ein Quadratkilometer ist ein Quadrat mit der Seite $10^3$ m:"
           - type: formula
             formula: (10^3)^2 = 10^{3 \cdot 2} = 10^6
           - type: text
@@ -135,6 +137,7 @@ blocks:
               - 4
         where:
           - a != b
+          - a * pow(b, n) != a * b * n
         task:
           text: Berechne ({{a}} · {{b}})^{{n}}.
         answer:
@@ -199,11 +202,11 @@ blocks:
             url: https://lernapps.net/apps/map/mathematik/c/potenzgesetze/
       - type: single-choice
         id: quadratkilometer
-        text: 1 km = 10³ m. Wie viele Quadratmeter hat 1 km²?
+        text: 1 km = 10³ m. Wie viele Quadratmeter hat 1 km²?
         options:
           - text: 10⁶ m²
             correct: true
-            info: 1 km² = (10³ m)² = 10⁶ m².
+            info: 1 km² = (10³ m)² = 10⁶ m².
           - text: 10⁵ m²
             correct: false
             info: "Du hast 3 + 2 gerechnet. Bei (10³)² werden die Exponenten multipliziert: 3 · 2 = 6."

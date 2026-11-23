@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
 title: √2 mit der Lupe einfangen
-description: Die Seite eines Quadrats mit 2 m² Fläche mit einer Intervallschachtelung Stelle für Stelle einfangen.
+description: Die Seite eines Quadrats mit 2 m² Fläche mit einer Intervallschachtelung Stelle für Stelle einfangen.
 competencies:
   - reelle-zahlen
 blocks:
@@ -122,12 +122,12 @@ blocks:
       - type: definition
         term: Intervallschachtelung
         explanation:
-          Eine Intervallschachtelung ist eine Folge von Bereichen auf der Zahlengerade, die ineinander liegen und immer
-          kleiner werden. Jeder Bereich enthält die gesuchte Zahl.
+          Eine Intervallschachtelung ist eine Folge von Intervallen auf der Zahlengerade, die ineinander liegen und
+          deren Länge beliebig klein wird. Jedes Intervall enthält die gesuchte Zahl.
       - type: text
         text:
-          Die Ziffern von √2 beginnen mit 1,41421356 und hören nie auf. Eine Intervallschachtelung kommt √2 immer näher, ohne
-          je eine endliche Dezimalzahl zu treffen. Ob es sich auch durch einen Bruch schreiben lässt, klärt die nächste Seite.
+          Die Ziffern von √2 beginnen mit 1,41421356, und jede Stufe der Lupe liefert eine Ziffer mehr. Dass sie nie aufhören
+          und √2 auch kein Bruch ist, zeigt die nächste Seite.
   - type: section
     id: beispiel
     title: Beispiel
@@ -207,7 +207,7 @@ blocks:
             info: "Das ist die Idee der Schachtelung: Der Bereich enthält √2 immer."
           - text: Auf einer Stufe liegt √2 genau auf einer Grenze.
             correct: false
-            info: Dann hätte √2 endlich viele Dezimalstellen, und das ist nicht so.
+            info: Das Quadrat der Grenze wäre dann genau 2. In der Tabelle ist das auf keiner Stufe so.
           - text: Das Quadrat der linken Grenze ist größer als 2.
             correct: false
             info: Das Quadrat der linken Grenze ist kleiner als 2, das der rechten größer.
@@ -231,7 +231,7 @@ blocks:
         id: endlich
         text: Wenn du lange genug einschachtelst, hat √2 irgendwann genau eine endliche Dezimalzahl.
         answer: false
-        explanation: Die Ziffern von √2 hören nie auf. Jede Stufe liefert nur einen Näherungswert.
+        explanation: Die Ziffern von √2 hören nie auf, das zeigt die nächste Seite. Jede Stufe liefert nur einen Näherungswert.
         links:
           - title: Baustein auf der Lernlandkarte
             url: https://lernapps.net/apps/map/mathematik/c/reelle-zahlen/

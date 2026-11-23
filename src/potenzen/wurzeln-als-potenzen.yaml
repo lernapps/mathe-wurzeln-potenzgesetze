@@ -36,8 +36,8 @@ blocks:
       - type: text
         text:
           'Aus der Aufgabe folgt: $3^{\frac{1}{2}} \cdot 3^{\frac{1}{2}} = 3^1 = 3$. Die Zahl $3^{\frac{1}{2}}$ ergibt also
-          mit sich selbst malgenommen 3. Das tut auch $\sqrt{3}$. Damit die Potenzgesetze weiter gelten, setzt man $3^{\frac{1}{2}}
-          = \sqrt{3}$.'
+          mit sich selbst malgenommen 3. Das tut auch die nicht negative Zahl $\sqrt{3}$. Damit die Potenzgesetze weiter gelten,
+          setzt man $3^{\frac{1}{2}} = \sqrt{3}$.'
       - type: text
         text:
           Genauso gilt $\left(8^{\frac{1}{3}}\right)^3 = 8^{\frac{1}{3} \cdot 3} = 8^1 = 8$. Die Zahl $8^{\frac{1}{3}}$ hat
@@ -51,7 +51,9 @@ blocks:
       - type: formula
         formula: a^{\frac{m}{n}} = \left(\sqrt[n]{a}\right)^m
       - type: text
-        text: Beide gelten für $a > 0$. Der Nenner des Exponenten ist der Wurzelexponent, der Zähler die Potenz.
+        text:
+          Beide gelten für $a > 0$, mit ganzen Zahlen $m$ und $n \ge 2$. Der Nenner des Exponenten ist der Wurzelexponent,
+          der Zähler die Potenz.
       - type: table
         caption: Wurzel und Potenz
         header:
@@ -177,15 +179,15 @@ blocks:
             url: https://lernapps.net/apps/map/mathematik/c/n-te-wurzeln/
       - type: number
         id: wuerfel-64
-        text: Ein Würfel hat 64 cm³. Seine Kante ist 64^(1/3) cm lang. Wie viele Zentimeter sind das?
+        text: Ein Würfel hat 64 cm³. Seine Kante ist $64^{\frac{1}{3}}$ cm lang. Wie viele Zentimeter sind das?
         answer: 4
         tolerance: 0
         unit: cm
         mistakes:
-          - answer: 21.3
+          - answer: 21.33
             message: Du hast 64 durch 3 geteilt. Der Exponent ein Drittel bedeutet die dritte Wurzel.
         hint: Der Exponent ein Drittel bedeutet die dritte Wurzel.
-        explanation: 64^(1/3) ist die dritte Wurzel aus 64, also 4, denn 4 · 4 · 4 = 64.
+        explanation: $64^{\frac{1}{3}}$ ist die dritte Wurzel aus 64, also 4, denn 4 · 4 · 4 = 64.
         links:
           - title: Baustein auf der Lernlandkarte
             url: https://lernapps.net/apps/map/mathematik/c/n-te-wurzeln/

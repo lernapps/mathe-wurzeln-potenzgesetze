@@ -29,7 +29,7 @@ blocks:
             info: 5·5 = 25 ist schon größer als 20.
           - text: zwischen 9 und 10
             correct: false
-            info: Das wäre eine Fläche von über 80 m².
+            info: Das wäre eine Fläche von über 80 m².
         explanation: Die Seite s erfüllt s·s = 20. Wegen 16 < 20 < 25 liegt s zwischen 4 und 5.
         links:
           - title: Baustein auf der Lernlandkarte
@@ -41,8 +41,8 @@ blocks:
       - type: text
         text:
           'Weil 16 < 20 < 25 gilt, liegt $\sqrt{20}$ zwischen $\sqrt{16} = 4$ und $\sqrt{25} = 5$. Du **schließt** die Wurzel
-          zwischen zwei ganzen Zahlen **ein**. Dann halbierst du den Bereich: Du probierst eine Zahl in der Mitte, quadrierst
-          sie und vergleichst mit 20.'
+          zwischen zwei ganzen Zahlen **ein**. Dann probierst du Zahlen dazwischen aus, quadrierst sie und vergleichst mit 20:
+          erst in Zehnteln, dann in Hundertsteln.'
       - type: table
         caption: Wie du $\sqrt{20}$ einschließt
         header:
@@ -115,8 +115,8 @@ blocks:
           - "4"
           - √20
         explanation:
-          Es gilt 5 < 9 < 10 < 16 < 20. Die Wurzel behält die Reihenfolge der Radikanden und der Zahlen 3 = √9 und
-          4 = √16.
+          Es gilt 5 < 9 < 10 < 16 < 20. Schreibe 3 als √9 und 4 als √16. Die Radikanden stehen dann in der Reihenfolge
+          5 < 9 < 10 < 16 < 20, und die Wurzeln behalten diese Reihenfolge.
         links:
           - title: Baustein auf der Lernlandkarte
             url: https://lernapps.net/apps/map/mathematik/c/quadratwurzeln/
@@ -192,23 +192,29 @@ blocks:
               - 35
               - 37
         task:
-          text: Bestimme √{{a}} auf eine Stelle nach dem Komma. Quadriere und schließe ein.
+          text:
+            Schließe √{{a}} ein. Gib die größte Zahl mit einer Stelle nach dem Komma an, deren Quadrat noch kleiner als {{a}}
+            ist.
         answer:
-          value: round(sqrt(a), 1)
+          value: round(sqrt(a) - 0.05, 1)
           compare:
             number:
               format: decimal
               decimals: 1
               tolerance: 0
         mistakes:
-          - value: round(sqrt(a), 0)
-            message: Du hast auf ganze Zahlen gerundet. Verlangt ist eine Stelle nach dem Komma.
-          - value: a / 2
-            message: "Du hast halbiert. Probe: Quadriere dein Ergebnis. Kommt {{a}} heraus?"
+          - value: round(sqrt(a) - 0.05, 1) + 0.1
+            message:
+              Das Quadrat dieser Zahl ist schon größer als {{a}}. Gesucht ist die größte Zahl, deren Quadrat noch kleiner
+              ist.
+          - value: round(sqrt(a) - 0.05, 1) - 0.1
+            message:
+              Das Quadrat dieser Zahl ist kleiner als {{a}}, aber es geht noch größer. Probiere die nächste Zahl mit einer
+              Stelle.
         hint: Probiere eine Zahl, quadriere sie und vergleiche mit {{a}}. Ist das Ergebnis zu groß, nimm eine kleinere Zahl.
         steps:
           - Quadriere Zahlen mit einer Stelle nach dem Komma und schließe √{{a}} ein.
-          - Der gerundete Näherungswert ist {{answer}}.
+          - Das Quadrat von {{answer}} ist kleiner als {{a}}, das Quadrat der nächsten Zahl mit einer Stelle ist größer.
       - type: true-false
         id: taschenrechner
         text: Wenn der Taschenrechner √20 mit vielen Stellen anzeigt, ist das der genaue Wert von √20.
@@ -234,12 +240,12 @@ blocks:
             info: 1,5² = 2,25 ist größer als 2.
           - text: 2 m
             correct: false
-            info: 2² = 4. Das wäre ein Beet mit 4 m².
+            info: 2² = 4. Das wäre ein Beet mit 4 m².
         explanation: "Nur 1,4 liegt links von √2 und ist nah dran: 1,4² = 1,96 < 2 < 2,25 = 1,5²."
         links:
           - title: Baustein auf der Lernlandkarte
             url: https://lernapps.net/apps/map/mathematik/c/quadratwurzeln/
       - type: text
         text:
-          Wie genau kannst du die Seite von 2 m² angeben? Auf der nächsten Seite fängst du √2 mit einer Lupe ein, Stelle für
+          Wie genau kannst du die Seite von 2 m² angeben? Auf der nächsten Seite fängst du √2 mit einer Lupe ein, Stelle für
           Stelle.

@@ -64,14 +64,16 @@ blocks:
       - type: text
         text:
           So entsteht $10^0 = 1$. Und $10^{-1} = 0{,}1 = \frac{1}{10}$, $10^{-2} = \frac{1}{100}$. Eine Haardicke von rund
-          0,0001 m ist $10^{-4}$ m.
+          0,0001 m ist $10^{-4}$ m.
   - type: section
     id: regel
     title: Negativer Exponent
     blocks:
       - type: definition
         term: negativer Exponent
-        explanation: "Ein negativer Exponent bedeutet: Du nimmst den Kehrwert der Potenz mit dem positiven Exponenten."
+        explanation:
+          'Ein negativer Exponent bedeutet: Du nimmst den Kehrwert der Potenz mit dem positiven Exponenten. Der Kehrwert
+          von $x$ ist $\frac{1}{x}$, zum Beispiel ist der Kehrwert von 8 die Zahl $\frac{1}{8}$.'
       - type: formula
         formula: a^{-n} = \frac{1}{a^n}
       - type: formula

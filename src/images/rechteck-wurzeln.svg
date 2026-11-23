@@ -9,6 +9,6 @@
     <text x="130" y="22">Seite √9 = 3</text>
     <text x="22" y="95" transform="rotate(-90 22 95)">Seite √4 = 2</text>
     <text x="130" y="178">Fläche √9 · √4 = 6</text>
-    <text x="130" y="202">Ein Quadrat mit 6 Kästchen: √36 = √(9 · 4)</text>
+    <text x="130" y="202">6 · 6 = 36 = 9 · 4</text>
   </g>
 </svg>

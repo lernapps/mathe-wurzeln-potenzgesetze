@@ -21,7 +21,7 @@ blocks:
             info: √25 = 5, und das Produktgesetz gibt √(25 · 2) = √25 · √2 = 5 · √2.
           - text: "25"
             correct: false
-            info: 25 ist der Radikand. Herausgezogen wird seine Wurzel.
+            info: 25 ist der Faktor, der unter der Wurzel bleibt. Herausgezogen wird seine Wurzel.
           - text: "2"
             correct: false
             info: "2 bleibt unter der Wurzel: Es ist keine Quadratzahl."
@@ -70,7 +70,7 @@ blocks:
       - type: text
         text:
           'Das ist wie bei 3 Äpfeln plus 5 Äpfeln: Die Einheit √2 bleibt. Ungleichartige Wurzeln wie $\sqrt{2} + \sqrt{3}$
-          lassen sich nicht zusammenfassen.'
+          lassen sich nicht zusammenfassen. Manche werden erst nach dem Vereinfachen gleichartig, wie im Beispiel unten.'
   - type: section
     id: beispiel
     title: Beispiel
@@ -107,7 +107,7 @@ blocks:
             message: Du hast den Quadratfaktor selbst vor die Wurzel gezogen. Vor die Wurzel kommt seine Wurzel.
           - value: e.b
             message: Das ist die Zahl, die unter der Wurzel bleibt. Gefragt ist der Faktor vor der Wurzel.
-        hint: "Suche die größte Quadratzahl, die in {{e.n}} steckt: 4, 9, 16, 25, 36, 49, 100."
+        hint: "Suche die größte Quadratzahl größer als 1, die in {{e.n}} steckt: 4, 9, 16, 25, 36, 49, 64, 81 oder 100."
         steps:
           - Zerlege {{e.n}} in einen Quadratfaktor und einen Rest.
           - Die Wurzel des Quadratfaktors ist {{answer}}.
@@ -131,6 +131,7 @@ blocks:
               - 7
         where:
           - p * q != p + q
+          - p * q != p + q + b
         task:
           text: "Fasse zusammen: {{p}}·√{{b}} + {{q}}·√{{b}} = r · √{{b}}. Wie groß ist r?"
         answer:
@@ -181,7 +182,7 @@ blocks:
             info: Vereinfache erst jede Wurzel, dann addiere die Faktoren.
           - text: √8 + √18
             correct: false
-            info: "Das lässt sich noch vereinfachen: beide Wurzeln sind gleichartig."
+            info: "Das lässt sich noch vereinfachen: Nach dem Vereinfachen sind beide Wurzeln gleichartig."
         explanation: "Erst vereinfachen: √8 = √(4·2) = 2√2 und √18 = √(9·2) = 3√2, dann zusammenfassen."
         links:
           - title: Baustein auf der Lernlandkarte
@@ -202,7 +203,7 @@ blocks:
           - text: 8,5 m
             correct: false
             info: 8,5² = 72,25. Das ist ein Näherungswert, aber nicht die genaue Seite.
-        explanation: Die genaue Seite ist √72 = 6√2. Als Näherungswert sind das etwa 8,49 m.
+        explanation: Die genaue Seite ist √72 = 6√2. Als Näherungswert sind das etwa 8,49 m.
         links:
           - title: Baustein auf der Lernlandkarte
             url: https://lernapps.net/apps/map/mathematik/c/wurzelgesetze/

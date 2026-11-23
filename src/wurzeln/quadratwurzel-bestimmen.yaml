@@ -52,7 +52,7 @@ blocks:
     blocks:
       - type: definition
         term: Quadratwurzel
-        explanation: "Die Quadratwurzel $\\sqrt{a}$ (gesprochen: Wurzel aus $a$) ist die Zahl, deren Quadrat $a$ ist. Sie ist nie negativ. Das Zeichen vor dem $a$ heißt Wurzelzeichen."
+        explanation: "Die Quadratwurzel $\\sqrt{a}$ (gesprochen: Wurzel aus $a$) ist die nicht negative Zahl, deren Quadrat $a$ ist. Dabei gilt $a \\ge 0$. Das Zeichen vor dem $a$ heißt Wurzelzeichen."
       - type: definition
         term: Radikand
         explanation: Der Radikand ist die Zahl unter dem Wurzelzeichen. In $\sqrt{25}$ ist 25 der Radikand.
@@ -64,7 +64,7 @@ blocks:
         title: Kein negativer Radikand
         blocks:
           - type: text
-            text: Jede Zahl mal sich selbst ist nicht negativ, denn minus mal minus ergibt plus. Darum gibt es zum Beispiel $\sqrt{-4}$ nicht.
+            text: Jede Zahl mal sich selbst ist nicht negativ, denn minus mal minus ergibt plus. Darum gibt es zum Beispiel $\sqrt{-4}$ unter den Zahlen, die du kennst, nicht.
   - type: section
     id: beispiel
     title: Beispiel
@@ -123,10 +123,6 @@ blocks:
         mistakes:
           - { value: "sqrt(A)", message: "Das ist eine Seite. Der Zaun geht um alle vier Seiten." }
           - { value: "4 * A", message: "Du hast die Fläche mit 4 malgenommen. Du brauchst die Seitenlänge." }
-          - {
-              value: "A / 4",
-              message: "Du hast die Fläche durch 4 geteilt. Für den Zaun brauchst du zuerst die Seite.",
-            }
           - { value: "2 * sqrt(A)", message: "Ein Quadrat hat vier gleich lange Seiten, nicht zwei." }
         hint: Bestimme zuerst die Seitenlänge. Der Umfang ist die Länge des ganzen Rands, also alle vier Seiten zusammen.
         steps:
