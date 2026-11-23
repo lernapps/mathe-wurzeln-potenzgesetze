@@ -108,11 +108,11 @@ Als Nächstes geht die Reise ins Kleine: Dabei brauchst du Potenzen mit negative
 
 ### Aufgabe potenz-potenz
 
-- Aufgabe: „Es gilt ({b}^{m})^{n} = {b}^k. Wie groß ist k?“
+- Aufgabe: „Es gilt $({b}^{{m}})^{{n}} = {b}^k$. Wie groß ist k?“
 - Antwortformat: eine Zahl eintippen
-- Tipp der App: „({b}^{m})^{n} heißt: {b}^{m} steht {n}-mal als Faktor da.“
+- Tipp der App: „{b} hoch {m} steht {n}-mal als Faktor da.“
 - Lösungsweg:
-  - ({b}^{m})^{n} = {b}^({m} · {n})
+  - $({b}^{{m}})^{{n}} = {b}^{{m} \cdot {n}}$
   - Also k = {answer}.
 - Typische Fehler und was die App sagt:
   - F1: „Du hast addiert. Bei einer Potenz einer Potenz werden die Exponenten multipliziert.“
@@ -193,11 +193,11 @@ Nr. | b | m | n | Lösung | F1 | F2
 
 ### Aufgabe produkt-in-klammer
 
-- Aufgabe: „Berechne ({a} · {b})^{n}.“
+- Aufgabe: „Berechne $({a} \cdot {b})^{{n}}$.“
 - Antwortformat: eine Zahl eintippen
 - Tipp der App: „Rechne erst die Klammer aus oder verteile den Exponenten auf beide Faktoren.“
 - Lösungsweg:
-  - ({a} · {b})^{n} = {a}^{n} · {b}^{n}
+  - $({a} \cdot {b})^{{n}} = {a}^{{n}} \cdot {b}^{{n}}$
   - Das ist {answer}.
 - Typische Fehler und was die App sagt:
   - F1: „Der Exponent gilt für beide Faktoren, nicht nur für den hinteren.“

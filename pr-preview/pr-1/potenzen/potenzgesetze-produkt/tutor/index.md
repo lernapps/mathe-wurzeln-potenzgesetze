@@ -104,11 +104,11 @@ Auf der nächsten Seite geht die Reise weiter, mit Potenzen von Potenzen: Aus Me
 
 ### Aufgabe produkt-potenzen
 
-- Aufgabe: „Es gilt {b}^{m} · {b}^{n} = {b}^k. Wie groß ist k?“
+- Aufgabe: „Es gilt ${b}^{{m}} \cdot {b}^{{n}} = {b}^k$. Wie groß ist k?“
 - Antwortformat: eine Zahl eintippen
 - Tipp der App: „Schreibe beide Potenzen aus und zähle alle Faktoren {b}.“
 - Lösungsweg:
-  - {b}^{m} · {b}^{n} = {b}^({m} + {n})
+  - ${b}^{{m}} \cdot {b}^{{n}} = {b}^{{m} + {n}}$
   - Also k = {answer}.
 - Typische Fehler und was die App sagt:
   - F1: „Du hast die Exponenten multipliziert. Bei gleicher Basis werden sie beim Malnehmen addiert.“
@@ -189,11 +189,11 @@ Nr. | b | m | n | Lösung | F1 | F2
 
 ### Aufgabe quotient-potenzen
 
-- Aufgabe: „Es gilt {b}^{m} : {b}^{n} = {b}^k. Wie groß ist k?“
+- Aufgabe: „Es gilt ${b}^{{m}} : {b}^{{n}} = {b}^k$. Wie groß ist k?“
 - Antwortformat: eine Zahl eintippen
 - Tipp der App: „Streiche gleiche Faktoren im Zähler und im Nenner. Wie viele bleiben übrig?“
 - Lösungsweg:
-  - {b}^{m} : {b}^{n} = {b}^({m} − {n})
+  - ${b}^{{m}} : {b}^{{n}} = {b}^{{m} - {n}}$
   - Also k = {answer}.
 - Typische Fehler und was die App sagt:
   - F1: „Du hast addiert. Das passiert beim Malnehmen. Beim Teilen kürzt du Faktoren.“
@@ -308,7 +308,7 @@ Nr. | b | m | n | Lösung | F1 | F2
 
 ### Aufgabe kombination
 
-- Aufgabe: Es gilt 5³ · 5⁴ : 5² = 5^k. Wie groß ist k?
+- Aufgabe: Es gilt 5³ · 5⁴ : 5² = 5 hoch k. Wie groß ist k?
 - Antwortformat: eine Zahl eintippen
 - Lösung: 5
 - Erklärung: Erst malnehmen: 5³ · 5⁴ = 5⁷. Dann teilen: 5⁷ : 5² = 5⁵.

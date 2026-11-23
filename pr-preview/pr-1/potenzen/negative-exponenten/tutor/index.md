@@ -110,14 +110,14 @@ Mit negativen Exponenten kannst du alle Größen der Reise schreiben. Das ordnes
 
 ### Aufgabe zehnerpotenz-dezimal
 
-- Aufgabe: „Schreibe 10^−{n} als Dezimalzahl.“
+- Aufgabe: „Schreibe $10^{-{n}}$ als Dezimalzahl.“
 - Antwortformat: eine Zahl eintippen
 - Tipp der App: „Die Reihe nach unten: Bei jedem Schritt wird durch 10 geteilt.“
 - Lösungsweg:
-  - 10^−{n} = 1 : 10^{n}
+  - $10^{-{n}} = 1 : 10^{{n}}$
   - Das ist {answer}.
 - Typische Fehler und was die App sagt:
-  - F1: „Das ist 10^{n} mit positivem Exponenten. Der Exponent ist aber negativ, der Wert ist kleiner als 1.“
+  - F1: „Das ist 10 hoch {n}, also mit positivem Exponenten. Der Exponent ist aber negativ, der Wert ist kleiner als 1.“
   - F2: „Ein negativer Exponent macht die Zahl nicht negativ, nur klein.“
   - F3: „Du hast 10 mit {n} malgenommen. Der Exponent sagt, wie oft du durch 10 teilst.“
 - Link zu Nummer n: `../?zehnerpotenz-dezimal=n&via=tutor#zehnerpotenz-dezimal`
@@ -132,14 +132,14 @@ Nr. | n | Lösung | F1 | F2 | F3
 
 ### Aufgabe nenner-bestimmen
 
-- Aufgabe: „Es gilt {b}^−{n} = 1 : d. Wie groß ist d?“
+- Aufgabe: „Es gilt ${b}^{-{n}} = \frac{1}{d}$. Wie groß ist d?“
 - Antwortformat: eine Zahl eintippen
-- Tipp der App: „a^−n ist der Kehrwert von a^n.“
+- Tipp der App: „Eine Potenz mit negativem Exponenten ist der Kehrwert der Potenz mit positivem Exponenten.“
 - Lösungsweg:
-  - {b}^−{n} = 1 : {b}^{n}
+  - ${b}^{-{n}} = \frac{1}{{b}^{{n}}}$
   - Also d = {answer}.
 - Typische Fehler und was die App sagt:
-  - F1: „Du hast Basis mal Exponent gerechnet. Der Nenner ist die Potenz {b}^{n}.“
+  - F1: „Du hast Basis mal Exponent gerechnet. Der Nenner ist die Potenz {b} hoch {n}.“
   - F2: „Der Nenner ist positiv: Das Minus im Exponenten macht nur den Kehrwert.“
 - Link zu Nummer n: `../?nenner-bestimmen=n&via=tutor#nenner-bestimmen`
 - Aufgaben nach Nummer: die Werte für `{…}`, die Lösung und was bei den Fehlern herauskommt. Ein Fehler ohne Spalte hat keinen festen Wert; die Meldung der App sagt, ob er vorliegt. `{answer}` ist die Lösung.
@@ -201,5 +201,5 @@ Nr. | b | n | Lösung | F1 | F2
   - ✗ 10¹⁷-mal – Du hast die Beträge der Exponenten addiert. Beim Teilen wird subtrahiert.
   - ✗ 10⁻¹⁷-mal – Du hast addiert und das falsche Vorzeichen. Beim Teilen wird subtrahiert.
 - Lösung: 10³-mal
-- Erklärung: 10⁻⁷ : 10⁻¹⁰ = 10^(−7 − (−10)) = 10³. Rund 1000 Atome nebeneinander sind so lang wie ein Virus.
+- Erklärung: 10⁻⁷ : 10⁻¹⁰ = 10 hoch (−7 − (−10)) = 10³. Rund 1000 Atome nebeneinander sind so lang wie ein Virus.
 - Link: [../?via=tutor#atom-virus](../?via=tutor#atom-virus)

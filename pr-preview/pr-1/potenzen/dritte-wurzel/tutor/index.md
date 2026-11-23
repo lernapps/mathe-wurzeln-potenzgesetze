@@ -107,8 +107,8 @@ Auf der letzten Seite zeigt sich, dass Wurzeln Potenzen sind.
 - Antwortformat: eine Zahl eintippen
 - Tipp der App: „Probiere kleine Zahlen und potenziere sie mit {e.n}.“
 - Lösungsweg:
-  - Gesucht ist w mit w^{e.n} = {e.a}.
-  - Mit {answer}^{e.n} = {e.a} ist die Wurzel {answer}.
+  - Gesucht ist w mit $w^{{e.n}} = {e.a}$.
+  - Mit ${answer}^{{e.n}} = {e.a}$ ist die Wurzel {answer}.
 - Typische Fehler und was die App sagt:
   - F1: „Du hast geteilt. Probe: Wie oft musst du deine Zahl als Faktor schreiben, damit {e.a} herauskommt? {e.n}-mal.“
   - F2: „Das ist die Zahl unter der Wurzel selbst. Gesucht ist die Zahl, die {e.n}-mal als Faktor {e.a} ergibt.“

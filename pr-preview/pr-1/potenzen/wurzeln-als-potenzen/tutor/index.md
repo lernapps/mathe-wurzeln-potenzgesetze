@@ -93,7 +93,7 @@ Rückblick: Im Schulgarten hast du aus Flächen Seiten bestimmt, Wurzeln eingesc
 
 ### Aufgabe halber-exponent
 
-- Aufgabe: Es gilt 3^x · 3^x = 3¹. Welche Zahl x erfüllt das? Gib sie als Dezimalzahl an.
+- Aufgabe: Es gilt 3ˣ · 3ˣ = 3¹. Welche Zahl x erfüllt das? Gib sie als Dezimalzahl an.
 - Antwortformat: eine Zahl eintippen
 - Lösung: 0,5
 - Erklärung: Beim Malnehmen gleicher Basen werden die Exponenten addiert: x + x = 1, also x = 0,5.

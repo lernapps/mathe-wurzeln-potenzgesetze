@@ -112,11 +112,11 @@
 </ul>
 <h3>Aufgabe mm-exponent</h3>
 <ul>
-<li>Aufgabe: „Eine Länge ist {e.mantisse} · 10^{e.exponent} m groß (Größe: {e.name}). In Millimetern ist sie {e.mantisse} · 10^k mm. Wie groß ist k?“</li>
+<li>Aufgabe: „Eine Länge ist ${e.mantisse} \cdot 10^{{e.exponent}}$ m groß (Größe: {e.name}). In Millimetern ist sie ${e.mantisse} \cdot 10^k$ mm. Wie groß ist k?“</li>
 <li>Antwortformat: eine Zahl eintippen</li>
 <li>Tipp der App: „1 m = 10³ mm. Die Zahl wird mit 10³ malgenommen.“</li>
 <li>Lösungsweg:<ul>
-<li>{e.mantisse} · 10^{e.exponent} m = {e.mantisse} · 10^{e.exponent} · 10³ mm</li>
+<li>${e.mantisse} \cdot 10^{{e.exponent}}$ m = ${e.mantisse} \cdot 10^{{e.exponent}} \cdot 10^3$ mm</li>
 <li>Der Exponent ist {e.exponent} + 3 = {answer}.</li>
 </ul>
 </li>
@@ -144,7 +144,7 @@
 </code></pre>
 <h3>Aufgabe produkt-wissenschaftlich</h3>
 <ul>
-<li>Aufgabe: „({a} · 10^{m}) · ({b} · 10^{n}) = c · 10^k mit 1 ≤ c &lt; 10. Wie groß ist k?“</li>
+<li>Aufgabe: „$({a} \cdot 10^{{m}}) \cdot ({b} \cdot 10^{{n}}) = c \cdot 10^k$ mit $1 \le c &lt; 10$. Wie groß ist k?“</li>
 <li>Antwortformat: eine Zahl eintippen</li>
 <li>Tipp der App: „Rechne die Zahlen vor den Zehnerpotenzen und die Zehnerpotenzen getrennt.“</li>
 <li>Lösungsweg:<ul>
@@ -231,11 +231,11 @@
 </code></pre>
 <h3>Aufgabe normieren</h3>
 <ul>
-<li>Aufgabe: „{a} · 10^{m} = c · 10^k mit 1 ≤ c &lt; 10. Wie groß ist k?“</li>
+<li>Aufgabe: „${a} \cdot 10^{{m}} = c \cdot 10^k$ mit $1 \le c &lt; 10$. Wie groß ist k?“</li>
 <li>Antwortformat: eine Zahl eintippen</li>
 <li>Tipp der App: „{a} = c · 10, wobei c zwischen 1 und 10 liegt.“</li>
 <li>Lösungsweg:<ul>
-<li>{a} · 10^{m} = c · 10 · 10^{m}</li>
+<li>${a} \cdot 10^{{m}} = c \cdot 10 \cdot 10^{{m}}$</li>
 <li>k = {m} + 1 = {answer}</li>
 </ul>
 </li>
@@ -307,10 +307,10 @@
 </ul>
 <h3>Aufgabe zehnerpotenzen-reise</h3>
 <ul>
-<li>Aufgabe: Wie viele Zehnerpotenzen liegen ungefähr zwischen einem Atom (10⁻¹⁰ m) und der Erde (10⁷ m)? Gib k mit 10⁷ : 10⁻¹⁰ = 10^k an.</li>
+<li>Aufgabe: Wie viele Zehnerpotenzen liegen ungefähr zwischen einem Atom (10⁻¹⁰ m) und der Erde (10⁷ m)? Gib k mit 10⁷ : 10⁻¹⁰ = 10 hoch k an.</li>
 <li>Antwortformat: eine Zahl eintippen</li>
 <li>Lösung: 17</li>
-<li>Erklärung: 10⁷ : 10⁻¹⁰ = 10^(7 − (−10)) = 10¹⁷. Das sind 17 Zehnerpotenzen.</li>
+<li>Erklärung: 10⁷ : 10⁻¹⁰ = 10 hoch (7 − (−10)) = 10¹⁷. Das sind 17 Zehnerpotenzen.</li>
 <li>Tipp der App: Beim Teilen wird subtrahiert, auch bei negativen Exponenten.</li>
 <li>Typische Fehler und was die App sagt:<ul>
 <li>-3: Du hast 7 + (−10) gerechnet. Beim Teilen subtrahierst du den Exponenten des Nenners, also 7 − (−10).</li>
