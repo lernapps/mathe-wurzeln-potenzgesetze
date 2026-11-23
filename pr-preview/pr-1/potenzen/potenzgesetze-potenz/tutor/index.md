@@ -41,7 +41,7 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 
 Potenzen potenzieren und Produkte potenzieren: ein Exponent kann sich auf ein ganzes Produkt beziehen.
 
-### Erste Aufgabe
+### Was du hier lernst
 
 Auf der Reise rechnest du in größeren Einheiten: 1 km = $10^3$ m. Am Ende dieser Seite weißt du, wie eine Potenz von einer Potenz und ein Produkt in der Klammer mit Exponent gerechnet werden.
 

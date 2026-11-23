@@ -41,9 +41,9 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 
 Aus einer Wurzel einen Faktor herausziehen und gleichartige Wurzeln zusammenfassen.
 
-### Erste Aufgabe
+### Was du hier lernst
 
-Das Pflaster im Schulgarten ist quadratisch und hat 50 m². Die Seite ist √50. Am Ende dieser Seite kannst du so einen Term in eine einfache Form bringen und mit Wurzeln addieren.
+Das Pflaster im Schulgarten ist quadratisch und hat 50 m². Die Seite ist √50. Beim Vereinfachen ziehst du einen Faktor, der eine Quadratzahl ist, vor die Wurzel: Aus √(9 · 5) wird 3 · √5. Am Ende dieser Seite kannst du so einen Term in eine einfache Form bringen und mit Wurzeln addieren.
 
 - Aufgabe `faktor-50` (unten)
 

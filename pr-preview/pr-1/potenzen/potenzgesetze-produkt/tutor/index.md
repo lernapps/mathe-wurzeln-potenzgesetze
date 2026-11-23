@@ -41,7 +41,7 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 
 Potenzen mit gleicher Basis multiplizieren und dividieren: Du zählst die Faktoren und erhältst die Exponentenregeln.
 
-### Erste Aufgabe
+### Was du hier lernst
 
 Die Reise beginnt bei der Erde. Ihr Durchmesser ist rund 10 000 000 m, also rund $10^7$ m. Die Sonne ist rund $10^{11}$ m entfernt. Am Ende dieser Seite kannst du solche Zahlen miteinander malnehmen und teilen, ohne die Nullen zu zählen.
 

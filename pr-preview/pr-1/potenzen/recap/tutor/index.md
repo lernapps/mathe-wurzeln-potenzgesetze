@@ -55,9 +55,9 @@ Für die Potenzgesetze brauchst du zwei Dinge: Terme umformen und Potenzen mit n
 
 Aus $4a + 7a - 2a$ wird $9a$. Aus $10b + 15$ wird $5 \cdot (2b + 3)$.
 
-Interaktiv: Kurztest: Was ergibt 3a plus 5a minus 2a? Zur Wahl stehen 6a, 6, 10a und 9a hoch 2. Richtig ist 6a, denn 3 plus 5 minus 2 ist 6 und das a bleibt.
+Interaktiv: Kurztest: Was ergibt 4x plus 3 minus x plus 5? Zur Wahl stehen 3x plus 8, 8x, 5x plus 8 und 3x minus 2. Richtig ist 3x plus 8, denn 4x minus x ist 3x und 3 plus 5 ist 8.
 
-Interaktiv: Kurztest: Welcher Term ist 6x plus 9, ausgeklammert? 3 mal (2x plus 3), 3 mal (2x plus 9), 6 mal (x plus 9) oder 9 mal (6x plus 1). Richtig ist 3 mal (2x plus 3).
+Interaktiv: Kurztest: Klammere 12a plus 18b so weit wie möglich aus. Richtig ist 6 mal (2a plus 3b), denn 6 ist der größte gemeinsame Teiler von 12 und 18.
 
 Interaktiv: Kurztest: Was ist a mal a mal a? Zur Wahl stehen a hoch 3, 3a, a plus 3 und 3 mal a mal a. Richtig ist a hoch 3.
 
@@ -67,7 +67,7 @@ Wenn du hier unsicher warst: Wiederhole den Baustein „Terme umformen“ auf se
 
 Eine **Potenz** schreibt ein Produkt aus gleichen Faktoren kurz: $2^5 = 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 = 32$. Die **Basis** ist 2, der **Exponent** ist 5. Eine **Zehnerpotenz** hat die Basis 10, der Exponent zählt die Nullen: $10^4$ = 10 000 hat vier Nullen.
 
-Interaktiv: Kurztest: Was ist 2 hoch 5? Zur Wahl stehen 32, 10, 25 und 16. Richtig ist 32, denn 2 mal 2 mal 2 mal 2 mal 2 ist 32.
+Interaktiv: Kurztest: Was ist 2 hoch 5 minus 5 hoch 2? Zur Wahl stehen 7, 0, minus 7 und 3. Richtig ist 7, denn 2 hoch 5 ist 32 und 5 hoch 2 ist 25.
 
 Interaktiv: Kurztest: Wie viele Nullen hat 10 hoch 4 ausgeschrieben? Zur Wahl stehen 4, 3, 5 und 40. Richtig ist 4, denn 10 hoch 4 ist 10 000.
 

@@ -41,7 +41,7 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 
 Sehr große und sehr kleine Zahlen als Mantisse mal Zehnerpotenz schreiben, vergleichen und multiplizieren.
 
-### Erste Aufgabe
+### Was du hier lernst
 
 Auf der Reise vom Atom bis zum Universum stehen Zahlen mit vielen Nullen. Am Ende dieser Seite schreibst du sie kurz auf, vergleichst sie und rechnest mit ihnen.
 

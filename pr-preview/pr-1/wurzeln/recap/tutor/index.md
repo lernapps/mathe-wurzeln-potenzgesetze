@@ -61,9 +61,9 @@ Für Wurzeln und reelle Zahlen brauchst du vier Dinge aus früheren Jahren: Pote
 
 Die Erde ist rund $15 \cdot 10^7$ Kilometer von der Sonne entfernt. $10^7$ ist eine 1 mit sieben Nullen, also 10 000 000. Das Ergebnis ist 150 000 000 Kilometer.
 
-Interaktiv: Kurztest: Was ist 4 hoch 3? Zur Wahl stehen 12, 64, 81 und 7. Richtig ist 64, denn 4 mal 4 mal 4 ist 64. 12 ist 4 mal 3, 81 ist 3 hoch 4, 7 ist 4 plus 3.
+Interaktiv: Kurztest: Was ist 2 hoch 4 plus 3 hoch 3? Zur Wahl stehen 43, 17 und 125. Richtig ist 43, denn 2 hoch 4 ist 16 und 3 hoch 3 ist 27.
 
-Interaktiv: Kurztest: Was ist 12 zum Quadrat? Zur Wahl stehen 24, 144, 122 und 14. Richtig ist 144, denn 12 mal 12 ist 144.
+Interaktiv: Kurztest: Was ist 15 zum Quadrat minus 14 zum Quadrat? Zur Wahl stehen 29, 1, 421 und 210. Richtig ist 29, denn 225 minus 196 ist 29.
 
 Wenn du hier unsicher warst: Wiederhole den Baustein „Potenzen und Zehnerpotenzen“ auf seiner Kartenseite: [Potenzen und Zehnerpotenzen](https://lernapps.net/apps/map/mathematik/c/potenzen/).
 
@@ -77,7 +77,7 @@ Zahlen vergleichst du Stelle für Stelle von links. Hat eine Zahl mehr Stellen, 
 
 1250 und 1205 haben beide vier Stellen. Die Tausender und Hunderter sind gleich. Bei den Zehnern ist 5 größer als 0, also gilt $1250 > 1205$.
 
-Interaktiv: Kurztest: Welche Zahl ist die größte? 987, 999, 1009 oder 989. Richtig ist 1009, weil sie vier Stellen hat und die anderen nur drei.
+Interaktiv: Kurztest: Welche Zahl ist die kleinste: 0,3, 0,25, 0,125 oder 0,2? Richtig ist 0,125, denn bei den Zehnteln steht dort nur die 1.
 
 Interaktiv: Kurztest: Welche Zahl ist größer, 1,41 oder 1,5? Richtig ist 1,5, denn bei den Zehnteln ist 5 größer als 4.
 
@@ -95,7 +95,7 @@ Beim Malnehmen rechnest du erst ohne Komma. Dann setzt du im Ergebnis so viele S
 
 Ohne Komma: $4 \cdot 15 = 60$. Die Faktoren haben zusammen zwei Stellen hinter dem Komma, also gilt $0{,}4 \cdot 1{,}5 = 0{,}60 = 0{,}6$.
 
-Interaktiv: Kurztest: Was ist 0,3 mal 0,2? Zur Wahl stehen 0,6, 0,06, 0,5 und 0,006. Richtig ist 0,06, denn 3 mal 2 ist 6 und es gibt zusammen zwei Stellen hinter dem Komma.
+Interaktiv: Kurztest: Was ist 0,12 mal 0,5? Zur Wahl stehen 0,06, 0,6, 0,006 und 0,17. Richtig ist 0,06, denn 12 mal 5 ist 60 und es gibt zusammen drei Stellen hinter dem Komma.
 
 Interaktiv: Kurztest: Was ist 1,5 mal 1,5? Zur Wahl stehen 2,25, 2,5, 3 und 0,225. Richtig ist 2,25, denn 15 mal 15 ist 225 und es gibt zusammen zwei Stellen hinter dem Komma.
 
@@ -115,7 +115,7 @@ Eine negative Zahl in einer Rechnung steht in Klammern. Beim Addieren einer nega
 
 Du startest bei 5 und gehst 8 Schritte nach links: $5 + (-8) = -3$.
 
-Interaktiv: Kurztest: Was ist minus 6 mal minus 2? Zur Wahl stehen 12, minus 12, minus 8 und 8. Richtig ist 12, denn minus mal minus ergibt plus.
+Interaktiv: Kurztest: Was ist minus 4 mal minus 3 minus 5? Zur Wahl stehen 7, 17, minus 17 und minus 7. Richtig ist 7, denn minus 4 mal minus 3 ist 12 und 12 minus 5 ist 7.
 
 Interaktiv: Kurztest: Was ist 5 plus minus 8? Zur Wahl stehen minus 3, 3, 13 und minus 13. Richtig ist minus 3, denn du startest bei 5 und gehst 8 Schritte nach links.
 

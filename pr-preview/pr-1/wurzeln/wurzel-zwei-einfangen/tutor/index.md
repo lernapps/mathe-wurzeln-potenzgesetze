@@ -41,7 +41,7 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 
 Die Seite eines Quadrats mit 2 m² Fläche mit einer Intervallschachtelung Stelle für Stelle einfangen.
 
-### Erste Aufgabe
+### Was du hier lernst
 
 Das Beet mit 2 m² kennst du schon: Die Seite liegt zwischen 1 m und 2 m. Am Ende dieser Seite kannst du sie auf so viele Stellen einfangen, wie du willst, und weißt, warum das nie endet.
 

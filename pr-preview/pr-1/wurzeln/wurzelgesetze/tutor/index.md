@@ -41,7 +41,7 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 
 Wurzeln multiplizieren und dividieren: Die Wurzel eines Produkts ist das Produkt der Wurzeln, und beim Quotienten gilt dasselbe.
 
-### Erste Aufgabe
+### Was du hier lernst
 
 Aus dem Gartenbau bleiben viele Wurzeln übrig, mit denen du rechnen willst. Am Ende dieser Seite kannst du Wurzeln mal und geteilt rechnen, ohne sie auszurechnen, und weißt, wo du keine Wurzel zerlegen darfst.
 

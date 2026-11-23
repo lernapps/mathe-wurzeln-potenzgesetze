@@ -41,7 +41,7 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 
 Zahlen unterscheiden, die sich als Bruch schreiben lassen, und solche, bei denen das nicht geht, und alle zusammen als reelle Zahlen einordnen.
 
-### Erste Aufgabe
+### Was du hier lernst
 
 Auf der Lupe hast du gesehen, dass jede Stufe eine Stelle von √2 mehr liefert. Am Ende dieser Seite weißt du, welche Zahlen sich als Bruch schreiben lassen und welche nicht, und wie die Zahlengerade am Ende keine Lücken mehr hat.
 

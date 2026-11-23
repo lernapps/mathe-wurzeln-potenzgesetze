@@ -41,7 +41,7 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 
 Potenzen mit negativem Exponenten als Bruch deuten: Auf der Reise ins Kleine fällt der Exponent unter null.
 
-### Erste Aufgabe
+### Was du hier lernst
 
 Die Reise führt vom Menschen zu den kleinen Dingen: zu Haaren, Zellen und Atomen. Dort sind die Längen kleiner als 1 m. Am Ende dieser Seite weißt du, was ein negativer Exponent bedeutet und wie du damit rechnest.
 

@@ -41,7 +41,7 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 
 Wenn die Fläche keine Quadratzahl ist: Die Seite zwischen zwei Quadratzahlen einschließen und einen Näherungswert bestimmen.
 
-### Erste Aufgabe
+### Was du hier lernst
 
 Auf der letzten Seite waren alle Flächen Quadratzahlen. Der Schulgarten bekommt ein Beet mit 20 m². Am Ende dieser Seite kannst du die Seite auch dann bestimmen, wenn die Fläche keine Quadratzahl ist.
 
@@ -50,6 +50,10 @@ Auf der letzten Seite waren alle Flächen Quadratzahlen. Der Schulgarten bekommt
 ### Einschließen
 
 Weil 16 &lt; 20 &lt; 25 gilt, liegt $\sqrt{20}$ zwischen $\sqrt{16} = 4$ und $\sqrt{25} = 5$. Du **schließt** die Wurzel zwischen zwei ganzen Zahlen **ein**. Dann probierst du Zahlen dazwischen aus, quadrierst sie und vergleichst mit 20: erst in Zehnteln, dann in Hundertsteln.
+
+Die Lupe zeigt einen Ausschnitt der Zahlengerade zwischen zwei Grenzen. Stufe 0 ist der große Ausschnitt von 4 bis 5. Mit dem Regler zoomst du hinein: Jede Stufe macht den Ausschnitt zehnmal kleiner. Der Punkt mit der Beschriftung √20 zeigt, wo √20 liegt. Darunter siehst du, dass das Quadrat der linken Grenze kleiner als 20 ist und das der rechten größer.
+
+Interaktiv: Lupe auf der Zahlengerade, drei Stufen. Auf jeder Stufe liegt √20 zwischen zwei Grenzen, deren Quadrate links und rechts von 20 liegen: - Stufe 0: zwischen 4 und 5. 4² = 16 (kleiner als 20), 5² = 25 (größer als 20). - Stufe 1: zwischen 4,4 und 4,5. 4,4² = 19,36 (kleiner als 20), 4,5² = 20,25 (größer als 20). - Stufe 2: zwischen 4,47 und 4,48. 4,47² = 19,9809 (kleiner als 20), 4,48² = 20,0704 (größer als 20).
 
 - **Einschließen**: Beim Einschließen suchst du eine Zahl, die zu klein ist, und eine, die zu groß ist. Die gesuchte Zahl liegt dazwischen. Dann rückst du beide Zahlen näher zusammen.
 

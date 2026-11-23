@@ -41,7 +41,7 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 
 Wurzeln als Potenzen mit Bruch-Exponenten schreiben: Das Potenzgesetz verlangt, dass 3 hoch ein Halb die Wurzel aus 3 ist.
 
-### Erste Aufgabe
+### Was du hier lernst
 
 Du kennst Potenzen mit ganzen Exponenten. Am Ende dieser Seite weißt du, warum es sinnvoll ist, Wurzeln als Potenzen mit Bruch-Exponenten zu schreiben, und kannst damit rechnen.
 

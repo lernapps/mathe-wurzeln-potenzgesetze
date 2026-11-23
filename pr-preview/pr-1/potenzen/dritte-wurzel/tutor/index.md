@@ -41,7 +41,7 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 
 Aus dem Volumen eines Würfels die Kante bestimmen: dritte Wurzel, vierte Wurzel und n-te Wurzel.
 
-### Erste Aufgabe
+### Was du hier lernst
 
 Die Reise ist zu Ende, aber eine Frage ist noch offen: Ein Würfel hat ein Volumen, und du suchst seine Kante, so wie du beim Quadrat die Seite gesucht hast. Am Ende dieser Seite kannst du Wurzeln mit beliebigem Wurzelexponenten bestimmen.
 

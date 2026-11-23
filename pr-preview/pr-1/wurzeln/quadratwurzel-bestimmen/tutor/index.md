@@ -41,7 +41,7 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 
 Aus der Fläche eines Quadrats die Seitenlänge bestimmen: die Quadratwurzel als Umkehrung des Quadrierens.
 
-### Erste Aufgabe
+### Was du hier lernst
 
 Im Schulgarten soll ein quadratisches Beet entstehen. Die Fläche steht fest, die Seitenlänge fehlt. Am Ende dieser Seite kannst du die Seitenlänge aus der Fläche bestimmen und kennst das Zeichen dafür.
 
