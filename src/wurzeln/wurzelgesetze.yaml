@@ -1,0 +1,198 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: "Wurzelgesetze: Produkt und Quotient"
+description:
+  "Wurzeln multiplizieren und dividieren: Die Wurzel eines Produkts ist das Produkt der Wurzeln, und beim Quotienten
+  gilt dasselbe."
+competencies:
+  - wurzelgesetze
+blocks:
+  - type: section
+    id: einstieg
+    title: Erste Aufgabe
+    blocks:
+      - type: text
+        text:
+          Aus dem Gartenbau bleiben viele Wurzeln übrig, mit denen du rechnen willst. Am Ende dieser Seite kannst du Wurzeln
+          mal und geteilt rechnen, ohne sie auszurechnen, und weißt, wo du keine Wurzel zerlegen darfst.
+      - type: single-choice
+        id: vergleich-36
+        text: Rechne √4 · √9 und √36 aus. Was fällt auf?
+        options:
+          - text: Beide Ergebnisse sind gleich.
+            correct: true
+            info: √4 · √9 = 2 · 3 = 6 und √36 = 6.
+          - text: √4 · √9 ist größer als √36.
+            correct: false
+            info: Beide sind 6.
+          - text: √4 · √9 ist kleiner als √36.
+            correct: false
+            info: Beide sind 6.
+          - text: Man kann sie nicht vergleichen.
+            correct: false
+            info: Beide Zahlen lassen sich ausrechnen und vergleichen.
+        explanation: 4 · 9 = 36, und es gilt √4 · √9 = √(4 · 9). Das ist kein Zufall, sondern ein Gesetz.
+        links:
+          - title: Baustein auf der Lernlandkarte
+            url: https://lernapps.net/apps/map/mathematik/c/wurzelgesetze/
+  - type: section
+    id: idee
+    title: Das Rechteck aus zwei Wurzeln
+    blocks:
+      - type: text
+        text:
+          Ein Rechteck hat die Seiten √9 = 3 und √4 = 2. Seine Fläche ist √9 · √4 = 6. Ein Quadrat mit 6 Kästchen hat die
+          Seite √6, ein Quadrat mit 36 Kästchen die Seite √36 = 6. Du suchst also eine Zahl, deren Quadrat 9 · 4 ist.
+      - type: figure
+        image: images/rechteck-wurzeln.svg
+        alt:
+          Ein Rechteck aus drei mal zwei Kästchen. Die Seiten sind mit Wurzel aus 9 gleich 3 und Wurzel aus 4 gleich 2 beschriftet,
+          die Fläche mit 6.
+        caption: "Zähle die Kästchen: 3 mal 2. Die Seitenlängen sind Wurzeln, die Fläche ist ihr Produkt."
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: text
+        text: "Das gilt für alle Zahlen a und b größer oder gleich 0. Du rechnest das Quadrat von √a · √b nach:"
+      - type: table
+        caption: Warum $\sqrt{a} \cdot \sqrt{b}$ die Wurzel von $a \cdot b$ ist
+        header:
+          - Rechnung
+          - Begründung
+        rows:
+          - - $(\sqrt{a} \cdot \sqrt{b})^2 = \sqrt{a} \cdot \sqrt{b} \cdot \sqrt{a} \cdot \sqrt{b}$
+            - Quadrieren heißt mit sich selbst malnehmen.
+          - - $= (\sqrt{a} \cdot \sqrt{a}) \cdot (\sqrt{b} \cdot \sqrt{b})$
+            - Faktoren tauschen.
+          - - $= a \cdot b$
+            - $\sqrt{a} \cdot \sqrt{a} = a$.
+      - type: text
+        text: Das Produkt √a · √b ist nicht negativ und hat das Quadrat a · b. Also ist es die Wurzel aus a · b.
+  - type: section
+    id: regel
+    title: Die Wurzelgesetze
+    blocks:
+      - type: formula
+        formula: \sqrt{a} \cdot \sqrt{b} = \sqrt{a \cdot b}
+      - type: formula
+        formula: '\sqrt{a} : \sqrt{b} = \sqrt{a : b}'
+      - type: text
+        text: Dabei sind $a$ und $b$ nicht negativ, beim Teilen ist $b$ größer als 0.
+      - type: note
+        title: "Achtung: Bei Plus und Minus gibt es kein Gesetz"
+        blocks:
+          - type: text
+            text:
+              Es gilt $\sqrt{9 + 16} = \sqrt{25} = 5$, aber $\sqrt{9} + \sqrt{16} = 3 + 4 = 7$. Du darfst eine Wurzel nicht
+              in eine Summe zerlegen.
+  - type: section
+    id: beispiel
+    title: Beispiele
+    blocks:
+      - type: example
+        title: "Produkt: √2 · √8"
+        blocks:
+          - type: text
+            text: 'Du fasst unter einer Wurzel zusammen: $\sqrt{2} \cdot \sqrt{8} = \sqrt{2 \cdot 8} = \sqrt{16} = 4$.'
+      - type: example
+        title: "Quotient: √45 : √5"
+        blocks:
+          - type: text
+            text: 'Auch beim Teilen schreibst du eine Wurzel für beide: $\sqrt{45} : \sqrt{5} = \sqrt{45 : 5} = \sqrt{9} = 3$.'
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: generated
+        id: produkt-wurzeln
+        given:
+          e:
+            pick: 1
+            from:
+              data: wurzelprodukte
+        task:
+          text: Berechne √{{e.a}} · √{{e.b}}.
+        answer:
+          value: sqrt(e.a * e.b)
+          compare:
+            number:
+              format: integer
+        mistakes:
+          - value: e.a * e.b
+            message: Du hast nur multipliziert und die Wurzel vergessen. Das Ergebnis ist die Wurzel aus {{e.a}} · {{e.b}}.
+          - value: e.a + e.b
+            message: Du hast addiert. Gefragt ist ein Produkt von Wurzeln.
+        hint: "Das Produktgesetz hilft: √a · √b = √(a · b). Welche Zahl hat das Quadrat a · b?"
+        steps:
+          - √{{e.a}} · √{{e.b}} = √({{e.a}} · {{e.b}})
+          - Die Wurzel ergibt {{answer}}.
+      - type: generated
+        id: quotient-wurzeln
+        given:
+          e:
+            pick: 1
+            from:
+              data: wurzelquotienten
+        task:
+          text: "Berechne √{{e.a}} : √{{e.b}}."
+        answer:
+          value: sqrt(e.a / e.b)
+          compare:
+            number:
+              format: integer
+        mistakes:
+          - value: e.a / e.b
+            message: "Du hast nur geteilt und die Wurzel vergessen. Das Ergebnis ist die Wurzel aus {{e.a}} : {{e.b}}."
+          - value: e.a - e.b
+            message: Du hast subtrahiert. Gefragt ist ein Quotient von Wurzeln.
+        hint: "Das Quotientengesetz hilft: √a : √b = √(a : b)."
+        steps:
+          - "√{{e.a}} : √{{e.b}} = √({{e.a}} : {{e.b}})"
+          - Die Wurzel ergibt {{answer}}.
+      - type: matching
+        id: produkt-wert
+        text: Ordne jedem Produkt seinen Wert zu.
+        pairs:
+          - left: das Produkt √2 · √18
+            right: "6"
+          - left: das Produkt √3 · √27
+            right: "9"
+          - left: das Produkt √5 · √20
+            right: "10"
+          - left: das Produkt √8 · √2
+            right: "4"
+        distractors:
+          - "8"
+          - "12"
+        explanation: "Du rechnest unter einer Wurzel: 2·18 = 36, 3·27 = 81, 5·20 = 100, 8·2 = 16."
+        links:
+          - title: Baustein auf der Lernlandkarte
+            url: https://lernapps.net/apps/map/mathematik/c/wurzelgesetze/
+      - type: true-false
+        id: wurzel-summe
+        text: Es gilt √(16 + 9) = √16 + √9.
+        answer: false
+        explanation: √(16 + 9) = √25 = 5, aber √16 + √9 = 4 + 3 = 7. Für Plus gibt es kein Wurzelgesetz.
+        links:
+          - title: Baustein auf der Lernlandkarte
+            url: https://lernapps.net/apps/map/mathematik/c/wurzelgesetze/
+      - type: single-choice
+        id: erlaubt
+        text: Welche Umformung ist erlaubt?
+        options:
+          - text: √(3 · 12) = √3 · √12
+            correct: true
+            info: Das ist das Produktgesetz.
+          - text: √(3 + 12) = √3 + √12
+            correct: false
+            info: √15 ist ungefähr 3,87, aber √3 + √12 ist ungefähr 5,20. Für Plus gibt es kein Gesetz.
+          - text: √(12 − 3) = √12 − √3
+            correct: false
+            info: √9 = 3, aber √12 − √3 ist ungefähr 1,73. Für Minus gibt es kein Gesetz.
+          - text: "√(3 : 12) = √3 + √12"
+            correct: false
+            info: "Beim Quotienten wird nicht addiert: √(3 : 12) = √3 : √12."
+        explanation: Nur beim Malnehmen und Teilen darfst du die Wurzel zerlegen oder zusammenfassen.
+        links:
+          - title: Baustein auf der Lernlandkarte
+            url: https://lernapps.net/apps/map/mathematik/c/wurzelgesetze/
+      - type: text
+        text: Mit den Gesetzen kannst du auch Wurzeln vereinfachen, die keine glatte Zahl sind. Das tust du auf der nächsten Seite.

@@ -283,7 +283,7 @@ page, which a link. -->
 - [x] Recap K1 mit Komponente (potenzen, zahlen-vergleichen-ordnen, dezimalbrueche-rechnen, rationale-zahlen-rechnen), Fachbegriffe im Glossar.
 - [x] K1 (quadratwurzeln): Einschließen, Näherungswert, Übung.
 - [x] K1 (reelle-zahlen): Komponente mit statischen Bildern, Übung.
-- [ ] K1 (reelle-zahlen): rational/irrational, Zahlbereiche, Übung.
+- [x] K1 (reelle-zahlen): rational/irrational, Zahlbereiche, Übung.
 - [ ] K1 und (wurzelgesetze) mit Übungen.
 - [ ] Recap K2 (terme-umformen, potenzen) mit Kurztest.
 - [ ] K2 und (potenzgesetze) mit Übungen.
