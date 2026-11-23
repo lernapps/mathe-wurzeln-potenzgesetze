@@ -8,7 +8,7 @@ phase: code
 # prePushFailures: failed pre-push runs, written by the hook.
 prePushFailures: 0
 # failedChecks: failed rules and runs, written by lernapps check and the hooks.
-failedChecks: { app-content-guide: 4, checks-pass: 7, explainer-readable-without-js: 3 }
+failedChecks: { accessible: 2, app-content-guide: 4, checks-pass: 9, explainer-readable-without-js: 3 }
 ---
 
 # Plan: mathe-wurzeln-potenzgesetze, first version
@@ -280,7 +280,7 @@ page, which a link. -->
       what it finds. Then show the creator the page and ask whether the others may follow it. Stop and wait. A
       change: change the pattern first.
       Creator: Orchestrator: Musterseite angenommen, übrige Seiten nach Muster, Kurztest aus /tmp/epic, dann Lupe
-- [ ] Recap K1 mit Komponente (potenzen, zahlen-vergleichen-ordnen, dezimalbrueche-rechnen, rationale-zahlen-rechnen), Fachbegriffe im Glossar.
+- [x] Recap K1 mit Komponente (potenzen, zahlen-vergleichen-ordnen, dezimalbrueche-rechnen, rationale-zahlen-rechnen), Fachbegriffe im Glossar.
 - [ ] K1 (quadratwurzeln): Einschließen, Näherungswert, Übung.
 - [ ] K1 (reelle-zahlen): Komponente mit statischen Bildern, Übung.
 - [ ] K1 (reelle-zahlen): rational/irrational, Zahlbereiche, Übung.
