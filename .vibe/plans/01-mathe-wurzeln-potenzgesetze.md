@@ -293,7 +293,7 @@ page, which a link. -->
 - [x] K2 und (n-te-wurzeln) mit Übungen, Rückblick auf beide Kapitel.
 - [x] Prüfer vor Veröffentlichen: fachlicher Prüfer und Lernenden-Prüfer über alle Seiten, Befunde unter Review im Plan, Änderungen danach nachprüfen.
 <!-- tasks: pages (10 added): the other pages or screens, after the pattern -->
-- [ ] Update the content guide so that it describes the app as built (`app-content-matches`).
+- [x] Update the content guide so that it describes the app as built (`app-content-matches`).
 - [ ] Prüfer-Läufe vor Veröffentlichen tatsächlich durchführen (die Aufgabe davor wurde irrtümlich zu früh abgehakt): fachlicher Prüfer und Lernenden-Prüfer, Befunde unter Review im Plan, Änderungen danach nachprüfen.
 - [ ] Run `npx --no -- lernapps check` until it passes.
 - [ ] Look at every screen and state, at 360 px and on a desktop, as "Look at the app" of skill `lernapps-cli` says.
