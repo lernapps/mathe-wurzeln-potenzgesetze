@@ -67,3 +67,11 @@ Kapitel `wurzeln` (Wurzeln und neue Zahlen), Kapitel `potenzen` (Potenzgesetze, 
 4. Je Kompetenz eine oder zwei Seiten mit Abschnitten `einstieg`, `idee`, `regel`, `beispiel`, `uebung`; Aufgaben nach den Mustern oben; Daten einmal in `src/data/`.
 5. Neue Fachbegriffe als `definition` ins Glossar.
 6. `npx --no -- lernapps check`, dann Commit.
+
+## Rules learned from mistakes
+
+- Kein `$\sqrt{\ }$` (leere Formel, der Check `explainer-readable-without-js` schlägt an): das Wurzelzeichen allein als Zeichen `√` in den Text schreiben.
+- Jeden Fachbegriff (Einheitsquadrat, Quadratzahl, Umfang, Wurzelziehen) auf der Seite erklären, bevor eine Aufgabe ihn benutzt; Hinweise nennen eine Strategie (Einschließen), nicht nur eine Frage.
+- Aufgabenpools nicht mit Zahlen der Beispiele und der Aufgaben derselben Seite überlappen lassen (81, 144 stehen nur dort, nicht im Pool).
+- Rückmeldungen der `generated`-Aufgaben nennen den häufigsten Fehler (halbiert, verdoppelt, Umfang statt Seite) und nie die Lösung.
+- Überschriften (auch `title` eines `example`) ohne geschütztes Leerzeichen: der Test „heading levels follow the nesting“ vergleicht sonst Text und Quelle verschieden.

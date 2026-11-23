@@ -8,7 +8,7 @@ phase: code
 # prePushFailures: failed pre-push runs, written by the hook.
 prePushFailures: 0
 # failedChecks: failed rules and runs, written by lernapps check and the hooks.
-failedChecks: {}
+failedChecks: { app-content-guide: 4, checks-pass: 6, explainer-readable-without-js: 3 }
 ---
 
 # Plan: mathe-wurzeln-potenzgesetze, first version
