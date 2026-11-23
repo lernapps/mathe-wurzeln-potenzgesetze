@@ -354,10 +354,26 @@ page, which a link. -->
 
 <!-- Last phase completed, checkpoints passed. E.g. "commit; confirmed, published". -->
 
+Explore, Plan und Code abgeschlossen, Commit begonnen: Vorschau-PR #1 offen (Prüfung „app“ und „preview“ grün). Checkpoints: Recherche, Plan, Musterseite freigegeben; „Veröffentlichen“ steht aus. Nicht gemergt, nicht gelistet.
+
+
 ### Creator turns after the plan
 
 <!-- Number of creator messages after the confirmation, topic of each. Target: at most 3. -->
 
+Eine Antwort des Orchestrators nach der Plan-Freigabe: Musterseite angenommen (Thema: Kurztest-Komponente aus den gemeinsamen Dateien, Reihenfolge Lupe). Vor der Plan-Freigabe zwei Antworten (Recherche, Kurztest-Vorlage). Keine Rückfrage meinerseits nach dem Plan.
+
+
 ### Where I had to guess
 
 <!-- Each gap in plan, skills, messages or answers, and your choice. "None" if none. -->
+
+- Seitenzuschnitt (12 Inhaltsseiten und 2 Recaps) und Reihenfolge der Seiten.
+- Realer Fall statt erfundener Kinder, nur Deutsch.
+- Aufgabenpools, Zahlenbereiche und Fehlerdiagnosen der `generated`-Aufgaben.
+- Größenordnungen der Zehnerpotenz-Reise (nachgeschlagen, gerundet, nicht in der App belegt).
+- ℕ mit 0, Definition der n-ten Wurzel nur für Radikand ≥ 0, Aufgaben nur mit Dezimalzahl-Antworten.
+- Umfang der Selbsteinschätzung (24 Aufgaben, mehr als der Richtwert).
+- Prüferfassung der Briefe `page.md` und `whole-app.md` (gekürzt und zusammengelegt).
+- Fehler im Ablauf: Backticks im Shell-Befehl beim Anlegen von Plan-Aufgaben, eine Aufgabe zu früh abgehakt (siehe Notes).
+
