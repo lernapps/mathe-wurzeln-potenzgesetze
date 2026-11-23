@@ -32,7 +32,13 @@ const sliderId = "lupe-stufe";
 
 <template>
   <div class="lupe">
-    <label :for="sliderId" class="lupe-label">{{ sliderLabel }}: {{ stage }}</label>
+    <label :for="sliderId" class="lupe-label">
+      <svg viewBox="0 0 24 24" width="20" height="20" class="lupe-icon" aria-hidden="true" focusable="false">
+        <circle cx="10" cy="10" r="6" fill="none" stroke="currentColor" stroke-width="2" />
+        <line x1="14.5" y1="14.5" x2="21" y2="21" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+      </svg>
+      {{ sliderLabel }}: {{ stage }}
+    </label>
     <input
       :id="sliderId"
       v-model.number="stage"
@@ -81,6 +87,11 @@ const sliderId = "lupe-stufe";
   display: block;
   font-weight: 600;
   margin-bottom: 0.25rem;
+}
+
+.lupe-icon {
+  vertical-align: -3px;
+  margin-right: 0.25rem;
 }
 
 .lupe-slider {

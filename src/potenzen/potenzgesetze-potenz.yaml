@@ -6,7 +6,7 @@ competencies:
 blocks:
   - type: section
     id: einstieg
-    title: Erste Aufgabe
+    title: Was du hier lernst
     blocks:
       - type: text
         text:
@@ -22,9 +22,6 @@ blocks:
             message: "Du hast 3 + 2 gerechnet. (2³)² heißt 2³ mal 2³: zwei Gruppen mit je 3 Zweien."
         hint: "(2³)² heißt: 2³ wird zweimal als Faktor geschrieben."
         explanation: (2³)² = 2³ · 2³ = (2 · 2 · 2) · (2 · 2 · 2). Das sind 6 Zweien.
-        links:
-          - title: Baustein auf der Lernlandkarte
-            url: https://lernapps.net/apps/map/mathematik/c/potenzgesetze/
   - type: section
     id: idee
     title: Gruppen von Faktoren
@@ -163,9 +160,6 @@ blocks:
             correct: false
             info: Du hast 4 hoch 3 gerechnet. Die Exponenten werden einfach malgenommen.
         explanation: "(x³)⁴ heißt: x³ steht viermal als Faktor da, also 3 · 4 = 12 Faktoren x."
-        links:
-          - title: Baustein auf der Lernlandkarte
-            url: https://lernapps.net/apps/map/mathematik/c/potenzgesetze/
       - type: matching
         id: term-potenz
         text: Ordne jedem Term die passende Potenz zu.
@@ -181,17 +175,11 @@ blocks:
         distractors:
           - 2⁸
         explanation: (2³)² = 2⁶, 2³·2² = 2⁵, 2⁶:2² = 2⁴ und (2 · 3)² = 2²·3².
-        links:
-          - title: Baustein auf der Lernlandkarte
-            url: https://lernapps.net/apps/map/mathematik/c/potenzgesetze/
       - type: true-false
         id: summe-klammer
         text: Es gilt (a + b)² = a² + b².
         answer: false
         explanation: "Probe mit a = 3 und b = 4: (3 + 4)² = 49, aber 3² + 4² = 25. Für Plus gibt es kein Potenzgesetz."
-        links:
-          - title: Baustein auf der Lernlandkarte
-            url: https://lernapps.net/apps/map/mathematik/c/potenzgesetze/
       - type: single-choice
         id: kubikmeter
         text: 1 m = 10² cm. Wie viele Kubikzentimeter hat 1 m³?
@@ -209,8 +197,5 @@ blocks:
             correct: false
             info: Du hast die Kante verdreifacht statt hoch 3 genommen.
         explanation: Ein Würfel mit der Kante 10² cm hat das Volumen (10²)³ = 10⁶ cm³.
-        links:
-          - title: Baustein auf der Lernlandkarte
-            url: https://lernapps.net/apps/map/mathematik/c/potenzgesetze/
       - type: text
         text: "Als Nächstes geht die Reise ins Kleine: Dabei brauchst du Potenzen mit negativen Exponenten."

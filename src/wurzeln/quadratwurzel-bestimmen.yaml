@@ -5,7 +5,7 @@ competencies: [quadratwurzeln]
 blocks:
   - type: section
     id: einstieg
-    title: Erste Aufgabe
+    title: Was du hier lernst
     blocks:
       - type: text
         text: |
@@ -27,9 +27,6 @@ blocks:
             message: "Das wäre der Umfang des Beets (4 · 5). Gesucht ist eine einzelne Seite."
         hint: Probiere kleine Zahlen. Welche Zahl mal sich selbst ergibt 25?
         explanation: Es sind 5 m, denn 5 m · 5 m = 25 m².
-        links:
-          - title: Quadratwurzeln auf der Lernlandkarte
-            url: https://lernapps.net/apps/map/mathematik/c/quadratwurzeln/
   - type: section
     id: idee
     title: Von der Seite zur Fläche und zurück
@@ -88,9 +85,6 @@ blocks:
         text: Es gilt $\sqrt{16} = 8$.
         answer: false
         explanation: Es ist 4, denn 4 · 4 = 16. Die Hälfte von 16 ist 8, aber 8 · 8 = 64.
-        links:
-          - title: Quadratwurzeln auf der Lernlandkarte
-            url: https://lernapps.net/apps/map/mathematik/c/quadratwurzeln/
       - type: generated
         id: seite-aus-flaeche
         given:
@@ -148,6 +142,3 @@ blocks:
             correct: false
             info: 81 · 81 = 6561. Das ist 81 quadriert. Wurzelziehen kehrt das Quadrieren um, es wiederholt es nicht.
         explanation: Das Wurzelzeichen steht für die nicht negative Zahl, deren Quadrat 81 ist.
-        links:
-          - title: Quadratwurzeln auf der Lernlandkarte
-            url: https://lernapps.net/apps/map/mathematik/c/quadratwurzeln/

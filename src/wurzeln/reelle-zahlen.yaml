@@ -8,7 +8,7 @@ competencies:
 blocks:
   - type: section
     id: einstieg
-    title: Erste Aufgabe
+    title: Was du hier lernst
     blocks:
       - type: text
         text:
@@ -31,9 +31,6 @@ blocks:
             correct: true
             info: 0,25 = $\frac{1}{4}$.
         explanation: Eine Dezimalzahl ist ein Bruch, wenn ihre Stellen aufhören oder sich immer gleich wiederholen.
-        links:
-          - title: Baustein auf der Lernlandkarte
-            url: https://lernapps.net/apps/map/mathematik/c/reelle-zahlen/
   - type: section
     id: idee
     title: Rational oder nicht?
@@ -135,9 +132,6 @@ blocks:
             correct: false
             info: 1,75 = $\frac{7}{4}$.
         explanation: Eine Wurzel aus einer natürlichen Zahl ist irrational, wenn die Zahl unter der Wurzel keine Quadratzahl ist.
-        links:
-          - title: Baustein auf der Lernlandkarte
-            url: https://lernapps.net/apps/map/mathematik/c/reelle-zahlen/
       - type: number
         id: zaehle-rationale
         text: Wie viele der Zahlen √4, √5, √9, √16, √20, √25 sind rational?
@@ -148,9 +142,6 @@ blocks:
             message: Das sind die irrationalen. Gefragt sind die rationalen Zahlen.
         hint: Welche Radikanden sind Quadratzahlen?
         explanation: √4 = 2, √9 = 3, √16 = 4 und √25 = 5 sind natürliche Zahlen. √5 und √20 sind irrational.
-        links:
-          - title: Baustein auf der Lernlandkarte
-            url: https://lernapps.net/apps/map/mathematik/c/reelle-zahlen/
       - type: matching
         id: kleinste-menge
         text: Ordne jeder Zahl die kleinste Zahlenmenge zu, in der sie liegt.
@@ -164,9 +155,6 @@ blocks:
           - left: die Zahl √3
             right: ℝ (reelle Zahlen)
         explanation: "Jede Zahl liegt in einer kleinsten Menge: 5 in ℕ, −4 in ℤ, 0,75 in ℚ und √3 nur in ℝ."
-        links:
-          - title: Baustein auf der Lernlandkarte
-            url: https://lernapps.net/apps/map/mathematik/c/reelle-zahlen/
       - type: true-false
         id: periodisch-irrational
         text: Die Zahl 0,1010010001… (nach jeder 1 eine Null mehr, also keine Periode) ist irrational.
@@ -174,9 +162,6 @@ blocks:
         explanation:
           Die Nullen werden immer mehr, darum wiederholt sich keine feste Gruppe von Ziffern (keine Periode). So eine
           Zahl ist kein Bruch.
-        links:
-          - title: Baustein auf der Lernlandkarte
-            url: https://lernapps.net/apps/map/mathematik/c/reelle-zahlen/
       - type: ordering
         id: zahlen-ordnen
         text: Ordne die Zahlen von klein nach groß.
@@ -186,9 +171,6 @@ blocks:
           - √2
           - 1,5
         explanation: √2 ≈ 1,41421. Das ist größer als 1,41 und kleiner als 1,5.
-        links:
-          - title: Baustein auf der Lernlandkarte
-            url: https://lernapps.net/apps/map/mathematik/c/reelle-zahlen/
       - type: single-choice
         id: feld-18
         text: Ein quadratisches Feld hat 18 m². Ist seine Seitenlänge eine rationale Zahl?
@@ -206,6 +188,3 @@ blocks:
             correct: false
             info: 18 ist eine natürliche Zahl. Es kommt darauf an, ob sie eine Quadratzahl ist.
         explanation: √a ist für natürliche a nur dann rational, wenn a eine Quadratzahl ist.
-        links:
-          - title: Baustein auf der Lernlandkarte
-            url: https://lernapps.net/apps/map/mathematik/c/reelle-zahlen/

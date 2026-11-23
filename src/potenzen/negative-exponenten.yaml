@@ -6,7 +6,7 @@ competencies:
 blocks:
   - type: section
     id: einstieg
-    title: Erste Aufgabe
+    title: Was du hier lernst
     blocks:
       - type: text
         text:
@@ -22,9 +22,6 @@ blocks:
             message: "Durch 10 teilen ergibt nicht 0. 10 : 10 = 1."
         hint: Teile 10 durch 10.
         explanation: "10 : 10 = 1. Die nächste Zahl ist 1, danach folgt 0,1."
-        links:
-          - title: Baustein auf der Lernlandkarte
-            url: https://lernapps.net/apps/map/mathematik/c/potenzen-ganzzahlige-exponenten/
   - type: section
     id: idee
     title: Die Reihe nach unten
@@ -180,17 +177,11 @@ blocks:
             correct: false
             info: "Das wäre 1 : (5 · 2). Der Nenner ist 5 · 5 = 25."
         explanation: "Ein negativer Exponent bedeutet den Kehrwert: 5⁻² = 1 : 5² = 1 : 25."
-        links:
-          - title: Baustein auf der Lernlandkarte
-            url: https://lernapps.net/apps/map/mathematik/c/potenzen-ganzzahlige-exponenten/
       - type: true-false
         id: null-hoch
         text: Es gilt 10⁰ = 0.
         answer: false
         explanation: In der Reihe 100, 10, … folgt nach 10 die Zahl 1, also 10⁰ = 1.
-        links:
-          - title: Baustein auf der Lernlandkarte
-            url: https://lernapps.net/apps/map/mathematik/c/potenzen-ganzzahlige-exponenten/
       - type: ordering
         id: zehnerpotenzen-ordnen
         text: Ordne die Zahlen von klein nach groß.
@@ -200,9 +191,6 @@ blocks:
           - 10⁰
           - 10²
         explanation: 10⁻³ = 0,001; 10⁻¹ = 0,1; 10⁰ = 1; 10² = 100.
-        links:
-          - title: Baustein auf der Lernlandkarte
-            url: https://lernapps.net/apps/map/mathematik/c/potenzen-ganzzahlige-exponenten/
       - type: single-choice
         id: atom-virus
         text: Ein Atom ist rund 10⁻¹⁰ m groß, ein Virus rund 10⁻⁷ m. Wie oft passt das Atom ungefähr in das Virus?
@@ -220,8 +208,5 @@ blocks:
             correct: false
             info: Du hast addiert und das falsche Vorzeichen. Beim Teilen wird subtrahiert.
         explanation: "10⁻⁷ : 10⁻¹⁰ = 10 hoch (−7 − (−10)) = 10³. Rund 1000 Atome nebeneinander sind so lang wie ein Virus."
-        links:
-          - title: Baustein auf der Lernlandkarte
-            url: https://lernapps.net/apps/map/mathematik/c/potenzen-ganzzahlige-exponenten/
       - type: text
         text: Mit negativen Exponenten kannst du alle Größen der Reise schreiben. Das ordnest du auf der nächsten Seite.

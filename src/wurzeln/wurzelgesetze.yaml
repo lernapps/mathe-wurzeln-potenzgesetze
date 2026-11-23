@@ -8,7 +8,7 @@ competencies:
 blocks:
   - type: section
     id: einstieg
-    title: Erste Aufgabe
+    title: Was du hier lernst
     blocks:
       - type: text
         text:
@@ -31,9 +31,6 @@ blocks:
             correct: false
             info: Beide Zahlen lassen sich ausrechnen und vergleichen.
         explanation: 4 · 9 = 36, und es gilt √4 · √9 = √(4 · 9). Das ist kein Zufall, sondern ein Gesetz.
-        links:
-          - title: Baustein auf der Lernlandkarte
-            url: https://lernapps.net/apps/map/mathematik/c/wurzelgesetze/
   - type: section
     id: idee
     title: Das Rechteck aus zwei Wurzeln
@@ -161,17 +158,11 @@ blocks:
           - "8"
           - "12"
         explanation: "Du rechnest unter einer Wurzel: 2 · 18 = 36, 3 · 27 = 81, 5 · 20 = 100, 8 · 2 = 16."
-        links:
-          - title: Baustein auf der Lernlandkarte
-            url: https://lernapps.net/apps/map/mathematik/c/wurzelgesetze/
       - type: true-false
         id: wurzel-summe
         text: Es gilt √(16 + 9) = √16 + √9.
         answer: false
         explanation: √(16 + 9) = √25 = 5, aber √16 + √9 = 4 + 3 = 7. Für Plus gibt es kein Wurzelgesetz.
-        links:
-          - title: Baustein auf der Lernlandkarte
-            url: https://lernapps.net/apps/map/mathematik/c/wurzelgesetze/
       - type: single-choice
         id: erlaubt
         text: Welche Umformung ist erlaubt?
@@ -189,8 +180,5 @@ blocks:
             correct: false
             info: "Beim Quotienten wird nicht addiert: √(3 : 12) = √3 : √12."
         explanation: Nur beim Malnehmen und Teilen darfst du die Wurzel zerlegen oder zusammenfassen.
-        links:
-          - title: Baustein auf der Lernlandkarte
-            url: https://lernapps.net/apps/map/mathematik/c/wurzelgesetze/
       - type: text
         text: Mit den Gesetzen kannst du auch Wurzeln vereinfachen, die keine glatte Zahl sind. Das tust du auf der nächsten Seite.

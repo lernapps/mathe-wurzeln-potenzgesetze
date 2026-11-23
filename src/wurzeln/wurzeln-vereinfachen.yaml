@@ -6,12 +6,13 @@ competencies:
 blocks:
   - type: section
     id: einstieg
-    title: Erste Aufgabe
+    title: Was du hier lernst
     blocks:
       - type: text
         text:
-          Das Pflaster im Schulgarten ist quadratisch und hat 50 m². Die Seite ist √50. Am Ende dieser Seite kannst du so
-          einen Term in eine einfache Form bringen und mit Wurzeln addieren.
+          "Das Pflaster im Schulgarten ist quadratisch und hat 50 m². Die Seite ist √50. Beim Vereinfachen ziehst du einen
+          Faktor, der eine Quadratzahl ist, vor die Wurzel: Aus √(9 · 5) wird 3 · √5. Am Ende dieser Seite kannst du so einen
+          Term in eine einfache Form bringen und mit Wurzeln addieren."
       - type: single-choice
         id: faktor-50
         text: Es gilt √50 = √(25 · 2). Welche Zahl lässt sich aus der Wurzel herausziehen?
@@ -29,9 +30,6 @@ blocks:
             correct: false
             info: 50 ist die ganze Zahl unter der Wurzel.
         explanation: √(25 · 2) = √25 · √2 = 5 · √2.
-        links:
-          - title: Baustein auf der Lernlandkarte
-            url: https://lernapps.net/apps/map/mathematik/c/wurzelgesetze/
   - type: section
     id: idee
     title: Quadratfaktor herausziehen
@@ -162,9 +160,6 @@ blocks:
           - 4√5
           - 2√10
         explanation: √20 = √(4 · 5), √45 = √(9 · 5), √75 = √(25 · 3), √98 = √(49 · 2).
-        links:
-          - title: Baustein auf der Lernlandkarte
-            url: https://lernapps.net/apps/map/mathematik/c/wurzelgesetze/
       - type: single-choice
         id: acht-achtzehn
         text: Was ist √8 + √18 in einfacher Form?
@@ -182,9 +177,6 @@ blocks:
             correct: false
             info: "Das lässt sich noch vereinfachen: Nach dem Vereinfachen sind beide Wurzeln gleichartig."
         explanation: "Erst vereinfachen: √8 = √(4 · 2) = 2√2 und √18 = √(9 · 2) = 3√2, dann zusammenfassen."
-        links:
-          - title: Baustein auf der Lernlandkarte
-            url: https://lernapps.net/apps/map/mathematik/c/wurzelgesetze/
       - type: single-choice
         id: pflaster-72
         text: Ein quadratisches Pflaster hat 72 m². Wie lang ist seine Seite genau?
@@ -202,6 +194,3 @@ blocks:
             correct: false
             info: 8,5² = 72,25. Das ist ein Näherungswert, aber nicht die genaue Seite.
         explanation: Die genaue Seite ist √72 = 6√2. Als Näherungswert sind das etwa 8,49 m.
-        links:
-          - title: Baustein auf der Lernlandkarte
-            url: https://lernapps.net/apps/map/mathematik/c/wurzelgesetze/

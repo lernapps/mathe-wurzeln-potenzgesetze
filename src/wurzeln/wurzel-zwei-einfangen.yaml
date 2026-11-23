@@ -6,7 +6,7 @@ competencies:
 blocks:
   - type: section
     id: einstieg
-    title: Erste Aufgabe
+    title: Was du hier lernst
     blocks:
       - type: text
         text:
@@ -25,9 +25,6 @@ blocks:
             message: Das wäre 1,5 + 1. Die Fläche ist Seite mal Seite.
         hint: Fläche = Seite mal Seite.
         explanation: "1,5 · 1,5 = 2,25. Das ist mehr als 2: Die gesuchte Seite ist kleiner als 1,5."
-        links:
-          - title: Baustein auf der Lernlandkarte
-            url: https://lernapps.net/apps/map/mathematik/c/reelle-zahlen/
   - type: section
     id: idee
     title: Die Lupe
@@ -197,9 +194,6 @@ blocks:
             correct: false
             info: Diese Zahlen sind die Quadrate der Grenzen, nicht die Grenzen selbst.
         explanation: "Die Wurzel behält die Reihenfolge: Aus 6,76 < 7 < 7,29 folgt 2,6 < √7 < 2,7."
-        links:
-          - title: Baustein auf der Lernlandkarte
-            url: https://lernapps.net/apps/map/mathematik/c/reelle-zahlen/
       - type: multiple-choice
         id: lupe-aussagen
         text: Welche Aussagen über die Lupe stimmen?
@@ -217,9 +211,6 @@ blocks:
             correct: false
             info: Das Quadrat der linken Grenze ist kleiner als 2, das der rechten größer.
         explanation: "Die Lupe zeigt: ein Bereich, der √2 enthält, die Quadrate der Grenzen links und rechts von 2."
-        links:
-          - title: Baustein auf der Lernlandkarte
-            url: https://lernapps.net/apps/map/mathematik/c/reelle-zahlen/
       - type: ordering
         id: schachtelung-schritte
         text: Bringe die Schritte einer Intervallschachtelung für √5 in die richtige Reihenfolge.
@@ -229,17 +220,11 @@ blocks:
           - "Hundertstel prüfen: 2,23² = 4,9729 < 5 < 5,0176 = 2,24²"
           - "Weitermachen, so lange du willst: es hört nie auf"
         explanation: "Erst der grobe Bereich, dann immer feiner: Zehntel, Hundertstel, und so weiter."
-        links:
-          - title: Baustein auf der Lernlandkarte
-            url: https://lernapps.net/apps/map/mathematik/c/reelle-zahlen/
       - type: true-false
         id: endlich
         text: Wenn du lange genug einschachtelst, hat √2 irgendwann genau eine endliche Dezimalzahl.
         answer: false
         explanation: Die Ziffern von √2 hören nie auf, das zeigt die nächste Seite. Jede Stufe liefert nur einen Näherungswert.
-        links:
-          - title: Baustein auf der Lernlandkarte
-            url: https://lernapps.net/apps/map/mathematik/c/reelle-zahlen/
       - type: number
         id: sqrt5-stufe
         text: Schließe √5 ein. Welche Zahl der Form 2,x ist die größte, deren Quadrat noch kleiner als 5 ist?
@@ -250,9 +235,6 @@ blocks:
             message: 2,3² = 5,29 ist schon größer als 5.
         hint: Quadriere 2,1, 2,2, 2,3 und vergleiche mit 5.
         explanation: 2,2² = 4,84 ist kleiner als 5, und 2,3² = 5,29 ist größer als 5. Also liegt √5 zwischen 2,2 und 2,3.
-        links:
-          - title: Baustein auf der Lernlandkarte
-            url: https://lernapps.net/apps/map/mathematik/c/reelle-zahlen/
       - type: text
         text:
           "Eine Frage bleibt: Gibt es für √2 einen Bruch, der genau passt? Auf der nächsten Seite ordnest du Zahlen ein, die

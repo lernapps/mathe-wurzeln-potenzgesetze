@@ -6,7 +6,7 @@ competencies:
 blocks:
   - type: section
     id: einstieg
-    title: Erste Aufgabe
+    title: Was du hier lernst
     blocks:
       - type: text
         text:
@@ -22,9 +22,6 @@ blocks:
             message: "Du hast 3 mal 4 gerechnet. Zähle die Faktoren: 3 Zweien und 4 Zweien stehen nebeneinander."
         hint: Schreibe beide Potenzen aus und zähle alle Zweien.
         explanation: 2³ = 2 · 2 · 2 und 2⁴ = 2 · 2 · 2 · 2. Zusammen stehen 3 + 4 = 7 Zweien in einer Reihe.
-        links:
-          - title: Baustein auf der Lernlandkarte
-            url: https://lernapps.net/apps/map/mathematik/c/potenzgesetze/
   - type: section
     id: idee
     title: Faktoren ausschreiben und zählen
@@ -151,17 +148,11 @@ blocks:
             correct: false
             info: "Hier ist die Basis falsch und der Exponent: Basis bleibt 3, Exponenten werden addiert."
         explanation: "Bei gleicher Basis gilt: Beim Malnehmen werden die Exponenten addiert."
-        links:
-          - title: Baustein auf der Lernlandkarte
-            url: https://lernapps.net/apps/map/mathematik/c/potenzgesetze/
       - type: true-false
         id: x-hoch
         text: Es gilt x² · x³ = x⁶.
         answer: false
         explanation: "x² · x³ = (x·x)·(x·x·x) = x⁵. Die Exponenten werden addiert: 2 + 3 = 5."
-        links:
-          - title: Baustein auf der Lernlandkarte
-            url: https://lernapps.net/apps/map/mathematik/c/potenzgesetze/
       - type: single-choice
         id: erde-sonne
         text:
@@ -181,9 +172,6 @@ blocks:
             correct: false
             info: "Du hast in die falsche Richtung gerechnet: Die Entfernung ist größer als der Durchmesser."
         explanation: "Entfernung durch Durchmesser: 10¹¹ : 10⁹ = 10². Die Sonne passt rund hundertmal in die Entfernung zur Erde."
-        links:
-          - title: Baustein auf der Lernlandkarte
-            url: https://lernapps.net/apps/map/mathematik/c/potenzgesetze/
       - type: number
         id: kombination
         text: 'Es gilt $5^3 \cdot 5^4 : 5^2 = 5^k$. Wie groß ist k?'
@@ -194,8 +182,5 @@ blocks:
             message: Du hast beide Rechenzeichen wie ein Plus behandelt. Beim Teilen subtrahierst du.
         hint: "Rechne von links nach rechts: erst das Produkt, dann den Quotienten."
         explanation: "Erst malnehmen: 5³ · 5⁴ = 5⁷. Dann teilen: 5⁷ : 5² = 5⁵."
-        links:
-          - title: Baustein auf der Lernlandkarte
-            url: https://lernapps.net/apps/map/mathematik/c/potenzgesetze/
       - type: text
         text: "Auf der nächsten Seite geht die Reise weiter, mit Potenzen von Potenzen: Aus Metern werden Quadratkilometer."

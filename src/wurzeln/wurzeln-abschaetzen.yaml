@@ -8,7 +8,7 @@ competencies:
 blocks:
   - type: section
     id: einstieg
-    title: Erste Aufgabe
+    title: Was du hier lernst
     blocks:
       - type: text
         text:
@@ -31,9 +31,6 @@ blocks:
             correct: false
             info: Das wäre eine Fläche von über 80 m².
         explanation: Die Seite s erfüllt s·s = 20. Wegen 16 < 20 < 25 liegt s zwischen 4 und 5.
-        links:
-          - title: Baustein auf der Lernlandkarte
-            url: https://lernapps.net/apps/map/mathematik/c/quadratwurzeln/
   - type: section
     id: idee
     title: Einschließen
@@ -43,6 +40,50 @@ blocks:
           'Weil 16 < 20 < 25 gilt, liegt $\sqrt{20}$ zwischen $\sqrt{16} = 4$ und $\sqrt{25} = 5$. Du **schließt** die Wurzel
           zwischen zwei ganzen Zahlen **ein**. Dann probierst du Zahlen dazwischen aus, quadrierst sie und vergleichst mit 20:
           erst in Zehnteln, dann in Hundertsteln.'
+      - type: text
+        text:
+          "Die Lupe zeigt einen Ausschnitt der Zahlengerade zwischen zwei Grenzen. Stufe 0 ist der große Ausschnitt von 4
+          bis 5. Mit dem Regler zoomst du hinein: Jede Stufe macht den Ausschnitt zehnmal kleiner. Der Punkt mit der Beschriftung
+          √20 zeigt, wo √20 liegt. Darunter siehst du, dass das Quadrat der linken Grenze kleiner als 20 ist und das der rechten
+          größer."
+      - type: vue-component
+        id: lupe-wurzel-20
+        component: Lupe
+        props:
+          stages:
+            - lower: "4"
+              upper: "5"
+              lowerSquare: "16"
+              upperSquare: "25"
+              pos: 0.4721
+            - lower: 4,4
+              upper: 4,5
+              lowerSquare: 19,36
+              upperSquare: 20,25
+              pos: 0.7214
+            - lower: 4,47
+              upper: 4,48
+              lowerSquare: 19,9809
+              upperSquare: 20,0704
+              pos: 0.2136
+          target: √20
+          sliderLabel: Stufe der Lupe
+          between: liegt zwischen
+          and: und
+          squareLeft: "Quadrat der linken Grenze:"
+          squareRight: "Quadrat der rechten Grenze:"
+          smaller: kleiner als 20
+          larger: größer als 20
+        nojs:
+          "Lupe auf der Zahlengerade, drei Stufen. Auf jeder Stufe liegt √20 zwischen zwei Grenzen, deren Quadrate links und
+          rechts von 20 liegen:
+
+
+          - Stufe 0: zwischen 4 und 5. 4² = 16 (kleiner als 20), 5² = 25 (größer als 20).
+
+          - Stufe 1: zwischen 4,4 und 4,5. 4,4² = 19,36 (kleiner als 20), 4,5² = 20,25 (größer als 20).
+
+          - Stufe 2: zwischen 4,47 und 4,48. 4,47² = 19,9809 (kleiner als 20), 4,48² = 20,0704 (größer als 20)."
       - type: definition
         term: Einschließen
         explanation:
@@ -123,9 +164,6 @@ blocks:
         explanation:
           Es gilt 5 < 9 < 10 < 16 < 20. Schreibe 3 als √9 und 4 als √16. Die Radikanden stehen dann in der Reihenfolge
           5 < 9 < 10 < 16 < 20, und die Wurzeln behalten diese Reihenfolge.
-        links:
-          - title: Baustein auf der Lernlandkarte
-            url: https://lernapps.net/apps/map/mathematik/c/quadratwurzeln/
       - type: generated
         id: ganze-zahl-darunter
         given:
@@ -228,9 +266,6 @@ blocks:
         explanation:
           "Die Anzeige ist ein Näherungswert: Sie hat endlich viele Stellen. Die Probe zeigt es: 4,472135955² ist nicht
           genau 20."
-        links:
-          - title: Baustein auf der Lernlandkarte
-            url: https://lernapps.net/apps/map/mathematik/c/quadratwurzeln/
       - type: single-choice
         id: beet-2
         text: Ein quadratisches Beet hat 2 m². Welcher Näherungswert für die Seite passt am besten?
@@ -248,9 +283,6 @@ blocks:
             correct: false
             info: 2² = 4. Das wäre ein Beet mit 4 m².
         explanation: "Nur 1,4 liegt links von √2 und ist nah dran: 1,4² = 1,96 < 2 < 2,25 = 1,5²."
-        links:
-          - title: Baustein auf der Lernlandkarte
-            url: https://lernapps.net/apps/map/mathematik/c/quadratwurzeln/
       - type: text
         text:
           Wie genau kannst du die Seite von 2 m² angeben? Auf der nächsten Seite fängst du √2 mit einer Lupe ein, Stelle für

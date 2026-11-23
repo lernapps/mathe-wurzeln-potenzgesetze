@@ -6,7 +6,7 @@ competencies:
 blocks:
   - type: section
     id: einstieg
-    title: Erste Aufgabe
+    title: Was du hier lernst
     blocks:
       - type: text
         text:
@@ -29,9 +29,6 @@ blocks:
             correct: false
             info: Du kannst beide Zahlen ausschreiben und vergleichen.
         explanation: Der größere Exponent entscheidet, wenn die Zahl vor dem Malpunkt zwischen 1 und 10 liegt.
-        links:
-          - title: Baustein auf der Lernlandkarte
-            url: https://lernapps.net/apps/map/mathematik/c/potenzen-ganzzahlige-exponenten/
   - type: section
     id: idee
     title: Zahl vor der Zehnerpotenz
@@ -223,17 +220,11 @@ blocks:
           - 1 · 10⁴
           - 2 · 10⁴
         explanation: 9 · 10² = 900; 4 · 10³ = 4000; 1 · 10⁴ = 10 000; 2 · 10⁴ = 20 000.
-        links:
-          - title: Baustein auf der Lernlandkarte
-            url: https://lernapps.net/apps/map/mathematik/c/potenzen-ganzzahlige-exponenten/
       - type: true-false
         id: nicht-normiert
         text: Die Zahl 45 · 10³ ist in wissenschaftlicher Schreibweise geschrieben.
         answer: false
         explanation: Die Zahl vor dem Malpunkt muss kleiner als 10 sein. Richtig wäre 4,5 · 10⁴.
-        links:
-          - title: Baustein auf der Lernlandkarte
-            url: https://lernapps.net/apps/map/mathematik/c/potenzen-ganzzahlige-exponenten/
       - type: number
         id: zehnerpotenzen-reise
         text:
@@ -246,9 +237,6 @@ blocks:
             message: Du hast 7 + (−10) gerechnet. Beim Teilen subtrahierst du den Exponenten des Nenners, also 7 − (−10).
         hint: Beim Teilen wird subtrahiert, auch bei negativen Exponenten.
         explanation: "10⁷ : 10⁻¹⁰ = 10 hoch (7 − (−10)) = 10¹⁷. Das sind 17 Zehnerpotenzen."
-        links:
-          - title: Baustein auf der Lernlandkarte
-            url: https://lernapps.net/apps/map/mathematik/c/potenzen-ganzzahlige-exponenten/
       - type: text
         text:
           "Du hast die Zehnerpotenz-Reise geschafft: vom Proton bei $10^{-15}$ m bis zum Universum bei $10^{26}$ m, mehr als

@@ -6,7 +6,7 @@ competencies:
 blocks:
   - type: section
     id: einstieg
-    title: Erste Aufgabe
+    title: Was du hier lernst
     blocks:
       - type: text
         text:
@@ -27,9 +27,6 @@ blocks:
             message: Du hast halbiert. Gesucht ist die Zahl, die dreimal als Faktor 27 ergibt.
         hint: "Probiere kleine Zahlen: Welche Zahl mal sich selbst mal sich selbst ergibt 27?"
         explanation: 3 cm · 3 cm · 3 cm = 27 cm³. Die Kante ist 3 cm lang.
-        links:
-          - title: Baustein auf der Lernlandkarte
-            url: https://lernapps.net/apps/map/mathematik/c/n-te-wurzeln/
   - type: section
     id: idee
     title: Vom Quadrat zum Würfel
@@ -128,9 +125,6 @@ blocks:
             correct: false
             info: Du hast 64 mit 3 malgenommen. Gesucht ist die Zahl, die dreimal als Faktor 64 ergibt.
         explanation: "Die dritte Wurzel von 64 ist die Zahl, deren dritte Potenz 64 ist: 4³ = 64."
-        links:
-          - title: Baustein auf der Lernlandkarte
-            url: https://lernapps.net/apps/map/mathematik/c/n-te-wurzeln/
       - type: matching
         id: wurzel-wert
         text: Ordne jeder Wurzel ihren Wert zu.
@@ -144,17 +138,11 @@ blocks:
           - left: die dritte Wurzel aus 1000
             right: "10"
         explanation: 2³ = 8, 3⁴ = 81, 5³ = 125 und 10³ = 1000.
-        links:
-          - title: Baustein auf der Lernlandkarte
-            url: https://lernapps.net/apps/map/mathematik/c/n-te-wurzeln/
       - type: true-false
         id: vierte-negativ
         text: Es gibt die vierte Wurzel aus −16.
         answer: false
         explanation: Eine Zahl hoch 4 ist nie negativ, auch (−2)⁴ = 16. Darum gibt es keine vierte Wurzel aus −16.
-        links:
-          - title: Baustein auf der Lernlandkarte
-            url: https://lernapps.net/apps/map/mathematik/c/n-te-wurzeln/
       - type: single-choice
         id: wuerfel-216
         text: Ein würfelförmiger Behälter fasst 216 Liter. Wie lang ist seine Kante?
@@ -172,8 +160,5 @@ blocks:
             correct: false
             info: "Das wäre 216 : 10. Gesucht ist die dritte Wurzel."
         explanation: 1 Liter ist 1 dm³. Die Kante a erfüllt a³ = 216, also a = 6 dm.
-        links:
-          - title: Baustein auf der Lernlandkarte
-            url: https://lernapps.net/apps/map/mathematik/c/n-te-wurzeln/
       - type: text
         text: Auf der letzten Seite zeigt sich, dass Wurzeln Potenzen sind.

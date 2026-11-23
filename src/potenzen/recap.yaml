@@ -39,48 +39,48 @@ blocks:
         id: test-zusammenfassen
         component: Kurztest
         props:
-          question: Was ergibt 3a + 5a − 2a?
+          question: Was ergibt 4x + 3 − x + 5?
           options:
-            - text: 6a
+            - text: 3x + 8
               correct: true
-              info: "3 + 5 − 2 = 6, die Variable a bleibt: 6a."
-            - text: "6"
+              info: 4x − x = 3x und 3 + 5 = 8.
+            - text: 8x
               correct: false
-              info: Das a bleibt stehen, denn es ist Teil der gleichartigen Glieder.
-            - text: 10a
+              info: Zahlen ohne x und Glieder mit x lassen sich nicht zusammenfassen.
+            - text: 5x + 8
               correct: false
-              info: Du hast − 2a mitaddiert. Das Minus gehört zum Glied.
-            - text: 9a²
+              info: "Das Minus vor x gehört zum Glied: 4x − x = 3x, nicht 5x."
+            - text: 3x − 2
               correct: false
-              info: Beim Zusammenfassen wird die Variable nicht multipliziert, nur die Zahlen davor werden verrechnet.
+              info: Du hast 3 − 5 gerechnet. Die 5 wird addiert.
           right: Richtig.
           wrong: Nicht richtig.
         nojs:
-          "Kurztest: Was ergibt 3a plus 5a minus 2a? Zur Wahl stehen 6a, 6, 10a und 9a hoch 2. Richtig ist 6a, denn 3 plus
-          5 minus 2 ist 6 und das a bleibt."
+          "Kurztest: Was ergibt 4x plus 3 minus x plus 5? Zur Wahl stehen 3x plus 8, 8x, 5x plus 8 und 3x minus 2. Richtig
+          ist 3x plus 8, denn 4x minus x ist 3x und 3 plus 5 ist 8."
       - type: vue-component
         id: test-ausklammern
         component: Kurztest
         props:
-          question: Welcher Term ist 6x + 9, ausgeklammert?
+          question: Klammere 12a + 18b so weit wie möglich aus.
           options:
-            - text: 9 · (6x + 1)
+            - text: 12 · (a + 18b)
               correct: false
-              info: Ausmultipliziert gäbe das 54x + 9.
-            - text: 3 · (2x + 3)
+              info: "Der Faktor 12 gehört auch zu 18b: Ausmultipliziert gäbe das 12a + 216b."
+            - text: 6 · (2a + 3b)
               correct: true
-              info: "Ausmultipliziert: 3 · 2x = 6x und 3 · 3 = 9."
-            - text: 3 · (2x + 9)
+              info: 6 ist der größte gemeinsame Teiler von 12 und 18.
+            - text: 3 · (4a + 6b)
               correct: false
-              info: Ausmultipliziert gäbe das 6x + 27. Der Faktor 3 gehört auch zur 9.
-            - text: 6 · (x + 9)
+              info: "Das stimmt, geht aber noch weiter: In der Klammer haben 4 und 6 noch den Teiler 2."
+            - text: 2 · (6a + 9b)
               correct: false
-              info: Ausmultipliziert gäbe das 6x + 54.
+              info: "Das stimmt, geht aber noch weiter: In der Klammer haben 6 und 9 noch den Teiler 3."
           right: Richtig.
           wrong: Nicht richtig.
         nojs:
-          "Kurztest: Welcher Term ist 6x plus 9, ausgeklammert? 3 mal (2x plus 3), 3 mal (2x plus 9), 6 mal (x plus 9) oder
-          9 mal (6x plus 1). Richtig ist 3 mal (2x plus 3)."
+          "Kurztest: Klammere 12a plus 18b so weit wie möglich aus. Richtig ist 6 mal (2a plus 3b), denn 6 ist der größte
+          gemeinsame Teiler von 12 und 18."
       - type: vue-component
         id: test-variable-mal
         component: Kurztest
@@ -117,25 +117,25 @@ blocks:
         id: test-potenz-2
         component: Kurztest
         props:
-          question: Was ist 2⁵?
+          question: Was ist 2⁵ − 5²?
           options:
-            - text: "25"
+            - text: −7
               correct: false
-              info: Das ist 5². Basis und Exponent sind vertauscht.
-            - text: "16"
+              info: Du hast 25 − 32 gerechnet. Die erste Zahl ist 2⁵.
+            - text: "3"
               correct: false
-              info: Das ist 2⁴. Es sind fünf Faktoren, nicht vier.
-            - text: "32"
+              info: Das wäre 5 − 2. Hier werden Potenzen abgezogen.
+            - text: "7"
               correct: true
-              info: 2⁵ = 2 · 2 · 2 · 2 · 2 = 32.
-            - text: "10"
+              info: 2⁵ = 32 und 5² = 25, 32 − 25 = 7.
+            - text: "0"
               correct: false
-              info: Das ist 2 · 5. Der Exponent sagt, wie oft die Basis als Faktor steht.
+              info: "Du hast Basis und Exponent vertauscht gerechnet: 2 · 5 = 5 · 2. Das sind Produkte, keine Potenzen."
           right: Richtig.
           wrong: Nicht richtig.
         nojs:
-          "Kurztest: Was ist 2 hoch 5? Zur Wahl stehen 32, 10, 25 und 16. Richtig ist 32, denn 2 mal 2 mal 2 mal 2 mal 2 ist
-          32."
+          "Kurztest: Was ist 2 hoch 5 minus 5 hoch 2? Zur Wahl stehen 7, 0, minus 7 und 3. Richtig ist 7, denn 2 hoch 5 ist
+          32 und 5 hoch 2 ist 25."
       - type: vue-component
         id: test-zehnerpotenz
         component: Kurztest
