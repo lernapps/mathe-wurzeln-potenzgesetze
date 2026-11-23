@@ -43,7 +43,7 @@ Aus dem Volumen eines Würfels die Kante bestimmen: dritte Wurzel, vierte Wurzel
 
 ### Erste Aufgabe
 
-Die Reise ist zu Ende, aber eine Frage ist noch offen: Ein Würfel hat ein Volumen, und du suchst seine Kante, so wie du beim Quadrat die Seite gesucht hast. Am Ende dieser Seite kannst du Wurzeln mit beliebigen Hochzahlen bestimmen.
+Die Reise ist zu Ende, aber eine Frage ist noch offen: Ein Würfel hat ein Volumen, und du suchst seine Kante, so wie du beim Quadrat die Seite gesucht hast. Am Ende dieser Seite kannst du Wurzeln mit beliebigem Wurzelexponenten bestimmen.
 
 - Aufgabe `wuerfel-27` (unten)
 
@@ -65,7 +65,7 @@ Die Quadratwurzel ist die zweite Wurzel: Der Wurzelexponent 2 wird nicht geschri
 
 **Merke: Der Radikand ist nicht negativ**
 
-Wie bei der Quadratwurzel gilt auch hier $a \ge 0$. Eine Zahl hoch 4 ist nie negativ, darum gibt es zum Beispiel $\sqrt[4]{-16}$ nicht.
+Wie bei der Quadratwurzel gilt auch hier $a \ge 0$. Bei geradem $n$ geht es nicht anders: Eine Zahl hoch 4 ist nie negativ, darum gibt es zum Beispiel $\sqrt[4]{-16}$ nicht. Bei ungeradem $n$ legen wir $a \ge 0$ hier fest.
 
 ### Beispiel
 
@@ -168,7 +168,7 @@ Nr. | e.a | e.n | Lösung | F1 | F2
 - Antwortformat: eine Antwort wählen
 - Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
   - ✓ 6 dm – 216 Liter sind 216 dm³, und 6 · 6 · 6 = 216.
-  - ✗ 36 dm – 36 dm · 36 dm ist schon 1296 dm².
+  - ✗ 36 dm – 36 dm · 36 dm · 36 dm ist viel mehr als 216 dm³.
   - ✗ 72 dm – Du hast 216 durch 3 geteilt. Die Kante steht dreimal als Faktor da.
   - ✗ 21,6 dm – Das wäre 216 : 10. Gesucht ist die dritte Wurzel.
 - Lösung: 6 dm

@@ -61,7 +61,7 @@ Zehnerpotenzen nach unten:
 - −2 | $10^{-2}$ | 0,01
 - −3 | $10^{-3}$ | 0,001
 
-So entsteht $10^0 = 1$. Und $10^{-1} = 0{,}1 = \frac{1}{10}$, $10^{-2} = \frac{1}{100}$. Eine Haardicke von rund 0,0001 m ist $10^{-4}$ m.
+So entsteht $10^0 = 1$. Und $10^{-1} = 0{,}1 = \frac{1}{10}$, $10^{-2} = \frac{1}{100}$. Eine Haardicke von rund 0,0001 m ist $10^{-4}$ m.
 
 ### Negativer Exponent
 

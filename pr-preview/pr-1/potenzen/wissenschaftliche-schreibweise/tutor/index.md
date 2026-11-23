@@ -67,15 +67,21 @@ Nach links verschoben wird der Exponent positiv, nach rechts negativ.
 
 $(a \cdot 10^m) \cdot (b \cdot 10^n) = (a \cdot b) \cdot 10^{m+n}$
 
-Ist $a \cdot b$ größer als 10, verschiebst du das Komma noch einmal und erhöhst den Exponenten um 1. Zum Umrechnen brauchst du 1 m = 1000 mm = $10^3$ mm. Die Tabelle zeigt die Größen der Reise, die du in den Aufgaben brauchst.
+Ist $a \cdot b$ mindestens 10, verschiebst du das Komma noch einmal und erhöhst den Exponenten um 1. Zum Umrechnen brauchst du 1 m = 1000 mm = $10^3$ mm. Die Tabelle zeigt die Größen der Reise, die du in den Aufgaben brauchst.
 
 Die Größen der Reise:
 - Größe | Länge
-- Proton (Atomkern) | $1 \cdot 10^{-15}$ m
+- Proton | $1 \cdot 10^{-15}$ m
 - Atom | $1 \cdot 10^{-10}$ m
+- Virus | $1 \cdot 10^{-7}$ m
+- Bakterium | $2 \cdot 10^{-6}$ m
 - Haardicke | $1 \cdot 10^{-4}$ m
+- Mensch | $1{,}7$ m
 - Erde, Durchmesser | $1{,}3 \cdot 10^{7}$ m
+- Sonne, Durchmesser | $1{,}4 \cdot 10^{9}$ m
 - Erde bis Sonne | $1{,}5 \cdot 10^{11}$ m
+- Lichtjahr | $9{,}5 \cdot 10^{15}$ m
+- Milchstraße, Durchmesser | $1 \cdot 10^{21}$ m
 - beobachtbares Universum, Durchmesser | $8{,}8 \cdot 10^{26}$ m
 
 ### Beispiel
@@ -100,7 +106,7 @@ $20 \cdot 10^9 = 2 \cdot 10^{10}$
 
 - Aufgabe `zehnerpotenzen-reise` (unten)
 
-Du hast die Zehnerpotenz-Reise geschafft: vom Proton im Atomkern bei $10^{-15}$ m bis zum Universum bei $10^{26}$ m, mehr als vierzig Zehnerpotenzen. Dein Werkzeug dafür waren die Potenzgesetze und die negativen Exponenten. Als Nächstes brauchst du Wurzeln mit Hochzahlen.
+Du hast die Zehnerpotenz-Reise geschafft: vom Proton bei $10^{-15}$ m bis zum Universum bei $10^{26}$ m, mehr als vierzig Zehnerpotenzen. Dein Werkzeug dafür waren die Potenzgesetze und die negativen Exponenten. Als Nächstes brauchst du Wurzeln mit beliebigem Wurzelexponenten.
 
 ### Aufgabe groesser
 
@@ -136,7 +142,7 @@ Nr. | e.mantisse | e.exponent | e.name | Lösung | F1 | F2
 3 | 1,7 | 0 | Mensch | 3 | -3 | 0
 4 | 1 | -4 | Haardicke | -1 | -7 | -4
 5 | 1 | 21 | Milchstraße, Durchmesser | 24 | 18 | 21
-6 | 1 | -15 | Atomkern (Proton) | -12 | -18 | -15
+6 | 1 | -15 | Proton | -12 | -18 | -15
 7 | 2 | -6 | Bakterium | -3 | -9 | -6
 8 | 9,5 | 15 | Lichtjahr | 18 | 12 | 15
 9 | 1,5 | 11 | Erde bis Sonne | 14 | 8 | 11

@@ -43,7 +43,7 @@ Potenzen potenzieren und Produkte potenzieren: ein Exponent kann sich auf ein ga
 
 ### Erste Aufgabe
 
-Auf der Reise rechnest du in größeren Einheiten: 1 km = $10^3$ m. Am Ende dieser Seite weißt du, wie eine Potenz von einer Potenz und ein Produkt in der Klammer mit Exponent gerechnet werden.
+Auf der Reise rechnest du in größeren Einheiten: 1 km = $10^3$ m. Am Ende dieser Seite weißt du, wie eine Potenz von einer Potenz und ein Produkt in der Klammer mit Exponent gerechnet werden.
 
 - Aufgabe `zweier-potenz` (unten)
 
@@ -73,11 +73,11 @@ Es gilt $(3 + 4)^2 = 7^2 = 49$, aber $3^2 + 4^2 = 9 + 16 = 25$. Du darfst eine S
 
 **Beispiel: Quadratkilometer und Kubikkilometer**
 
-1 km = $10^3$ m. Ein Quadratkilometer ist ein Quadrat mit der Seite $10^3$ m:
+1 km = $10^3$ m. Ein Quadratkilometer ist ein Quadrat mit der Seite $10^3$ m:
 
 $(10^3)^2 = 10^{3 \cdot 2} = 10^6$
 
-Ein Quadratkilometer hat also $10^6$ m². Ein Würfel mit der Kante $10^3$ m hat $(10^3)^3 = 10^9$ m³.
+Ein Quadratkilometer hat also $10^6$ m². Ein Würfel mit der Kante $10^3$ m hat $(10^3)^3 = 10^9$ m³.
 
 ### Übung
 
@@ -100,7 +100,7 @@ Als Nächstes geht die Reise ins Kleine: Dabei brauchst du Potenzen mit negative
 - Aufgabe: Schreibe (2³)² als Produkt aus lauter Zweien. Wie viele Zweien sind es?
 - Antwortformat: eine Zahl eintippen
 - Lösung: 6
-- Erklärung: (2³)² = 2³ · 2³ = (2·2·2) · (2·2·2). Das sind 6 Zweien.
+- Erklärung: (2³)² = 2³ · 2³ = (2 · 2 · 2) · (2 · 2 · 2). Das sind 6 Zweien.
 - Tipp der App: (2³)² heißt: 2³ wird zweimal als Faktor geschrieben.
 - Typische Fehler und was die App sagt:
   - 5: Du hast 3 + 2 gerechnet. (2³)² heißt 2³ mal 2³: zwei Gruppen mit je 3 Zweien.
@@ -116,7 +116,7 @@ Als Nächstes geht die Reise ins Kleine: Dabei brauchst du Potenzen mit negative
   - Also k = {answer}.
 - Typische Fehler und was die App sagt:
   - F1: „Du hast addiert. Bei einer Potenz einer Potenz werden die Exponenten multipliziert.“
-  - F2: „Du hast m hoch n gerechnet. Die Exponenten werden einfach malgenommen.“
+  - F2: „Du hast {m} hoch {n} gerechnet. Die Exponenten werden einfach malgenommen.“
 - Link zu Nummer n: `../?potenz-potenz=n&via=tutor#potenz-potenz`
 - Aufgaben nach Nummer: die Werte für `{…}`, die Lösung und was bei den Fehlern herauskommt. Ein Fehler ohne Spalte hat keinen festen Wert; die Meldung der App sagt, ob er vorliegt. `{answer}` ist die Lösung.
 
@@ -243,7 +243,7 @@ Nr. | a | b | n | Lösung | F1 | F2
 - Aufgabe: Ordne jedem Term die passende Potenz zu.
 - Antwortformat: jedem Eintrag links den passenden rechts zuordnen
 - Lösung: der Term (2³)² – 2⁶; das Produkt 2³ · 2² – 2⁵; der Quotient 2⁶ : 2² – 2⁴; der Term (2 · 3)² – 2² · 3²
-- Erklärung: (2³)² = 2⁶, 2³·2² = 2⁵, 2⁶:2² = 2⁴ und (2·3)² = 2²·3².
+- Erklärung: (2³)² = 2⁶, 2³·2² = 2⁵, 2⁶:2² = 2⁴ und (2 · 3)² = 2²·3².
 - Link: [../?via=tutor#term-potenz](../?via=tutor#term-potenz)
 
 ### Aufgabe summe-klammer

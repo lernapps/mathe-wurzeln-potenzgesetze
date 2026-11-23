@@ -103,6 +103,8 @@ Wenn du hier unsicher warst: Wiederhole den Baustein „Rechnen mit Dezimalbrüc
 
 - **Vorzeichenregel**: Beim Malnehmen und Teilen gilt: gleiche Vorzeichen ergeben plus, verschiedene Vorzeichen ergeben minus. Zum Beispiel ist $(-3) \cdot (-4) = 12$ und $(-3) \cdot 4 = -12$.
 
+Auf der Seite zu den reellen Zahlen kommen Brüche vor: Ein Bruch wie $\frac{6}{8}$ lässt sich zu $\frac{3}{4}$ kürzen. Gerade Zahlen sind durch 2 teilbar, ungerade nicht.
+
 Eine negative Zahl in einer Rechnung steht in Klammern. Beim Addieren einer negativen Zahl gehst du auf der Zahlengerade nach links.
 
 **Beispiel: 5 + (−8)**

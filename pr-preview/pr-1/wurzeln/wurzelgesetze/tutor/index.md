@@ -49,7 +49,7 @@ Aus dem Gartenbau bleiben viele Wurzeln übrig, mit denen du rechnen willst. Am 
 
 ### Das Rechteck aus zwei Wurzeln
 
-Ein Rechteck hat die Seiten √9 = 3 und √4 = 2. Seine Fläche ist √9 · √4 = 6. Die Zahl 6 ist die Fläche. Sie hat das Quadrat 6 · 6 = 36, und 36 ist gerade 9 · 4. Du suchst also eine nicht negative Zahl, deren Quadrat 9 · 4 ist.
+Ein Rechteck hat die Seiten √9 = 3 und √4 = 2. Seine Fläche ist √9 · √4 = 6. Die Zahl 6 hat das Quadrat 6 · 6 = 36, und 36 ist gerade 9 · 4. Du suchst also eine nicht negative Zahl, deren Quadrat 9 · 4 ist.
 
 Bild: Ein Rechteck aus drei mal zwei Kästchen. Die Seiten sind mit Wurzel aus 9 gleich 3 und Wurzel aus 4 gleich 2 beschriftet, die Fläche mit 6. Bildunterschrift: Zähle die Kästchen: 3 mal 2. Die Seitenlängen sind Wurzeln, die Fläche ist ihr Produkt.
 
@@ -185,7 +185,7 @@ Nr. | e.a | e.b | Lösung | F1 | F2
 - Aufgabe: Ordne jedem Produkt seinen Wert zu.
 - Antwortformat: jedem Eintrag links den passenden rechts zuordnen
 - Lösung: das Produkt √2 · √18 – 6; das Produkt √3 · √27 – 9; das Produkt √5 · √20 – 10; das Produkt √8 · √2 – 4
-- Erklärung: Du rechnest unter einer Wurzel: 2·18 = 36, 3·27 = 81, 5·20 = 100, 8·2 = 16.
+- Erklärung: Du rechnest unter einer Wurzel: 2 · 18 = 36, 3 · 27 = 81, 5 · 20 = 100, 8 · 2 = 16.
 - Link: [../?via=tutor#produkt-wert](../?via=tutor#produkt-wert)
 
 ### Aufgabe wurzel-summe

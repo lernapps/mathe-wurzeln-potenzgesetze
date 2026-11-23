@@ -99,9 +99,9 @@ Wie genau kannst du die Seite von 2 m² angeben? Auf der nächsten Seite fängs
 - Aufgabe: Ein quadratisches Beet hat 20 m². Zwischen welchen ganzen Metern liegt die Seitenlänge?
 - Antwortformat: eine Antwort wählen
 - Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
-  - ✗ zwischen 3 und 4 – 3·3 = 9 und 4·4 = 16. Beides ist kleiner als 20.
-  - ✓ zwischen 4 und 5 – 4·4 = 16 ist kleiner als 20 und 5·5 = 25 ist größer.
-  - ✗ zwischen 5 und 6 – 5·5 = 25 ist schon größer als 20.
+  - ✗ zwischen 3 und 4 – 3 · 3 = 9 und 4 · 4 = 16. Beides ist kleiner als 20.
+  - ✓ zwischen 4 und 5 – 4 · 4 = 16 ist kleiner als 20 und 5 · 5 = 25 ist größer.
+  - ✗ zwischen 5 und 6 – 5 · 5 = 25 ist schon größer als 20.
   - ✗ zwischen 9 und 10 – Das wäre eine Fläche von über 80 m².
 - Lösung: zwischen 4 und 5
 - Erklärung: Die Seite s erfüllt s·s = 20. Wegen 16 &lt; 20 &lt; 25 liegt s zwischen 4 und 5.

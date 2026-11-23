@@ -43,7 +43,7 @@ Zahlen unterscheiden, die sich als Bruch schreiben lassen, und solche, bei denen
 
 ### Erste Aufgabe
 
-Auf der Lupe hast du gesehen, dass die Stellen von √2 nie aufhören. Am Ende dieser Seite weißt du, welche Zahlen sich als Bruch schreiben lassen und welche nicht, und wie die Zahlengerade am Ende keine Lücken mehr hat.
+Auf der Lupe hast du gesehen, dass jede Stufe eine Stelle von √2 mehr liefert. Am Ende dieser Seite weißt du, welche Zahlen sich als Bruch schreiben lassen und welche nicht, und wie die Zahlengerade am Ende keine Lücken mehr hat.
 
 - Aufgabe `bruch-erkennen` (unten)
 
@@ -59,7 +59,7 @@ Brüche haben immer eine Dezimalzahl, die abbricht oder sich wiederholt: $\frac{
 
 ### Die Zahlenmengen und die Zahlengerade
 
-Bild: Eine Zahlengerade von minus 2 bis 4. Die Zahlen minus 0,5 und 0,75 sind gefüllte Punkte, die Zahlen Wurzel aus 2 und Pi sind offene Punkte mit rotem Rand. Bildunterschrift: Gefüllte Punkte sind rational, offene sind irrational. Beide liegen auf derselben Zahlengerade.
+Bild: Eine Zahlengerade von minus 2 bis 3. Die Zahlen minus 0,5 und 0,75 sind gefüllte Punkte, die Zahlen Wurzel aus 2 und Pi sind offene Punkte mit rotem Rand. Bildunterschrift: Gefüllte Punkte sind rational, offene sind irrational. Beide liegen auf derselben Zahlengerade.
 
 Die Zahlenmengen:
 - Menge | Zeichen | Beispiele
@@ -68,7 +68,7 @@ Die Zahlenmengen:
 - rationale Zahlen | ℚ | −0,5; 0,75; $\frac{1}{3}$
 - reelle Zahlen | ℝ | alle rationalen Zahlen und dazu √2, π und alle anderen irrationalen
 
-Jede Menge steckt in der nächsten: ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ. Mit den reellen Zahlen hat die Zahlengerade keine Lücken mehr: In diesem Kurs wachsen die Zahlen damit ein letztes Mal. Für Wurzeln aus natürlichen Zahlen gilt: √a ist rational genau dann, wenn a eine Quadratzahl ist.
+Jede Menge steckt in der nächsten: ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ. Mit den reellen Zahlen hat die Zahlengerade keine Lücken mehr: In diesem Kurs wachsen die Zahlen damit ein letztes Mal. Für Wurzeln aus natürlichen Zahlen gilt (hier ohne Beweis, anders als bei √2): √a ist rational genau dann, wenn a eine Quadratzahl ist.
 
 **Merke: Denkweg: Warum √2 kein Bruch ist**
 

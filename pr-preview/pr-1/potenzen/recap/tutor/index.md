@@ -43,7 +43,7 @@ Zwei Bausteine, die du für die Potenzgesetze brauchst: Terme umformen und Poten
 
 ### Wofür diese Seite ist
 
-Für die Potenzgesetze brauchst du zwei Dinge: Terme umformen und Potenzen mit natürlichen Exponenten. Lies jeden Abschnitt kurz und beantworte die Kurztests. Sie zählen nichts und speichern nichts. Unter jedem Abschnitt steht, was du wiederholen kannst, wenn du unsicher warst. Hast du alle Kurztests richtig, bist du bereit.
+Für die Potenzgesetze brauchst du zwei Dinge: Terme umformen und Potenzen mit natürlichen Exponenten. Lies jeden Abschnitt kurz und beantworte die Kurztests. Sie zählen nichts und speichern nichts. Unter jedem Abschnitt steht, was du wiederholen kannst, wenn du unsicher warst. Hast du alle Kurztests richtig, bist du bereit. Die dritte Wurzel baut auf der Quadratwurzel aus dem Kapitel „Wurzeln und neue Zahlen“ auf; lies dort zuerst „Quadratwurzel bestimmen“, falls du sie noch nicht kennst.
 
 ### Terme umformen
 

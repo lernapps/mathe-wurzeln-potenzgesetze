@@ -43,7 +43,7 @@ Potenzen mit gleicher Basis multiplizieren und dividieren: Du zählst die Faktor
 
 ### Erste Aufgabe
 
-Die Reise beginnt bei der Erde. Ihr Durchmesser ist rund 10 000 000 m, also rund $10^7$ m. Die Sonne ist rund $10^{11}$ m entfernt. Am Ende dieser Seite kannst du solche Zahlen miteinander malnehmen und teilen, ohne die Nullen zu zählen.
+Die Reise beginnt bei der Erde. Ihr Durchmesser ist rund 10 000 000 m, also rund $10^7$ m. Die Sonne ist rund $10^{11}$ m entfernt. Am Ende dieser Seite kannst du solche Zahlen miteinander malnehmen und teilen, ohne die Nullen zu zählen.
 
 - Aufgabe `zweier-zaehlen` (unten)
 
@@ -69,7 +69,7 @@ Beim Teilen ist $m$ größer als $n$. Was bei $m$ kleiner als $n$ passiert, zeig
 
 **Beispiel: Von der Erde zur Sonne**
 
-Wie oft passt der Erddurchmesser $10^7$ m in die Entfernung $10^{11}$ m? Du teilst:
+Wie oft passt der Erddurchmesser $10^7$ m in die Entfernung $10^{11}$ m? Du teilst:
 
 $10^{11} : 10^{7} = 10^{11-7} = 10^4$
 
@@ -96,7 +96,7 @@ Auf der nächsten Seite geht die Reise weiter, mit Potenzen von Potenzen: Aus Me
 - Aufgabe: Schreibe 2³ · 2⁴ als Produkt aus lauter Zweien. Wie viele Zweien sind es?
 - Antwortformat: eine Zahl eintippen
 - Lösung: 7
-- Erklärung: 2³ = 2·2·2 und 2⁴ = 2·2·2·2. Zusammen stehen 3 + 4 = 7 Zweien in einer Reihe.
+- Erklärung: 2³ = 2 · 2 · 2 und 2⁴ = 2 · 2 · 2 · 2. Zusammen stehen 3 + 4 = 7 Zweien in einer Reihe.
 - Tipp der App: Schreibe beide Potenzen aus und zähle alle Zweien.
 - Typische Fehler und was die App sagt:
   - 12: Du hast 3 mal 4 gerechnet. Zähle die Faktoren: 3 Zweien und 4 Zweien stehen nebeneinander.
@@ -197,7 +197,7 @@ Nr. | b | m | n | Lösung | F1 | F2
   - Also k = {answer}.
 - Typische Fehler und was die App sagt:
   - F1: „Du hast addiert. Das passiert beim Malnehmen. Beim Teilen kürzt du Faktoren.“
-  - F2: „Du hast die Exponenten multipliziert. Beim Teilen bleiben nach dem Kürzen m minus n Faktoren übrig.“
+  - F2: „Du hast die Exponenten multipliziert. Beim Teilen bleiben nach dem Kürzen {m} minus {n} Faktoren übrig.“
 - Link zu Nummer n: `../?quotient-potenzen=n&via=tutor#quotient-potenzen`
 - Aufgaben nach Nummer: die Werte für `{…}`, die Lösung und was bei den Fehlern herauskommt. Ein Fehler ohne Spalte hat keinen festen Wert; die Meldung der App sagt, ob er vorliegt. `{answer}` ist die Lösung.
 

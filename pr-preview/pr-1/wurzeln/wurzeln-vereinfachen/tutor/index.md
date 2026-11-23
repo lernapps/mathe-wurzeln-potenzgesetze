@@ -93,7 +93,7 @@ $\sqrt{12} + \sqrt{27} = 2\sqrt{3} + 3\sqrt{3} = 5\sqrt{3}$
 - Antwortformat: eine Antwort wählen
 - Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
   - ✓ 5 – √25 = 5, und das Produktgesetz gibt √(25 · 2) = √25 · √2 = 5 · √2.
-  - ✗ 25 – 25 ist der Faktor, der unter der Wurzel bleibt. Herausgezogen wird seine Wurzel.
+  - ✗ 25 – 25 ist der Quadratfaktor. Herausgezogen wird seine Wurzel 5, unter der Wurzel bleibt 2.
   - ✗ 2 – 2 bleibt unter der Wurzel: Es ist keine Quadratzahl.
   - ✗ 50 – 50 ist die ganze Zahl unter der Wurzel.
 - Lösung: 5
@@ -225,7 +225,7 @@ Nr. | p | b | q | Lösung | F1 | F2
 - Aufgabe: Ordne jedem Term seine einfache Form zu.
 - Antwortformat: jedem Eintrag links den passenden rechts zuordnen
 - Lösung: die Wurzel √20 – 2√5; die Wurzel √45 – 3√5; die Wurzel √75 – 5√3; die Wurzel √98 – 7√2
-- Erklärung: √20 = √(4·5), √45 = √(9·5), √75 = √(25·3), √98 = √(49·2).
+- Erklärung: √20 = √(4 · 5), √45 = √(9 · 5), √75 = √(25 · 3), √98 = √(49 · 2).
 - Link: [../?via=tutor#term-vereinfacht](../?via=tutor#term-vereinfacht)
 
 ### Aufgabe acht-achtzehn
@@ -238,7 +238,7 @@ Nr. | p | b | q | Lösung | F1 | F2
   - ✗ 5√10 – Vereinfache erst jede Wurzel, dann addiere die Faktoren.
   - ✗ √8 + √18 – Das lässt sich noch vereinfachen: Nach dem Vereinfachen sind beide Wurzeln gleichartig.
 - Lösung: 5√2
-- Erklärung: Erst vereinfachen: √8 = √(4·2) = 2√2 und √18 = √(9·2) = 3√2, dann zusammenfassen.
+- Erklärung: Erst vereinfachen: √8 = √(4 · 2) = 2√2 und √18 = √(9 · 2) = 3√2, dann zusammenfassen.
 - Link: [../?via=tutor#acht-achtzehn](../?via=tutor#acht-achtzehn)
 
 ### Aufgabe pflaster-72
