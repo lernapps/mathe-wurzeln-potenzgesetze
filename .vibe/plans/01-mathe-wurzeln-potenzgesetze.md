@@ -4,7 +4,7 @@
 # Archetype, null until chosen in Explore. Allowed values: explainer, interactive, quiz.
 archetype: explainer
 # Current phase. Allowed values: explore, plan, code, commit.
-phase: code
+phase: commit
 # prePushFailures: failed pre-push runs, written by the hook.
 prePushFailures: 0
 # failedChecks: failed rules and runs, written by lernapps check and the hooks.
@@ -60,6 +60,8 @@ Lernende der Stufe 9-10 erschließen Quadratwurzeln, reelle Zahlen, Wurzel- und 
 - *Lernenden-Prüfer (Klasse 10, Browser, 1280 und 360 px, alle 14 Seiten):* keine Konsolenfehler. Behoben: rohes LaTeX in drei Tabellenüberschriften, vier Seiten mit Tabellen breiter als 360 px (Tabellen durch Formelzeilen ersetzt), Recaps zu dünn (je Baustein jetzt zwei Kurztests, Gesamturteil „alle richtig = bereit“, verschiedene Titel), Lupe vor Gebrauch erklärt (Ausschnitt, Striche, Stufen), neue Begriffe im Glossar (Quadrieren, Einschließen, Intervall, Kehrwert, Wurzelexponent, Quadratfaktor, Produkt- und Quotientengesetz), Beispiele, die zugleich eine Aufgabe sind (Erde–Sonne, km², 125 Liter, 64 cm³, √72, Pool-Überlappungen) durch andere Zahlen ersetzt, „Mantisse“ nur einmal erklärt, 1 m = 10³ mm genannt, `m < n` erklärt, Rückblick am Ende des Kapitels, Dezimalzahl-Hinweis bei Aufgaben mit Bruch-Antwort.
 - Nach dem letzten Prüferlauf geändert und **nicht erneut durchgespielt** (nur `lernapps check` und Breitenprüfung bei 360 px): alle in der vorigen Zeile genannten Änderungen, besonders die neuen Kurztests, die Formelzeilen statt Tabellen und die ausgetauschten Aufgaben. Die inhaltlichen Stellen (neue Aufgaben, Definitionen) braucht einen zweiten fachlichen Blick vor „Veröffentlichen“.
 - Laufzeit (nicht behoben, an den Orchestrator): Rückmeldung nach falscher Auswahl zeigt den Optionstext zweimal mit „.:“; Meldung bei leerer oder nicht numerischer Eingabe („Wähle, tippe oder ordne alles zu“); „Lösung“-Knopf schon nach dem ersten Fehlversuch; Zahlfelder lehnen „1/2“ ab (nur Dezimalzahlen); Pfeiltasten im Kurztest bewerten sofort; Seiten ohne Schrägstrich am Ende liefern die Startseite; `\sqrt{\ }` ergibt eine leere Formel; `\ldots` nicht erlaubt; Formeln in `matching` werden roh angezeigt; geschütztes Leerzeichen in Überschriften bricht den Test; 10 `generated`-Aufgaben benutzen „^“ als Ersatz für Hochzahlen in Aufgabentexten (Ausnahme Fund W28 gilt nur für Rückmeldungen: dort 0 Stellen mit `a/b`).
+
+**Ganze-App-Check:** Der Lernenden-Prüfer lief mit einer eigenen Fassung des Briefs `whole-app.md` (alle 14 Seiten in Reihenfolge, Anschluss, Begriffe, Geschichte; nicht wörtlich nach Vorlage). Die Funde und Umsetzungen stehen unter „Review“. Nicht eigens abgefragt: Wiedererkennen der Geschichte auf jeder Seite (nur indirekt: Schulgarten bis Seite 7, Reise ab Kapitel 2) und Querverweise zwischen Seiten.
 
 **Strang:** `mathematik/arithmetik` („Zahl und Operation“), Karte `https://lernapps.net/apps/map/mathematik.json` gelesen, `explainerFocus: strand`.
 
@@ -302,9 +304,9 @@ page, which a link. -->
 - [x] Update the content guide so that it describes the app as built (`app-content-matches`).
 - [x] Prüfer-Läufe vor Veröffentlichen tatsächlich durchführen (die Aufgabe davor wurde irrtümlich zu früh abgehakt): fachlicher Prüfer und Lernenden-Prüfer, Befunde unter Review im Plan, Änderungen danach nachprüfen.
 - [x] Run `npx --no -- lernapps check` until it passes.
-- [ ] Look at every screen and state, at 360 px and on a desktop, as "Look at the app" of skill `lernapps-cli` says.
+- [x] Look at every screen and state, at 360 px and on a desktop, as "Look at the app" of skill `lernapps-cli` says.
       Compare each with its sketch.
-- [ ] Do the whole-app check of skill `lernapps-learner-check`. Fix what it finds and write under "Notes" what you
+- [x] Do the whole-app check of skill `lernapps-learner-check`. Fix what it finds and write under "Notes" what you
       fixed.
 
 ## Commit
