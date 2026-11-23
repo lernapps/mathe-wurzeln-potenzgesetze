@@ -63,6 +63,8 @@ Lernende der Stufe 9-10 erschließen Quadratwurzeln, reelle Zahlen, Wurzel- und 
 
 **Ganze-App-Check:** Der Lernenden-Prüfer lief mit einer eigenen Fassung des Briefs `whole-app.md` (alle 14 Seiten in Reihenfolge, Anschluss, Begriffe, Geschichte; nicht wörtlich nach Vorlage). Die Funde und Umsetzungen stehen unter „Review“. Nicht eigens abgefragt: Wiedererkennen der Geschichte auf jeder Seite (nur indirekt: Schulgarten bis Seite 7, Reise ab Kapitel 2) und Querverweise zwischen Seiten.
 
+**Selbsteinschätzung:** je Kapitel eingebaut (3 Schritte mit je 4 `generated`-Aufgaben, 12 je Kapitel, 24 in der App, das ist mehr als der Richtwert 15 bis 20). Die Lupe-Seite ist nur mit zwei Aufgaben beteiligt, Recap-Seiten gar nicht. Ein Lauf im Browser mit Playwright öffnete die Startseite der App, beide Kapitel und den Tutor-Weg (`?via=tutor`); die Ende-zu-Ende-Tests des Templates machen die drei Läufe je Selbsteinschätzung und liefen grün.
+
 **Strang:** `mathematik/arithmetik` („Zahl und Operation“), Karte `https://lernapps.net/apps/map/mathematik.json` gelesen, `explainerFocus: strand`.
 
 **Kompetenzen nach Kapitel (Ids und „Ich kann“-Sätze der Karte):**
