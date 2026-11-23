@@ -40,6 +40,7 @@ Lernende der Stufe 9-10 erschließen Quadratwurzeln, reelle Zahlen, Wurzel- und 
 - Zahlengerade (nicht Zahlenstrahl) durchgehend, weil negative Zahlen vorkommen; Konvention aus #768/#385 (regeln.md Abschnitt 2).
 - Sprache: nur Deutsch (guess: Issue nennt keine zweite Sprache).
 - Look and feel: fixed by the archetype.
+- Kein `scope`: die App hat keine `open-task` und folgt keinem Material des Auftraggebers.
 
 
 ## Notes
@@ -262,14 +263,14 @@ page, which a link. -->
 
 - [x] Load skill `lernapps-cli`. Create the app as its section "Create" says:
       `npx --no -- lernapps create --archetype explainer`.
-- [ ] Fill the content guide `.agents/skills/app-content/SKILL.md` from "Notes" and "Content method": every heading,
+- [x] Fill the content guide `.agents/skills/app-content/SKILL.md` from "Notes" and "Content method": every heading,
       no "FILL IN" left. Commit it before any content.
-- [ ] Load skill `lernapps-explainer`.
-- [ ] Load skill `lernapps-content-questions`. Read whole, with your file tool:
+- [x] Load skill `lernapps-explainer`.
+- [x] Load skill `lernapps-content-questions`. Read whole, with your file tool:
       `.agents/skills/lernapps-explainer/references/blocks.md` and
       `.agents/skills/lernapps-explainer/references/exercises.md`. A foreign language: also
       `references/language-tasks.md` in the same folder. A component in the plan: also `references/components.md`.
-- [ ] Decide whether the app needs `scope`, as "`scope`" in
+- [x] Decide whether the app needs `scope`, as "`scope`" in
       `.agents/skills/lernapps-explainer/references/structure.md` says. Write the choice under "Key decisions".
 - [ ] Musterseite K1 komplett bauen: Einstieg (Beet 2 m²), Quadrat-SVG, Herleitung, Beispiel, Übung (generated, number, true-false) mit Fehlerdiagnose; Lernenden-Prüfer (Klasse 10) durchspielen lassen und Befunde umsetzen.
 <!-- tasks: pattern (1 added): the one page or screen that is the pattern for the others -->
