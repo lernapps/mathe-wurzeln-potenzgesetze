@@ -284,7 +284,7 @@ page, which a link. -->
 - [x] K1 (quadratwurzeln): Einschließen, Näherungswert, Übung.
 - [x] K1 (reelle-zahlen): Komponente mit statischen Bildern, Übung.
 - [x] K1 (reelle-zahlen): rational/irrational, Zahlbereiche, Übung.
-- [ ] K1 und (wurzelgesetze) mit Übungen.
+- [x] K1 und (wurzelgesetze) mit Übungen.
 - [ ] Recap K2 (terme-umformen, potenzen) mit Kurztest.
 - [ ] K2 und (potenzgesetze) mit Übungen.
 - [ ] K2 und (potenzen-ganzzahlige-exponenten) mit Datei , Übungen.

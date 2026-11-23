@@ -1,0 +1,4 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Potenzgesetze, kleine Zahlen und n-te Wurzeln
+summary: Die Zehnerpotenz-Reise vom Atom bis zum Universum führt zu den Potenzgesetzen, zu negativen Exponenten und zu den n-ten Wurzeln.
+pages: [recap]
