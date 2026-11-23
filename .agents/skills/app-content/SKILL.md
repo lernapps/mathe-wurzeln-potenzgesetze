@@ -26,47 +26,53 @@ Kapitel `wurzeln` (Wurzeln und neue Zahlen), Kapitel `potenzen` (Potenzgesetze, 
 
 ## Content structure
 
-- Jedes Kapitel: `src/<kapitel>/chapter.yaml` (title, summary, pages in Lesereihenfolge); erste Seite `recap`. Abschnitts-Ids auf Inhaltsseiten: `einstieg` (erste Aufgabe vorweg, mit Begründung der Lösung), `idee` (Herleitung am Bild), `regel`, `beispiel` (Beispielkasten, ein Beispiel je Kasten), `uebung`. Jede Seite sagt am Anfang, was Lernende danach können, und am Ende, was kommt.
-- Recap-Seite: Kopf „Das brauchst du für dieses Kapitel“, je Baustein eine Überschrift (Name der Karte), Fachbegriffe fett mit ein bis zwei Sätzen und Zahlenbeispiel (je auch als `definition` im Glossar), ein Beispielkasten, Komponente `Kurztest` (`src/components/Kurztest.*`, Vorlage aus den gemeinsamen Epic-Dateien), Satz mit Kartenseite `https://lernapps.net/apps/map/mathematik/c/<id>/`, Schluss „Du bist bereit, wenn du …“. Höchstens ein Bildschirm je Baustein. Keine Links in andere Apps.
-- Länge: höchstens 350 Wörter Lesetext je Seite, Bild, Tabelle oder Aufgabe in den ersten vier Blöcken, mindestens vier Aufgaben, nicht alle vom selben Typ.
-- Geschichte: realer Fall ohne erfundene Personen. Kapitel `wurzeln`: Bauen und Messen (Beet, Pflaster, Würfelverpackung). Kapitel `potenzen`: Zehnerpotenz-Reise vom Universum zum Atom. Jede Seite nimmt den Faden der vorigen auf und endet mit dem nächsten Schritt.
+- Zwei Kapitel, Ordner `src/wurzeln/` (Wurzeln und neue Zahlen) und `src/potenzen/` (Potenzgesetze, kleine Zahlen und n-te Wurzeln), je mit `chapter.yaml` und der Seitenliste in Lesereihenfolge. Das Kapitel `wurzeln` hat 6 Inhaltsseiten (`quadratwurzel-bestimmen`, `wurzeln-abschaetzen`, `wurzel-zwei-einfangen`, `reelle-zahlen`, `wurzelgesetze`, `wurzeln-vereinfachen`), das Kapitel `potenzen` 6 (`potenzgesetze-produkt`, `potenzgesetze-potenz`, `negative-exponenten`, `wissenschaftliche-schreibweise`, `dritte-wurzel`, `wurzeln-als-potenzen`). Beide beginnen mit der Seite `recap`.
+- Abschnitts-Ids auf Inhaltsseiten, in dieser Reihenfolge: `einstieg` (Ziel in einem Satz und eine erste Aufgabe, die ohne die Seite lösbar ist), `idee` (Herleitung an Bild, Tabelle oder Komponente), `regel` (Definition, Formel), `beispiel` (Beispielkasten, ein Beispiel je Kasten), `uebung` (mindestens vier Aufgaben, vom Erkennen zum Anwenden zur neuen Situation). Die Seite endet mit einem Satz, was kommt.
+- Recap-Seite: `recap:` statt `competencies`, Abschnitte `kopf`, je Baustein eine Überschrift (Name der Karte), `bereit`. Je Baustein: Fachbegriffe als `definition` (Glossar), ein Beispielkasten, ein bis zwei Komponenten `Kurztest` (`src/components/Kurztest.*`, eine Frage, sofortige Rückmeldung mit Grund, nichts gezählt) und der Satz „Wenn du hier unsicher warst: …“ mit Kartenseite `https://lernapps.net/apps/map/mathematik/c/<id>/`. Kein Link in andere Apps. Die Kurztest-Fragen enthalten nur Text (keine Formeln), `nojs` nennt Frage, Optionen und Antwort.
+- Länge: Inhaltsseiten höchstens 350 Wörter Lesetext (Hinweis `explainer-text-load` bei den Recaps und einer Seite bleibt, weil mehrere Bausteine auf einer Seite stehen).
+- Geschichte: realer Fall ohne erfundene Personen. Kapitel `wurzeln`: Schulgarten (Beet, Zaun, Pflaster). Kapitel `potenzen`: Zehnerpotenz-Reise (Erde, Sonne, Atom, Virus, Universum), am Ende der Rückblick auf beide Kapitel.
 
 ## Terminology
 
-- Begriffe der Karte: Quadratwurzeln, Reelle Zahlen, Wurzelgesetze, Potenzgesetze, Negative Exponenten, N-te Wurzeln. Neue Wörter am Beispiel bei erster Verwendung (Radikand, Wurzelexponent, irrationale Zahl, Mantisse).
-- Schreibweisen (regeln.md Abschnitt 2): Dezimalkomma; Minus `−` (U+2212), negative Zahl in Rechnung in Klammern; `·` und `:`; Brüche gesetzt (MathML), `a/b` nur in `mistakes` und Rückmeldungen von `generated` (Ausnahme W28, wird gezählt: siehe Plan); Einheiten mit geschütztem Leerzeichen (`2 m²`); Variablen kursiv; ab 5 Stellen Dreiergruppen mit schmalem geschütztem Leerzeichen; Zahlengerade (nie Zahlenstrahl); Anrede „du“.
-- Ausgeschlossen: Rationalisieren des Nenners, Wurzelgleichungen, Funktionen (#396), Pythagoras (#399).
-- Glossar (`definition`-Blöcke): Quadratzahl, Quadratwurzel, Radikand, Näherungswert, rationale Zahl, irrationale Zahl, reelle Zahl, Potenz, Basis, Exponent, Zehnerpotenz, Dezimalbruch, Vorzeichenregel, gleichartige Glieder, Ausklammern, Mantisse, n-te Wurzel.
+- Begriffe der Karte: Quadratwurzeln, Reelle Zahlen, Wurzelgesetze, Potenzgesetze, Negative Exponenten, N-te Wurzeln. Neue Wörter am Beispiel bei erster Verwendung.
+- Schreibweisen (regeln.md Abschnitt 2): Dezimalkomma; Minus `−` (U+2212), negative Zahl in Rechnung in Klammern; `·` und `:`; Brüche in Text und Aufgaben gesetzt (`\frac`), `a/b` nie als Bruch; Einheiten mit geschütztem Leerzeichen (`2 m²`), Zahlen ab fünf Stellen in Dreiergruppen mit schmalem geschütztem Leerzeichen (U+202F); Variablen kursiv (`$a$`); „Zahlengerade“ (nie „Zahlenstrahl“); Anrede „du“. Potenzen in Optionen und Rückmeldungen als Unicode (`2⁵`, `10⁻⁷`), weil Formeln dort nicht gesetzt werden; in `matching` keine Formeln (nur Wörter und Unicode).
+- Ausgeschlossen: Rationalisieren des Nenners, Wurzelgleichungen, Funktionen (#396), Pythagoras (#399), Wurzel aus negativen Zahlen (außer als Hinweis, dass es sie nicht gibt).
+- Glossar (`definition`-Blöcke, jeder Begriff einmal): Potenz, Basis, Exponent, Quadratzahl, Zehnerpotenz, Zahlengerade, Dezimalbruch, Vorzeichenregel (Recap Kapitel 1); gleichartige Glieder, Ausklammern (Recap Kapitel 2); Quadratwurzel, Radikand, Näherungswert, Intervallschachtelung, rationale Zahl, irrationale Zahl, reelle Zahl, gleichartige Wurzeln, negativer Exponent, Mantisse, n-te Wurzel.
 
 ## Exercise patterns
 
-- Seite berechnen/schätzen (`generated`): Muster „Seite aus Fläche“ (Wurzel, Rundung `round(sqrt(A), 2)`), `mistakes` für halbiert, Quadrat statt Wurzel. Beispiel: `src/wurzeln/quadratwurzel-bestimmen.yaml`, Id `ex-seite`.
-- Beurteilen (`true-false` mit Grund, `single-choice`): √(a²+b²) = a+b, π = 22/7, irrational/rational mit Dezimalentwicklung als `material`.
-- Ordnen und Zuordnen: `ordering` (Wurzeln, Zahlen auf der Zahlengerade), `matching` (Term ↔ vereinfachter Term, Zahl ↔ kleinste Zahlmenge).
-- Vereinfachen und Potenzen (`generated`): Eingabe Faktor und Radikand bzw. Basis und Exponent, Fehlertypen im Plan („Content method“).
-- Große/kleine Zahlen (`generated`): zieht Datensätze aus `src/data/groessen.yaml` (Felder `name`, `mantisse`, `exponent`, `hinweis`); Antwort Mantisse und Exponent.
-- Zufallswerte immer mit Rechenprobe in der Formel, nie Division durch 0, nie Wurzel aus negativer Zahl bei geradem n.
+Alle Aufgaben stehen im Abschnitt `uebung` der Seite; Zufallsaufgaben (`generated`) mit Fehlerdiagnose (`mistakes`), `hint` und `steps`, kein `mistake` darf für eine gezogene Zahl gleich der Antwort sein (der Build prüft das mit festen Seeds).
+- Seite aus Fläche, Zaun: `generated` mit `oneOf` aus Quadratzahlen, Antwort `sqrt(A)`. Beispiel: `src/wurzeln/quadratwurzel-bestimmen.yaml`, Ids `seite-aus-flaeche`, `zaun`.
+- Einschließen und Näherung: `generated` `ganze-zahl-darunter` (Antwort `round(sqrt(a) - 0.5, 0)`), `naeherung-eine-stelle` (`round(sqrt(a), 1)`), `ordering` (`wurzeln-ordnen`) in `src/wurzeln/wurzeln-abschaetzen.yaml`.
+- Intervallschachtelung: `number`, `ordering` (`schachtelung-schritte`), `multiple-choice`, `true-false`, `generated` `quadrieren-lupe` in `src/wurzeln/wurzel-zwei-einfangen.yaml`.
+- Rational/irrational: `multiple-choice`, `single-choice`, `matching` (Zahl ↔ Zahlenmenge), `ordering`, `number` in `src/wurzeln/reelle-zahlen.yaml`.
+- Wurzelgesetze mit Datensatz: `generated` mit `pick: 1` aus `src/data/wurzelprodukte.yaml`, `wurzelquotienten.yaml` (`produkt-wurzeln`, `quotient-wurzeln`), `quadratfaktoren.yaml` (`faktor-ziehen` in `src/wurzeln/wurzeln-vereinfachen.yaml`); `matching` Term ↔ Wert/vereinfachte Form.
+- Potenzgesetze: `generated` mit Exponenten als Antwort (`produkt-potenzen`, `quotient-potenzen`, `potenz-potenz`, `produkt-in-klammer`) in `src/potenzen/potenzgesetze-produkt.yaml` und `potenzgesetze-potenz.yaml`; Fehler: Exponenten multipliziert statt addiert und umgekehrt.
+- Negative Exponenten: `generated` `zehnerpotenz-dezimal`, `nenner-bestimmen`; Größen der Reise aus `src/data/groessen.yaml` (Felder `name`, `mantisse`, `exponent`) in `mm-exponent` auf `src/potenzen/wissenschaftliche-schreibweise.yaml`.
+- n-te Wurzeln: `generated` aus `src/data/nwurzeln.yaml` (`n`, `a`, `w` mit `w^n = a`, Id `nte-wurzel-bestimmen`, `wurzel-als-potenz`) und aus `src/data/bruchexponenten.yaml` (`a`, `n`, `m`, `r`, Id `bruch-exponent-zaehler`).
+- Je Seite mindestens eine Aufgabe in einer neuen Situation (Sachaufgabe wie Beet, Behälter, Reise).
+- Zufallswerte immer mit Rechenprobe in der Formel, nie Division durch 0, nie Wurzel aus negativer Zahl.
 
 ## Figures
 
-- Quadrat und Würfel (SVG `image`): Quadrat mit gegebener Fläche und gesuchter Seite „?“, Würfel mit gegebenem Volumen und gesuchter Kante „?“. Das Bild zeigt nie die Lösung. Farbe nie allein als Information (Beschriftung am Bild).
-- Zahlengerade mit Lupe: vier SVG-Bilder (1 bis 2, 1,4 bis 1,5, 1,41 bis 1,42, 1,414 bis 1,415), Grenzen beschriftet; Komponente `Lupe` (Regler Stufe, Tastatur, Textalternative; ohne JS die vier Bilder).
-- Zehnerpotenz-Leiter: `table` aus `src/data/groessen.yaml`.
-- Alle Bilder: eigene SVG im Explainer, `alt` beschreibt, was gezeigt ist, Bildunterschrift sagt, worauf man schaut; Lizenz wie die App (CC BY 4.0 Inhalt, MIT Code); funktioniert bei 360 px.
+- SVG im Ordner `src/images/` (eigene Zeichnung, CC-BY-4.0, weißer Hintergrund im Bild, Text und Rahmen dunkel, jede Information auch als Text): `quadrat-seite-3.svg` (3×3 Quadrat, Einheitsquadrat 1 m²), `rechteck-wurzeln.svg` (Rechteck √9 mal √4), `zahlengerade-reell.svg` (gefüllte Punkte rational, offene irrational, zusätzlich beschriftet), `wuerfel-kante-2.svg` (2×2×2 Würfel). Bilder zeigen nie die Lösung der Aufgabe auf derselben Seite.
+- Komponente `Lupe` (`src/components/Lupe.vue`, `.ts`, `.test.ts`) auf `src/wurzeln/wurzel-zwei-einfangen.yaml`: Regler für fünf Stufen der Intervallschachtelung für √2, Zahlengerade zoomt, Quadrate der Grenzen als Text; prüft nichts. Ohne JavaScript steht die Tabelle „Die Stufen der Lupe“ und der Text `nojs`.
+- Komponente `Kurztest` (`src/components/Kurztest.vue`): nur auf den `recap`-Seiten. Farben nur über Variablen der Laufzeit.
+- Tabellen mit drei Spalten höchstens, Formeln kurz (sonst Scroll-Bereich, der `accessible` verletzt).
 
 ## Sources
 
-- Lernlandkarte Mathematik (gelesen). KMK-Bildungsstandards ESA/MSA 2022 nur über die Karte. Eigene Herleitungen und Aufgaben, jede Zahlenaufgabe mit Rechenprobe.
-- Größenordnungen der Zehnerpotenz-Reise nachgeschlagen, nachgerechnet, auf Größenordnung gerundet; sie stehen nicht als Quelle oder Link in der App. Keine Schulbuchtexte, keine Dritt-Inhalte, keine externen Links (auch nicht an Aufgaben).
+- Lernlandkarte Mathematik; KMK-Bildungsstandards ESA/MSA 2022 nur über die Karte. Eigene Herleitungen und Aufgaben, jede Zahl rechnerisch geprüft (Tabellen der Näherungswerte und alle Datensätze in `src/data/` sind mit Skripten nachgerechnet).
+- Größenordnungen der Zehnerpotenz-Reise (`src/data/groessen.yaml`) nachgeschlagen, auf Größenordnung gerundet und selbst umgerechnet; sie stehen nicht als Quelle oder Link in der App. Keine Schulbuchtexte, keine Dritt-Inhalte, keine externen Links (an Fragen verlinkt nur die Kartenseite des Bausteins).
 
 ## Adding a chapter or round
 
 1. Kompetenzen aus der Karte (`https://lernapps.net/apps/map/mathematik.json`) mit Id übernehmen; Reihenfolge nach `requires`.
-2. Ordner `src/<kapitel>/`, `chapter.yaml` mit `title`, `summary`, `pages`; Kapitel in `src/app.yaml` unter `chapters` eintragen.
-3. Erste Seite `recap` für Voraussetzungen von außen (Format siehe „Content structure“).
-4. Je Kompetenz eine oder zwei Seiten mit Abschnitten `einstieg`, `idee`, `regel`, `beispiel`, `uebung`; Aufgaben nach den Mustern oben; Daten einmal in `src/data/`.
-5. Neue Fachbegriffe als `definition` ins Glossar.
-6. `npx --no -- lernapps check`, dann Commit.
+2. Ordner `src/<kapitel>/` mit `chapter.yaml` (`title`, `summary`, `pages`); Kapitel in `src/app.yaml` unter `chapters` eintragen, jede Seite genau einmal in `pages`.
+3. Erste Seite `recap`: eine Recap-Seite je Kapitel (Vorlage: `src/wurzeln/recap.yaml`), Kurztests mit `Kurztest`.
+4. Je Kompetenz eine oder zwei Seiten mit den Abschnitten `einstieg`, `idee`, `regel`, `beispiel`, `uebung`; Aufgaben nach den Mustern oben; Datensätze einmal in `src/data/<name>.yaml` (Name nur Kleinbuchstaben und Ziffern).
+5. Fachbegriffe als `definition` (jeder Begriff nur einmal im ganzen Explainer).
+6. `npx vp check --fix`, `npx vp build`, `npx --no -- lernapps check`, dann Commit.
 
 ## Rules learned from mistakes
 
