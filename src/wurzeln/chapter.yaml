@@ -11,3 +11,20 @@ pages:
     wurzelgesetze,
     wurzeln-vereinfachen,
   ]
+selfAssessment:
+  pages:
+    - exercises:
+        - /wurzeln/quadratwurzel-bestimmen/#seite-aus-flaeche
+        - /wurzeln/quadratwurzel-bestimmen/#zaun
+        - /wurzeln/wurzeln-abschaetzen/#ganze-zahl-darunter
+        - /wurzeln/wurzeln-abschaetzen/#naeherung-eine-stelle
+    - exercises:
+        - /wurzeln/wurzel-zwei-einfangen/#quadrieren-lupe
+        - /wurzeln/wurzel-zwei-einfangen/#sqrt5-stufe
+        - /wurzeln/reelle-zahlen/#irrational-welche
+        - /wurzeln/reelle-zahlen/#zaehle-rationale
+    - exercises:
+        - /wurzeln/wurzelgesetze/#produkt-wurzeln
+        - /wurzeln/wurzelgesetze/#quotient-wurzeln
+        - /wurzeln/wurzeln-vereinfachen/#faktor-ziehen
+        - /wurzeln/wurzeln-vereinfachen/#gleichartig-addieren

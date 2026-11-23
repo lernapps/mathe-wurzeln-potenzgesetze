@@ -71,8 +71,9 @@ Alle Aufgaben stehen im Abschnitt `uebung` der Seite; Zufallsaufgaben (`generate
 2. Ordner `src/<kapitel>/` mit `chapter.yaml` (`title`, `summary`, `pages`); Kapitel in `src/app.yaml` unter `chapters` eintragen, jede Seite genau einmal in `pages`.
 3. Erste Seite `recap`: eine Recap-Seite je Kapitel (Vorlage: `src/wurzeln/recap.yaml`), Kurztests mit `Kurztest`.
 4. Je Kompetenz eine oder zwei Seiten mit den Abschnitten `einstieg`, `idee`, `regel`, `beispiel`, `uebung`; Aufgaben nach den Mustern oben; Datensätze einmal in `src/data/<name>.yaml` (Name nur Kleinbuchstaben und Ziffern).
-5. Fachbegriffe als `definition` (jeder Begriff nur einmal im ganzen Explainer).
-6. `npx vp check --fix`, `npx vp build`, `npx --no -- lernapps check`, dann Commit.
+5. 1 bis 3 ihrer Übungen in `selfAssessment` (in `chapter.yaml`) aufnehmen, wie Skill `lernapps-explainer-self-assessment` sagt. Bisher je Kapitel drei Schritte mit je vier Zufallsaufgaben (`generated`), jede Seite mit zwei; die Seite `wurzel-zwei-einfangen` mit der Lupe und die Recap-Seiten sind nicht oder nur mit Zufallsaufgaben beteiligt (Recap hat keine Aufgabe).
+6. Fachbegriffe als `definition` (jeder Begriff nur einmal im ganzen Explainer).
+7. `npx vp check --fix`, `npx vp build`, `npx --no -- lernapps check`, dann Commit.
 
 ## Rules learned from mistakes
 

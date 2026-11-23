@@ -11,3 +11,20 @@ pages:
     dritte-wurzel,
     wurzeln-als-potenzen,
   ]
+selfAssessment:
+  pages:
+    - exercises:
+        - /potenzen/potenzgesetze-produkt/#produkt-potenzen
+        - /potenzen/potenzgesetze-produkt/#quotient-potenzen
+        - /potenzen/potenzgesetze-potenz/#potenz-potenz
+        - /potenzen/potenzgesetze-potenz/#produkt-in-klammer
+    - exercises:
+        - /potenzen/negative-exponenten/#zehnerpotenz-dezimal
+        - /potenzen/negative-exponenten/#nenner-bestimmen
+        - /potenzen/wissenschaftliche-schreibweise/#mm-exponent
+        - /potenzen/wissenschaftliche-schreibweise/#produkt-wissenschaftlich
+    - exercises:
+        - /potenzen/dritte-wurzel/#nte-wurzel-bestimmen
+        - /potenzen/dritte-wurzel/#nte-wurzel-bestimmen
+        - /potenzen/wurzeln-als-potenzen/#wurzel-als-potenz
+        - /potenzen/wurzeln-als-potenzen/#bruch-exponent-zaehler
