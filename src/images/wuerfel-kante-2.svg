@@ -1,16 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="300" height="250" viewBox="0 0 300 250">
   <title>Würfel aus 2 mal 2 mal 2 Einheitswürfeln</title>
   <rect x="0" y="0" width="300" height="250" fill="#ffffff"/>
-  <g stroke="#14532d" stroke-width="2">
-    <polygon points="50,100 90,70 170,70 130,100" fill="#bbf7d0"/><polygon points="90,70 130,40 210,40 170,70" fill="#bbf7d0"/>
-    <polygon points="130,100 170,70 170,150 130,180" fill="#86efac"/><polygon points="170,70 210,40 210,120 170,150" fill="#86efac"/>
-    <rect x="50" y="100" width="80" height="80" fill="#dcfce7"/>
-    <line x1="90" y1="100" x2="90" y2="180"/><line x1="50" y1="140" x2="130" y2="140"/>
-    <line x1="150" y1="85" x2="150" y2="165"/><line x1="130" y1="120" x2="170" y2="90" />
-    <line x1="110" y1="55" x2="190" y2="55"/><line x1="150" y1="85" x2="190" y2="55"/>
+  <g stroke="#14532d" stroke-width="2" stroke-linejoin="round">
+    <polygon points="60,100 120,55 200,55 140,100" fill="#bbf7d0"/>
+    <polygon points="140,100 200,55 200,135 140,180" fill="#86efac"/>
+    <rect x="60" y="100" width="80" height="80" fill="#dcfce7"/>
+  </g>
+  <g stroke="#14532d" stroke-width="1.5">
+    <line x1="100" y1="100" x2="100" y2="180"/><line x1="60" y1="140" x2="140" y2="140"/>
+    <line x1="100" y1="100" x2="160" y2="55"/><line x1="90" y1="77.5" x2="170" y2="77.5"/>
+    <line x1="140" y1="140" x2="200" y2="95"/><line x1="170" y1="77.5" x2="170" y2="157.5"/>
   </g>
   <g font-family="sans-serif" font-size="16" fill="#111827" text-anchor="middle">
-    <text x="90" y="202">Kante 2 cm</text>
-    <text x="150" y="230">Volumen 2 · 2 · 2 = 8 cm³</text>
+    <text x="100" y="204">Kante 2 cm</text>
+    <text x="150" y="232">Volumen 2 · 2 · 2 = 8 cm³</text>
   </g>
 </svg>
