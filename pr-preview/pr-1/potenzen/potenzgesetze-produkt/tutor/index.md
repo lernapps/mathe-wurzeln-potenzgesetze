@@ -308,7 +308,7 @@ Nr. | b | m | n | Lösung | F1 | F2
 
 ### Aufgabe kombination
 
-- Aufgabe: Es gilt 5³ · 5⁴ : 5² = 5 hoch k. Wie groß ist k?
+- Aufgabe: Es gilt $5^3 \cdot 5^4 : 5^2 = 5^k$. Wie groß ist k?
 - Antwortformat: eine Zahl eintippen
 - Lösung: 5
 - Erklärung: Erst malnehmen: 5³ · 5⁴ = 5⁷. Dann teilen: 5⁷ : 5² = 5⁵.

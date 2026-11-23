@@ -49,11 +49,11 @@ Auf der Lupe hast du gesehen, dass jede Stufe eine Stelle von √2 mehr liefert.
 
 ### Rational oder nicht?
 
-Brüche haben immer eine Dezimalzahl, die abbricht oder sich wiederholt: $\frac{1}{4} = 0{,}25$, $\frac{1}{3}$ = 0,333…, $\frac{1}{7}$ = 0,142857142857… Bei √2 passiert das nicht: Die Stellen laufen unendlich weiter und bilden kein Muster.
+Brüche haben immer eine Dezimalzahl, die abbricht oder sich wiederholt: $\frac{1}{4} = 0{,}25$, $\frac{1}{3}$ = 0,333…, $\frac{1}{7}$ = 0,142857142857… Bei √2 passiert das nicht: Die Stellen laufen unendlich weiter, und keine Gruppe von Ziffern wiederholt sich immer wieder (keine Periode).
 
 - **rationale Zahl**: Eine rationale Zahl lässt sich als Bruch $\frac{p}{q}$ mit ganzen Zahlen $p$ und $q \neq 0$ schreiben. Ihre Dezimalzahl bricht ab oder wiederholt sich.
 
-- **irrationale Zahl**: Eine irrationale Zahl lässt sich nicht als Bruch schreiben. Ihre Dezimalzahl hat unendlich viele Stellen ohne Wiederholung, zum Beispiel √2, √3 und π.
+- **irrationale Zahl**: Eine irrationale Zahl lässt sich nicht als Bruch schreiben. Ihre Dezimalzahl hat unendlich viele Stellen und keine Periode, zum Beispiel √2, √3 und π.
 
 - **reelle Zahl**: Reelle Zahlen sind alle rationalen und alle irrationalen Zahlen zusammen. Jeder Punkt der Zahlengerade gehört zu genau einer reellen Zahl.
 
@@ -68,7 +68,7 @@ Die Zahlenmengen:
 - rationale Zahlen | ℚ | −0,5; 0,75; $\frac{1}{3}$
 - reelle Zahlen | ℝ | alle rationalen Zahlen und dazu √2, π und alle anderen irrationalen
 
-Jede Menge steckt in der nächsten: ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ. Mit den reellen Zahlen hat die Zahlengerade keine Lücken mehr: In diesem Kurs wachsen die Zahlen damit ein letztes Mal. Für Wurzeln aus natürlichen Zahlen gilt (hier ohne Beweis, anders als bei √2): √a ist rational genau dann, wenn a eine Quadratzahl ist.
+Jede Menge steckt in der nächsten: ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ (⊂ heißt: ist enthalten in). Mit den reellen Zahlen hat die Zahlengerade keine Lücken mehr: Die Zahlbereiche wachsen hier ein letztes Mal. Für Wurzeln aus natürlichen Zahlen gilt (hier ohne Beweis, anders als bei √2): √a ist rational genau dann, wenn a eine Quadratzahl ist.
 
 **Merke: Denkweg: Warum √2 kein Bruch ist**
 
@@ -141,10 +141,10 @@ Angenommen, $\sqrt{2} = \frac{p}{q}$ mit einem gekürzten Bruch. Quadrieren gibt
 
 ### Aufgabe periodisch-irrational
 
-- Aufgabe: Die Zahl 0,1010010001… (nach jeder 1 eine Null mehr) ist irrational.
+- Aufgabe: Die Zahl 0,1010010001… (nach jeder 1 eine Null mehr, also keine Periode) ist irrational.
 - Antwortformat: „Stimmt“ oder „Stimmt nicht“ wählen
 - Lösung: Die Aussage stimmt.
-- Erklärung: Die Nullen werden immer mehr, es gibt keine Wiederholung. So eine Zahl ist kein Bruch.
+- Erklärung: Die Nullen werden immer mehr, darum wiederholt sich keine feste Gruppe von Ziffern (keine Periode). So eine Zahl ist kein Bruch.
 - Link: [../?via=tutor#periodisch-irrational](../?via=tutor#periodisch-irrational)
 
 ### Aufgabe zahlen-ordnen

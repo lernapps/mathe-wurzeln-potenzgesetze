@@ -134,15 +134,15 @@ Nr. | x | Lösung | F1 | F2
 
 ### Aufgabe folgerung
 
-- Aufgabe: Du hast 1,41² = 1,9881 und 1,42² = 2,0164 gerechnet. Was folgt daraus für √2?
+- Aufgabe: Du hast 2,6² = 6,76 und 2,7² = 7,29 gerechnet. Was folgt daraus für √7?
 - Antwortformat: eine Antwort wählen
 - Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
-  - ✓ √2 liegt zwischen 1,41 und 1,42. – Das Quadrat von 1,41 ist kleiner als 2, das von 1,42 größer. Also liegt √2 dazwischen.
-  - ✗ √2 ist gleich 1,41. – 1,41² ist 1,9881 und nicht 2.
-  - ✗ √2 ist gleich 1,415. – 1,415 ist nur die Mitte des Bereichs. Sein Quadrat ist 2,002225, also nicht 2.
-  - ✗ √2 liegt zwischen 1,9881 und 2,0164. – Diese Zahlen sind die Quadrate der Grenzen, nicht die Grenzen selbst.
-- Lösung: √2 liegt zwischen 1,41 und 1,42.
-- Erklärung: Die Wurzel behält die Reihenfolge: Aus 1,9881 &lt; 2 &lt; 2,0164 folgt 1,41 &lt; √2 &lt; 1,42.
+  - ✓ √7 liegt zwischen 2,6 und 2,7. – Das Quadrat von 2,6 ist kleiner als 7, das von 2,7 größer. Also liegt √7 dazwischen.
+  - ✗ √7 ist gleich 2,6. – 2,6² ist 6,76 und nicht 7.
+  - ✗ √7 ist gleich 2,65. – 2,65 ist nur die Mitte des Bereichs. Sein Quadrat ist 7,0225, also nicht 7.
+  - ✗ √7 liegt zwischen 6,76 und 7,29. – Diese Zahlen sind die Quadrate der Grenzen, nicht die Grenzen selbst.
+- Lösung: √7 liegt zwischen 2,6 und 2,7.
+- Erklärung: Die Wurzel behält die Reihenfolge: Aus 6,76 &lt; 7 &lt; 7,29 folgt 2,6 &lt; √7 &lt; 2,7.
 - Link: [../?via=tutor#folgerung](../?via=tutor#folgerung)
 
 ### Aufgabe lupe-aussagen

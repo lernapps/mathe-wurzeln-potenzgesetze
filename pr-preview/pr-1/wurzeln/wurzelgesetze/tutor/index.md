@@ -49,7 +49,7 @@ Aus dem Gartenbau bleiben viele Wurzeln übrig, mit denen du rechnen willst. Am 
 
 ### Das Rechteck aus zwei Wurzeln
 
-Ein Rechteck hat die Seiten √9 = 3 und √4 = 2. Seine Fläche ist √9 · √4 = 6. Die Zahl 6 hat das Quadrat 6 · 6 = 36, und 36 ist gerade 9 · 4. Du suchst also eine nicht negative Zahl, deren Quadrat 9 · 4 ist.
+Ein Rechteck hat die Seiten √9 = 3 und √4 = 2. Seine Fläche ist √9 · √4 = 6. Die Zahl 6 hat das Quadrat 6 · 6 = 36, und 36 ist dasselbe wie 9 · 4. Du suchst also eine nicht negative Zahl, deren Quadrat 9 · 4 ist.
 
 Bild: Ein Rechteck aus drei mal zwei Kästchen. Die Seiten sind mit Wurzel aus 9 gleich 3 und Wurzel aus 4 gleich 2 beschriftet, die Fläche mit 6. Bildunterschrift: Zähle die Kästchen: 3 mal 2. Die Seitenlängen sind Wurzeln, die Fläche ist ihr Produkt.
 

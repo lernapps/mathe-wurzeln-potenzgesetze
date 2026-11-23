@@ -88,19 +88,22 @@
 <div class="explainer-block" data-block="regel/3" data-block-id="52844660" data-block-type="formula" data-block-order="8">
 <div class="block-formula"><math display="block" class="tml-display" style="display:block math;"><mrow><msup><mi>a</mi><mn>0</mn></msup><mo>=</mo><mn>1</mn></mrow></math></div>
 </div>
-<div class="explainer-block" data-block="regel/4" data-block-id="9e719f1d" data-block-type="text" data-block-order="9">
+<div class="explainer-block" data-block="regel/4" data-block-id="ee51b30d" data-block-type="text" data-block-order="9">
+<div class="block-text"><p>Die Gesetze von den letzten Seiten gelten weiter, auch wenn der Exponent beim Teilen kleiner wird als beim Malnehmen: <math><mrow><msup><mn>10</mn><mn>2</mn></msup><mo lspace="0.2222em" rspace="0.2222em">:</mo><msup><mn>10</mn><mn>5</mn></msup><mo>=</mo><msup><mn>10</mn><mrow><mn>2</mn><mo>−</mo><mn>5</mn></mrow></msup><mo>=</mo><msup><mn>10</mn><mrow><mo form="prefix" stretchy="false" lspace="0em" rspace="0em">−</mo><mn>3</mn></mrow></msup></mrow></math>. Und bei zwei negativen Exponenten: <math><mrow><msup><mn>10</mn><mrow><mo form="prefix" stretchy="false" lspace="0em" rspace="0em">−</mo><mn>7</mn></mrow></msup><mo lspace="0.2222em" rspace="0.2222em">:</mo><msup><mn>10</mn><mrow><mo form="prefix" stretchy="false" lspace="0em" rspace="0em">−</mo><mn>10</mn></mrow></msup><mo>=</mo><msup><mn>10</mn><mrow><mo form="prefix" stretchy="false" lspace="0em" rspace="0em">−</mo><mn>7</mn><mo>−</mo><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mo form="prefix" stretchy="false">−</mo><mn>10</mn><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></msup><mo>=</mo><msup><mn>10</mn><mn>3</mn></msup></mrow></math>.</p></div>
+</div>
+<div class="explainer-block" data-block="regel/5" data-block-id="9e719f1d" data-block-type="text" data-block-order="10">
 <div class="block-text"><p>Beide gelten für <math><mrow><mi>a</mi><mo>≠</mo><mn>0</mn></mrow></math>. Die Potenzgesetze von den letzten Seiten gelten weiter: <math><mrow><msup><mi>a</mi><mi>n</mi></msup><mo>⋅</mo><msup><mi>a</mi><mrow><mo form="prefix" stretchy="false" lspace="0em" rspace="0em">−</mo><mi>n</mi></mrow></msup><mo>=</mo><msup><mi>a</mi><mn>0</mn></msup><mo>=</mo><mn>1</mn></mrow></math>.</p></div>
 </div>
 </section>
 <section class="explainer-section">
 <h2 id="beispiel">Beispiel</h2>
-<div class="explainer-block" data-block="beispiel/1" data-block-id="51151bff" data-block-type="example" data-block-order="10">
+<div class="explainer-block" data-block="beispiel/1" data-block-id="51151bff" data-block-type="example" data-block-order="11">
 <div class="explainer-box explainer-example">
 <h3 class="explainer-box-title">2⁻³</h3>
-<div class="explainer-block" data-block="beispiel/1/1" data-block-id="56c97761" data-block-type="text" data-block-order="11">
+<div class="explainer-block" data-block="beispiel/1/1" data-block-id="56c97761" data-block-type="text" data-block-order="12">
 <div class="block-text"><p>Der Exponent ist negativ, also Kehrwert von <math><msup><mn>2</mn><mn>3</mn></msup></math>:</p></div>
 </div>
-<div class="explainer-block" data-block="beispiel/1/2" data-block-id="e33b8b44" data-block-type="formula" data-block-order="12">
+<div class="explainer-block" data-block="beispiel/1/2" data-block-id="e33b8b44" data-block-type="formula" data-block-order="13">
 <div class="block-formula"><math display="block" class="tml-display" style="display:block math;"><mrow><msup><mn>2</mn><mrow><mo form="prefix" stretchy="false" lspace="0em" rspace="0em">−</mo><mn>3</mn></mrow></msup><mo>=</mo><mfrac><mn>1</mn><msup><mn>2</mn><mn>3</mn></msup></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>8</mn></mfrac></mrow></math></div>
 </div>
 </div>
@@ -108,7 +111,7 @@
 </section>
 <section class="explainer-section">
 <h2 id="uebung">Übung</h2>
-<div class="explainer-block" data-block="uebung/1" data-block-id="3d62d853" data-block-type="generated" data-block-order="13">
+<div class="explainer-block" data-block="uebung/1" data-block-id="3d62d853" data-block-type="generated" data-block-order="14">
 <div class="explainer-exercise explainer-generated" id="zehnerpotenz-dezimal">
 <p class="explainer-exercise-label">Aufgabe</p>
 <div class="explainer-live" hidden></div>
@@ -119,7 +122,7 @@
 <script type="application/json" class="explainer-exercise-data">{"kind":"generated","lang":"de","spec":{"type":"generated","id":"zehnerpotenz-dezimal","given":{"n":{"int":[4,6]}},"task":{"text":"Schreibe $10^{-{{n}}}$ als Dezimalzahl."},"answer":{"value":"1 / pow(10, n)","compare":{"number":{"format":"decimal","decimals":6,"tolerance":0}}},"mistakes":[{"value":"pow(10, n)","message":"Das ist 10 hoch {{n}}, also mit positivem Exponenten. Der Exponent ist aber negativ, der Wert ist kleiner als 1."},{"value":"0 - 1 / pow(10, n)","message":"Ein negativer Exponent macht die Zahl nicht negativ, nur klein."},{"value":"1 / (10 * n)","message":"Du hast 10 mit {{n}} malgenommen. Der Exponent sagt, wie oft du durch 10 teilst."}],"hint":"Die Reihe nach unten: Bei jedem Schritt wird durch 10 geteilt.","steps":["$10^{-{{n}}} = 1 : 10^{{{n}}}$","Das ist {{answer}}."]},"templates":{"de":{"task":"Schreibe \u003cmath>\u003cmsup>\u003cmn>10\u003c/mn>\u003cmrow>\u003cmo form=\"prefix\" stretchy=\"false\" lspace=\"0em\" rspace=\"0em\">−\u003c/mo>\u003cmtext>⟦n⟧\u003c/mtext>\u003c/mrow>\u003c/msup>\u003c/math> als Dezimalzahl.","steps":["\u003cmath>\u003cmrow>\u003cmsup>\u003cmn>10\u003c/mn>\u003cmrow>\u003cmo form=\"prefix\" stretchy=\"false\" lspace=\"0em\" rspace=\"0em\">−\u003c/mo>\u003cmtext>⟦n⟧\u003c/mtext>\u003c/mrow>\u003c/msup>\u003cmo>=\u003c/mo>\u003cmn>1\u003c/mn>\u003cmo lspace=\"0.2222em\" rspace=\"0.2222em\">:\u003c/mo>\u003cmsup>\u003cmn>10\u003c/mn>\u003cmtext>⟦n⟧\u003c/mtext>\u003c/msup>\u003c/mrow>\u003c/math>","Das ist ⟦answer⟧."],"hint":"Die Reihe nach unten: Bei jedem Schritt wird durch 10 geteilt.","messages":["Das ist 10 hoch ⟦n⟧, also mit positivem Exponenten. Der Exponent ist aber negativ, der Wert ist kleiner als 1.","Ein negativer Exponent macht die Zahl nicht negativ, nur klein.","Du hast 10 mit ⟦n⟧ malgenommen. Der Exponent sagt, wie oft du durch 10 teilst."]}},"data":{},"seeds":[1,2,4],"texts":{"newTask":"Neue Aufgabe","practice":"Übe selbst, mit immer neuen Aufgaben:","hint":"Tipp","solution":"Lösung","taskNumber":"Aufgabe Nr. {n}"}}</script>
 </div>
 </div>
-<div class="explainer-block" data-block="uebung/2" data-block-id="305be752" data-block-type="generated" data-block-order="14">
+<div class="explainer-block" data-block="uebung/2" data-block-id="82502985" data-block-type="generated" data-block-order="15">
 <div class="explainer-exercise explainer-generated" id="nenner-bestimmen">
 <p class="explainer-exercise-label">Aufgabe</p>
 <div class="explainer-live" hidden></div>
@@ -127,10 +130,10 @@
 <ol class="explainer-worked"><li class="explainer-worked-task"><p class="explainer-task-number">Aufgabe Nr. 1</p><p class="explainer-task">Es gilt <math><mrow><msup><mn>2</mn><mrow><mo form="prefix" stretchy="false" lspace="0em" rspace="0em">−</mo><mn>3</mn></mrow></msup><mo>=</mo><mfrac><mn>1</mn><mi>d</mi></mfrac></mrow></math>. Wie groß ist d?</p><details class="explainer-hint"><summary>Tipp</summary><p>Eine Potenz mit negativem Exponenten ist der Kehrwert der Potenz mit positivem Exponenten.</p></details><details class="explainer-solution"><summary>Lösung</summary><ol class="explainer-steps"><li><math><mrow><msup><mn>2</mn><mrow><mo form="prefix" stretchy="false" lspace="0em" rspace="0em">−</mo><mn>3</mn></mrow></msup><mo>=</mo><mfrac><mn>1</mn><msup><mn>2</mn><mn>3</mn></msup></mfrac></mrow></math></li><li>Also d = 8.</li></ol><p><strong>Richtige Antwort:</strong> 8</p></details></li>
 <li class="explainer-worked-task"><p class="explainer-task-number">Aufgabe Nr. 2</p><p class="explainer-task">Es gilt <math><mrow><msup><mn>3</mn><mrow><mo form="prefix" stretchy="false" lspace="0em" rspace="0em">−</mo><mn>4</mn></mrow></msup><mo>=</mo><mfrac><mn>1</mn><mi>d</mi></mfrac></mrow></math>. Wie groß ist d?</p><details class="explainer-hint"><summary>Tipp</summary><p>Eine Potenz mit negativem Exponenten ist der Kehrwert der Potenz mit positivem Exponenten.</p></details><details class="explainer-solution"><summary>Lösung</summary><ol class="explainer-steps"><li><math><mrow><msup><mn>3</mn><mrow><mo form="prefix" stretchy="false" lspace="0em" rspace="0em">−</mo><mn>4</mn></mrow></msup><mo>=</mo><mfrac><mn>1</mn><msup><mn>3</mn><mn>4</mn></msup></mfrac></mrow></math></li><li>Also d = 81.</li></ol><p><strong>Richtige Antwort:</strong> 81</p></details></li>
 <li class="explainer-worked-task"><p class="explainer-task-number">Aufgabe Nr. 3</p><p class="explainer-task">Es gilt <math><mrow><msup><mn>3</mn><mrow><mo form="prefix" stretchy="false" lspace="0em" rspace="0em">−</mo><mn>2</mn></mrow></msup><mo>=</mo><mfrac><mn>1</mn><mi>d</mi></mfrac></mrow></math>. Wie groß ist d?</p><details class="explainer-hint"><summary>Tipp</summary><p>Eine Potenz mit negativem Exponenten ist der Kehrwert der Potenz mit positivem Exponenten.</p></details><details class="explainer-solution"><summary>Lösung</summary><ol class="explainer-steps"><li><math><mrow><msup><mn>3</mn><mrow><mo form="prefix" stretchy="false" lspace="0em" rspace="0em">−</mo><mn>2</mn></mrow></msup><mo>=</mo><mfrac><mn>1</mn><msup><mn>3</mn><mn>2</mn></msup></mfrac></mrow></math></li><li>Also d = 9.</li></ol><p><strong>Richtige Antwort:</strong> 9</p></details></li></ol>
-<script type="application/json" class="explainer-exercise-data">{"kind":"generated","lang":"de","spec":{"type":"generated","id":"nenner-bestimmen","given":{"b":{"oneOf":[2,3,4,5,10]},"n":{"int":[2,4]}},"where":["b * n != pow(b, n)"],"task":{"text":"Es gilt ${{b}}^{-{{n}}} = \\frac{1}{d}$. Wie groß ist d?"},"answer":{"value":"pow(b, n)","compare":{"number":{"format":"integer"}}},"mistakes":[{"value":"b * n","message":"Du hast Basis mal Exponent gerechnet. Der Nenner ist die Potenz {{b}} hoch {{n}}."},{"value":"0 - pow(b, n)","message":"Der Nenner ist positiv: Das Minus im Exponenten macht nur den Kehrwert."}],"hint":"Eine Potenz mit negativem Exponenten ist der Kehrwert der Potenz mit positivem Exponenten.","steps":["${{b}}^{-{{n}}} = \\frac{1}{{{b}}^{{{n}}}}$","Also d = {{answer}}."]},"templates":{"de":{"task":"Es gilt \u003cmath>\u003cmrow>\u003cmsup>\u003cmtext>⟦b⟧\u003c/mtext>\u003cmrow>\u003cmo form=\"prefix\" stretchy=\"false\" lspace=\"0em\" rspace=\"0em\">−\u003c/mo>\u003cmtext>⟦n⟧\u003c/mtext>\u003c/mrow>\u003c/msup>\u003cmo>=\u003c/mo>\u003cmfrac>\u003cmn>1\u003c/mn>\u003cmi>d\u003c/mi>\u003c/mfrac>\u003c/mrow>\u003c/math>. Wie groß ist d?","steps":["\u003cmath>\u003cmrow>\u003cmsup>\u003cmtext>⟦b⟧\u003c/mtext>\u003cmrow>\u003cmo form=\"prefix\" stretchy=\"false\" lspace=\"0em\" rspace=\"0em\">−\u003c/mo>\u003cmtext>⟦n⟧\u003c/mtext>\u003c/mrow>\u003c/msup>\u003cmo>=\u003c/mo>\u003cmfrac>\u003cmn>1\u003c/mn>\u003cmsup>\u003cmtext>⟦b⟧\u003c/mtext>\u003cmtext>⟦n⟧\u003c/mtext>\u003c/msup>\u003c/mfrac>\u003c/mrow>\u003c/math>","Also d = ⟦answer⟧."],"hint":"Eine Potenz mit negativem Exponenten ist der Kehrwert der Potenz mit positivem Exponenten.","messages":["Du hast Basis mal Exponent gerechnet. Der Nenner ist die Potenz ⟦b⟧ hoch ⟦n⟧.","Der Nenner ist positiv: Das Minus im Exponenten macht nur den Kehrwert."]}},"data":{},"seeds":[1,2,3,4,5,7,11,18,21,24,30,35,36,37],"texts":{"newTask":"Neue Aufgabe","practice":"Übe selbst, mit immer neuen Aufgaben:","hint":"Tipp","solution":"Lösung","taskNumber":"Aufgabe Nr. {n}"}}</script>
+<script type="application/json" class="explainer-exercise-data">{"kind":"generated","lang":"de","spec":{"type":"generated","id":"nenner-bestimmen","given":{"b":{"oneOf":[2,3,4,5,10]},"n":{"int":[2,4]}},"where":["b * n != pow(b, n)","pow(b, n) \u003c 1000"],"task":{"text":"Es gilt ${{b}}^{-{{n}}} = \\frac{1}{d}$. Wie groß ist d?"},"answer":{"value":"pow(b, n)","compare":{"number":{"format":"integer"}}},"mistakes":[{"value":"b * n","message":"Du hast Basis mal Exponent gerechnet. Der Nenner ist die Potenz {{b}} hoch {{n}}."},{"value":"0 - pow(b, n)","message":"Der Nenner ist positiv: Das Minus im Exponenten macht nur den Kehrwert."}],"hint":"Eine Potenz mit negativem Exponenten ist der Kehrwert der Potenz mit positivem Exponenten.","steps":["${{b}}^{-{{n}}} = \\frac{1}{{{b}}^{{{n}}}}$","Also d = {{answer}}."]},"templates":{"de":{"task":"Es gilt \u003cmath>\u003cmrow>\u003cmsup>\u003cmtext>⟦b⟧\u003c/mtext>\u003cmrow>\u003cmo form=\"prefix\" stretchy=\"false\" lspace=\"0em\" rspace=\"0em\">−\u003c/mo>\u003cmtext>⟦n⟧\u003c/mtext>\u003c/mrow>\u003c/msup>\u003cmo>=\u003c/mo>\u003cmfrac>\u003cmn>1\u003c/mn>\u003cmi>d\u003c/mi>\u003c/mfrac>\u003c/mrow>\u003c/math>. Wie groß ist d?","steps":["\u003cmath>\u003cmrow>\u003cmsup>\u003cmtext>⟦b⟧\u003c/mtext>\u003cmrow>\u003cmo form=\"prefix\" stretchy=\"false\" lspace=\"0em\" rspace=\"0em\">−\u003c/mo>\u003cmtext>⟦n⟧\u003c/mtext>\u003c/mrow>\u003c/msup>\u003cmo>=\u003c/mo>\u003cmfrac>\u003cmn>1\u003c/mn>\u003cmsup>\u003cmtext>⟦b⟧\u003c/mtext>\u003cmtext>⟦n⟧\u003c/mtext>\u003c/msup>\u003c/mfrac>\u003c/mrow>\u003c/math>","Also d = ⟦answer⟧."],"hint":"Eine Potenz mit negativem Exponenten ist der Kehrwert der Potenz mit positivem Exponenten.","messages":["Du hast Basis mal Exponent gerechnet. Der Nenner ist die Potenz ⟦b⟧ hoch ⟦n⟧.","Der Nenner ist positiv: Das Minus im Exponenten macht nur den Kehrwert."]}},"data":{},"seeds":[1,2,3,4,5,7,11,18,21,30,36,37],"texts":{"newTask":"Neue Aufgabe","practice":"Übe selbst, mit immer neuen Aufgaben:","hint":"Tipp","solution":"Lösung","taskNumber":"Aufgabe Nr. {n}"}}</script>
 </div>
 </div>
-<div class="explainer-block" data-block="uebung/3" data-block-id="607e9724" data-block-type="single-choice" data-block-order="15">
+<div class="explainer-block" data-block="uebung/3" data-block-id="607e9724" data-block-type="single-choice" data-block-order="16">
 <div class="explainer-exercise explainer-question" id="fuenf-minus-zwei">
 <p class="explainer-exercise-label">Aufgabe</p>
 <div class="question" id="frage-fuenf-minus-zwei" data-id="fuenf-minus-zwei" data-type="single-choice">
@@ -169,7 +172,7 @@
 <script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"fuenf-minus-zwei","text":"Welche Zahl ist 5⁻²?","explanation":"Ein negativer Exponent bedeutet den Kehrwert: 5⁻² = 1 : 5² = 1 : 25.","links":[{"title":"Baustein auf der Lernlandkarte","url":"https://lernapps.net/apps/map/mathematik/c/potenzen-ganzzahlige-exponenten/"}],"type":"single-choice","options":[{"text":"$\\frac{1}{25}$","correct":true,"info":"5⁻² ist der Kehrwert von 5² = 25."},{"text":"−25","correct":false,"info":"Das Minus im Exponenten macht die Zahl nicht negativ."},{"text":"−10","correct":false,"info":"Das wäre 5 · (−2). Ein Exponent ist kein Faktor."},{"text":"$\\frac{1}{10}$","correct":false,"info":"Das wäre 1 : (5 · 2). Der Nenner ist 5 · 5 = 25."}]},"rendered":{"$\\frac{1}{25}$":"\u003cmath>\u003cmfrac>\u003cmn>1\u003c/mn>\u003cmn>25\u003c/mn>\u003c/mfrac>\u003c/math>","$\\frac{1}{10}$":"\u003cmath>\u003cmfrac>\u003cmn>1\u003c/mn>\u003cmn>10\u003c/mn>\u003c/mfrac>\u003c/math>"}}</script>
 </div>
 </div>
-<div class="explainer-block" data-block="uebung/4" data-block-id="aef2dddb" data-block-type="true-false" data-block-order="16">
+<div class="explainer-block" data-block="uebung/4" data-block-id="aef2dddb" data-block-type="true-false" data-block-order="17">
 <div class="explainer-exercise explainer-question" id="null-hoch">
 <p class="explainer-exercise-label">Aufgabe</p>
 <div class="question" id="frage-null-hoch" data-id="null-hoch" data-type="true-false">
@@ -196,7 +199,7 @@
 <script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"null-hoch","text":"Es gilt 10⁰ = 0.","explanation":"In der Reihe 100, 10, … folgt nach 10 die Zahl 1, also 10⁰ = 1.","links":[{"title":"Baustein auf der Lernlandkarte","url":"https://lernapps.net/apps/map/mathematik/c/potenzen-ganzzahlige-exponenten/"}],"type":"true-false","answer":false},"rendered":{}}</script>
 </div>
 </div>
-<div class="explainer-block" data-block="uebung/5" data-block-id="1e562146" data-block-type="ordering" data-block-order="17">
+<div class="explainer-block" data-block="uebung/5" data-block-id="1e562146" data-block-type="ordering" data-block-order="18">
 <div class="explainer-exercise explainer-question" id="zehnerpotenzen-ordnen">
 <p class="explainer-exercise-label">Aufgabe</p>
 <div class="question" id="frage-zehnerpotenzen-ordnen" data-id="zehnerpotenzen-ordnen" data-type="ordering">
@@ -228,7 +231,7 @@
 <script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"zehnerpotenzen-ordnen","text":"Ordne die Zahlen von klein nach groß.","explanation":"10⁻³ = 0,001; 10⁻¹ = 0,1; 10⁰ = 1; 10² = 100.","links":[{"title":"Baustein auf der Lernlandkarte","url":"https://lernapps.net/apps/map/mathematik/c/potenzen-ganzzahlige-exponenten/"}],"type":"ordering","items":["10⁻³","10⁻¹","10⁰","10²"]},"rendered":{}}</script>
 </div>
 </div>
-<div class="explainer-block" data-block="uebung/6" data-block-id="305b33db" data-block-type="single-choice" data-block-order="18">
+<div class="explainer-block" data-block="uebung/6" data-block-id="305b33db" data-block-type="single-choice" data-block-order="19">
 <div class="explainer-exercise explainer-question" id="atom-virus">
 <p class="explainer-exercise-label">Aufgabe</p>
 <div class="question" id="frage-atom-virus" data-id="atom-virus" data-type="single-choice">
@@ -267,7 +270,7 @@
 <script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"atom-virus","text":"Ein Atom ist rund 10⁻¹⁰ m groß, ein Virus rund 10⁻⁷ m. Wie oft passt das Atom ungefähr in das Virus?","explanation":"10⁻⁷ : 10⁻¹⁰ = 10 hoch (−7 − (−10)) = 10³. Rund 1000 Atome nebeneinander sind so lang wie ein Virus.","links":[{"title":"Baustein auf der Lernlandkarte","url":"https://lernapps.net/apps/map/mathematik/c/potenzen-ganzzahlige-exponenten/"}],"type":"single-choice","options":[{"text":"10³-mal","correct":true,"info":"10⁻⁷ : 10⁻¹⁰ = 10⁻⁷⁻⁽⁻¹⁰⁾ = 10³."},{"text":"10⁻³-mal","correct":false,"info":"Das Virus ist größer als das Atom, also passt das Atom mehr als einmal hinein."},{"text":"10¹⁷-mal","correct":false,"info":"Du hast die Beträge der Exponenten addiert. Beim Teilen wird subtrahiert."},{"text":"10⁻¹⁷-mal","correct":false,"info":"Du hast addiert und das falsche Vorzeichen. Beim Teilen wird subtrahiert."}]},"rendered":{}}</script>
 </div>
 </div>
-<div class="explainer-block" data-block="uebung/7" data-block-id="5fb51253" data-block-type="text" data-block-order="19">
+<div class="explainer-block" data-block="uebung/7" data-block-id="5fb51253" data-block-type="text" data-block-order="20">
 <div class="block-text"><p>Mit negativen Exponenten kannst du alle Größen der Reise schreiben. Das ordnest du auf der nächsten Seite.</p></div>
 </div>
 </section>
@@ -309,7 +312,7 @@
 <span class="explainer-feedback-local">Nur in diesem Browser gespeichert</span>
 <button type="button" class="explainer-feedback-off">Beenden</button>
 </div>
-<script type="application/json" class="explainer-feedback-data">{"storage":"mathe-wurzeln-potenzgesetze","app":"Wurzeln, reelle Zahlen und Potenzgesetze","root":"../../","repository":"lernapps/mathe-wurzeln-potenzgesetze","revision":"cd7999e","page":{"title":"Negative Exponenten","order":10}}</script>
+<script type="application/json" class="explainer-feedback-data">{"storage":"mathe-wurzeln-potenzgesetze","app":"Wurzeln, reelle Zahlen und Potenzgesetze","root":"../../","repository":"lernapps/mathe-wurzeln-potenzgesetze","revision":"d2574ea","page":{"title":"Negative Exponenten","order":10}}</script>
 </aside>
 </template>
 <nav class="explainer-pager" aria-label="Weiterblättern"><a rel="prev" href="../../potenzen/potenzgesetze-potenz/">Zurück: Potenzgesetze: Potenz einer Potenz</a><a rel="next" href="../../potenzen/wissenschaftliche-schreibweise/">Weiter: Wissenschaftliche Schreibweise</a></nav>

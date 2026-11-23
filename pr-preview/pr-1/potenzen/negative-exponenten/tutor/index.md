@@ -71,6 +71,8 @@ $a^{-n} = \frac{1}{a^n}$
 
 $a^0 = 1$
 
+Die Gesetze von den letzten Seiten gelten weiter, auch wenn der Exponent beim Teilen kleiner wird als beim Malnehmen: $10^2 : 10^5 = 10^{2-5} = 10^{-3}$. Und bei zwei negativen Exponenten: $10^{-7} : 10^{-10} = 10^{-7-(-10)} = 10^3$.
+
 Beide gelten für $a \neq 0$. Die Potenzgesetze von den letzten Seiten gelten weiter: $a^n \cdot a^{-n} = a^0 = 1$.
 
 ### Beispiel
@@ -155,11 +157,9 @@ Nr. | b | n | Lösung | F1 | F2
 7 | 5 | 3 | 125 | 15 | -125
 8 | 10 | 2 | 100 | 20 | -100
 9 | 3 | 3 | 27 | 9 | -27
-10 | 10 | 4 | 10.000 | 40 | -10000
-11 | 2 | 4 | 16 | 8 | -16
-12 | 10 | 3 | 1.000 | 30 | -1000
-13 | 5 | 2 | 25 | 10 | -25
-14 | 4 | 3 | 64 | 12 | -64
+10 | 2 | 4 | 16 | 8 | -16
+11 | 5 | 2 | 25 | 10 | -25
+12 | 4 | 3 | 64 | 12 | -64
 ```
 
 ### Aufgabe fuenf-minus-zwei

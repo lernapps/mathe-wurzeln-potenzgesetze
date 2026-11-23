@@ -81,6 +81,8 @@ Interaktiv: Kurztest: Welche Zahl ist die größte? 987, 999, 1009 oder 989. Ric
 
 Interaktiv: Kurztest: Welche Zahl ist größer, 1,41 oder 1,5? Richtig ist 1,5, denn bei den Zehnteln ist 5 größer als 4.
 
+Interaktiv: Kurztest: Welche Reihenfolge ist richtig, von klein nach groß? Minus 2, minus 0,5, 1. Richtig ist: minus 2, minus 0,5, 1, denn auf der Zahlengerade liegen sie in dieser Reihenfolge von links nach rechts.
+
 Wenn du hier unsicher warst: Wiederhole den Baustein „Zahlen vergleichen und ordnen“ auf seiner Kartenseite: [Zahlen vergleichen und ordnen](https://lernapps.net/apps/map/mathematik/c/zahlen-vergleichen-ordnen/).
 
 ### Rechnen mit Dezimalbrüchen
@@ -96,6 +98,8 @@ Ohne Komma: $4 \cdot 15 = 60$. Die Faktoren haben zusammen zwei Stellen hinter d
 Interaktiv: Kurztest: Was ist 0,3 mal 0,2? Zur Wahl stehen 0,6, 0,06, 0,5 und 0,006. Richtig ist 0,06, denn 3 mal 2 ist 6 und es gibt zusammen zwei Stellen hinter dem Komma.
 
 Interaktiv: Kurztest: Was ist 1,5 mal 1,5? Zur Wahl stehen 2,25, 2,5, 3 und 0,225. Richtig ist 2,25, denn 15 mal 15 ist 225 und es gibt zusammen zwei Stellen hinter dem Komma.
+
+Interaktiv: Kurztest: Welcher Bruch ist 0,25? Ein Viertel, ein Halb, ein Fünftel oder drei Viertel. Richtig ist ein Viertel, denn 1 geteilt durch 4 ist 0,25.
 
 Wenn du hier unsicher warst: Wiederhole den Baustein „Rechnen mit Dezimalbrüchen“ auf seiner Kartenseite: [Rechnen mit Dezimalbrüchen](https://lernapps.net/apps/map/mathematik/c/dezimalbrueche-rechnen/).
 
@@ -114,6 +118,8 @@ Du startest bei 5 und gehst 8 Schritte nach links: $5 + (-8) = -3$.
 Interaktiv: Kurztest: Was ist minus 6 mal minus 2? Zur Wahl stehen 12, minus 12, minus 8 und 8. Richtig ist 12, denn minus mal minus ergibt plus.
 
 Interaktiv: Kurztest: Was ist 5 plus minus 8? Zur Wahl stehen minus 3, 3, 13 und minus 13. Richtig ist minus 3, denn du startest bei 5 und gehst 8 Schritte nach links.
+
+Interaktiv: Kurztest: Was ist 7 minus minus 10? Zur Wahl stehen 17, minus 3, minus 17 und 3. Richtig ist 17, denn minus eine negative Zahl ist plus.
 
 Wenn du hier unsicher warst: Wiederhole den Baustein „Rechnen mit negativen Zahlen“ auf seiner Kartenseite: [Rechnen mit negativen Zahlen](https://lernapps.net/apps/map/mathematik/c/rationale-zahlen-rechnen/).
 

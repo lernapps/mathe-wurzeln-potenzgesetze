@@ -93,7 +93,7 @@ Rückblick: Im Schulgarten hast du aus Flächen Seiten bestimmt, Wurzeln eingesc
 
 ### Aufgabe halber-exponent
 
-- Aufgabe: Es gilt 3ˣ · 3ˣ = 3¹. Welche Zahl x erfüllt das? Gib sie als Dezimalzahl an.
+- Aufgabe: Es gilt $3^x \cdot 3^x = 3^1$. Welche Zahl x erfüllt das? Gib sie als Dezimalzahl an.
 - Antwortformat: eine Zahl eintippen
 - Lösung: 0,5
 - Erklärung: Beim Malnehmen gleicher Basen werden die Exponenten addiert: x + x = 1, also x = 0,5.
@@ -109,7 +109,7 @@ Rückblick: Im Schulgarten hast du aus Flächen Seiten bestimmt, Wurzeln eingesc
 - Antwortformat: eine Zahl eintippen
 - Tipp der App: „Der Nenner des Exponenten ist der Wurzelexponent.“
 - Lösungsweg:
-  - Der Exponent hat den Nenner {e.n}: gemeint ist die {e.n}-te Wurzel aus {e.a}.
+  - Der Exponent hat den Nenner {e.n}: gemeint ist die Wurzel mit Wurzelexponent {e.n} aus {e.a}.
   - Das ist {answer}.
 - Typische Fehler und was die App sagt:
   - F1: „Der Bruch im Exponenten teilt nicht die Basis. Sein Nenner {e.n} gibt den Wurzelexponenten an.“
@@ -141,10 +141,10 @@ Nr. | e.a | e.n | Lösung | F1 | F2
 - Antwortformat: eine Zahl eintippen
 - Tipp der App: „Nenner: Wurzel. Zähler: Potenz.“
 - Lösungsweg:
-  - Erst die {e.n}-te Wurzel aus {e.a}, dann hoch {e.m}.
+  - Erst die Wurzel mit Wurzelexponent {e.n} aus {e.a}, dann hoch {e.m}.
   - Das ist {answer}.
 - Typische Fehler und was die App sagt:
-  - F1: „Der Bruch im Exponenten gehört ganz in den Exponenten. Erst die {e.n}-te Wurzel ziehen, dann mit {e.m} potenzieren.“
+  - F1: „Der Bruch im Exponenten gehört ganz in den Exponenten. Erst die Wurzel mit Wurzelexponent {e.n} ziehen, dann mit {e.m} potenzieren.“
 - Link zu Nummer n: `../?bruch-exponent-zaehler=n&via=tutor#bruch-exponent-zaehler`
 - Aufgaben nach Nummer: die Werte für `{…}`, die Lösung und was bei den Fehlern herauskommt. Ein Fehler ohne Spalte hat keinen festen Wert; die Meldung der App sagt, ob er vorliegt. `{answer}` ist die Lösung.
 

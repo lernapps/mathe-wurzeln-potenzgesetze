@@ -63,6 +63,8 @@ Nach links verschoben wird der Exponent positiv, nach rechts negativ.
 
 ### Rechnen und Ordnen
 
+- **wissenschaftliche Schreibweise**: Die wissenschaftliche Schreibweise schreibt eine positive Zahl als Mantisse mal Zehnerpotenz, zum Beispiel $4{,}5 \cdot 10^4$ für 45 000.
+
 - **Mantisse**: Die Mantisse ist die Zahl $m$ vor der Zehnerpotenz in der wissenschaftlichen Schreibweise. Sie liegt mindestens bei 1 und unter 10.
 
 $(a \cdot 10^m) \cdot (b \cdot 10^n) = (a \cdot b) \cdot 10^{m+n}$
@@ -312,7 +314,7 @@ Nr. | a | m | Lösung | F1 | F2
 
 ### Aufgabe zehnerpotenzen-reise
 
-- Aufgabe: Wie viele Zehnerpotenzen liegen ungefähr zwischen einem Atom (10⁻¹⁰ m) und der Erde (10⁷ m)? Gib k mit 10⁷ : 10⁻¹⁰ = 10 hoch k an.
+- Aufgabe: Wie viele Zehnerpotenzen liegen ungefähr zwischen einem Atom ($10^{-10}$ m) und der Erde ($10^7$ m)? Gib k mit $10^7 : 10^{-10} = 10^k$ an.
 - Antwortformat: eine Zahl eintippen
 - Lösung: 17
 - Erklärung: 10⁷ : 10⁻¹⁰ = 10 hoch (7 − (−10)) = 10¹⁷. Das sind 17 Zehnerpotenzen.

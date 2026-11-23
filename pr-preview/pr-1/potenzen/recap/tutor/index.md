@@ -59,6 +59,8 @@ Interaktiv: Kurztest: Was ergibt 3a plus 5a minus 2a? Zur Wahl stehen 6a, 6, 10a
 
 Interaktiv: Kurztest: Welcher Term ist 6x plus 9, ausgeklammert? 3 mal (2x plus 3), 3 mal (2x plus 9), 6 mal (x plus 9) oder 9 mal (6x plus 1). Richtig ist 3 mal (2x plus 3).
 
+Interaktiv: Kurztest: Was ist a mal a mal a? Zur Wahl stehen a hoch 3, 3a, a plus 3 und 3 mal a mal a. Richtig ist a hoch 3.
+
 Wenn du hier unsicher warst: Wiederhole den Baustein „Terme umformen“ auf seiner Kartenseite: [Terme umformen](https://lernapps.net/apps/map/mathematik/c/terme-umformen/).
 
 ### Potenzen und Zehnerpotenzen

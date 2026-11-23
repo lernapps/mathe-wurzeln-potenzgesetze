@@ -55,13 +55,13 @@ Beim Quadrat gilt Seite · Seite = Fläche. Beim Würfel gilt Kante · Kante · 
 
 ### n-te Wurzeln
 
-- **n-te Wurzel**: Die n-te Wurzel aus einer Zahl $a \ge 0$ ist die nicht negative Zahl, die n-mal als Faktor $a$ ergibt. Die dritte Wurzel von 8 ist 2, weil $2^3 = 8$ gilt.
+- **n-te Wurzel**: Die n-te Wurzel aus einer Zahl $a \ge 0$ ist die nicht negative Zahl, deren n-te Potenz $a$ ist. Die dritte Wurzel von 8 ist 2, weil $2^3 = 8$ gilt.
 
 - **Wurzelexponent**: Der Wurzelexponent $n$ sagt, welche Wurzel gemeint ist: bei der dritten Wurzel ist $n = 3$, bei der Quadratwurzel $n = 2$ (er wird nicht geschrieben).
 
 $\sqrt[3]{8} = 2 \quad \text{denn} \quad 2^3 = 8$
 
-Die Quadratwurzel ist die zweite Wurzel: Der Wurzelexponent 2 wird nicht geschrieben. Ähnlich gilt $\sqrt[4]{81} = 3$, denn $3^4 = 81$, und $\sqrt[5]{32} = 2$, denn $2^5 = 32$.
+Ähnlich gilt $\sqrt[4]{81} = 3$, denn $3^4 = 81$, und $\sqrt[5]{32} = 2$, denn $2^5 = 32$.
 
 **Merke: Der Radikand ist nicht negativ**
 

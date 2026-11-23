@@ -49,7 +49,7 @@ Das Pflaster im Schulgarten ist quadratisch und hat 50 m². Die Seite ist √50
 
 ### Quadratfaktor herausziehen
 
-Du suchst unter der Wurzel einen Faktor, der eine Quadratzahl ist: 4, 9, 16, 25, 36, …. Mit dem Produktgesetz von der letzten Seite ziehst du seine Wurzel vor die Wurzel.
+Du suchst unter der Wurzel einen Faktor, der eine Quadratzahl ist: 4, 9, 16, 25, 36, …. Probiere die Quadratzahlen 4, 9, 16, 25, … der Reihe nach: Geht eine von ihnen in der Zahl unter der Wurzel auf? Mit dem Produktgesetz von der letzten Seite ziehst du seine Wurzel vor die Wurzel.
 
 - **Quadratfaktor**: Ein Quadratfaktor ist ein Faktor unter der Wurzel, der eine Quadratzahl ist, zum Beispiel 16 in $\sqrt{16 \cdot 7}$.
 
