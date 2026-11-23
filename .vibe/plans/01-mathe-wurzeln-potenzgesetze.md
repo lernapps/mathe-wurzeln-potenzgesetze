@@ -4,7 +4,7 @@
 # Archetype, null until chosen in Explore. Allowed values: explainer, interactive, quiz.
 archetype: explainer
 # Current phase. Allowed values: explore, plan, code, commit.
-phase: explore
+phase: plan
 # prePushFailures: failed pre-push runs, written by the hook.
 prePushFailures: 0
 # failedChecks: failed rules and runs, written by lernapps check and the hooks.
@@ -47,6 +47,8 @@ Lernende der Stufe 9-10 erschließen Quadratwurzeln, reelle Zahlen, Wurzel- und 
 <!-- Strand or subject, competencies by chapter (ids), didactic approach, scope, sources and licences, open questions. -->
 
 **Hinweis zum Ablauf:** Die Interview-Aufgaben (Ziel, Lernende, Inhalt, Menge, Sprache, Begriffe) beantwortet der Auftragstext aus dem Issue 392 und den Regeln, nicht ein Mensch im Chat. Die Aufgaben 3-6 der Explore-Phase habe ich gesammelt abgehakt, nachdem ich Karte, Skills und README gelesen hatte.
+
+**Hinweis zu den Code-Aufgaben:** Beim Anlegen haben Backticks im Shell-Befehl Seiten-Ids aus den Aufgabentexten verschluckt (nicht per Hand korrigierbar, `plan-file`). Die Aufgaben meinen: Musterseite = `wurzeln/quadratwurzel-bestimmen`; Recap K1 = `wurzeln/recap` mit `Kurztest`; „K1 (quadratwurzeln)“ = `wurzeln-abschaetzen`; „K1 (reelle-zahlen) Komponente“ = `wurzel-zwei-einfangen` mit `Lupe`; „K1 (reelle-zahlen)“ = `reelle-zahlen`; „K1 und (wurzelgesetze)“ = `wurzelgesetze` und `wurzeln-vereinfachen`; „K2 und (potenzgesetze)“ = `potenzgesetze-produkt` und `potenzgesetze-potenz`; „K2 und (potenzen-ganzzahlige-exponenten)“ = `negative-exponenten` und `wissenschaftliche-schreibweise` mit `src/data/groessen.yaml`; „K2 und (n-te-wurzeln)“ = `dritte-wurzel` und `wurzeln-als-potenzen`. Skizzen: `.vibe/sketches/`.
 
 **Strang:** `mathematik/arithmetik` („Zahl und Operation“), Karte `https://lernapps.net/apps/map/mathematik.json` gelesen, `explainerFocus: strand`.
 
@@ -124,9 +126,10 @@ Lernende der Stufe 9-10 erschließen Quadratwurzeln, reelle Zahlen, Wurzel- und 
       off), and which misconception the feedback catches.
 - [x] Write under "Notes" the scope: what is in, what is out and why, the data range (for example "all main-group
       elements", never a silent "1–20"), the languages.
-- [ ] **Checkpoint:** research. Show in plain words: the strand or why none, the competencies by chapter, the didactic
+- [x] **Checkpoint:** research. Show in plain words: the strand or why none, the competencies by chapter, the didactic
       approach, the scope, every "(guess)", the sources and what is unchecked, the archetype and its reason. Stop and
       wait. Changes: change them, then ask again.
+      Creator: Orchestrator: Recherche freigegeben; Recap mit Komponente Kurztest; Zuschnitt 12+2 ok
 
 ### Answers
 
@@ -165,15 +168,15 @@ Lernende der Stufe 9-10 erschließen Quadratwurzeln, reelle Zahlen, Wurzel- und 
 
 ### Tasks
 
-- [ ] Map the content as "Map the content" of skill `lernapps-explainer-design` says, and write the result under
+- [x] Map the content as "Map the content" of skill `lernapps-explainer-design` says, and write the result under
       "Content method".
-- [ ] Choose a pattern per competency as skill `lernapps-exercise-patterns` says, and add it to "Content method".
-- [ ] Add to "Content method" one line per page, as "Engagement" of skill `lernapps-explainer-design` says: the
+- [x] Choose a pattern per competency as skill `lernapps-exercise-patterns` says, and add it to "Content method".
+- [x] Add to "Content method" one line per page, as "Engagement" of skill `lernapps-explainer-design` says: the
       opening task, the change of activity, the reward, the story.
-- [ ] Add the tasks of Code, each one a piece of work that ends in a commit. First the pattern: one complete page or
+- [x] Add the tasks of Code, each one a piece of work that ends in a commit. First the pattern: one complete page or
       screen, `npx --no -- lernapps plan add --at pattern "<task>"`. Then the others, one call each:
       `npx --no -- lernapps plan add --at pages "<task>"`. Each task says what it builds and what it shows.
-- [ ] Draw a sketch of each screen, component or interactive exercise: a static SVG or image, or the steps with what
+- [x] Draw a sketch of each screen, component or interactive exercise: a static SVG or image, or the steps with what
       learners see after each. Keep the files in `.vibe/sketches/`.
 - [ ] Show the creator, short: goal, competencies by chapter, the Code tasks, the sketches, and the content method in
       plain words (what learners see and do, what the app cannot do). At most 2 questions.
@@ -187,6 +190,62 @@ checks and what it cannot; how a later agent adds a chapter. It becomes the cont
 <!-- An explainer: per figure, model and component its learning action in two to four sentences
 (`explainer-representation-explained`); per page its prerequisites the app does not practise, and which get a recap
 page, which a link. -->
+
+**Seiten und Bausteine (Baustein → Seite; Ordnung nach `requires`).** Ids der Seiten sind fest und bleiben. Abschnitte aller Seiten: `einstieg` (Aufgabe vorweg), `idee` (Herleitung am Bild), `regel`, `beispiel`, `uebung`.
+
+| Kapitel | Seite (id) | Baustein | Neue Idee |
+|---|---|---|---|
+| `wurzeln` | `recap` Das brauchst du hier | recap: potenzen, zahlen-vergleichen-ordnen, dezimalbrueche-rechnen, rationale-zahlen-rechnen | nichts Neues |
+| | `quadratwurzel-bestimmen` | quadratwurzeln | Fläche gegeben, Seite gesucht: √ als Umkehrung des Quadrierens |
+| | `wurzeln-abschaetzen` | quadratwurzeln | zwischen zwei Quadratzahlen einschließen, Näherungswert |
+| | `wurzel-zwei-einfangen` | reelle-zahlen | Intervallschachtelung: √2 mit Lupe, nie getroffen |
+| | `reelle-zahlen` | reelle-zahlen | rational (abbrechend/periodisch) vs. irrational; ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ; Zahlengerade ohne Lücken |
+| | `wurzelgesetze` | wurzelgesetze | √a·√b = √(a·b), √a : √b = √(a:b), an Quadraten aus Quadraten |
+| | `wurzeln-vereinfachen` | wurzelgesetze | Quadratzahl als Faktor herausziehen, gleichartige Wurzeln zusammenfassen |
+| `potenzen` | `recap` Das brauchst du hier | recap: terme-umformen, potenzen | nichts Neues |
+| | `potenzgesetze-produkt` | potenzgesetze | gleiche Basis: Faktoren ausschreiben, Exponenten addieren/subtrahieren |
+| | `potenzgesetze-potenz` | potenzgesetze | Potenz einer Potenz; gleicher Exponent bei verschiedenen Basen |
+| | `negative-exponenten` | potenzen-ganzzahlige-exponenten | Reise zu kleinen Dingen: Exponent −1 heißt Kehrwert; a⁰ = 1 |
+| | `wissenschaftliche-schreibweise` | potenzen-ganzzahlige-exponenten | m · 10ⁿ mit 1 ≤ m < 10; Rechnen mit Größenordnungen |
+| | `dritte-wurzel` | n-te-wurzeln | Würfel: Volumen gegeben, Kante gesucht; n-te Wurzel, gerade und ungerade n |
+| | `wurzeln-als-potenzen` | n-te-wurzeln | Bruch-Exponent: (a^(1/n))ⁿ = a erzwingt ⁿ√a |
+
+**Übungsmuster (je Baustein):**
+- Quadratwurzeln: `generated` „Seite aus Fläche“ (Fläche = Quadratzahl, dann Nicht-Quadratzahl mit Rundung auf 2 Stellen), `number`, `ordering` (Wurzeln der Größe nach), `true-false` mit Grund (√(a²+b²) = a+b). Fehler: halbiert, Quadratzahl statt Wurzel, Rundung.
+- Reelle Zahlen: `single-choice`/`multiple-choice` „rational oder irrational?“ mit Dezimalentwicklung als Material, `matching` (Zahl ↔ kleinste Zahlmenge), `ordering` auf der Zahlengerade. Fehler: π = 22/7, 0,333… irrational, √16 irrational.
+- Wurzelgesetze: `generated` „vereinfache“, Antwort a·√b (Eingabe `a√b` als zwei Felder: Faktor und Radikand), `matching` Term ↔ Term, `true-false`. Fehler: √(a+b) = √a + √b, 25·√2 statt 5·√2.
+- Potenzgesetze: `generated` „schreibe als eine Potenz“ (Basis, Exponent), Typfehler: Basen multipliziert, Exponenten multipliziert statt addiert, (a³)² = a⁵.
+- Negative Exponenten und wissenschaftliche Schreibweise: `generated` aus Datei `src/data/groessen.yaml` (Größen der Reise), Antwort Mantisse und Exponent; Bruchschreibweise; Fehler: 2⁻³ = −8, Komma falsche Richtung.
+- N-te Wurzeln: `generated` „n-te Wurzel“ (³√27, ⁴√81, ³√−8, ⁵√32), `true-false` (⁴√−16), Umschreiben √a ↔ a^(1/2). Fehler: ³√27 = 9, a^(1/2) = a:2.
+- Zufallsaufgaben nur mit Rechenprobe in der Formel (`round`, `sqrt`), nie Division durch 0, nie Wurzel aus negativer Zahl bei geradem n, feste Seeds im Build-Test.
+- Schreibweisen nach regeln.md Abschnitt 2: Dezimalkomma, Minus U+2212, `·`, Brüche gesetzt, Variablen kursiv. Rückmeldungen in `generated` dürfen `a/b` nutzen (Ausnahme, Fund W28), Stellen werden im Plan gezählt.
+
+**Figuren und Komponenten (Lernhandlung):**
+- Quadrat und Würfel (SVG-`image`s): Quadrat mit Fläche 2 m², Seite markiert „?“; Würfel mit Volumen 8 cm³, Kante „?“. Der Text sagt: das Quadrat ist die Fläche, die Seite ist gesucht; Lernende rechnen rückwärts. Das Bild zeigt nie die Lösung. `alt`: beschreibt das Quadrat und die gesuchte Seite.
+- Zahlengerade mit Lupe (`wurzel-zwei-einfangen`): vier SVG-Bilder nebeneinander (Ausschnitt 1 bis 2, 1,4 bis 1,5, 1,41 bis 1,42, 1,414 bis 1,415) mit Beschriftung der Grenzen; jede Stufe fängt √2 mit einer Dezimale mehr ein. Die Komponente `Lupe` (ein Regler für die Stufe, Zahlengerade zoomt, Grenzen und Quadrate der Grenzen erscheinen, Tastatur, Textalternative) ist die interaktive Form; ohne JS die vier Bilder. Begründung: ein Regler, dessen Bild sich ändert, geht mit keinem Block. Was sie nicht kann: nichts prüfen; Prüfung steht in den Aufgaben darunter.
+- Zehnerpotenz-Leiter (`negative-exponenten`, `wissenschaftliche-schreibweise`): `table` mit Größe, Länge in m, Zehnerpotenz (Daten aus `src/data/groessen.yaml`, jede Tatsache einmal); `generated` zieht daraus. Kein Komponent.
+- `Kurztest` (Recap-Seiten): eine Frage, eine Auswahl, sofortige Rückmeldung mit Grund, nichts gezählt oder gespeichert, Tastatur und Textalternative; die Komponente ist keine Aufgabe nach Schema, daher bleibt `topic-has-exercises` ruhig. Eigene Komponente nach der Beschreibung in regeln.md Abschnitt 7 (das Vorbild-Repo liegt außerhalb meines GitHub-Zugriffs, ich schreibe sie selbst; Fund fürs Werkzeug W31 bleibt).
+- Recap-Seite: Kopf „Das brauchst du für dieses Kapitel“, je Baustein eine Überschrift mit Namen der Karte, Fachbegriffe fett mit Zahlenbeispiel (auch im Glossar), Beispielkasten, Kurztest, Satz „Wenn nicht: <Baustein>, Kartenseite https://lernapps.net/apps/map/mathematik/c/<id>/“, Schluss „Du bist bereit, wenn du …“. Kein Link in andere Apps.
+
+**Engagement je Seite (Eröffnung · Wechsel · Belohnung · Geschichte):**
+- `quadratwurzel-bestimmen`: Beet mit 2 m², Seite? Schätzen vor dem Lesen · Bild, Rechnen, Lesen im Wechsel · „Ich kenne √ als Umkehrung“ · Fall Gartenbau, Fläche 16 m².
+- `wurzeln-abschaetzen`: Zwei Quadratzahlen finden, die 50 einschließen · Intervall halbieren, Taschenrechner · Näherung auf zwei Stellen · weiter beim Beet 2 m²: genaue Seite.
+- `wurzel-zwei-einfangen`: Lupe: wie viele Stellen? · Regler, Tabelle der Quadrate · „√2 lässt sich nie als Bruch fangen“ · Fall: Diagonale/Seite 2 m² kein Bruch.
+- `reelle-zahlen`: Dezimalentwicklung von 1/7, 0,25, √2 vergleichen · Sortieren, Zuordnen · Zahlenmengen als Karte · Zahlengerade hat keine Lücken mehr.
+- `wurzelgesetze`: Quadrat aus zwei Quadraten (Flächen 4 und 9) · Muster erkennen, dann Regel · „√ geht über Mal und Geteilt, nicht über Plus“ · Beetplan mit mehreren Quadraten.
+- `wurzeln-vereinfachen`: √50 als Seite; 25 als Faktor · Zeile für Zeile · „5·√2“ als Standardform · Pflasterfläche.
+- `potenzgesetze-produkt`: 2³·2⁴ ausschreiben und zählen · Bild, dann Regel, dann neue Zahlen · Exponentenregel · Zehnerpotenz-Reise, erste Etappe: Erde bis Sonne.
+- `potenzgesetze-potenz`: (2³)² ausschreiben · Zeile für Zeile · Vergleich der drei Gesetze · Reise: Milchstraße.
+- `negative-exponenten`: Reise zu kleinen Dingen: Haardicke, Zelle, Atom · Exponent fällt um 1, Wert durch 10 · 10⁻ⁿ als Bruch · Reise: Atom.
+- `wissenschaftliche-schreibweise`: Zwei Größen vergleichen · Umrechnen, Rechnen · Größenordnung · Reise: Universum zu Atom, Abschluss mit Rückblick.
+- `dritte-wurzel`: Würfel 8 cm³, Kante? · Würfel, Potenzen, Wurzel · n-te Wurzel für n = 3, 4, 5 · Fall Würfelverpackung.
+- `wurzeln-als-potenzen`: Welche Zahl hoch 2 gibt 5? Potenzgesetz erzwingt a^(1/2) · Herleitung in 3 Zeilen, dann Aufgaben · „Wurzeln sind Potenzen“ · Rückblick auf beide Kapitel.
+- Wiederholung gleicher Fakten nur in anderer Form (Bild, Tabelle, Aufgabe), nicht dieselben Worte zweimal.
+
+**Daten:** `src/data/groessen.yaml`: Felder `name`, `meter` (Mantisse), `exponent`, `hinweis` (je Größe einmal, gerundet auf Größenordnung): Atomkern 1·10⁻¹⁵ m, Atom 1·10⁻¹⁰ m, Zelle 1·10⁻⁵ m, Haardicke 1·10⁻⁴ m, Mensch 1,7 m, Erde-Sonne 1,5·10¹¹ m, Lichtjahr 9,5·10¹⁵ m, beobachtbares Universum 8,8·10²⁶ m (Richtwerte, vom fachlichen Prüfer zu bestätigen).
+
+**Wie ein späterer Agent ein Kapitel ergänzt:** Karte lesen, `competencies` der Seite aus der Karte, Seitenid und Abschnittsids wie oben, Fehlerdiagnose je Aufgabe, Daten einmal in `src/data/`, Recap nach regeln.md Abschnitt 7.
+**Zählung `a/b` in Rückmeldungen (Fund W28):** wird beim Bauen gezählt und hier nachgetragen.
 
 ## Code
 
@@ -211,11 +270,22 @@ page, which a link. -->
       `references/language-tasks.md` in the same folder. A component in the plan: also `references/components.md`.
 - [ ] Decide whether the app needs `scope`, as "`scope`" in
       `.agents/skills/lernapps-explainer/references/structure.md` says. Write the choice under "Key decisions".
-<!-- tasks: pattern: the one page or screen that is the pattern for the others -->
+- [ ] Musterseite K1 komplett bauen: Einstieg (Beet 2 m²), Quadrat-SVG, Herleitung, Beispiel, Übung (generated, number, true-false) mit Fehlerdiagnose; Lernenden-Prüfer (Klasse 10) durchspielen lassen und Befunde umsetzen.
+<!-- tasks: pattern (1 added): the one page or screen that is the pattern for the others -->
 - [ ] **Checkpoint:** the pattern page. Load skill `lernapps-learner-check` and do its learner check on the page. Fix
       what it finds. Then show the creator the page and ask whether the others may follow it. Stop and wait. A
       change: change the pattern first.
-<!-- tasks: pages: the other pages or screens, after the pattern -->
+- [ ] Recap K1 mit Komponente (potenzen, zahlen-vergleichen-ordnen, dezimalbrueche-rechnen, rationale-zahlen-rechnen), Fachbegriffe im Glossar.
+- [ ] K1 (quadratwurzeln): Einschließen, Näherungswert, Übung.
+- [ ] K1 (reelle-zahlen): Komponente mit statischen Bildern, Übung.
+- [ ] K1 (reelle-zahlen): rational/irrational, Zahlbereiche, Übung.
+- [ ] K1 und (wurzelgesetze) mit Übungen.
+- [ ] Recap K2 (terme-umformen, potenzen) mit Kurztest.
+- [ ] K2 und (potenzgesetze) mit Übungen.
+- [ ] K2 und (potenzen-ganzzahlige-exponenten) mit Datei , Übungen.
+- [ ] K2 und (n-te-wurzeln) mit Übungen, Rückblick auf beide Kapitel.
+- [ ] Prüfer vor Veröffentlichen: fachlicher Prüfer und Lernenden-Prüfer über alle Seiten, Befunde unter Review im Plan, Änderungen danach nachprüfen.
+<!-- tasks: pages (10 added): the other pages or screens, after the pattern -->
 - [ ] Update the content guide so that it describes the app as built (`app-content-matches`).
 - [ ] Run `npx --no -- lernapps check` until it passes.
 - [ ] Look at every screen and state, at 360 px and on a desktop, as "Look at the app" of skill `lernapps-cli` says.
