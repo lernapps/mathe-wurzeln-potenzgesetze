@@ -109,8 +109,8 @@ blocks:
               data: groessen
         task:
           text:
-            "Eine Länge ist {{e.mantisse}} · 10^{{e.exponent}} m groß (Größe: {{e.name}}). In Millimetern ist sie {{e.mantisse}}
-            · 10^k mm. Wie groß ist k?"
+            'Eine Länge ist ${{e.mantisse}} \cdot 10^{{{e.exponent}}}$ m groß (Größe: {{e.name}}). In Millimetern ist sie
+            ${{e.mantisse}} \cdot 10^k$ mm. Wie groß ist k?'
         answer:
           value: e.exponent + 3
           compare:
@@ -123,7 +123,7 @@ blocks:
             message: 1 m = 1000 mm = 10³ mm. Der Exponent ändert sich beim Umrechnen.
         hint: 1 m = 10³ mm. Die Zahl wird mit 10³ malgenommen.
         steps:
-          - "{{e.mantisse}} · 10^{{e.exponent}} m = {{e.mantisse}} · 10^{{e.exponent}} · 10³ mm"
+          - ${{e.mantisse}} \cdot 10^{{{e.exponent}}}$ m = ${{e.mantisse}} \cdot 10^{{{e.exponent}}} \cdot 10^3$ mm
           - Der Exponent ist {{e.exponent}} + 3 = {{answer}}.
       - type: generated
         id: produkt-wissenschaftlich
@@ -149,7 +149,7 @@ blocks:
           - m * n != m + n
           - m * n != m + n + 1
         task:
-          text: ({{a}} · 10^{{m}}) · ({{b}} · 10^{{n}}) = c · 10^k mit 1 ≤ c < 10. Wie groß ist k?
+          text: $({{a}} \cdot 10^{{{m}}}) \cdot ({{b}} \cdot 10^{{{n}}}) = c \cdot 10^k$ mit $1 \le c < 10$. Wie groß ist k?
         answer:
           value: m + n
           compare:
@@ -182,7 +182,7 @@ blocks:
               - 2
               - 6
         task:
-          text: "{{a}} · 10^{{m}} = c · 10^k mit 1 ≤ c < 10. Wie groß ist k?"
+          text: ${{a}} \cdot 10^{{{m}}} = c \cdot 10^k$ mit $1 \le c < 10$. Wie groß ist k?
         answer:
           value: m + 1
           compare:
@@ -195,7 +195,7 @@ blocks:
             message: Das Komma geht nach links, dann wird der Exponent größer, nicht kleiner.
         hint: "{{a}} = c · 10, wobei c zwischen 1 und 10 liegt."
         steps:
-          - "{{a}} · 10^{{m}} = c · 10 · 10^{{m}}"
+          - ${{a}} \cdot 10^{{{m}}} = c \cdot 10 \cdot 10^{{{m}}}$
           - k = {{m}} + 1 = {{answer}}
       - type: ordering
         id: wissenschaftlich-ordnen
@@ -221,14 +221,14 @@ blocks:
         id: zehnerpotenzen-reise
         text:
           "Wie viele Zehnerpotenzen liegen ungefähr zwischen einem Atom (10⁻¹⁰ m) und der Erde (10⁷ m)? Gib k mit 10⁷ : 10⁻¹⁰
-          = 10^k an."
+          = 10 hoch k an."
         answer: 17
         tolerance: 0
         mistakes:
           - answer: -3
             message: Du hast 7 + (−10) gerechnet. Beim Teilen subtrahierst du den Exponenten des Nenners, also 7 − (−10).
         hint: Beim Teilen wird subtrahiert, auch bei negativen Exponenten.
-        explanation: "10⁷ : 10⁻¹⁰ = 10^(7 − (−10)) = 10¹⁷. Das sind 17 Zehnerpotenzen."
+        explanation: "10⁷ : 10⁻¹⁰ = 10 hoch (7 − (−10)) = 10¹⁷. Das sind 17 Zehnerpotenzen."
         links:
           - title: Baustein auf der Lernlandkarte
             url: https://lernapps.net/apps/map/mathematik/c/potenzen-ganzzahlige-exponenten/

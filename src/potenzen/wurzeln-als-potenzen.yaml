@@ -16,7 +16,7 @@ blocks:
           mit Bruch-Exponenten zu schreiben, und kannst damit rechnen.
       - type: number
         id: halber-exponent
-        text: Es gilt 3^x · 3^x = 3¹. Welche Zahl x erfüllt das? Gib sie als Dezimalzahl an.
+        text: Es gilt 3ˣ · 3ˣ = 3¹. Welche Zahl x erfüllt das? Gib sie als Dezimalzahl an.
         answer: 0.5
         tolerance: 0
         mistakes:

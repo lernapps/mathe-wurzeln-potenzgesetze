@@ -86,7 +86,7 @@ blocks:
         where:
           - m * n != m + n
         task:
-          text: Es gilt {{b}}^{{m}} · {{b}}^{{n}} = {{b}}^k. Wie groß ist k?
+          text: Es gilt ${{b}}^{{{m}}} \cdot {{b}}^{{{n}}} = {{b}}^k$. Wie groß ist k?
         answer:
           value: m + n
           compare:
@@ -99,7 +99,7 @@ blocks:
             message: Du hast subtrahiert. Das passiert beim Teilen, nicht beim Malnehmen.
         hint: Schreibe beide Potenzen aus und zähle alle Faktoren {{b}}.
         steps:
-          - "{{b}}^{{m}} · {{b}}^{{n}} = {{b}}^({{m}} + {{n}})"
+          - ${{b}}^{{{m}}} \cdot {{b}}^{{{n}}} = {{b}}^{{{m}} + {{n}}}$
           - Also k = {{answer}}.
       - type: generated
         id: quotient-potenzen
@@ -119,7 +119,7 @@ blocks:
               - 1
               - 3
         task:
-          text: "Es gilt {{b}}^{{m}} : {{b}}^{{n}} = {{b}}^k. Wie groß ist k?"
+          text: "Es gilt ${{b}}^{{{m}}} : {{b}}^{{{n}}} = {{b}}^k$. Wie groß ist k?"
         answer:
           value: m - n
           compare:
@@ -132,7 +132,7 @@ blocks:
             message: Du hast die Exponenten multipliziert. Beim Teilen bleiben nach dem Kürzen m minus n Faktoren übrig.
         hint: Streiche gleiche Faktoren im Zähler und im Nenner. Wie viele bleiben übrig?
         steps:
-          - "{{b}}^{{m}} : {{b}}^{{n}} = {{b}}^({{m}} − {{n}})"
+          - "${{b}}^{{{m}}} : {{b}}^{{{n}}} = {{b}}^{{{m}} - {{n}}}$"
           - Also k = {{answer}}.
       - type: single-choice
         id: umformung
@@ -186,7 +186,7 @@ blocks:
             url: https://lernapps.net/apps/map/mathematik/c/potenzgesetze/
       - type: number
         id: kombination
-        text: "Es gilt 5³ · 5⁴ : 5² = 5^k. Wie groß ist k?"
+        text: "Es gilt 5³ · 5⁴ : 5² = 5 hoch k. Wie groß ist k?"
         answer: 5
         tolerance: 0
         mistakes:

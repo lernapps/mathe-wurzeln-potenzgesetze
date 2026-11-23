@@ -105,7 +105,7 @@ blocks:
               - 4
               - 6
         task:
-          text: Schreibe 10^−{{n}} als Dezimalzahl.
+          text: Schreibe $10^{-{{n}}}$ als Dezimalzahl.
         answer:
           value: 1 / pow(10, n)
           compare:
@@ -115,14 +115,16 @@ blocks:
               tolerance: 0
         mistakes:
           - value: pow(10, n)
-            message: Das ist 10^{{n}} mit positivem Exponenten. Der Exponent ist aber negativ, der Wert ist kleiner als 1.
+            message:
+              Das ist 10 hoch {{n}}, also mit positivem Exponenten. Der Exponent ist aber negativ, der Wert ist kleiner als
+              1.
           - value: 0 - 1 / pow(10, n)
             message: Ein negativer Exponent macht die Zahl nicht negativ, nur klein.
           - value: 1 / (10 * n)
             message: Du hast 10 mit {{n}} malgenommen. Der Exponent sagt, wie oft du durch 10 teilst.
         hint: "Die Reihe nach unten: Bei jedem Schritt wird durch 10 geteilt."
         steps:
-          - "10^−{{n}} = 1 : 10^{{n}}"
+          - "$10^{-{{n}}} = 1 : 10^{{{n}}}$"
           - Das ist {{answer}}.
       - type: generated
         id: nenner-bestimmen
@@ -141,7 +143,7 @@ blocks:
         where:
           - b * n != pow(b, n)
         task:
-          text: "Es gilt {{b}}^−{{n}} = 1 : d. Wie groß ist d?"
+          text: Es gilt ${{b}}^{-{{n}}} = \frac{1}{d}$. Wie groß ist d?
         answer:
           value: pow(b, n)
           compare:
@@ -149,12 +151,12 @@ blocks:
               format: integer
         mistakes:
           - value: b * n
-            message: Du hast Basis mal Exponent gerechnet. Der Nenner ist die Potenz {{b}}^{{n}}.
+            message: Du hast Basis mal Exponent gerechnet. Der Nenner ist die Potenz {{b}} hoch {{n}}.
           - value: 0 - pow(b, n)
             message: "Der Nenner ist positiv: Das Minus im Exponenten macht nur den Kehrwert."
-        hint: a^−n ist der Kehrwert von a^n.
+        hint: Eine Potenz mit negativem Exponenten ist der Kehrwert der Potenz mit positivem Exponenten.
         steps:
-          - "{{b}}^−{{n}} = 1 : {{b}}^{{n}}"
+          - ${{b}}^{-{{n}}} = \frac{1}{{{b}}^{{{n}}}}$
           - Also d = {{answer}}.
       - type: single-choice
         id: fuenf-minus-zwei
@@ -212,7 +214,7 @@ blocks:
           - text: 10⁻¹⁷-mal
             correct: false
             info: Du hast addiert und das falsche Vorzeichen. Beim Teilen wird subtrahiert.
-        explanation: "10⁻⁷ : 10⁻¹⁰ = 10^(−7 − (−10)) = 10³. Rund 1000 Atome nebeneinander sind so lang wie ein Virus."
+        explanation: "10⁻⁷ : 10⁻¹⁰ = 10 hoch (−7 − (−10)) = 10³. Rund 1000 Atome nebeneinander sind so lang wie ein Virus."
         links:
           - title: Baustein auf der Lernlandkarte
             url: https://lernapps.net/apps/map/mathematik/c/potenzen-ganzzahlige-exponenten/

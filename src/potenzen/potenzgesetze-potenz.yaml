@@ -94,7 +94,7 @@ blocks:
           - m * n != m + n
           - m * n != pow(m, n)
         task:
-          text: Es gilt ({{b}}^{{m}})^{{n}} = {{b}}^k. Wie groß ist k?
+          text: Es gilt $({{b}}^{{{m}}})^{{{n}}} = {{b}}^k$. Wie groß ist k?
         answer:
           value: m * n
           compare:
@@ -105,9 +105,9 @@ blocks:
             message: Du hast addiert. Bei einer Potenz einer Potenz werden die Exponenten multipliziert.
           - value: pow(m, n)
             message: Du hast m hoch n gerechnet. Die Exponenten werden einfach malgenommen.
-        hint: "({{b}}^{{m}})^{{n}} heißt: {{b}}^{{m}} steht {{n}}-mal als Faktor da."
+        hint: "{{b}} hoch {{m}} steht {{n}}-mal als Faktor da."
         steps:
-          - ({{b}}^{{m}})^{{n}} = {{b}}^({{m}} · {{n}})
+          - $({{b}}^{{{m}}})^{{{n}}} = {{b}}^{{{m}} \cdot {{n}}}$
           - Also k = {{answer}}.
       - type: generated
         id: produkt-in-klammer
@@ -130,7 +130,7 @@ blocks:
           - a != b
           - a * pow(b, n) != a * b * n
         task:
-          text: Berechne ({{a}} · {{b}})^{{n}}.
+          text: Berechne $({{a}} \cdot {{b}})^{{{n}}}$.
         answer:
           value: pow(a * b, n)
           compare:
@@ -143,7 +143,7 @@ blocks:
             message: Du hast mit dem Exponenten malgenommen. Der Exponent sagt, wie oft das Produkt als Faktor steht.
         hint: Rechne erst die Klammer aus oder verteile den Exponenten auf beide Faktoren.
         steps:
-          - ({{a}} · {{b}})^{{n}} = {{a}}^{{n}} · {{b}}^{{n}}
+          - $({{a}} \cdot {{b}})^{{{n}}} = {{a}}^{{{n}}} \cdot {{b}}^{{{n}}}$
           - Das ist {{answer}}.
       - type: single-choice
         id: potenz-potenz-sc

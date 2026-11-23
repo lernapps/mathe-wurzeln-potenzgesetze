@@ -111,8 +111,8 @@ blocks:
             message: Das ist die Zahl unter der Wurzel selbst. Gesucht ist die Zahl, die {{e.n}}-mal als Faktor {{e.a}} ergibt.
         hint: Probiere kleine Zahlen und potenziere sie mit {{e.n}}.
         steps:
-          - Gesucht ist w mit w^{{e.n}} = {{e.a}}.
-          - Mit {{answer}}^{{e.n}} = {{e.a}} ist die Wurzel {{answer}}.
+          - Gesucht ist w mit $w^{{{e.n}}} = {{e.a}}$.
+          - Mit ${{answer}}^{{{e.n}}} = {{e.a}}$ ist die Wurzel {{answer}}.
       - type: single-choice
         id: dritte-64
         text: Was ist die dritte Wurzel aus 64?
