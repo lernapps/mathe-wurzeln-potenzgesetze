@@ -72,10 +72,10 @@ blocks:
               info: 6 ist der größte gemeinsame Teiler von 12 und 18.
             - text: 3 · (4a + 6b)
               correct: false
-              info: "Das stimmt, geht aber noch weiter: In der Klammer haben 4 und 6 noch den Teiler 2."
+              info: "Das ist ausgeklammert, aber nicht so weit wie möglich: In der Klammer haben 4 und 6 noch den Teiler 2."
             - text: 2 · (6a + 9b)
               correct: false
-              info: "Das stimmt, geht aber noch weiter: In der Klammer haben 6 und 9 noch den Teiler 3."
+              info: "Das ist ausgeklammert, aber nicht so weit wie möglich: In der Klammer haben 6 und 9 noch den Teiler 3."
           right: Richtig.
           wrong: Nicht richtig.
         nojs:
@@ -130,7 +130,9 @@ blocks:
               info: 2⁵ = 32 und 5² = 25, 32 − 25 = 7.
             - text: "0"
               correct: false
-              info: "Du hast Basis und Exponent vertauscht gerechnet: 2 · 5 = 5 · 2. Das sind Produkte, keine Potenzen."
+              info:
+                "Du hast 2 · 5 und 5 · 2 gerechnet. Eine Potenz ist ein Produkt aus gleichen Faktoren: 2⁵ ist 2 · 2 · 2 · 2
+                · 2."
           right: Richtig.
           wrong: Nicht richtig.
         nojs:

@@ -133,7 +133,7 @@ blocks:
               info: 0,25 hat 2 Zehntel, 0,125 nur 1.
             - text: 0,3
               correct: false
-              info: 0,3 hat 3 Zehntel und ist die größte der vier Zahlen.
+              info: 0,3 hat 3 Zehntel, 0,125 nur 1 Zehntel.
           right: Richtig.
           wrong: Nicht richtig.
         nojs:
@@ -213,9 +213,9 @@ blocks:
         props:
           question: Was ist 0,12 · 0,5?
           options:
-            - text: 0,17
+            - text: 0,62
               correct: false
-              info: Das wäre 0,12 + 0,05. Hier wird malgenommen.
+              info: Das wäre 0,12 + 0,5. Hier wird malgenommen.
             - text: 0,06
               correct: true
               info: "12 · 5 = 60, drei Stellen hinter dem Komma: 0,060 = 0,06."
@@ -228,7 +228,7 @@ blocks:
           right: Richtig.
           wrong: Nicht richtig.
         nojs:
-          "Kurztest: Was ist 0,12 mal 0,5? Zur Wahl stehen 0,06, 0,6, 0,006 und 0,17. Richtig ist 0,06, denn 12 mal 5 ist
+          "Kurztest: Was ist 0,12 mal 0,5? Zur Wahl stehen 0,06, 0,6, 0,006 und 0,62. Richtig ist 0,06, denn 12 mal 5 ist
           60 und es gibt zusammen drei Stellen hinter dem Komma."
       - type: vue-component
         id: test-dezimal-quadrat
