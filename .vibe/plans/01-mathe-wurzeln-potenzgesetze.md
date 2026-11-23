@@ -8,7 +8,7 @@ phase: code
 # prePushFailures: failed pre-push runs, written by the hook.
 prePushFailures: 0
 # failedChecks: failed rules and runs, written by lernapps check and the hooks.
-failedChecks: { app-content-guide: 4, checks-pass: 6, explainer-readable-without-js: 3 }
+failedChecks: { app-content-guide: 4, checks-pass: 7, explainer-readable-without-js: 3 }
 ---
 
 # Plan: mathe-wurzeln-potenzgesetze, first version
@@ -50,6 +50,8 @@ Lernende der Stufe 9-10 erschließen Quadratwurzeln, reelle Zahlen, Wurzel- und 
 **Hinweis zum Ablauf:** Die Interview-Aufgaben (Ziel, Lernende, Inhalt, Menge, Sprache, Begriffe) beantwortet der Auftragstext aus dem Issue 392 und den Regeln, nicht ein Mensch im Chat. Die Aufgaben 3-6 der Explore-Phase habe ich gesammelt abgehakt, nachdem ich Karte, Skills und README gelesen hatte.
 
 **Hinweis zu den Code-Aufgaben:** Beim Anlegen haben Backticks im Shell-Befehl Seiten-Ids aus den Aufgabentexten verschluckt (nicht per Hand korrigierbar, `plan-file`). Die Aufgaben meinen: Musterseite = `wurzeln/quadratwurzel-bestimmen`; Recap K1 = `wurzeln/recap` mit `Kurztest`; „K1 (quadratwurzeln)“ = `wurzeln-abschaetzen`; „K1 (reelle-zahlen) Komponente“ = `wurzel-zwei-einfangen` mit `Lupe`; „K1 (reelle-zahlen)“ = `reelle-zahlen`; „K1 und (wurzelgesetze)“ = `wurzelgesetze` und `wurzeln-vereinfachen`; „K2 und (potenzgesetze)“ = `potenzgesetze-produkt` und `potenzgesetze-potenz`; „K2 und (potenzen-ganzzahlige-exponenten)“ = `negative-exponenten` und `wissenschaftliche-schreibweise` mit `src/data/groessen.yaml`; „K2 und (n-te-wurzeln)“ = `dritte-wurzel` und `wurzeln-als-potenzen`. Skizzen: `.vibe/sketches/`.
+
+**Musterseite, Lernenden-Prüfer (zwei Unteragenten, Klasse 10, getrennt vom Schreiber):** Lauf 1 las YAML und Screenshot, Lauf 2 spielte die gebaute Seite im Browser (1280 und 360 px) durch. Umgesetzt: Begriffe erklärt (Einheitsquadrat, Quadratzahl, Quadrat einer Zahl, Einschließen, Umfang, „Wurzel aus“), wiederholte Formel entfernt, Bildunterschrift nennt das Einheitsquadrat, Hinweise mit Strategie statt festem Beispiel, Aufgabenpool ohne die Zahlen von Beispiel und Aufgaben, Fehlerrückmeldungen für 10, −5, ±1 und Umfang, Optionen von √81 ohne eingebaute Begründung, Grund für „nicht negativ“ im Text. Nicht geändert (Laufzeit): „.:“ in der Rückmeldung einer Auswahl, Meldung bei leerer Zahleneingabe, „Lösung“-Knopf schon nach dem ersten Fehler (regeln.md 3.3), `\sqrt{\ }` ergibt eine leere Formel, geschütztes Leerzeichen in Überschriften bricht den Test „heading levels“. Seite danach nicht erneut von einem Prüfer durchgespielt (Änderungen sind überwiegend Text; Stand: nur `lernapps check`).
 
 **Strang:** `mathematik/arithmetik` („Zahl und Operation“), Karte `https://lernapps.net/apps/map/mathematik.json` gelesen, `explainerFocus: strand`.
 
