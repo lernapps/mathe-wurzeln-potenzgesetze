@@ -1,4 +1,4 @@
 # yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
 title: Wurzeln und neue Zahlen
 summary: Zur Fläche eines Quadrats ist die Seite gesucht. So entstehen Quadratwurzeln, und die Zahlengerade wächst ein letztes Mal.
-pages: [recap, quadratwurzel-bestimmen, wurzeln-abschaetzen]
+pages: [recap, quadratwurzel-bestimmen, wurzeln-abschaetzen, wurzel-zwei-einfangen]
