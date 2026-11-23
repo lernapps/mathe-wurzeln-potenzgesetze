@@ -8,7 +8,7 @@ phase: code
 # prePushFailures: failed pre-push runs, written by the hook.
 prePushFailures: 0
 # failedChecks: failed rules and runs, written by lernapps check and the hooks.
-failedChecks: { accessible: 2, app-content-guide: 4, checks-pass: 10, explainer-readable-without-js: 3 }
+failedChecks: { accessible: 2, app-content-guide: 4, checks-pass: 12, explainer-readable-without-js: 3 }
 ---
 
 # Plan: mathe-wurzeln-potenzgesetze, first version
@@ -285,7 +285,7 @@ page, which a link. -->
 - [x] K1 (reelle-zahlen): Komponente mit statischen Bildern, Übung.
 - [x] K1 (reelle-zahlen): rational/irrational, Zahlbereiche, Übung.
 - [x] K1 und (wurzelgesetze) mit Übungen.
-- [ ] Recap K2 (terme-umformen, potenzen) mit Kurztest.
+- [x] Recap K2 (terme-umformen, potenzen) mit Kurztest.
 - [ ] K2 und (potenzgesetze) mit Übungen.
 - [ ] K2 und (potenzen-ganzzahlige-exponenten) mit Datei , Übungen.
 - [ ] K2 und (n-te-wurzeln) mit Übungen, Rückblick auf beide Kapitel.

@@ -1,0 +1,218 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Negative Exponenten
+description: "Potenzen mit negativem Exponenten als Bruch deuten: Auf der Reise ins Kleine fällt der Exponent unter null."
+competencies:
+  - potenzen-ganzzahlige-exponenten
+blocks:
+  - type: section
+    id: einstieg
+    title: Erste Aufgabe
+    blocks:
+      - type: text
+        text:
+          "Die Reise führt vom Menschen zu den kleinen Dingen: zu Haaren, Zellen und Atomen. Dort sind die Längen kleiner
+          als 1 m. Am Ende dieser Seite weißt du, was ein negativer Exponent bedeutet und wie du damit rechnest."
+      - type: number
+        id: reihe-weiter
+        text: In der Reihe 1000, 100, 10, … wird jede Zahl durch 10 geteilt. Welche Zahl kommt nach 10?
+        answer: 1
+        tolerance: 0
+        mistakes:
+          - answer: 0
+            message: "Durch 10 teilen ergibt nicht 0. 10 : 10 = 1."
+        hint: Teile 10 durch 10.
+        explanation: "10 : 10 = 1. Die nächste Zahl ist 1, danach folgt 0,1."
+        links:
+          - title: Baustein auf der Lernlandkarte
+            url: https://lernapps.net/apps/map/mathematik/c/potenzen-ganzzahlige-exponenten/
+  - type: section
+    id: idee
+    title: Die Reihe nach unten
+    blocks:
+      - type: text
+        text:
+          "Du schreibst die Reihe als Potenzen von 10. Mit jedem Schritt nach unten sinkt der Exponent um 1, und der Wert
+          wird durch 10 geteilt. Die Reihe darf unter null weitergehen:"
+      - type: table
+        caption: Zehnerpotenzen nach unten
+        header:
+          - Exponent
+          - Potenz
+          - Wert
+        rows:
+          - - "3"
+            - $10^3$
+            - "1000"
+          - - "2"
+            - $10^2$
+            - "100"
+          - - "1"
+            - $10^1$
+            - "10"
+          - - "0"
+            - $10^0$
+            - "1"
+          - - −1
+            - $10^{-1}$
+            - 0,1
+          - - −2
+            - $10^{-2}$
+            - 0,01
+          - - −3
+            - $10^{-3}$
+            - 0,001
+      - type: text
+        text:
+          So entsteht $10^0 = 1$. Und $10^{-1} = 0{,}1 = \frac{1}{10}$, $10^{-2} = \frac{1}{100}$. Eine Haardicke von rund
+          0,0001 m ist $10^{-4}$ m.
+  - type: section
+    id: regel
+    title: Negativer Exponent
+    blocks:
+      - type: definition
+        term: negativer Exponent
+        explanation: "Ein negativer Exponent bedeutet: Du nimmst den Kehrwert der Potenz mit dem positiven Exponenten."
+      - type: formula
+        formula: a^{-n} = \frac{1}{a^n}
+      - type: formula
+        formula: a^0 = 1
+      - type: text
+        text:
+          'Beide gelten für $a \neq 0$. Die Potenzgesetze von den letzten Seiten gelten weiter: $a^n \cdot a^{-n} = a^0 =
+          1$.'
+  - type: section
+    id: beispiel
+    title: Beispiel
+    blocks:
+      - type: example
+        title: 2⁻³
+        blocks:
+          - type: text
+            text: "Der Exponent ist negativ, also Kehrwert von $2^3$:"
+          - type: formula
+            formula: 2^{-3} = \frac{1}{2^3} = \frac{1}{8}
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: generated
+        id: zehnerpotenz-dezimal
+        given:
+          n:
+            int:
+              - 2
+              - 6
+        task:
+          text: Schreibe 10^−{{n}} als Dezimalzahl.
+        answer:
+          value: 1 / pow(10, n)
+          compare:
+            number:
+              format: decimal
+              decimals: 6
+              tolerance: 0
+        mistakes:
+          - value: pow(10, n)
+            message: Das ist 10^{{n}} mit positivem Exponenten. Der Exponent ist aber negativ, der Wert ist kleiner als 1.
+          - value: 0 - 1 / pow(10, n)
+            message: Ein negativer Exponent macht die Zahl nicht negativ, nur klein.
+          - value: 1 / (10 * n)
+            message: Du hast 10 mit {{n}} malgenommen. Der Exponent sagt, wie oft du durch 10 teilst.
+        hint: "Die Reihe nach unten: Bei jedem Schritt wird durch 10 geteilt."
+        steps:
+          - "10^−{{n}} = 1 : 10^{{n}}"
+          - Das ist {{answer}}.
+      - type: generated
+        id: nenner-bestimmen
+        given:
+          b:
+            oneOf:
+              - 2
+              - 3
+              - 4
+              - 5
+              - 10
+          n:
+            int:
+              - 2
+              - 4
+        where:
+          - b * n != pow(b, n)
+        task:
+          text: "Es gilt {{b}}^−{{n}} = 1 : d. Wie groß ist d?"
+        answer:
+          value: pow(b, n)
+          compare:
+            number:
+              format: integer
+        mistakes:
+          - value: b * n
+            message: Du hast Basis mal Exponent gerechnet. Der Nenner ist die Potenz {{b}}^{{n}}.
+          - value: 0 - pow(b, n)
+            message: "Der Nenner ist positiv: Das Minus im Exponenten macht nur den Kehrwert."
+        hint: a^−n ist der Kehrwert von a^n.
+        steps:
+          - "{{b}}^−{{n}} = 1 : {{b}}^{{n}}"
+          - Also d = {{answer}}.
+      - type: single-choice
+        id: fuenf-minus-zwei
+        text: Welche Zahl ist 5⁻²?
+        options:
+          - text: $\frac{1}{25}$
+            correct: true
+            info: 5⁻² ist der Kehrwert von 5² = 25.
+          - text: −25
+            correct: false
+            info: Das Minus im Exponenten macht die Zahl nicht negativ.
+          - text: −10
+            correct: false
+            info: Das wäre 5 · (−2). Ein Exponent ist kein Faktor.
+          - text: $\frac{1}{10}$
+            correct: false
+            info: "Das wäre 1 : (5 · 2). Der Nenner ist 5 · 5 = 25."
+        explanation: "Ein negativer Exponent bedeutet den Kehrwert: 5⁻² = 1 : 5² = 1 : 25."
+        links:
+          - title: Baustein auf der Lernlandkarte
+            url: https://lernapps.net/apps/map/mathematik/c/potenzen-ganzzahlige-exponenten/
+      - type: true-false
+        id: null-hoch
+        text: Es gilt 10⁰ = 0.
+        answer: false
+        explanation: In der Reihe 100, 10, … folgt nach 10 die Zahl 1, also 10⁰ = 1.
+        links:
+          - title: Baustein auf der Lernlandkarte
+            url: https://lernapps.net/apps/map/mathematik/c/potenzen-ganzzahlige-exponenten/
+      - type: ordering
+        id: zehnerpotenzen-ordnen
+        text: Ordne die Zahlen von klein nach groß.
+        items:
+          - 10⁻³
+          - 10⁻¹
+          - 10⁰
+          - 10²
+        explanation: 10⁻³ = 0,001; 10⁻¹ = 0,1; 10⁰ = 1; 10² = 100.
+        links:
+          - title: Baustein auf der Lernlandkarte
+            url: https://lernapps.net/apps/map/mathematik/c/potenzen-ganzzahlige-exponenten/
+      - type: single-choice
+        id: atom-virus
+        text: Ein Atom ist rund 10⁻¹⁰ m groß, ein Virus rund 10⁻⁷ m. Wie oft passt das Atom ungefähr in das Virus?
+        options:
+          - text: 10³-mal
+            correct: true
+            info: "10⁻⁷ : 10⁻¹⁰ = 10⁻⁷⁻⁽⁻¹⁰⁾ = 10³."
+          - text: 10⁻³-mal
+            correct: false
+            info: Das Virus ist größer als das Atom, also passt das Atom mehr als einmal hinein.
+          - text: 10¹⁷-mal
+            correct: false
+            info: Du hast die Beträge der Exponenten addiert. Beim Teilen wird subtrahiert.
+          - text: 10⁻¹⁷-mal
+            correct: false
+            info: Du hast addiert und das falsche Vorzeichen. Beim Teilen wird subtrahiert.
+        explanation: "10⁻⁷ : 10⁻¹⁰ = 10^(−7 − (−10)) = 10³. Rund 1000 Atome nebeneinander sind so lang wie ein Virus."
+        links:
+          - title: Baustein auf der Lernlandkarte
+            url: https://lernapps.net/apps/map/mathematik/c/potenzen-ganzzahlige-exponenten/
+      - type: text
+        text: Mit negativen Exponenten kannst du alle Größen der Reise schreiben. Das ordnest du auf der nächsten Seite.

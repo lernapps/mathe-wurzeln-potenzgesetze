@@ -1,0 +1,178 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Die dritte Wurzel und n-te Wurzeln
+description: "Aus dem Volumen eines Würfels die Kante bestimmen: dritte Wurzel, vierte Wurzel und n-te Wurzel."
+competencies:
+  - n-te-wurzeln
+blocks:
+  - type: section
+    id: einstieg
+    title: Erste Aufgabe
+    blocks:
+      - type: text
+        text:
+          "Die Reise ist zu Ende, aber eine Frage ist noch offen: Ein Würfel hat ein Volumen, und du suchst seine Kante, so
+          wie du beim Quadrat die Seite gesucht hast. Am Ende dieser Seite kannst du Wurzeln mit beliebigen Hochzahlen bestimmen."
+      - type: number
+        id: wuerfel-27
+        text: Ein Würfel hat ein Volumen von 27 cm³. Wie lang ist eine Kante?
+        answer: 3
+        tolerance: 0
+        unit: cm
+        mistakes:
+          - answer: 9
+            message:
+              "Du hast 27 durch 3 geteilt. Beim Würfel muss die Kante dreimal als Faktor stehen: Welche Zahl mal sich selbst
+              mal sich selbst ergibt 27?"
+          - answer: 13.5
+            message: Du hast halbiert. Gesucht ist die Zahl, die dreimal als Faktor 27 ergibt.
+        hint: "Probiere kleine Zahlen: Welche Zahl mal sich selbst mal sich selbst ergibt 27?"
+        explanation: 3 cm · 3 cm · 3 cm = 27 cm³. Die Kante ist 3 cm lang.
+        links:
+          - title: Baustein auf der Lernlandkarte
+            url: https://lernapps.net/apps/map/mathematik/c/n-te-wurzeln/
+  - type: section
+    id: idee
+    title: Vom Quadrat zum Würfel
+    blocks:
+      - type: figure
+        image: images/wuerfel-kante-2.svg
+        alt:
+          Ein Würfel aus zwei mal zwei mal zwei Einheitswürfeln. Die Kante ist mit 2 cm beschriftet, das Volumen mit 2 mal
+          2 mal 2 gleich 8 Kubikzentimeter.
+        caption: "Zähle die Würfelchen: 2 in der Länge, 2 in der Breite, 2 in der Höhe."
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: text
+        text:
+          Beim Quadrat gilt Seite · Seite = Fläche. Beim Würfel gilt Kante · Kante · Kante = Volumen, also $a^3 = V$. Die
+          Kante ist die Zahl, die dreimal als Faktor das Volumen ergibt. Diese Umkehrung heißt **dritte Wurzel**.
+  - type: section
+    id: regel
+    title: n-te Wurzeln
+    blocks:
+      - type: definition
+        term: n-te Wurzel
+        explanation:
+          Die n-te Wurzel aus einer Zahl $a \ge 0$ ist die nicht negative Zahl, die n-mal als Faktor $a$ ergibt. Die
+          dritte Wurzel von 8 ist 2, weil $2^3 = 8$ gilt. Die Zahl $n$ heißt Wurzelexponent.
+      - type: formula
+        formula: \sqrt[3]{8} = 2 \quad \text{denn} \quad 2^3 = 8
+      - type: text
+        text:
+          'Die Quadratwurzel ist die zweite Wurzel: Der Wurzelexponent 2 wird nicht geschrieben. Ähnlich gilt $\sqrt[4]{81}
+          = 3$, denn $3^4 = 81$, und $\sqrt[5]{32} = 2$, denn $2^5 = 32$.'
+      - type: note
+        title: Bei geradem n kein negativer Radikand
+        blocks:
+          - type: text
+            text:
+              Eine Zahl hoch 4 ist nie negativ. Darum gibt es zum Beispiel $\sqrt[4]{-16}$ nicht, so wie es $\sqrt{-4}$ nicht
+              gibt.
+  - type: section
+    id: beispiel
+    title: Beispiel
+    blocks:
+      - type: example
+        title: Würfelbehälter mit 125 Litern
+        blocks:
+          - type: text
+            text:
+              Ein Liter ist 1 dm³. Der Behälter hat also 125 dm³. Gesucht ist $a$ mit $a^3 = 125$. Mit $5 \cdot 5 \cdot 5 =
+              125$ ist die Kante 5 dm lang.
+          - type: formula
+            formula: \sqrt[3]{125} = 5
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: generated
+        id: nte-wurzel-bestimmen
+        given:
+          e:
+            pick: 1
+            from:
+              data: nwurzeln
+        task:
+          text: Bestimme die {{e.n}}-te Wurzel aus {{e.a}}.
+        answer:
+          value: e.w
+          compare:
+            number:
+              format: integer
+        mistakes:
+          - value: e.a / e.n
+            message: "Du hast geteilt. Probe: Wie oft musst du deine Zahl als Faktor schreiben, damit {{e.a}} herauskommt? {{e.n}}-mal."
+          - value: e.w * e.w
+            message:
+              "Das ist deine Zahl mal sich selbst. Gefragt ist die {{e.n}}-te Wurzel: Die Zahl steht {{e.n}}-mal als Faktor
+              da."
+        hint: Probiere kleine Zahlen und potenziere sie mit {{e.n}}.
+        steps:
+          - Gesucht ist w mit w^{{e.n}} = {{e.a}}.
+          - Mit {{answer}}^{{e.n}} = {{e.a}} ist die Wurzel {{answer}}.
+      - type: single-choice
+        id: dritte-64
+        text: Was ist die dritte Wurzel aus 64?
+        options:
+          - text: "4"
+            correct: true
+            info: 4 · 4 · 4 = 64.
+          - text: "8"
+            correct: false
+            info: 8 ist die Quadratwurzel von 64. Gefragt ist die dritte Wurzel.
+          - text: 21,3
+            correct: false
+            info: Du hast 64 durch 3 geteilt. Wurzelziehen ist nicht Teilen.
+          - text: "192"
+            correct: false
+            info: Du hast 64 mit 3 malgenommen. Gesucht ist die Zahl, die dreimal als Faktor 64 ergibt.
+        explanation: "Die dritte Wurzel von 64 ist die Zahl, deren dritte Potenz 64 ist: 4³ = 64."
+        links:
+          - title: Baustein auf der Lernlandkarte
+            url: https://lernapps.net/apps/map/mathematik/c/n-te-wurzeln/
+      - type: matching
+        id: wurzel-wert
+        text: Ordne jeder Wurzel ihren Wert zu.
+        pairs:
+          - left: die dritte Wurzel aus 8
+            right: "2"
+          - left: die vierte Wurzel aus 81
+            right: "3"
+          - left: die dritte Wurzel aus 64
+            right: "4"
+          - left: die dritte Wurzel aus 1000
+            right: "10"
+        explanation: 2³ = 8, 3⁴ = 81, 4³ = 64 und 10³ = 1000.
+        links:
+          - title: Baustein auf der Lernlandkarte
+            url: https://lernapps.net/apps/map/mathematik/c/n-te-wurzeln/
+      - type: true-false
+        id: vierte-negativ
+        text: Es gibt die vierte Wurzel aus −16.
+        answer: false
+        explanation: Eine Zahl hoch 4 ist nie negativ, auch (−2)⁴ = 16. Darum gibt es keine vierte Wurzel aus −16.
+        links:
+          - title: Baustein auf der Lernlandkarte
+            url: https://lernapps.net/apps/map/mathematik/c/n-te-wurzeln/
+      - type: single-choice
+        id: wuerfel-125
+        text: Ein würfelförmiger Behälter fasst 125 Liter. Wie lang ist seine Kante?
+        options:
+          - text: 5 dm
+            correct: true
+            info: 125 Liter sind 125 dm³, und 5 · 5 · 5 = 125.
+          - text: 25 dm
+            correct: false
+            info: 25 dm · 25 dm ist schon 625 dm².
+          - text: 41,7 dm
+            correct: false
+            info: Du hast 125 durch 3 geteilt. Die Kante steht dreimal als Faktor da.
+          - text: 12,5 dm
+            correct: false
+            info: "Das wäre 125 : 10. Gesucht ist die dritte Wurzel."
+        explanation: 1 Liter ist 1 dm³. Die Kante a erfüllt a³ = 125, also a = 5 dm.
+        links:
+          - title: Baustein auf der Lernlandkarte
+            url: https://lernapps.net/apps/map/mathematik/c/n-te-wurzeln/
+      - type: text
+        text: Auf der letzten Seite zeigt sich, dass Wurzeln Potenzen sind.

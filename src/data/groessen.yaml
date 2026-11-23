@@ -1,0 +1,36 @@
+- name: Atomkern (Proton)
+  mantisse: 1
+  exponent: -15
+- name: Atom
+  mantisse: 1
+  exponent: -10
+- name: Virus
+  mantisse: 1
+  exponent: -7
+- name: Bakterium
+  mantisse: 2
+  exponent: -6
+- name: Haardicke
+  mantisse: 1
+  exponent: -4
+- name: Mensch
+  mantisse: 1.7
+  exponent: 0
+- name: Erde, Durchmesser
+  mantisse: 1.3
+  exponent: 7
+- name: Sonne, Durchmesser
+  mantisse: 1.4
+  exponent: 9
+- name: Erde bis Sonne
+  mantisse: 1.5
+  exponent: 11
+- name: Lichtjahr
+  mantisse: 9.5
+  exponent: 15
+- name: Milchstraße, Durchmesser
+  mantisse: 1
+  exponent: 21
+- name: beobachtbares Universum, Durchmesser
+  mantisse: 8.8
+  exponent: 26
