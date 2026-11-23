@@ -272,7 +272,7 @@ page, which a link. -->
       `references/language-tasks.md` in the same folder. A component in the plan: also `references/components.md`.
 - [x] Decide whether the app needs `scope`, as "`scope`" in
       `.agents/skills/lernapps-explainer/references/structure.md` says. Write the choice under "Key decisions".
-- [ ] Musterseite K1 komplett bauen: Einstieg (Beet 2 m²), Quadrat-SVG, Herleitung, Beispiel, Übung (generated, number, true-false) mit Fehlerdiagnose; Lernenden-Prüfer (Klasse 10) durchspielen lassen und Befunde umsetzen.
+- [x] Musterseite K1 komplett bauen: Einstieg (Beet 2 m²), Quadrat-SVG, Herleitung, Beispiel, Übung (generated, number, true-false) mit Fehlerdiagnose; Lernenden-Prüfer (Klasse 10) durchspielen lassen und Befunde umsetzen.
 <!-- tasks: pattern (1 added): the one page or screen that is the pattern for the others -->
 - [ ] **Checkpoint:** the pattern page. Load skill `lernapps-learner-check` and do its learner check on the page. Fix
       what it finds. Then show the creator the page and ask whether the others may follow it. Stop and wait. A
