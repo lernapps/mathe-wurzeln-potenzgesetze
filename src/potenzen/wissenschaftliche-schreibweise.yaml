@@ -55,6 +55,11 @@ blocks:
     title: Rechnen und Ordnen
     blocks:
       - type: definition
+        term: wissenschaftliche Schreibweise
+        explanation:
+          Die wissenschaftliche Schreibweise schreibt eine positive Zahl als Mantisse mal Zehnerpotenz, zum Beispiel
+          $4{,}5 \cdot 10^4$ für 45 000.
+      - type: definition
         term: Mantisse
         explanation:
           Die Mantisse ist die Zahl $m$ vor der Zehnerpotenz in der wissenschaftlichen Schreibweise. Sie liegt mindestens
@@ -232,8 +237,8 @@ blocks:
       - type: number
         id: zehnerpotenzen-reise
         text:
-          "Wie viele Zehnerpotenzen liegen ungefähr zwischen einem Atom (10⁻¹⁰ m) und der Erde (10⁷ m)? Gib k mit 10⁷ : 10⁻¹⁰
-          = 10 hoch k an."
+          "Wie viele Zehnerpotenzen liegen ungefähr zwischen einem Atom ($10^{-10}$ m) und der Erde ($10^7$ m)? Gib k mit
+          $10^7 : 10^{-10} = 10^k$ an."
         answer: 17
         tolerance: 0
         mistakes:

@@ -182,21 +182,21 @@ blocks:
           - "{{x}} · {{x}} = {{answer}}"
       - type: single-choice
         id: folgerung
-        text: Du hast 1,41² = 1,9881 und 1,42² = 2,0164 gerechnet. Was folgt daraus für √2?
+        text: Du hast 2,6² = 6,76 und 2,7² = 7,29 gerechnet. Was folgt daraus für √7?
         options:
-          - text: √2 liegt zwischen 1,41 und 1,42.
+          - text: √7 liegt zwischen 2,6 und 2,7.
             correct: true
-            info: Das Quadrat von 1,41 ist kleiner als 2, das von 1,42 größer. Also liegt √2 dazwischen.
-          - text: √2 ist gleich 1,41.
+            info: Das Quadrat von 2,6 ist kleiner als 7, das von 2,7 größer. Also liegt √7 dazwischen.
+          - text: √7 ist gleich 2,6.
             correct: false
-            info: 1,41² ist 1,9881 und nicht 2.
-          - text: √2 ist gleich 1,415.
+            info: 2,6² ist 6,76 und nicht 7.
+          - text: √7 ist gleich 2,65.
             correct: false
-            info: 1,415 ist nur die Mitte des Bereichs. Sein Quadrat ist 2,002225, also nicht 2.
-          - text: √2 liegt zwischen 1,9881 und 2,0164.
+            info: 2,65 ist nur die Mitte des Bereichs. Sein Quadrat ist 7,0225, also nicht 7.
+          - text: √7 liegt zwischen 6,76 und 7,29.
             correct: false
             info: Diese Zahlen sind die Quadrate der Grenzen, nicht die Grenzen selbst.
-        explanation: "Die Wurzel behält die Reihenfolge: Aus 1,9881 < 2 < 2,0164 folgt 1,41 < √2 < 1,42."
+        explanation: "Die Wurzel behält die Reihenfolge: Aus 6,76 < 7 < 7,29 folgt 2,6 < √7 < 2,7."
         links:
           - title: Baustein auf der Lernlandkarte
             url: https://lernapps.net/apps/map/mathematik/c/reelle-zahlen/

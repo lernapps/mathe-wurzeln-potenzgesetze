@@ -159,6 +159,29 @@ blocks:
           right: Richtig.
           wrong: Nicht richtig.
         nojs: "Kurztest: Welche Zahl ist größer, 1,41 oder 1,5? Richtig ist 1,5, denn bei den Zehnteln ist 5 größer als 4."
+      - type: vue-component
+        id: test-ordnen-negativ
+        component: Kurztest
+        props:
+          question: Welche Reihenfolge ist richtig, von klein nach groß?
+          options:
+            - text: −2; −0,5; 1
+              correct: true
+              info: Auf der Zahlengerade liegt −2 links von −0,5, und −0,5 liegt links von 1.
+            - text: −0,5; −2; 1
+              correct: false
+              info: −2 liegt weiter links als −0,5, ist also kleiner.
+            - text: 1; −0,5; −2
+              correct: false
+              info: Das ist die Reihenfolge von groß nach klein.
+            - text: −0,5; 1; −2
+              correct: false
+              info: −2 ist die kleinste der drei Zahlen und gehört nach vorn.
+          right: Richtig.
+          wrong: Nicht richtig.
+        nojs:
+          "Kurztest: Welche Reihenfolge ist richtig, von klein nach groß? Minus 2, minus 0,5, 1. Richtig ist: minus 2, minus
+          0,5, 1, denn auf der Zahlengerade liegen sie in dieser Reihenfolge von links nach rechts."
       - type: text
         text:
           "Wenn du hier unsicher warst: Wiederhole den Baustein „Zahlen vergleichen und ordnen“ auf seiner Kartenseite: [Zahlen
@@ -229,6 +252,29 @@ blocks:
         nojs:
           "Kurztest: Was ist 1,5 mal 1,5? Zur Wahl stehen 2,25, 2,5, 3 und 0,225. Richtig ist 2,25, denn 15 mal 15 ist 225
           und es gibt zusammen zwei Stellen hinter dem Komma."
+      - type: vue-component
+        id: test-bruch-dezimal
+        component: Kurztest
+        props:
+          question: Welcher Bruch ist 0,25?
+          options:
+            - text: ½
+              correct: false
+              info: Ein Halb ist 0,5.
+            - text: ⅕
+              correct: false
+              info: Ein Fünftel ist 0,2.
+            - text: ¾
+              correct: false
+              info: Drei Viertel sind 0,75.
+            - text: ¼
+              correct: true
+              info: "Ein Viertel ist 1 : 4 = 0,25."
+          right: Richtig.
+          wrong: Nicht richtig.
+        nojs:
+          "Kurztest: Welcher Bruch ist 0,25? Ein Viertel, ein Halb, ein Fünftel oder drei Viertel. Richtig ist ein Viertel,
+          denn 1 geteilt durch 4 ist 0,25."
       - type: text
         text:
           "Wenn du hier unsicher warst: Wiederhole den Baustein „Rechnen mit Dezimalbrüchen“ auf seiner Kartenseite: [Rechnen
@@ -301,6 +347,29 @@ blocks:
         nojs:
           "Kurztest: Was ist 5 plus minus 8? Zur Wahl stehen minus 3, 3, 13 und minus 13. Richtig ist minus 3, denn du startest
           bei 5 und gehst 8 Schritte nach links."
+      - type: vue-component
+        id: test-negativ-subtrahieren
+        component: Kurztest
+        props:
+          question: Was ist 7 − (−10)?
+          options:
+            - text: −17
+              correct: false
+              info: Das Ergebnis ist größer als 7, nicht negativ.
+            - text: "3"
+              correct: false
+              info: Das wäre 10 − 7. Du startest bei 7 und gehst nach rechts.
+            - text: "17"
+              correct: true
+              info: "Minus eine negative Zahl ist plus: 7 + 10 = 17."
+            - text: −3
+              correct: false
+              info: Das wäre 7 + (−10). Hier wird aber (−10) abgezogen.
+          right: Richtig.
+          wrong: Nicht richtig.
+        nojs:
+          "Kurztest: Was ist 7 minus minus 10? Zur Wahl stehen 17, minus 3, minus 17 und 3. Richtig ist 17, denn minus eine
+          negative Zahl ist plus."
       - type: text
         text:
           "Wenn du hier unsicher warst: Wiederhole den Baustein „Rechnen mit negativen Zahlen“ auf seiner Kartenseite: [Rechnen

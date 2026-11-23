@@ -81,6 +81,27 @@ blocks:
         nojs:
           "Kurztest: Welcher Term ist 6x plus 9, ausgeklammert? 3 mal (2x plus 3), 3 mal (2x plus 9), 6 mal (x plus 9) oder
           9 mal (6x plus 1). Richtig ist 3 mal (2x plus 3)."
+      - type: vue-component
+        id: test-variable-mal
+        component: Kurztest
+        props:
+          question: Was ist a · a · a?
+          options:
+            - text: a + 3
+              correct: false
+              info: Das ist eine Summe. Hier wird malgenommen.
+            - text: 3 · a · a
+              correct: false
+              info: Dreimal dieselbe Variable heißt dreimal a als Faktor, nicht einmal 3.
+            - text: a³
+              correct: true
+              info: Drei gleiche Faktoren a schreibst du kurz als a³.
+            - text: 3a
+              correct: false
+              info: 3a ist a + a + a. Hier steht aber ein Produkt.
+          right: Richtig.
+          wrong: Nicht richtig.
+        nojs: "Kurztest: Was ist a mal a mal a? Zur Wahl stehen a hoch 3, 3a, a plus 3 und 3 mal a mal a. Richtig ist a hoch 3."
       - type: text
         text: "Wenn du hier unsicher warst: Wiederhole den Baustein „Terme umformen“ auf seiner Kartenseite: [Terme umformen](https://lernapps.net/apps/map/mathematik/c/terme-umformen/)."
   - type: section

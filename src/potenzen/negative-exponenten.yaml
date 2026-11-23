@@ -80,6 +80,10 @@ blocks:
         formula: a^0 = 1
       - type: text
         text:
+          "Die Gesetze von den letzten Seiten gelten weiter, auch wenn der Exponent beim Teilen kleiner wird als beim Malnehmen:
+          $10^2 : 10^5 = 10^{2-5} = 10^{-3}$. Und bei zwei negativen Exponenten: $10^{-7} : 10^{-10} = 10^{-7-(-10)} = 10^3$."
+      - type: text
+        text:
           'Beide gelten für $a \neq 0$. Die Potenzgesetze von den letzten Seiten gelten weiter: $a^n \cdot a^{-n} = a^0 =
           1$.'
   - type: section
@@ -142,6 +146,7 @@ blocks:
               - 4
         where:
           - b * n != pow(b, n)
+          - pow(b, n) < 1000
         task:
           text: Es gilt ${{b}}^{-{{n}}} = \frac{1}{d}$. Wie groß ist d?
         answer:

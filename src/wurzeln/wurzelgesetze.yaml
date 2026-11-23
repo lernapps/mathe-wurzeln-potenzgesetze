@@ -41,7 +41,7 @@ blocks:
       - type: text
         text:
           Ein Rechteck hat die Seiten √9 = 3 und √4 = 2. Seine Fläche ist √9 · √4 = 6. Die Zahl 6 hat das Quadrat 6 · 6 =
-          36, und 36 ist gerade 9 · 4. Du suchst also eine nicht negative Zahl, deren Quadrat 9 · 4 ist.
+          36, und 36 ist dasselbe wie 9 · 4. Du suchst also eine nicht negative Zahl, deren Quadrat 9 · 4 ist.
       - type: figure
         image: images/rechteck-wurzeln.svg
         alt:

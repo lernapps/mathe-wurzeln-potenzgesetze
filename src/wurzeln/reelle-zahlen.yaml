@@ -41,8 +41,8 @@ blocks:
       - type: text
         text:
           'Brüche haben immer eine Dezimalzahl, die abbricht oder sich wiederholt: $\frac{1}{4} = 0{,}25$, $\frac{1}{3}$ =
-          0,333…, $\frac{1}{7}$ = 0,142857142857… Bei √2 passiert das nicht: Die Stellen laufen unendlich weiter und bilden kein
-          Muster.'
+          0,333…, $\frac{1}{7}$ = 0,142857142857… Bei √2 passiert das nicht: Die Stellen laufen unendlich weiter, und keine Gruppe
+          von Ziffern wiederholt sich immer wieder (keine Periode).'
       - type: definition
         term: rationale Zahl
         explanation:
@@ -52,7 +52,7 @@ blocks:
         term: irrationale Zahl
         explanation:
           Eine irrationale Zahl lässt sich nicht als Bruch schreiben. Ihre Dezimalzahl hat unendlich viele Stellen
-          ohne Wiederholung, zum Beispiel √2, √3 und π.
+          und keine Periode, zum Beispiel √2, √3 und π.
       - type: definition
         term: reelle Zahl
         explanation:
@@ -91,9 +91,9 @@ blocks:
             - alle rationalen Zahlen und dazu √2, π und alle anderen irrationalen
       - type: text
         text:
-          "Jede Menge steckt in der nächsten: ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ. Mit den reellen Zahlen hat die Zahlengerade keine Lücken mehr:
-          In diesem Kurs wachsen die Zahlen damit ein letztes Mal. Für Wurzeln aus natürlichen Zahlen gilt (hier ohne Beweis,
-          anders als bei √2): √a ist rational genau dann, wenn a eine Quadratzahl ist."
+          "Jede Menge steckt in der nächsten: ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ (⊂ heißt: ist enthalten in). Mit den reellen Zahlen hat die Zahlengerade
+          keine Lücken mehr: Die Zahlbereiche wachsen hier ein letztes Mal. Für Wurzeln aus natürlichen Zahlen gilt (hier ohne
+          Beweis, anders als bei √2): √a ist rational genau dann, wenn a eine Quadratzahl ist."
       - type: note
         title: "Denkweg: Warum √2 kein Bruch ist"
         blocks:
@@ -169,9 +169,11 @@ blocks:
             url: https://lernapps.net/apps/map/mathematik/c/reelle-zahlen/
       - type: true-false
         id: periodisch-irrational
-        text: Die Zahl 0,1010010001… (nach jeder 1 eine Null mehr) ist irrational.
+        text: Die Zahl 0,1010010001… (nach jeder 1 eine Null mehr, also keine Periode) ist irrational.
         answer: true
-        explanation: Die Nullen werden immer mehr, es gibt keine Wiederholung. So eine Zahl ist kein Bruch.
+        explanation:
+          Die Nullen werden immer mehr, darum wiederholt sich keine feste Gruppe von Ziffern (keine Periode). So eine
+          Zahl ist kein Bruch.
         links:
           - title: Baustein auf der Lernlandkarte
             url: https://lernapps.net/apps/map/mathematik/c/reelle-zahlen/

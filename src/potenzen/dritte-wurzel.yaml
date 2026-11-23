@@ -53,8 +53,8 @@ blocks:
       - type: definition
         term: n-te Wurzel
         explanation:
-          Die n-te Wurzel aus einer Zahl $a \ge 0$ ist die nicht negative Zahl, die n-mal als Faktor $a$ ergibt. Die
-          dritte Wurzel von 8 ist 2, weil $2^3 = 8$ gilt.
+          Die n-te Wurzel aus einer Zahl $a \ge 0$ ist die nicht negative Zahl, deren n-te Potenz $a$ ist. Die dritte
+          Wurzel von 8 ist 2, weil $2^3 = 8$ gilt.
       - type: definition
         term: Wurzelexponent
         explanation:
@@ -63,9 +63,7 @@ blocks:
       - type: formula
         formula: \sqrt[3]{8} = 2 \quad \text{denn} \quad 2^3 = 8
       - type: text
-        text:
-          'Die Quadratwurzel ist die zweite Wurzel: Der Wurzelexponent 2 wird nicht geschrieben. Ähnlich gilt $\sqrt[4]{81}
-          = 3$, denn $3^4 = 81$, und $\sqrt[5]{32} = 2$, denn $2^5 = 32$.'
+        text: Ähnlich gilt $\sqrt[4]{81} = 3$, denn $3^4 = 81$, und $\sqrt[5]{32} = 2$, denn $2^5 = 32$.
       - type: note
         title: Der Radikand ist nicht negativ
         blocks:

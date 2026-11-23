@@ -129,6 +129,7 @@ blocks:
         where:
           - a != b
           - a * pow(b, n) != a * b * n
+          - pow(a * b, n) < 1000
         task:
           text: Berechne $({{a}} \cdot {{b}})^{{{n}}}$.
         answer:

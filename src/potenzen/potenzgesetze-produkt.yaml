@@ -186,7 +186,7 @@ blocks:
             url: https://lernapps.net/apps/map/mathematik/c/potenzgesetze/
       - type: number
         id: kombination
-        text: "Es gilt 5³ · 5⁴ : 5² = 5 hoch k. Wie groß ist k?"
+        text: 'Es gilt $5^3 \cdot 5^4 : 5^2 = 5^k$. Wie groß ist k?'
         answer: 5
         tolerance: 0
         mistakes:
