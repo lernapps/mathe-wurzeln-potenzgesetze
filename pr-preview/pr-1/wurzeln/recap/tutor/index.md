@@ -20,9 +20,11 @@ Eltern und Lehrkräfte sehen hier, was der Tutor bekommt. [Zur Seite](../)
 
 ## Wo das Kind gerade ist
 
+- Die erste Nachricht des Kindes nennt diese Seite und je Aufgabe die Nummer, die das Kind gerade vor sich hat, z. B. `?uebung=potenz-dezimal-negativ`. Schlag die Nummern unten bei den Aufgaben nach. Kommt das Kind mit „Hilfe“, nennt `uebung=` die Aufgabe und `abschnitt=` ihren Abschnitt.
 - Steht in der Nachricht „Die App sagt: …“, hat die App das zur Eingabe des Kindes gemeldet. Setz dort an, ohne es zu wiederholen.
 - Eine Zeile wie „…, Nr. 16: richtig im 2. Versuch.“ kommt von „Zurück“ in der App: Aufgabe, Nummer und wie weit das Kind damit kam.
 - „Ich habe auf … geübt:“ kommt von „Zurück zum Tutor“: diese Seite mit den Nummern, dann je geübter Aufgabe, wie es lief, bei einer falschen mit Eingabe und Meldung der App. Setz bei den falschen an, eine nach der anderen.
+- Jede Nummer hat einen Link: die Adresse der Seite, also dieser Tutor-Seite ohne `tutor/` und ohne `?…`, mit der Nummer und `via=tutor`, z. B. `…/wurzeln/recap/?via=tutor#potenz-dezimal-negativ`. Schick ihn immer als volle Adresse, mit Schema und Host dieser Tutor-Seite (z. B. `https://`). Zum Weiterüben nimm eine andere Nummer der Aufgabe und nenn ihren Text. Sag dazu: „Löse sie in der App und drück dann ‚Zurück‘. Füg die Zeile hier ein.“
 
 ## Besondere Anforderungen
 
@@ -39,11 +41,11 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 
 Diese Seite ist eine Wiederholung: Sie wiederholt etwas, das das Kind schon können sollte, und hat höchstens zwei Aufgaben zur Kontrolle. Erklär mit dem Inhalt der Seite und frag nach, ob das Kind ihn verstanden hat. Üben kann es das in anderen Apps; welche das sind, steht hier: https://lernapps.net/apps/map/mathematik/c/potenzen/, https://lernapps.net/apps/map/mathematik/c/zahlen-vergleichen-ordnen/, https://lernapps.net/apps/map/mathematik/c/dezimalbrueche-rechnen/, https://lernapps.net/apps/map/mathematik/c/rationale-zahlen-rechnen/
 
-Vier Bausteine aus früheren Jahren, die du für Wurzeln und reelle Zahlen brauchst, mit Kurztests zum Prüfen.
+Vier Bausteine aus früheren Jahren, die du für Wurzeln und reelle Zahlen brauchst, mit zwei Aufgaben zum Prüfen.
 
 ### Wofür diese Seite ist
 
-Für Wurzeln und reelle Zahlen brauchst du vier Dinge aus früheren Jahren: Potenzen, Zahlen ordnen, Dezimalbrüche und negative Zahlen. Lies jeden Abschnitt kurz und beantworte die Kurztests. Sie zählen nichts und speichern nichts, sie zeigen dir nur, ob du es kannst. Unter jedem Abschnitt steht, was du wiederholen kannst, wenn du unsicher warst. Hast du alle Kurztests richtig, bist du bereit.
+Für Wurzeln und reelle Zahlen brauchst du vier Dinge aus früheren Jahren: Potenzen, Zahlen ordnen, Dezimalbrüche und negative Zahlen. Lies jeden Abschnitt kurz. Am Ende prüfen zwei Aufgaben, ob du es kannst. Sie zählen nichts und speichern nichts. Unter jedem Abschnitt steht, was du wiederholen kannst, wenn du unsicher warst. Hast du beide Aufgaben richtig, bist du bereit.
 
 ### Potenzen und Zehnerpotenzen
 
@@ -61,10 +63,6 @@ Für Wurzeln und reelle Zahlen brauchst du vier Dinge aus früheren Jahren: Pote
 
 Die Erde ist rund $15 \cdot 10^7$ Kilometer von der Sonne entfernt. $10^7$ ist eine 1 mit sieben Nullen, also 10 000 000. Das Ergebnis ist 150 000 000 Kilometer.
 
-Interaktiv: Kurztest: Was ist 2 hoch 4 plus 3 hoch 3? Zur Wahl stehen 43, 17 und 125. Richtig ist 43, denn 2 hoch 4 ist 16 und 3 hoch 3 ist 27.
-
-Interaktiv: Kurztest: Was ist 15 zum Quadrat minus 14 zum Quadrat? Zur Wahl stehen 29, 1, 421 und 210. Richtig ist 29, denn 225 minus 196 ist 29.
-
 Wenn du hier unsicher warst: Wiederhole den Baustein „Potenzen und Zehnerpotenzen“ auf seiner Kartenseite: [Potenzen und Zehnerpotenzen](https://lernapps.net/apps/map/mathematik/c/potenzen/).
 
 ### Zahlen vergleichen und ordnen
@@ -77,12 +75,6 @@ Zahlen vergleichst du Stelle für Stelle von links. Hat eine Zahl mehr Stellen, 
 
 1250 und 1205 haben beide vier Stellen. Die Tausender und Hunderter sind gleich. Bei den Zehnern ist 5 größer als 0, also gilt $1250 > 1205$.
 
-Interaktiv: Kurztest: Welche Zahl ist die kleinste: 0,3, 0,25, 0,125 oder 0,2? Richtig ist 0,125, denn bei den Zehnteln steht dort nur die 1.
-
-Interaktiv: Kurztest: Welche Zahl ist größer, 1,41 oder 1,5? Richtig ist 1,5, denn bei den Zehnteln ist 5 größer als 4.
-
-Interaktiv: Kurztest: Welche Reihenfolge ist richtig, von klein nach groß? Minus 2, minus 0,5, 1. Richtig ist: minus 2, minus 0,5, 1, denn auf der Zahlengerade liegen sie in dieser Reihenfolge von links nach rechts.
-
 Wenn du hier unsicher warst: Wiederhole den Baustein „Zahlen vergleichen und ordnen“ auf seiner Kartenseite: [Zahlen vergleichen und ordnen](https://lernapps.net/apps/map/mathematik/c/zahlen-vergleichen-ordnen/).
 
 ### Rechnen mit Dezimalbrüchen
@@ -94,12 +86,6 @@ Beim Malnehmen rechnest du erst ohne Komma. Dann setzt du im Ergebnis so viele S
 **Beispiel: 0,4 mal 1,5**
 
 Ohne Komma: $4 \cdot 15 = 60$. Die Faktoren haben zusammen zwei Stellen hinter dem Komma, also gilt $0{,}4 \cdot 1{,}5 = 0{,}60 = 0{,}6$.
-
-Interaktiv: Kurztest: Was ist 0,12 mal 0,5? Zur Wahl stehen 0,06, 0,6, 0,006 und 0,62. Richtig ist 0,06, denn 12 mal 5 ist 60 und es gibt zusammen drei Stellen hinter dem Komma.
-
-Interaktiv: Kurztest: Was ist 1,5 mal 1,5? Zur Wahl stehen 2,25, 2,5, 3 und 0,225. Richtig ist 2,25, denn 15 mal 15 ist 225 und es gibt zusammen zwei Stellen hinter dem Komma.
-
-Interaktiv: Kurztest: Welcher Bruch ist 0,25? Ein Viertel, ein Halb, ein Fünftel oder drei Viertel. Richtig ist ein Viertel, denn 1 geteilt durch 4 ist 0,25.
 
 Wenn du hier unsicher warst: Wiederhole den Baustein „Rechnen mit Dezimalbrüchen“ auf seiner Kartenseite: [Rechnen mit Dezimalbrüchen](https://lernapps.net/apps/map/mathematik/c/dezimalbrueche-rechnen/).
 
@@ -115,13 +101,15 @@ Eine negative Zahl in einer Rechnung steht in Klammern. Beim Addieren einer nega
 
 Du startest bei 5 und gehst 8 Schritte nach links: $5 + (-8) = -3$.
 
-Interaktiv: Kurztest: Was ist minus 4 mal minus 3 minus 5? Zur Wahl stehen 7, 17, minus 17 und minus 7. Richtig ist 7, denn minus 4 mal minus 3 ist 12 und 12 minus 5 ist 7.
-
-Interaktiv: Kurztest: Was ist 5 plus minus 8? Zur Wahl stehen minus 3, 3, 13 und minus 13. Richtig ist minus 3, denn du startest bei 5 und gehst 8 Schritte nach links.
-
-Interaktiv: Kurztest: Was ist 7 minus minus 10? Zur Wahl stehen 17, minus 3, minus 17 und 3. Richtig ist 17, denn minus eine negative Zahl ist plus.
-
 Wenn du hier unsicher warst: Wiederhole den Baustein „Rechnen mit negativen Zahlen“ auf seiner Kartenseite: [Rechnen mit negativen Zahlen](https://lernapps.net/apps/map/mathematik/c/rationale-zahlen-rechnen/).
+
+### Kannst du das?
+
+Wenn du nicht sicher bist, ob du die vier Bausteine kannst, prüfen zwei Aufgaben sie zusammen. Du bekommst sofort eine Rückmeldung, und nichts wird gezählt.
+
+- Aufgabe `potenz-dezimal-negativ` (unten)
+
+- Aufgabe `zahlen-ordnen-recap` (unten)
 
 ### Du bist bereit, wenn du …
 
@@ -130,4 +118,25 @@ Wenn du hier unsicher warst: Wiederhole den Baustein „Rechnen mit negativen Za
 - mit Dezimalbrüchen rechnen kannst.
 - mit negativen Zahlen rechnen und dabei Vorzeichen- und Klammerregeln beachten kannst.
 
-Hattest du bei jedem Kurztest alles richtig, geht es weiter: Zur Fläche eines Quadrats ist die Seite gesucht. Sonst wiederhole zuerst den Baustein, bei dem du unsicher warst.
+Hattest du beide Aufgaben richtig, geht es weiter: Zur Fläche eines Quadrats ist die Seite gesucht. Sonst wiederhole zuerst den Baustein, bei dem du unsicher warst.
+
+### Aufgabe potenz-dezimal-negativ
+
+- Aufgabe: Berechne 2⁴ + 0,5 · (−6).
+- Antwortformat: eine Zahl eintippen
+- Lösung: 13
+- Erklärung: 2⁴ = 16 und 0,5 · (−6) = −3, denn plus mal minus ergibt minus. Dann ist 16 + (−3) = 13.
+- Tipp der App: Rechne erst die Potenz und das Produkt, dann addiere.
+- Typische Fehler und was die App sagt:
+  - 19: Du hast 0,5 · (−6) = +3 gerechnet. Plus mal minus ergibt minus.
+  - 5: 2⁴ ist nicht 2 · 4. Der Exponent 4 sagt: Die 2 steht viermal als Faktor da, das sind 16.
+  - -14: 0,5 · 6 ist 3, nicht 30. Ein Faktor mit einer Stelle hinter dem Komma macht das Ergebnis zehnmal kleiner.
+- Link: [../?via=tutor#potenz-dezimal-negativ](../?via=tutor#potenz-dezimal-negativ)
+
+### Aufgabe zahlen-ordnen-recap
+
+- Aufgabe: Ordne die Zahlen von klein nach groß.
+- Antwortformat: die Einträge in die richtige Reihenfolge bringen (die App zeigt sie gemischt)
+- Lösung: 1. −2, 2. −0,5, 3. 0,125, 4. 1,41, 5. 3²
+- Erklärung: −2 und −0,5 liegen links von der Null, −2 weiter links. Dann folgen 0,125 und 1,41, und 3² = 9 ist die größte Zahl.
+- Link: [../?via=tutor#zahlen-ordnen-recap](../?via=tutor#zahlen-ordnen-recap)

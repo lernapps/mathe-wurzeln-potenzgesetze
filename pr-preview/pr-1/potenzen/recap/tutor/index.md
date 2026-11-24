@@ -20,9 +20,11 @@ Eltern und Lehrkräfte sehen hier, was der Tutor bekommt. [Zur Seite](../)
 
 ## Wo das Kind gerade ist
 
+- Die erste Nachricht des Kindes nennt diese Seite und je Aufgabe die Nummer, die das Kind gerade vor sich hat, z. B. `?uebung=terme-zusammenfassen`. Schlag die Nummern unten bei den Aufgaben nach. Kommt das Kind mit „Hilfe“, nennt `uebung=` die Aufgabe und `abschnitt=` ihren Abschnitt.
 - Steht in der Nachricht „Die App sagt: …“, hat die App das zur Eingabe des Kindes gemeldet. Setz dort an, ohne es zu wiederholen.
 - Eine Zeile wie „…, Nr. 16: richtig im 2. Versuch.“ kommt von „Zurück“ in der App: Aufgabe, Nummer und wie weit das Kind damit kam.
 - „Ich habe auf … geübt:“ kommt von „Zurück zum Tutor“: diese Seite mit den Nummern, dann je geübter Aufgabe, wie es lief, bei einer falschen mit Eingabe und Meldung der App. Setz bei den falschen an, eine nach der anderen.
+- Jede Nummer hat einen Link: die Adresse der Seite, also dieser Tutor-Seite ohne `tutor/` und ohne `?…`, mit der Nummer und `via=tutor`, z. B. `…/potenzen/recap/?via=tutor#terme-zusammenfassen`. Schick ihn immer als volle Adresse, mit Schema und Host dieser Tutor-Seite (z. B. `https://`). Zum Weiterüben nimm eine andere Nummer der Aufgabe und nenn ihren Text. Sag dazu: „Löse sie in der App und drück dann ‚Zurück‘. Füg die Zeile hier ein.“
 
 ## Besondere Anforderungen
 
@@ -39,11 +41,11 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 
 Diese Seite ist eine Wiederholung: Sie wiederholt etwas, das das Kind schon können sollte, und hat höchstens zwei Aufgaben zur Kontrolle. Erklär mit dem Inhalt der Seite und frag nach, ob das Kind ihn verstanden hat. Üben kann es das in anderen Apps; welche das sind, steht hier: https://lernapps.net/apps/map/mathematik/c/terme-umformen/, https://lernapps.net/apps/map/mathematik/c/potenzen/
 
-Zwei Bausteine, die du für die Potenzgesetze brauchst: Terme umformen und Potenzen, mit Kurztests zum Prüfen.
+Zwei Bausteine, die du für die Potenzgesetze brauchst: Terme umformen und Potenzen, mit zwei Aufgaben zum Prüfen.
 
 ### Wofür diese Seite ist
 
-Für die Potenzgesetze brauchst du zwei Dinge: Terme umformen und Potenzen mit natürlichen Exponenten. Lies jeden Abschnitt kurz und beantworte die Kurztests. Sie zählen nichts und speichern nichts. Unter jedem Abschnitt steht, was du wiederholen kannst, wenn du unsicher warst. Hast du alle Kurztests richtig, bist du bereit. Die dritte Wurzel baut auf der Quadratwurzel aus dem Kapitel „Wurzeln und neue Zahlen“ auf; lies dort zuerst „Quadratwurzel bestimmen“, falls du sie noch nicht kennst.
+Für die Potenzgesetze brauchst du zwei Dinge: Terme umformen und Potenzen mit natürlichen Exponenten. Lies jeden Abschnitt kurz. Am Ende prüfen zwei Aufgaben, ob du es kannst. Sie zählen nichts und speichern nichts. Unter jedem Abschnitt steht, was du wiederholen kannst, wenn du unsicher warst. Hast du beide Aufgaben richtig, bist du bereit. Die dritte Wurzel baut auf der Quadratwurzel aus dem Kapitel „Wurzeln und neue Zahlen“ auf; lies dort zuerst „Quadratwurzel bestimmen“, falls du sie noch nicht kennst.
 
 ### Terme umformen
 
@@ -55,27 +57,51 @@ Für die Potenzgesetze brauchst du zwei Dinge: Terme umformen und Potenzen mit n
 
 Aus $4a + 7a - 2a$ wird $9a$. Aus $10b + 15$ wird $5 \cdot (2b + 3)$.
 
-Interaktiv: Kurztest: Was ergibt 4x plus 3 minus x plus 5? Zur Wahl stehen 3x plus 8, 8x, 5x plus 8 und 3x minus 2. Richtig ist 3x plus 8, denn 4x minus x ist 3x und 3 plus 5 ist 8.
-
-Interaktiv: Kurztest: Klammere 12a plus 18b so weit wie möglich aus. Richtig ist 6 mal (2a plus 3b), denn 6 ist der größte gemeinsame Teiler von 12 und 18.
-
-Interaktiv: Kurztest: Was ist a mal a mal a? Zur Wahl stehen a hoch 3, 3a, a plus 3 und 3 mal a mal a. Richtig ist a hoch 3.
-
 Wenn du hier unsicher warst: Wiederhole den Baustein „Terme umformen“ auf seiner Kartenseite: [Terme umformen](https://lernapps.net/apps/map/mathematik/c/terme-umformen/).
 
 ### Potenzen und Zehnerpotenzen
 
 Eine **Potenz** schreibt ein Produkt aus gleichen Faktoren kurz: $2^5 = 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 = 32$. Die **Basis** ist 2, der **Exponent** ist 5. Eine **Zehnerpotenz** hat die Basis 10, der Exponent zählt die Nullen: $10^4$ = 10 000 hat vier Nullen.
 
-Interaktiv: Kurztest: Was ist 2 hoch 5 minus 5 hoch 2? Zur Wahl stehen 7, 0, minus 7 und 3. Richtig ist 7, denn 2 hoch 5 ist 32 und 5 hoch 2 ist 25.
-
-Interaktiv: Kurztest: Wie viele Nullen hat 10 hoch 4 ausgeschrieben? Zur Wahl stehen 4, 3, 5 und 40. Richtig ist 4, denn 10 hoch 4 ist 10 000.
-
 Wenn du hier unsicher warst: Wiederhole den Baustein „Potenzen und Zehnerpotenzen“ auf seiner Kartenseite: [Potenzen und Zehnerpotenzen](https://lernapps.net/apps/map/mathematik/c/potenzen/).
+
+### Kannst du das?
+
+Wenn du nicht sicher bist, ob du die beiden Bausteine kannst, prüfen zwei Aufgaben sie zusammen. Du bekommst sofort eine Rückmeldung, und nichts wird gezählt.
+
+- Aufgabe `terme-zusammenfassen` (unten)
+
+- Aufgabe `potenz-differenz` (unten)
 
 ### Du bist bereit, wenn du …
 
 - gleichartige Glieder zusammenfassen und gemeinsame Faktoren ausklammern kannst.
 - Potenzen mit natürlichen Exponenten berechnen und Zehnerpotenzen zum Schreiben großer Zahlen nutzen kannst.
 
-Hattest du bei jedem Kurztest alles richtig, beginnt die Reise: vom Proton bis zum Universum, mit Zehnerpotenzen. Sonst wiederhole zuerst den Baustein, bei dem du unsicher warst.
+Hattest du beide Aufgaben richtig, beginnt die Reise: vom Proton bis zum Universum, mit Zehnerpotenzen. Sonst wiederhole zuerst den Baustein, bei dem du unsicher warst.
+
+### Aufgabe terme-zusammenfassen
+
+- Aufgabe: Was ergibt 4x + 3 − x + 5?
+- Antwortformat: eine Antwort wählen
+- Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
+  - ✓ 3x + 8 – 4x − x = 3x und 3 + 5 = 8.
+  - ✗ 8x – Zahlen ohne x und Glieder mit x lassen sich nicht zusammenfassen.
+  - ✗ 5x + 8 – Das Minus vor x gehört zum Glied: 4x − x = 3x, nicht 5x.
+  - ✗ 3x − 2 – Du hast 3 − 5 gerechnet. Die 5 wird addiert.
+- Lösung: 3x + 8
+- Erklärung: Du fasst die Glieder mit x und die Zahlen getrennt zusammen: 4x − x = 3x und 3 + 5 = 8.
+- Link: [../?via=tutor#terme-zusammenfassen](../?via=tutor#terme-zusammenfassen)
+
+### Aufgabe potenz-differenz
+
+- Aufgabe: Was ist 2⁵ − 5²?
+- Antwortformat: eine Zahl eintippen
+- Lösung: 7
+- Erklärung: 2⁵ = 32 und 5² = 25, also 32 − 25 = 7.
+- Tipp der App: Rechne erst beide Potenzen aus.
+- Typische Fehler und was die App sagt:
+  - 0: Du hast 2 · 5 und 5 · 2 gerechnet. Eine Potenz ist ein Produkt aus gleichen Faktoren: 2⁵ ist 2 · 2 · 2 · 2 · 2.
+  - -7: Du hast 25 − 32 gerechnet. Die erste Zahl ist 2⁵.
+  - 3: Das wäre 5 − 2. Hier werden Potenzen abgezogen.
+- Link: [../?via=tutor#potenz-differenz](../?via=tutor#potenz-differenz)
