@@ -76,7 +76,7 @@ Jede Menge steckt in der nächsten: ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ (⊂ heißt: ist
 
 **Merke: Denkweg: Warum √2 kein Bruch ist**
 
-Angenommen, $\sqrt{2} = \frac{p}{q}$ mit einem gekürzten Bruch. Quadrieren gibt $p^2 = 2q^2$, also ist $p^2$ gerade. Das Quadrat einer ungeraden Zahl ist ungerade, also ist $p$ gerade: $p = 2k$. Dann ist $4k^2 = 2q^2$, also $q^2 = 2k^2$, und $q$ ist auch gerade. Beide wären durch 2 teilbar, das widerspricht dem Kürzen. Also gibt es keinen solchen Bruch.
+Angenommen, $\sqrt{2} = \frac{p}{q}$ mit einem gekürzten Bruch. Quadrieren gibt $p^2 = 2q^2$, also ist $p^2$ gerade (gerade heißt: durch 2 teilbar). Das Quadrat einer ungeraden Zahl ist ungerade, also ist $p$ gerade: $p = 2k$. Dann ist $4k^2 = 2q^2$, also $q^2 = 2k^2$, und $q$ ist auch gerade. Beide wären durch 2 teilbar, das widerspricht dem Kürzen. Also gibt es keinen solchen Bruch.
 
 ### Beispiel
 

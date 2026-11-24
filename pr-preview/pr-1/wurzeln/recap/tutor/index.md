@@ -45,7 +45,7 @@ Vier Bausteine aus früheren Jahren, die du für Wurzeln und reelle Zahlen brauc
 
 ### Wofür diese Seite ist
 
-Für Wurzeln und reelle Zahlen brauchst du vier Dinge aus früheren Jahren: Potenzen, Zahlen ordnen, Dezimalbrüche und negative Zahlen. Lies jeden Abschnitt kurz. Am Ende prüfen zwei Aufgaben, ob du es kannst. Sie zählen nichts und speichern nichts. Unter jedem Abschnitt steht, was du wiederholen kannst, wenn du unsicher warst. Hast du beide Aufgaben richtig, bist du bereit.
+Für Wurzeln und reelle Zahlen brauchst du vier Dinge aus früheren Jahren: Potenzen, Zahlen ordnen, Dezimalbrüche und negative Zahlen. Lies jeden Abschnitt kurz. Am Ende prüfen zwei Aufgaben, ob du es kannst. Sie zählen nichts und speichern nichts. Unter jedem Abschnitt steht, was du wiederholen kannst, wenn du unsicher warst.
 
 ### Potenzen und Zehnerpotenzen
 
@@ -83,7 +83,7 @@ Wenn du hier unsicher warst: Wiederhole den Baustein „Zahlen vergleichen und o
 
 ### Rechnen mit Dezimalbrüchen
 
-Näherungswerte von Wurzeln sind Dezimalzahlen, mit denen du rechnest.
+Wenn du Näherungswerte von Wurzeln berechnest, rechnest du mit Dezimalzahlen. Auch Brüche kommen vor: Ein Bruch wie $\frac{1}{4}$ ist die Dezimalzahl 0,25, und $\frac{6}{8}$ lässt sich zu $\frac{3}{4}$ kürzen.
 
 - **Dezimalbruch**: Ein Dezimalbruch (eine Dezimalzahl) ist eine Zahl mit Komma, zum Beispiel 3,25. Hinter dem Komma stehen Zehntel, Hundertstel, Tausendstel und so weiter.
 
@@ -97,11 +97,9 @@ Wenn du hier unsicher warst: Wiederhole den Baustein „Rechnen mit Dezimalbrüc
 
 ### Rechnen mit negativen Zahlen
 
-Wenn du Zahlen auf der ganzen Zahlengerade einordnest, auch links von der Null, musst du sicher mit Vorzeichen rechnen.
+Wenn du Zahlen auf der ganzen Zahlengerade einordnest, auch links von der Null, musst du sicher mit Vorzeichen rechnen. Dazu gehören Klammern: Eine negative Zahl in einer Rechnung steht in Klammern.
 
 - **Vorzeichenregel**: Beim Malnehmen und Teilen gilt: gleiche Vorzeichen ergeben plus, verschiedene Vorzeichen ergeben minus. Zum Beispiel ist $(-3) \cdot (-4) = 12$ und $(-3) \cdot 4 = -12$.
-
-Auf der Seite zu den reellen Zahlen kommen Brüche vor: Ein Bruch wie $\frac{6}{8}$ lässt sich zu $\frac{3}{4}$ kürzen. Gerade Zahlen sind durch 2 teilbar, ungerade nicht.
 
 Eine negative Zahl in einer Rechnung steht in Klammern. Beim Addieren einer negativen Zahl gehst du auf der Zahlengerade nach links.
 
@@ -113,7 +111,7 @@ Wenn du hier unsicher warst: Wiederhole den Baustein „Rechnen mit negativen Za
 
 ### Kannst du das?
 
-Wenn du nicht sicher bist, ob du die vier Bausteine kannst, prüfen zwei Aufgaben sie zusammen. Du bekommst sofort eine Rückmeldung, und nichts wird gezählt.
+Wenn du nicht sicher bist, ob du die vier Bausteine kannst, prüfen zwei Aufgaben sie zusammen.
 
 - Aufgabe `potenz-dezimal-negativ` (unten)
 
@@ -137,6 +135,9 @@ Hattest du beide Aufgaben richtig, geht es weiter: Zur Fläche eines Quadrats is
 - Tipp der App: Rechne erst die Potenz und das Produkt, dann addiere.
 - Typische Fehler und was die App sagt:
   - 19: Du hast 0,5 · (−6) = +3 gerechnet. Plus mal minus ergibt minus.
+  - -3: Das ist nur 0,5 · (−6). Die Potenz 2⁴ = 16 gehört zur Summe.
+  - 16: Das ist nur 2⁴. Das Produkt 0,5 · (−6) = −3 gehört dazu.
+  - 10: Du hast 16 − 6 gerechnet. Das Produkt ist 0,5 · (−6) = −3, nicht −6.
   - 5: 2⁴ ist nicht 2 · 4. Der Exponent 4 sagt: Die 2 steht viermal als Faktor da, das sind 16.
   - -14: 0,5 · 6 ist 3, nicht 30. Ein Faktor mit einer Stelle hinter dem Komma macht das Ergebnis zehnmal kleiner.
 - Link: [../?via=tutor#potenz-dezimal-negativ](../?via=tutor#potenz-dezimal-negativ)

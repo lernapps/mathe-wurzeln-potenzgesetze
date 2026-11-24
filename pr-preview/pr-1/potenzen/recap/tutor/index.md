@@ -20,11 +20,11 @@ Eltern und Lehrkräfte sehen hier, was der Tutor bekommt. [Zur Seite](../)
 
 ## Wo das Kind gerade ist
 
-- Die erste Nachricht des Kindes nennt diese Seite und je Aufgabe die Nummer, die das Kind gerade vor sich hat, z. B. `?uebung=terme-zusammenfassen`. Schlag die Nummern unten bei den Aufgaben nach. Kommt das Kind mit „Hilfe“, nennt `uebung=` die Aufgabe und `abschnitt=` ihren Abschnitt.
+- Die erste Nachricht des Kindes nennt diese Seite und je Aufgabe die Nummer, die das Kind gerade vor sich hat, z. B. `?uebung=terme-ausklammern`. Schlag die Nummern unten bei den Aufgaben nach. Kommt das Kind mit „Hilfe“, nennt `uebung=` die Aufgabe und `abschnitt=` ihren Abschnitt.
 - Steht in der Nachricht „Die App sagt: …“, hat die App das zur Eingabe des Kindes gemeldet. Setz dort an, ohne es zu wiederholen.
 - Eine Zeile wie „…, Nr. 16: richtig im 2. Versuch.“ kommt von „Zurück“ in der App: Aufgabe, Nummer und wie weit das Kind damit kam.
 - „Ich habe auf … geübt:“ kommt von „Zurück zum Tutor“: diese Seite mit den Nummern, dann je geübter Aufgabe, wie es lief, bei einer falschen mit Eingabe und Meldung der App. Setz bei den falschen an, eine nach der anderen.
-- Jede Nummer hat einen Link: die Adresse der Seite, also dieser Tutor-Seite ohne `tutor/` und ohne `?…`, mit der Nummer und `via=tutor`, z. B. `…/potenzen/recap/?via=tutor#terme-zusammenfassen`. Schick ihn immer als volle Adresse, mit Schema und Host dieser Tutor-Seite (z. B. `https://`). Zum Weiterüben nimm eine andere Nummer der Aufgabe und nenn ihren Text. Sag dazu: „Löse sie in der App und drück dann ‚Zurück‘. Füg die Zeile hier ein.“
+- Jede Nummer hat einen Link: die Adresse der Seite, also dieser Tutor-Seite ohne `tutor/` und ohne `?…`, mit der Nummer und `via=tutor`, z. B. `…/potenzen/recap/?via=tutor#terme-ausklammern`. Schick ihn immer als volle Adresse, mit Schema und Host dieser Tutor-Seite (z. B. `https://`). Zum Weiterüben nimm eine andere Nummer der Aufgabe und nenn ihren Text. Sag dazu: „Löse sie in der App und drück dann ‚Zurück‘. Füg die Zeile hier ein.“
 
 ## Besondere Anforderungen
 
@@ -45,7 +45,7 @@ Zwei Bausteine, die du für die Potenzgesetze brauchst: Terme umformen und Poten
 
 ### Wofür diese Seite ist
 
-Für die Potenzgesetze brauchst du zwei Dinge: Terme umformen und Potenzen mit natürlichen Exponenten. Lies jeden Abschnitt kurz. Am Ende prüfen zwei Aufgaben, ob du es kannst. Sie zählen nichts und speichern nichts. Unter jedem Abschnitt steht, was du wiederholen kannst, wenn du unsicher warst. Hast du beide Aufgaben richtig, bist du bereit. Die dritte Wurzel baut auf der Quadratwurzel aus dem Kapitel „Wurzeln und neue Zahlen“ auf; lies dort zuerst „Quadratwurzel bestimmen“, falls du sie noch nicht kennst.
+Für die Potenzgesetze brauchst du zwei Dinge: Terme umformen und Potenzen mit natürlichen Exponenten. Lies jeden Abschnitt kurz. Am Ende prüfen zwei Aufgaben, ob du es kannst. Sie zählen nichts und speichern nichts. Unter jedem Abschnitt steht, was du wiederholen kannst, wenn du unsicher warst. Die dritte Wurzel baut auf der Quadratwurzel aus dem Kapitel „Wurzeln und neue Zahlen“ auf; lies dort zuerst „Quadratwurzel bestimmen“, falls du sie noch nicht kennst.
 
 ### Terme umformen
 
@@ -63,7 +63,7 @@ Wenn du hier unsicher warst: Wiederhole den Baustein „Terme umformen“ auf se
 
 ### Potenzen und Zehnerpotenzen
 
-Die Potenzgesetze bauen darauf auf, dass du Potenzen und Zehnerpotenzen sicher schreibst.
+Wenn du Potenzen verrechnen willst, musst du Potenzen und Zehnerpotenzen sicher schreiben und berechnen.
 
 Eine **Potenz** schreibt ein Produkt aus gleichen Faktoren kurz: $2^5 = 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 = 32$. Die **Basis** ist 2, der **Exponent** ist 5. Eine **Zehnerpotenz** hat die Basis 10, der Exponent zählt die Nullen: $10^4$ = 10 000 hat vier Nullen.
 
@@ -71,11 +71,11 @@ Wenn du hier unsicher warst: Wiederhole den Baustein „Potenzen und Zehnerpoten
 
 ### Kannst du das?
 
-Wenn du nicht sicher bist, ob du die beiden Bausteine kannst, prüfen zwei Aufgaben sie zusammen. Du bekommst sofort eine Rückmeldung, und nichts wird gezählt.
+Wenn du nicht sicher bist, ob du die beiden Bausteine kannst, prüfen zwei Aufgaben sie zusammen.
 
-- Aufgabe `terme-zusammenfassen` (unten)
+- Aufgabe `terme-ausklammern` (unten)
 
-- Aufgabe `potenz-differenz` (unten)
+- Aufgabe `potenz-zehnerpotenz` (unten)
 
 ### Du bist bereit, wenn du …
 
@@ -84,28 +84,28 @@ Wenn du nicht sicher bist, ob du die beiden Bausteine kannst, prüfen zwei Aufga
 
 Hattest du beide Aufgaben richtig, beginnt die Reise: vom Proton bis zum Universum, mit Zehnerpotenzen. Sonst wiederhole zuerst den Baustein, bei dem du unsicher warst.
 
-### Aufgabe terme-zusammenfassen
+### Aufgabe terme-ausklammern
 
-- Aufgabe: Was ergibt 4x + 3 − x + 5?
+- Aufgabe: Klammere 12a + 18b so weit wie möglich aus.
 - Antwortformat: eine Antwort wählen
 - Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
-  - ✓ 3x + 8 – 4x − x = 3x und 3 + 5 = 8.
-  - ✗ 8x – Zahlen ohne x und Glieder mit x lassen sich nicht zusammenfassen.
-  - ✗ 5x + 8 – Das Minus vor x gehört zum Glied: 4x − x = 3x, nicht 5x.
-  - ✗ 3x − 2 – Du hast 3 − 5 gerechnet. Die 5 wird addiert.
-- Lösung: 3x + 8
-- Erklärung: Du fasst die Glieder mit x und die Zahlen getrennt zusammen: 4x − x = 3x und 3 + 5 = 8.
-- Link: [../?via=tutor#terme-zusammenfassen](../?via=tutor#terme-zusammenfassen)
+  - ✓ 6 · (2a + 3b) – 6 ist der größte gemeinsame Teiler von 12 und 18.
+  - ✗ 3 · (4a + 6b) – Das ist ausgeklammert, aber nicht so weit wie möglich: In der Klammer haben 4 und 6 noch den Teiler 2.
+  - ✗ 2 · (6a + 9b) – Das ist ausgeklammert, aber nicht so weit wie möglich: In der Klammer haben 6 und 9 noch den Teiler 3.
+  - ✗ 12 · (a + 18b) – Der Faktor 12 gehört auch zu 18b: Ausmultipliziert gäbe das 12a + 216b.
+- Lösung: 6 · (2a + 3b)
+- Erklärung: Du suchst den größten Faktor, der in beiden Gliedern steckt: 6 passt in 12a und in 18b.
+- Link: [../?via=tutor#terme-ausklammern](../?via=tutor#terme-ausklammern)
 
-### Aufgabe potenz-differenz
+### Aufgabe potenz-zehnerpotenz
 
-- Aufgabe: Was ist 2⁵ − 5²?
+- Aufgabe: Berechne 2⁵ − 5² + 10³ : 100.
 - Antwortformat: eine Zahl eintippen
-- Lösung: 7
-- Erklärung: 2⁵ = 32 und 5² = 25, also 32 − 25 = 7.
-- Tipp der App: Rechne erst beide Potenzen aus.
+- Lösung: 17
+- Erklärung: 2⁵ = 32 und 5² = 25, also 7. 10³ = 1000, und 1000 : 100 = 10. Zusammen 17.
+- Tipp der App: Rechne erst die drei Potenzen aus, dann von links nach rechts.
 - Typische Fehler und was die App sagt:
-  - 0: Du hast 2 · 5 und 5 · 2 gerechnet. Eine Potenz ist ein Produkt aus gleichen Faktoren: 2⁵ ist 2 · 2 · 2 · 2 · 2.
-  - -7: Du hast 25 − 32 gerechnet. Die erste Zahl ist 2⁵.
-  - 3: Das wäre 5 − 2. Hier werden Potenzen abgezogen.
-- Link: [../?via=tutor#potenz-differenz](../?via=tutor#potenz-differenz)
+  - 7: Du hast 10³ : 100 = 10 vergessen.
+  - 3: Du hast 5² − 2⁵ gerechnet. Die erste Zahl ist 2⁵.
+  - 7.3: 10³ ist nicht 10 · 3. Es ist eine 1 mit drei Nullen, also 1000.
+- Link: [../?via=tutor#potenz-zehnerpotenz](../?via=tutor#potenz-zehnerpotenz)

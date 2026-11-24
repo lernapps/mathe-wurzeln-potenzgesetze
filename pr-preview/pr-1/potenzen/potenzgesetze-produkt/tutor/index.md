@@ -49,7 +49,7 @@ Die Reise beginnt bei der Erde. Ihr Durchmesser ist rund 10 000 000 m, also
 
 ### Faktoren ausschreiben und zählen
 
-Wenn du Zahlen wie $10^7$ und $10^{11}$ verrechnen willst, ohne die Nullen zu zählen, brauchst du Regeln für Potenzen. Du findest sie, indem du ausschreibst.
+Wenn du die Regeln für Potenzen nicht nur glauben willst, kannst du sie selbst finden.
 
 Du schreibst die Potenzen aus. Bei gleicher Basis stehen die Faktoren in einer Reihe, und du zählst sie:
 
@@ -61,7 +61,7 @@ Beim Malnehmen werden die Exponenten addiert: 3 + 4 = 7. Beim Teilen kürzt du g
 
 ### Die Gesetze
 
-Aus dem Ausschreiben entstehen zwei Regeln für Potenzen mit gleicher Basis.
+Wenn du beim Ausschreiben jedes Mal dasselbe siehst, lohnt sich eine feste Regel.
 
 $a^m \cdot a^n = a^{m+n}$
 

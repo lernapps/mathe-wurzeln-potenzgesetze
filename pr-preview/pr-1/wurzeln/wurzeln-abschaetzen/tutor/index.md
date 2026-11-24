@@ -72,7 +72,7 @@ Du suchst die Stelle, an der das Quadrat von zu klein zu zu groß wechselt: erst
 
 ### Näherungswert
 
-Wenn du ein Ergebnis wie 4,47 aufschreibst, sagst du: Das ist nicht der genaue Wert, sondern kommt ihm sehr nahe. Dafür gibt es ein Wort und ein Zeichen.
+Wenn du ein Ergebnis wie 4,47 aufschreibst, ist es nicht der genaue Wert. Wie sagst du das richtig? Dafür gibt es ein Wort und ein Zeichen.
 
 - **Näherungswert**: Ein Näherungswert ist eine Zahl, die dem genauen Wert sehr nahe kommt, aber nicht gleich ihm ist. Du schreibst ihn mit dem Zeichen ≈, zum Beispiel $\sqrt{20} \approx 4{,}47$.
 

@@ -65,7 +65,7 @@ Nach links verschoben wird der Exponent positiv, nach rechts negativ.
 
 ### Rechnen und Ordnen
 
-Wenn du mit solchen Zahlen rechnen willst, kommt es nur darauf an, wie Mantissen und Exponenten zusammenspielen.
+Wenn du mit solchen Zahlen rechnen willst, kommt es darauf an, wie die Zahlen vor den Zehnerpotenzen und die Exponenten zusammenspielen.
 
 - **wissenschaftliche Schreibweise**: Die wissenschaftliche Schreibweise schreibt eine positive Zahl als Mantisse mal Zehnerpotenz, zum Beispiel $4{,}5 \cdot 10^4$ für 45 000.
 
@@ -73,9 +73,9 @@ Wenn du mit solchen Zahlen rechnen willst, kommt es nur darauf an, wie Mantissen
 
 $(a \cdot 10^m) \cdot (b \cdot 10^n) = (a \cdot b) \cdot 10^{m+n}$
 
-Ist $a \cdot b$ mindestens 10, verschiebst du das Komma noch einmal und erhöhst den Exponenten um 1. Zum Umrechnen brauchst du 1 m = 1000 mm = $10^3$ mm. Die Tabelle zeigt die Größen der Reise, die du in den Aufgaben brauchst.
+Ist $a \cdot b$ mindestens 10, verschiebst du das Komma noch einmal und erhöhst den Exponenten um 1. Zum Umrechnen brauchst du 1 m = 1000 mm = $10^3$ mm.
 
-Auf der Zehnerpotenz-Reise machst du Halt bei zwölf Größen, vom Proton bis zum Universum. Mit dem Regler wählst du den Halt. Die Skala zeigt, wo seine Länge zwischen $10^{-15}$ m und $10^{27}$ m liegt, und darunter steht, um wie viele Zehnerpotenzen sie größer ist als beim Halt davor.
+Auf der Zehnerpotenz-Reise machst du Halt bei zwölf Größen, vom Proton bis zum Universum. Ein Halt ist eine Größe, bei der die Reise stehen bleibt. Schiebe den Regler, um den Halt zu wechseln: Die schwarze Marke auf der Skala zeigt, wo seine Länge zwischen $10^{-15}$ m und $10^{27}$ m liegt, und darunter steht, wie oft so lang er ungefähr ist wie der Halt davor.
 
 Interaktiv: Zehnerpotenz-Reise, zwölf Halte von der kleinsten zur größten Länge: - Proton: 10⁻¹⁵ m - Atom: 10⁻¹⁰ m - Virus: 10⁻⁷ m - Bakterium: 2 · 10⁻⁶ m - Haardicke: 10⁻⁴ m - Mensch: 1,7 m - Erde, Durchmesser: 1,3 · 10⁷ m - Sonne, Durchmesser: 1,4 · 10⁹ m - Erde bis Sonne: 1,5 · 10¹¹ m - Lichtjahr: 9,5 · 10¹⁵ m - Milchstraße, Durchmesser: 10²¹ m - beobachtbares Universum, Durchmesser: 8,8 · 10²⁶ m
 
@@ -101,7 +101,7 @@ $20 \cdot 10^9 = 2 \cdot 10^{10}$
 
 - Aufgabe `zehnerpotenzen-reise` (unten)
 
-Du hast die Zehnerpotenz-Reise geschafft: vom Proton bei $10^{-15}$ m bis zum Universum bei $10^{26}$ m, mehr als vierzig Zehnerpotenzen. Dein Werkzeug dafür waren die Potenzgesetze und die negativen Exponenten. Als Nächstes brauchst du Wurzeln mit beliebigem Wurzelexponenten.
+Du hast die Zehnerpotenz-Reise geschafft: vom Proton bei $10^{-15}$ m bis zum Universum bei rund $10^{27}$ m, mehr als vierzig Zehnerpotenzen. Dein Werkzeug dafür waren die Potenzgesetze und die negativen Exponenten. Als Nächstes brauchst du Wurzeln mit beliebigem Wurzelexponenten.
 
 ### Aufgabe groesser
 

@@ -49,7 +49,7 @@ Aus dem Gartenbau bleiben viele Wurzeln übrig, mit denen du rechnen willst. Am 
 
 ### Das Rechteck aus zwei Wurzeln
 
-Wenn du Wurzeln multiplizieren oder dividieren musst, ohne sie auszurechnen, suchst du eine Regel. Du findest sie an einem Rechteck.
+Eine Regel für Wurzeln lässt sich an einem Rechteck zeigen, dessen Seiten Wurzeln sind.
 
 Ein Rechteck hat die Seiten √9 = 3 und √4 = 2. Seine Fläche ist √9 · √4 = 6. Die Zahl 6 hat das Quadrat 6 · 6 = 36, und 36 ist dasselbe wie 9 · 4. Du suchst also eine nicht negative Zahl, deren Quadrat 9 · 4 ist.
 
@@ -67,7 +67,7 @@ Das Produkt √a · √b ist nicht negativ und hat das Quadrat a · b. Also ist 
 
 ### Die Wurzelgesetze
 
-Mit diesen Regeln darfst du Wurzeln beim Malnehmen und Teilen zusammenfassen oder zerlegen.
+Wenn du Wurzeln beim Malnehmen und Teilen zusammenfassen oder zerlegen willst, brauchst du eine feste Regel.
 
 Das **Produktgesetz** und das **Quotientengesetz**:
 
