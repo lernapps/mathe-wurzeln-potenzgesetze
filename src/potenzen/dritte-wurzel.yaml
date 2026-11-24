@@ -31,6 +31,10 @@ blocks:
     id: idee
     title: Vom Quadrat zum Würfel
     blocks:
+      - type: text
+        text:
+          Wenn du aus dem Volumen eines Würfels seine Kante bestimmen willst, brauchst du die Umkehrung des Hochnehmens mit
+          3.
       - type: figure
         image: images/wuerfel-kante-2.svg
         alt:
@@ -47,6 +51,8 @@ blocks:
     id: regel
     title: n-te Wurzeln
     blocks:
+      - type: text
+        text: Damit du das für jeden Wurzelexponenten sagen kannst, gibt es einen allgemeinen Namen.
       - type: definition
         term: n-te Wurzel
         explanation:

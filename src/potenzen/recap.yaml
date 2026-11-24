@@ -20,6 +20,8 @@ blocks:
     id: terme-umformen
     title: Terme umformen
     blocks:
+      - type: text
+        text: Wenn du später Potenzen mit Variablen verrechnest, fasst du Glieder zusammen und klammerst aus.
       - type: definition
         term: gleichartige Glieder
         explanation:
@@ -41,6 +43,8 @@ blocks:
     id: potenzen
     title: Potenzen und Zehnerpotenzen
     blocks:
+      - type: text
+        text: Die Potenzgesetze bauen darauf auf, dass du Potenzen und Zehnerpotenzen sicher schreibst.
       - type: text
         text:
           'Eine **Potenz** schreibt ein Produkt aus gleichen Faktoren kurz: $2^5 = 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 = 32$.

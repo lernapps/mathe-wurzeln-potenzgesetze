@@ -26,6 +26,10 @@ blocks:
     id: idee
     title: Gruppen von Faktoren
     blocks:
+      - type: text
+        text:
+          Wenn eine Potenz noch einmal potenziert wird, etwa beim Umrechnen von Metern in Quadratkilometer, brauchst du Regeln
+          für Klammern mit Exponent. Wieder hilft das Ausschreiben.
       - type: formula
         formula: (a^3)^2 = a^3 \cdot a^3 = a \cdot a \cdot a \cdot a \cdot a \cdot a = a^6
       - type: formula
@@ -38,6 +42,8 @@ blocks:
     id: regel
     title: Die Gesetze
     blocks:
+      - type: text
+        text: "Daraus entstehen drei Regeln:"
       - type: formula
         formula: (a^m)^n = a^{m \cdot n}
       - type: formula

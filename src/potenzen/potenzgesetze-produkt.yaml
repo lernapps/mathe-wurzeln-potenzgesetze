@@ -27,6 +27,10 @@ blocks:
     title: Faktoren ausschreiben und zählen
     blocks:
       - type: text
+        text:
+          Wenn du Zahlen wie $10^7$ und $10^{11}$ verrechnen willst, ohne die Nullen zu zählen, brauchst du Regeln für Potenzen.
+          Du findest sie, indem du ausschreibst.
+      - type: text
         text: "Du schreibst die Potenzen aus. Bei gleicher Basis stehen die Faktoren in einer Reihe, und du zählst sie:"
       - type: formula
         formula: a^3 \cdot a^4 = a \cdot a \cdot a \cdot a \cdot a \cdot a \cdot a = a^7
@@ -40,6 +44,8 @@ blocks:
     id: regel
     title: Die Gesetze
     blocks:
+      - type: text
+        text: Aus dem Ausschreiben entstehen zwei Regeln für Potenzen mit gleicher Basis.
       - type: formula
         formula: a^m \cdot a^n = a^{m+n}
       - type: formula

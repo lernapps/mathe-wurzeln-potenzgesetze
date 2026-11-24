@@ -32,6 +32,8 @@ blocks:
     title: Von der Seite zur Fläche und zurück
     blocks:
       - type: text
+        text: Wenn du die Fläche eines Quadrats kennst und seine Seite suchst, musst du das Quadrieren rückwärts rechnen. Dafür schaust du erst, wie aus der Seite die Fläche entsteht.
+      - type: text
         text: |
           Ein Einheitsquadrat ist 1 m lang und 1 m breit, hat also 1 m² Fläche. Ein Quadrat mit der Seite 3 m besteht aus 3 mal 3 solchen Quadraten. Eine Zahl mit sich selbst malzunehmen heißt **Quadrieren**: $3^2 = 3 \cdot 3 = 9$ (gesprochen: 3 zum Quadrat). Das Ergebnis 9 ist eine **Quadratzahl**, und 9 ist das Quadrat von 3.
       - type: figure
@@ -47,6 +49,8 @@ blocks:
     id: regel
     title: Die Quadratwurzel
     blocks:
+      - type: text
+        text: Damit du das Rückwärtsrechnen kurz aufschreiben kannst, gibt es ein eigenes Zeichen und einen Namen dafür.
       - type: definition
         term: Quadrieren
         explanation: Quadrieren heißt, eine Zahl mit sich selbst malzunehmen, zum Beispiel $5^2 = 5 \cdot 5 = 25$.

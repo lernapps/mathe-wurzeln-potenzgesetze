@@ -37,6 +37,10 @@ blocks:
     blocks:
       - type: text
         text:
+          Wenn du Wurzeln multiplizieren oder dividieren musst, ohne sie auszurechnen, suchst du eine Regel. Du findest sie
+          an einem Rechteck.
+      - type: text
+        text:
           Ein Rechteck hat die Seiten √9 = 3 und √4 = 2. Seine Fläche ist √9 · √4 = 6. Die Zahl 6 hat das Quadrat 6 · 6 =
           36, und 36 ist dasselbe wie 9 · 4. Du suchst also eine nicht negative Zahl, deren Quadrat 9 · 4 ist.
       - type: figure
@@ -63,6 +67,8 @@ blocks:
     id: regel
     title: Die Wurzelgesetze
     blocks:
+      - type: text
+        text: Mit diesen Regeln darfst du Wurzeln beim Malnehmen und Teilen zusammenfassen oder zerlegen.
       - type: text
         text: "Das **Produktgesetz** und das **Quotientengesetz**:"
       - type: formula

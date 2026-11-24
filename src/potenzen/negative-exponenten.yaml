@@ -28,6 +28,10 @@ blocks:
     blocks:
       - type: text
         text:
+          Wenn du Längen unter 1 m schreiben willst, reichen positive Exponenten nicht mehr. Die Reihe nach unten zeigt, wie
+          es weitergeht.
+      - type: text
+        text:
           "Du schreibst die Reihe als Potenzen von 10. Mit jedem Schritt nach unten sinkt der Exponent um 1, und der Wert
           wird durch 10 geteilt. Die Reihe darf unter null weitergehen:"
       - type: table
@@ -66,6 +70,8 @@ blocks:
     id: regel
     title: Negativer Exponent
     blocks:
+      - type: text
+        text: Damit du mit kleinen Zahlen rechnen kannst, braucht der negative Exponent eine feste Bedeutung.
       - type: definition
         term: negativer Exponent
         explanation:

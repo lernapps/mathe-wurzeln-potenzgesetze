@@ -35,6 +35,10 @@ blocks:
     blocks:
       - type: text
         text:
+          Wenn du sehr große und sehr kleine Zahlen vergleichen und verrechnen willst, brauchst du eine einheitliche, kurze
+          Schreibweise.
+      - type: text
+        text:
           'Die **wissenschaftliche Schreibweise** schreibt jede positive Zahl als $m \cdot 10^n$ mit $1 \le m < 10$ und ganzem
           $n$. Du verschiebst dazu das Komma:'
       - type: formula
@@ -51,6 +55,8 @@ blocks:
     id: regel
     title: Rechnen und Ordnen
     blocks:
+      - type: text
+        text: Wenn du mit solchen Zahlen rechnen willst, kommt es nur darauf an, wie Mantissen und Exponenten zusammenspielen.
       - type: definition
         term: wissenschaftliche Schreibweise
         explanation:

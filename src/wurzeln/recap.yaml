@@ -21,6 +21,10 @@ blocks:
     id: potenzen
     title: Potenzen und Zehnerpotenzen
     blocks:
+      - type: text
+        text:
+          Wenn du ein Produkt aus gleichen Faktoren oder eine sehr große Zahl kurz aufschreiben willst, nimmst du eine Potenz.
+          Quadratzahlen brauchst du gleich für die Wurzeln.
       - type: definition
         term: Potenz
         explanation: 'Eine Potenz schreibt ein Produkt aus gleichen Faktoren kurz auf: $2^3 = 2 \cdot 2 \cdot 2 = 8$.'
@@ -55,6 +59,8 @@ blocks:
     id: zahlen-vergleichen-ordnen
     title: Zahlen vergleichen und ordnen
     blocks:
+      - type: text
+        text: Wenn du Wurzeln abschätzen willst, musst du Zahlen vergleichen und ordnen können.
       - type: definition
         term: Zahlengerade
         explanation:
@@ -79,6 +85,8 @@ blocks:
     id: dezimalbrueche-rechnen
     title: Rechnen mit Dezimalbrüchen
     blocks:
+      - type: text
+        text: Näherungswerte von Wurzeln sind Dezimalzahlen, mit denen du rechnest.
       - type: definition
         term: Dezimalbruch
         explanation:
@@ -103,6 +111,8 @@ blocks:
     id: rationale-zahlen-rechnen
     title: Rechnen mit negativen Zahlen
     blocks:
+      - type: text
+        text: Wenn du Zahlen auf der ganzen Zahlengerade einordnest, auch links von der Null, musst du sicher mit Vorzeichen rechnen.
       - type: definition
         term: Vorzeichenregel
         explanation:

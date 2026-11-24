@@ -37,6 +37,10 @@ blocks:
     blocks:
       - type: text
         text:
+          Wenn die Fläche keine Quadratzahl ist, gibt es keine glatte Seite. Dann suchst du zwei Zahlen, zwischen denen die
+          Seite liegt, und rückst sie immer näher zusammen.
+      - type: text
+        text:
           'Weil 16 < 20 < 25 gilt, liegt $\sqrt{20}$ zwischen $\sqrt{16} = 4$ und $\sqrt{25} = 5$. Du **schließt** die Wurzel
           zwischen zwei ganzen Zahlen **ein**. Dann probierst du Zahlen dazwischen aus, quadrierst sie und vergleichst mit 20:
           erst in Zehnteln, dann in Hundertsteln.'
@@ -124,6 +128,10 @@ blocks:
     id: regel
     title: Näherungswert
     blocks:
+      - type: text
+        text:
+          "Wenn du ein Ergebnis wie 4,47 aufschreibst, sagst du: Das ist nicht der genaue Wert, sondern kommt ihm sehr nahe.
+          Dafür gibt es ein Wort und ein Zeichen."
       - type: definition
         term: Näherungswert
         explanation:

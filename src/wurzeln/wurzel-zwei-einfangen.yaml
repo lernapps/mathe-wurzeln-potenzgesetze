@@ -31,6 +31,10 @@ blocks:
     blocks:
       - type: text
         text:
+          Wenn du wissen willst, wie genau du die Seite des Beets mit 2 m² angeben kannst, schaust du die Zahlengerade vergrößert
+          an.
+      - type: text
+        text:
           'Die Seite $s$ des Beets erfüllt $s \cdot s = 2$. Du suchst also die Zahl $\sqrt{2}$. Die Lupe zeigt einen Ausschnitt
           der Zahlengerade zwischen zwei Grenzen. Jeder der zehn Abschnitte zwischen den Strichen ist ein Zehntel davon, und der
           Punkt mit der Beschriftung √2 zeigt, wo √2 liegt. Mit dem Regler wählst du die Stufe: Stufe 0 ist der große Ausschnitt,
@@ -118,6 +122,8 @@ blocks:
     id: regel
     title: Intervallschachtelung
     blocks:
+      - type: text
+        text: Damit du über dieses Hineinzoomen sprechen kannst, brauchst du zwei Wörter.
       - type: definition
         term: Intervall
         explanation: Ein Intervall ist der Bereich der Zahlengerade zwischen zwei Zahlen, zum Beispiel zwischen 1,41 und 1,42.
