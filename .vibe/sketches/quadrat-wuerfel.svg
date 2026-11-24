@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 220" role="img" aria-label="Skizze: links ein Quadrat mit Fläche 2 Quadratmeter und gesuchter Seite, rechts ein Würfel mit Volumen 8 Kubikzentimeter und gesuchter Kante">
+<rect x="20" y="30" width="140" height="140" fill="#dbeafe" stroke="#1e3a8a" stroke-width="2"/>
+<text x="90" y="105" text-anchor="middle" font-size="16">A = 2 m²</text>
+<text x="90" y="195" text-anchor="middle" font-size="16">Seite s = ?</text>
+<g transform="translate(300,40)"><rect x="0" y="30" width="110" height="110" fill="#dcfce7" stroke="#166534" stroke-width="2"/><polygon points="0,30 40,0 150,0 110,30" fill="#bbf7d0" stroke="#166534" stroke-width="2"/><polygon points="110,30 150,0 150,110 110,140" fill="#86efac" stroke="#166534" stroke-width="2"/><text x="55" y="90" text-anchor="middle" font-size="16">V = 8 cm³</text><text x="60" y="170" text-anchor="middle" font-size="16">Kante a = ?</text></g>
+</svg>

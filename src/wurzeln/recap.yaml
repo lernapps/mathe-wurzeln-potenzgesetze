@@ -1,0 +1,191 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Das brauchst du für Wurzeln und reelle Zahlen
+description: Vier Bausteine aus früheren Jahren, die du für Wurzeln und reelle Zahlen brauchst, mit zwei Aufgaben zum Prüfen.
+recap:
+  - mathematik/potenzen
+  - mathematik/zahlen-vergleichen-ordnen
+  - mathematik/dezimalbrueche-rechnen
+  - mathematik/rationale-zahlen-rechnen
+blocks:
+  - type: section
+    id: kopf
+    title: Wofür diese Seite ist
+    blocks:
+      - type: text
+        text:
+          "Für Wurzeln und reelle Zahlen brauchst du vier Dinge aus früheren Jahren: Potenzen, Zahlen ordnen, Dezimalbrüche
+          und negative Zahlen. Lies jeden Abschnitt kurz. Am Ende prüfen zwei Aufgaben, ob du es kannst. Sie zählen nichts und
+          speichern nichts. Unter jedem Abschnitt steht, was du wiederholen kannst, wenn du unsicher warst."
+  - type: section
+    id: potenzen
+    title: Potenzen und Zehnerpotenzen
+    blocks:
+      - type: text
+        text:
+          Wenn du ein Produkt aus gleichen Faktoren oder eine sehr große Zahl kurz aufschreiben willst, nimmst du eine Potenz.
+          Quadratzahlen brauchst du gleich für die Wurzeln.
+      - type: definition
+        term: Potenz
+        explanation: 'Eine Potenz schreibt ein Produkt aus gleichen Faktoren kurz auf: $2^3 = 2 \cdot 2 \cdot 2 = 8$.'
+      - type: definition
+        term: Basis
+        explanation: Die Basis ist der Faktor, der wiederholt wird. In $2^3$ ist 2 die Basis.
+      - type: definition
+        term: Exponent
+        explanation: Der Exponent sagt, wie oft die Basis als Faktor steht. In $2^3$ ist 3 der Exponent.
+      - type: definition
+        term: Quadratzahl
+        explanation:
+          Eine Quadratzahl ist das Quadrat einer natürlichen Zahl, zum Beispiel $7^2 = 49$. Die ersten Quadratzahlen
+          sind 1, 4, 9, 16, 25, 36, 49, 64, 81 und 100. Später brauchst du auch 121, 144, 169, 196, 225, 256 und 400.
+      - type: definition
+        term: Zehnerpotenz
+        explanation:
+          Eine Zehnerpotenz hat die Basis 10, zum Beispiel $10^3 = 10 \cdot 10 \cdot 10 = 1000$. Der Exponent zählt
+          die Nullen.
+      - type: example
+        title: Eine große Zahl kurz geschrieben
+        blocks:
+          - type: text
+            text:
+              Die Erde ist rund $15 \cdot 10^7$ Kilometer von der Sonne entfernt. $10^7$ ist eine 1 mit sieben Nullen, also
+              10 000 000. Das Ergebnis ist 150 000 000 Kilometer.
+      - type: text
+        text:
+          "Wenn du hier unsicher warst: Wiederhole den Baustein „Potenzen und Zehnerpotenzen“ auf seiner Kartenseite: [Potenzen
+          und Zehnerpotenzen](https://lernapps.net/apps/map/mathematik/c/potenzen/)."
+  - type: section
+    id: zahlen-vergleichen-ordnen
+    title: Zahlen vergleichen und ordnen
+    blocks:
+      - type: text
+        text: Wenn du Wurzeln abschätzen willst, musst du Zahlen vergleichen und ordnen können.
+      - type: definition
+        term: Zahlengerade
+        explanation:
+          Auf der Zahlengerade hat jede Zahl ihren Platz. Rechts liegt immer die größere Zahl, links die kleinere.
+          Links von der 0 liegen die negativen Zahlen.
+      - type: text
+        text:
+          Zahlen vergleichst du Stelle für Stelle von links. Hat eine Zahl mehr Stellen, ist sie größer (bei natürlichen Zahlen).
+          Du schreibst $a < b$, wenn $a$ links von $b$ liegt.
+      - type: example
+        title: Welche Zahl ist größer?
+        blocks:
+          - type: text
+            text:
+              1250 und 1205 haben beide vier Stellen. Die Tausender und Hunderter sind gleich. Bei den Zehnern ist 5 größer
+              als 0, also gilt $1250 > 1205$.
+      - type: text
+        text:
+          "Wenn du hier unsicher warst: Wiederhole den Baustein „Zahlen vergleichen und ordnen“ auf seiner Kartenseite: [Zahlen
+          vergleichen und ordnen](https://lernapps.net/apps/map/mathematik/c/zahlen-vergleichen-ordnen/)."
+  - type: section
+    id: dezimalbrueche-rechnen
+    title: Rechnen mit Dezimalbrüchen
+    blocks:
+      - type: text
+        text:
+          'Wenn du Näherungswerte von Wurzeln berechnest, rechnest du mit Dezimalzahlen. Auch Brüche kommen vor: Ein Bruch
+          wie $\frac{1}{4}$ ist die Dezimalzahl 0,25, und $\frac{6}{8}$ lässt sich zu $\frac{3}{4}$ kürzen.'
+      - type: definition
+        term: Dezimalbruch
+        explanation:
+          Ein Dezimalbruch (eine Dezimalzahl) ist eine Zahl mit Komma, zum Beispiel 3,25. Hinter dem Komma stehen Zehntel,
+          Hundertstel, Tausendstel und so weiter.
+      - type: text
+        text:
+          Beim Malnehmen rechnest du erst ohne Komma. Dann setzt du im Ergebnis so viele Stellen hinter das Komma, wie beide
+          Faktoren zusammen hatten.
+      - type: example
+        title: 0,4 mal 1,5
+        blocks:
+          - type: text
+            text:
+              'Ohne Komma: $4 \cdot 15 = 60$. Die Faktoren haben zusammen zwei Stellen hinter dem Komma, also gilt $0{,}4 \cdot
+              1{,}5 = 0{,}60 = 0{,}6$.'
+      - type: text
+        text:
+          "Wenn du hier unsicher warst: Wiederhole den Baustein „Rechnen mit Dezimalbrüchen“ auf seiner Kartenseite: [Rechnen
+          mit Dezimalbrüchen](https://lernapps.net/apps/map/mathematik/c/dezimalbrueche-rechnen/)."
+  - type: section
+    id: rationale-zahlen-rechnen
+    title: Rechnen mit negativen Zahlen
+    blocks:
+      - type: text
+        text:
+          "Wenn du Zahlen auf der ganzen Zahlengerade einordnest, auch links von der Null, musst du sicher mit Vorzeichen
+          rechnen. Dazu gehören Klammern: Eine negative Zahl in einer Rechnung steht in Klammern."
+      - type: definition
+        term: Vorzeichenregel
+        explanation:
+          'Beim Malnehmen und Teilen gilt: gleiche Vorzeichen ergeben plus, verschiedene Vorzeichen ergeben minus.
+          Zum Beispiel ist $(-3) \cdot (-4) = 12$ und $(-3) \cdot 4 = -12$.'
+      - type: text
+        text:
+          Eine negative Zahl in einer Rechnung steht in Klammern. Beim Addieren einer negativen Zahl gehst du auf der Zahlengerade
+          nach links.
+      - type: example
+        title: 5 + (−8)
+        blocks:
+          - type: text
+            text: "Du startest bei 5 und gehst 8 Schritte nach links: $5 + (-8) = -3$."
+      - type: text
+        text:
+          "Wenn du hier unsicher warst: Wiederhole den Baustein „Rechnen mit negativen Zahlen“ auf seiner Kartenseite: [Rechnen
+          mit negativen Zahlen](https://lernapps.net/apps/map/mathematik/c/rationale-zahlen-rechnen/)."
+  - type: section
+    id: kannst-du-das
+    title: Kannst du das?
+    blocks:
+      - type: text
+        text: Wenn du nicht sicher bist, ob du die vier Bausteine kannst, prüfen zwei Aufgaben sie zusammen.
+      - type: number
+        id: potenz-dezimal-negativ
+        text: Berechne 2⁴ + 0,5 · (−6).
+        answer: 13
+        tolerance: 0
+        mistakes:
+          - answer: 19
+            message: Du hast 0,5 · (−6) = +3 gerechnet. Plus mal minus ergibt minus.
+          - answer: -3
+            message: Das ist nur 0,5 · (−6). Die Potenz 2⁴ = 16 gehört zur Summe.
+          - answer: 16
+            message: Das ist nur 2⁴. Das Produkt 0,5 · (−6) = −3 gehört dazu.
+          - answer: 10
+            message: Du hast 16 − 6 gerechnet. Das Produkt ist 0,5 · (−6) = −3, nicht −6.
+          - answer: 5
+            message: "2⁴ ist nicht 2 · 4. Der Exponent 4 sagt: Die 2 steht viermal als Faktor da, das sind 16."
+          - answer: -14
+            message: 0,5 · 6 ist 3, nicht 30. Ein Faktor mit einer Stelle hinter dem Komma macht das Ergebnis zehnmal kleiner.
+        hint: Rechne erst die Potenz und das Produkt, dann addiere.
+        explanation: 2⁴ = 16 und 0,5 · (−6) = −3, denn plus mal minus ergibt minus. Dann ist 16 + (−3) = 13.
+      - type: ordering
+        id: zahlen-ordnen-recap
+        text: Ordne die Zahlen von klein nach groß.
+        items:
+          - −2
+          - −0,5
+          - 0,125
+          - 1,41
+          - 3²
+        explanation:
+          −2 und −0,5 liegen links von der Null, −2 weiter links. Dann folgen 0,125 und 1,41, und 3² = 9 ist die größte
+          Zahl.
+  - type: section
+    id: bereit
+    title: Du bist bereit, wenn du …
+    blocks:
+      - type: text
+        text:
+          "- Potenzen mit natürlichen Exponenten berechnen und Zehnerpotenzen zum Schreiben großer Zahlen nutzen kannst.
+
+          - Zahlen vergleichen, auf der Zahlengerade zuordnen und der Größe nach ordnen kannst.
+
+          - mit Dezimalbrüchen rechnen kannst.
+
+          - mit negativen Zahlen rechnen und dabei Vorzeichen- und Klammerregeln beachten kannst.
+
+
+          Hattest du beide Aufgaben richtig, geht es weiter: Zur Fläche eines Quadrats ist die Seite gesucht. Sonst wiederhole
+          zuerst den Baustein, bei dem du unsicher warst."

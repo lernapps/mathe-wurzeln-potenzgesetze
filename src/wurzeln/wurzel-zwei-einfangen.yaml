@@ -1,0 +1,247 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: √2 mit der Lupe einfangen
+description: Die Seite eines Quadrats mit 2 m² Fläche mit einer Intervallschachtelung Stelle für Stelle einfangen.
+competencies:
+  - reelle-zahlen
+blocks:
+  - type: section
+    id: einstieg
+    title: Was du hier lernst
+    blocks:
+      - type: text
+        text:
+          "Das Beet mit 2 m² kennst du schon: Die Seite liegt zwischen 1 m und 2 m. Am Ende dieser Seite kannst du sie auf
+          so viele Stellen einfangen, wie du willst, und weißt, warum das nie endet."
+      - type: number
+        id: beet-2-probe
+        text: Ein Beet hat die Seite 1,5 m. Wie groß ist seine Fläche?
+        answer: 2.25
+        tolerance: 0
+        unit: m²
+        mistakes:
+          - answer: 3
+            message: Du hast 1,5 mit 2 malgenommen. Die Fläche ist Seite mal Seite.
+          - answer: 2.5
+            message: Das wäre 1,5 + 1. Die Fläche ist Seite mal Seite.
+        hint: Fläche = Seite mal Seite.
+        explanation: "1,5 · 1,5 = 2,25. Das ist mehr als 2: Die gesuchte Seite ist kleiner als 1,5."
+  - type: section
+    id: idee
+    title: Die Lupe
+    blocks:
+      - type: text
+        text:
+          Wenn du wissen willst, wie genau du die Seite des Beets mit 2 m² angeben kannst, schaust du die Zahlengerade vergrößert
+          an.
+      - type: text
+        text:
+          'Die Seite $s$ des Beets erfüllt $s \cdot s = 2$. Du suchst also die Zahl $\sqrt{2}$. Die Lupe zeigt einen Ausschnitt
+          der Zahlengerade zwischen zwei Grenzen. Jeder der zehn Abschnitte zwischen den Strichen ist ein Zehntel davon, und der
+          Punkt mit der Beschriftung √2 zeigt, wo √2 liegt. Mit dem Regler wählst du die Stufe: Stufe 0 ist der große Ausschnitt,
+          jede höhere Stufe zoomt zehnmal weiter hinein. Das Quadrat der linken Grenze ist immer kleiner als 2, das Quadrat der
+          rechten größer.'
+      - type: vue-component
+        id: lupe
+        component: Lupe
+        props:
+          stages:
+            - lower: "1"
+              upper: "2"
+              lowerSquare: "1"
+              upperSquare: "4"
+              pos: 0.4142
+            - lower: 1,4
+              upper: 1,5
+              lowerSquare: 1,96
+              upperSquare: 2,25
+              pos: 0.1421
+            - lower: 1,41
+              upper: 1,42
+              lowerSquare: 1,9881
+              upperSquare: 2,0164
+              pos: 0.4214
+            - lower: 1,414
+              upper: 1,415
+              lowerSquare: 1,999396
+              upperSquare: 2,002225
+              pos: 0.2136
+            - lower: 1,4142
+              upper: 1,4143
+              lowerSquare: 1,99996164
+              upperSquare: 2,00024449
+              pos: 0.1356
+          target: √2
+          sliderLabel: Stufe der Lupe
+          between: liegt zwischen
+          and: und
+          squareLeft: "Quadrat der linken Grenze:"
+          squareRight: "Quadrat der rechten Grenze:"
+          smaller: kleiner als 2
+          larger: größer als 2
+        nojs:
+          "Lupe auf der Zahlengerade, fünf Stufen. Auf jeder Stufe liegt √2 zwischen zwei Grenzen, deren Quadrate links und
+          rechts von 2 liegen:
+
+
+          - Stufe 0: zwischen 1 und 2. 1² = 1 (kleiner als 2), 2² = 4 (größer als 2).
+
+          - Stufe 1: zwischen 1,4 und 1,5. 1,4² = 1,96 (kleiner als 2), 1,5² = 2,25 (größer als 2).
+
+          - Stufe 2: zwischen 1,41 und 1,42. 1,41² = 1,9881 (kleiner als 2), 1,42² = 2,0164 (größer als 2).
+
+          - Stufe 3: zwischen 1,414 und 1,415. 1,414² = 1,999396 (kleiner als 2), 1,415² = 2,002225 (größer als 2).
+
+          - Stufe 4: zwischen 1,4142 und 1,4143. 1,4142² = 1,99996164 (kleiner als 2), 1,4143² = 2,00024449 (größer als 2)."
+      - type: table
+        caption: Die Stufen der Lupe
+        header:
+          - Stufe
+          - √2 liegt zwischen
+          - Quadrate der Grenzen
+        rows:
+          - - "0"
+            - 1 und 2
+            - 1 und 4
+          - - "1"
+            - 1,4 und 1,5
+            - 1,96 und 2,25
+          - - "2"
+            - 1,41 und 1,42
+            - 1,9881 und 2,0164
+          - - "3"
+            - 1,414 und 1,415
+            - 1,999396 und 2,002225
+          - - "4"
+            - 1,4142 und 1,4143
+            - 1,99996164 und 2,00024449
+      - type: text
+        text:
+          "Jede Stufe liefert eine Dezimalstelle mehr: 1, dann 1,4, dann 1,41, dann 1,414. √2 liegt auf jeder Stufe im Bereich,
+          aber auf keiner Stufe auf einer Grenze."
+  - type: section
+    id: regel
+    title: Intervallschachtelung
+    blocks:
+      - type: text
+        text: Damit du über dieses Hineinzoomen sprechen kannst, brauchst du zwei Wörter.
+      - type: definition
+        term: Intervall
+        explanation: Ein Intervall ist der Bereich der Zahlengerade zwischen zwei Zahlen, zum Beispiel zwischen 1,41 und 1,42.
+      - type: definition
+        term: Intervallschachtelung
+        explanation:
+          Eine Intervallschachtelung ist eine Folge von Intervallen auf der Zahlengerade, die ineinander liegen und
+          deren Länge beliebig klein wird. Jedes Intervall enthält die gesuchte Zahl.
+      - type: text
+        text:
+          Die Ziffern von √2 beginnen mit 1,41421356, und jede Stufe der Lupe liefert eine Ziffer mehr. Dass sie nie aufhören
+          und √2 auch kein Bruch ist, zeigt die nächste Seite.
+  - type: section
+    id: beispiel
+    title: Beispiel
+    blocks:
+      - type: example
+        title: √3 einschließen
+        blocks:
+          - type: text
+            text:
+              'Gesucht: ein Bereich für $\sqrt{3}$. Mit $1{,}7^2 = 2{,}89 < 3$ und $1{,}8^2 = 3{,}24 > 3$ liegt $\sqrt{3}$ zwischen
+              1,7 und 1,8. Eine Stufe weiter: $1{,}73^2 = 2{,}9929 < 3$ und $1{,}74^2 = 3{,}0276 > 3$.'
+          - type: formula
+            formula: 1{,}73 < \sqrt{3} < 1{,}74
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: generated
+        id: quadrieren-lupe
+        given:
+          x:
+            oneOf:
+              - 1.1
+              - 1.2
+              - 1.3
+              - 1.4
+              - 1.6
+              - 1.7
+              - 1.8
+              - 1.9
+        task:
+          text: Berechne {{x}}². Das Ergebnis zeigt dir, ob √2 links oder rechts von {{x}} liegt.
+        answer:
+          value: x * x
+          compare:
+            number:
+              format: decimal
+              decimals: 2
+              tolerance: 0
+        mistakes:
+          - value: x + x
+            message: Quadrieren heißt mit sich selbst malnehmen, nicht verdoppeln.
+          - value: round(x * x, 1)
+            message: Du hast zu früh gerundet. Rechne genau, mit zwei Stellen nach dem Komma.
+        hint: "Fläche eines Quadrats: Seite mal Seite."
+        steps:
+          - "{{x}} · {{x}} = {{answer}}"
+      - type: single-choice
+        id: folgerung
+        text: Du hast 2,6² = 6,76 und 2,7² = 7,29 gerechnet. Was folgt daraus für √7?
+        options:
+          - text: √7 liegt zwischen 2,6 und 2,7.
+            correct: true
+            info: Das Quadrat von 2,6 ist kleiner als 7, das von 2,7 größer. Also liegt √7 dazwischen.
+          - text: √7 ist gleich 2,6.
+            correct: false
+            info: 2,6² ist 6,76 und nicht 7.
+          - text: √7 ist gleich 2,65.
+            correct: false
+            info: 2,65 ist nur die Mitte des Bereichs. Sein Quadrat ist 7,0225, also nicht 7.
+          - text: √7 liegt zwischen 6,76 und 7,29.
+            correct: false
+            info: Diese Zahlen sind die Quadrate der Grenzen, nicht die Grenzen selbst.
+        explanation: "Die Wurzel behält die Reihenfolge: Aus 6,76 < 7 < 7,29 folgt 2,6 < √7 < 2,7."
+      - type: multiple-choice
+        id: lupe-aussagen
+        text: Welche Aussagen über die Lupe stimmen?
+        options:
+          - text: Auf jeder Stufe ist der Bereich zehnmal kleiner.
+            correct: true
+            info: Von 1 bis 2 geht es auf 1,4 bis 1,5 und weiter auf 1,41 bis 1,42.
+          - text: √2 liegt auf jeder Stufe im Bereich.
+            correct: true
+            info: "Das ist die Idee der Schachtelung: Der Bereich enthält √2 immer."
+          - text: Auf einer Stufe liegt √2 genau auf einer Grenze.
+            correct: false
+            info: Das Quadrat der Grenze wäre dann genau 2. In der Tabelle ist das auf keiner Stufe so.
+          - text: Das Quadrat der linken Grenze ist größer als 2.
+            correct: false
+            info: Das Quadrat der linken Grenze ist kleiner als 2, das der rechten größer.
+        explanation: "Die Lupe zeigt: ein Bereich, der √2 enthält, die Quadrate der Grenzen links und rechts von 2."
+      - type: ordering
+        id: schachtelung-schritte
+        text: Bringe die Schritte einer Intervallschachtelung für √5 in die richtige Reihenfolge.
+        items:
+          - "Quadratzahlen finden: 4 < 5 < 9, also liegt √5 zwischen 2 und 3"
+          - "Zehntel prüfen: 2,2² = 4,84 < 5 < 5,29 = 2,3²"
+          - "Hundertstel prüfen: 2,23² = 4,9729 < 5 < 5,0176 = 2,24²"
+          - "Weitermachen, so lange du willst: es hört nie auf"
+        explanation: "Erst der grobe Bereich, dann immer feiner: Zehntel, Hundertstel, und so weiter."
+      - type: true-false
+        id: endlich
+        text: Wenn du lange genug einschachtelst, hat √2 irgendwann genau eine endliche Dezimalzahl.
+        answer: false
+        explanation: Die Ziffern von √2 hören nie auf, das zeigt die nächste Seite. Jede Stufe liefert nur einen Näherungswert.
+      - type: number
+        id: sqrt5-stufe
+        text: Schließe √5 ein. Welche Zahl der Form 2,x ist die größte, deren Quadrat noch kleiner als 5 ist?
+        answer: 2.2
+        tolerance: 0
+        mistakes:
+          - answer: 2.3
+            message: 2,3² = 5,29 ist schon größer als 5.
+        hint: Quadriere 2,1, 2,2, 2,3 und vergleiche mit 5.
+        explanation: 2,2² = 4,84 ist kleiner als 5, und 2,3² = 5,29 ist größer als 5. Also liegt √5 zwischen 2,2 und 2,3.
+      - type: text
+        text:
+          "Eine Frage bleibt: Gibt es für √2 einen Bruch, der genau passt? Auf der nächsten Seite ordnest du Zahlen ein, die
+          sich als Bruch schreiben lassen, und solche, bei denen es nicht geht."

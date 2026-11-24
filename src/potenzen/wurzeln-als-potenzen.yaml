@@ -1,0 +1,190 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Wurzeln als Potenzen
+description:
+  "Wurzeln als Potenzen mit Bruch-Exponenten schreiben: Das Potenzgesetz verlangt, dass 3 hoch ein Halb die Wurzel
+  aus 3 ist."
+competencies:
+  - n-te-wurzeln
+blocks:
+  - type: section
+    id: einstieg
+    title: Was du hier lernst
+    blocks:
+      - type: text
+        text:
+          Du kennst Potenzen mit ganzen Exponenten. Am Ende dieser Seite weißt du, warum es sinnvoll ist, Wurzeln als Potenzen
+          mit Bruch-Exponenten zu schreiben, und kannst damit rechnen.
+      - type: number
+        id: halber-exponent
+        text: Es gilt $3^x \cdot 3^x = 3^1$. Welche Zahl x erfüllt das? Gib sie als Dezimalzahl an.
+        answer: 0.5
+        tolerance: 0
+        mistakes:
+          - answer: 1
+            message: Mit x = 1 wäre 3¹ · 3¹ = 3², nicht 3¹.
+          - answer: 2
+            message: Mit x = 2 wäre 3² · 3² = 3⁴. Die beiden Exponenten sollen zusammen 1 ergeben.
+        hint: Beim Malnehmen gleicher Basen addierst du die Exponenten.
+        explanation: "Beim Malnehmen gleicher Basen werden die Exponenten addiert: x + x = 1, also x = 0,5."
+  - type: section
+    id: idee
+    title: Das Potenzgesetz verlangt es
+    blocks:
+      - type: text
+        text:
+          Wenn du Wurzeln mit den Potenzgesetzen verrechnen willst, musst du sie als Potenzen schreiben können. Die Gesetze
+          selbst zeigen, wie.
+      - type: text
+        text:
+          'Aus der Aufgabe folgt: $3^{\frac{1}{2}} \cdot 3^{\frac{1}{2}} = 3^1 = 3$. Die Zahl $3^{\frac{1}{2}}$ ergibt also
+          mit sich selbst malgenommen 3. Das tut auch die nicht negative Zahl $\sqrt{3}$. Damit die Potenzgesetze weiter gelten,
+          setzt man $3^{\frac{1}{2}} = \sqrt{3}$.'
+      - type: text
+        text:
+          Genauso gilt $\left(8^{\frac{1}{3}}\right)^3 = 8^{\frac{1}{3} \cdot 3} = 8^1 = 8$. Die Zahl $8^{\frac{1}{3}}$ hat
+          also die dritte Potenz 8. Das ist die dritte Wurzel aus 8, also 2.
+  - type: section
+    id: regel
+    title: Bruch-Exponenten
+    blocks:
+      - type: text
+        text: Daraus ergibt sich die Schreibweise mit Bruch-Exponenten.
+      - type: formula
+        formula: a^{\frac{1}{n}} = \sqrt[n]{a}
+      - type: formula
+        formula: a^{\frac{m}{n}} = \left(\sqrt[n]{a}\right)^m
+      - type: text
+        text:
+          Beide gelten für $a > 0$, mit ganzen Zahlen $m$ und $n \ge 2$. Der Nenner des Exponenten ist der Wurzelexponent,
+          der Zähler die Potenz.
+      - type: table
+        caption: Wurzel und Potenz
+        header:
+          - Wurzel
+          - Potenz
+          - Wert
+        rows:
+          - - $\sqrt{9}$
+            - $9^{\frac{1}{2}}$
+            - "3"
+          - - $\sqrt[3]{8}$
+            - $8^{\frac{1}{3}}$
+            - "2"
+          - - $\sqrt[4]{16}$
+            - $16^{\frac{1}{4}}$
+            - "2"
+  - type: section
+    id: beispiel
+    title: Beispiel
+    blocks:
+      - type: example
+        title: 27 hoch zwei Drittel
+        blocks:
+          - type: text
+            text: "Der Nenner 3 ist die dritte Wurzel, der Zähler 2 die Potenz:"
+          - type: formula
+            formula: 27^{\frac{2}{3}} = \left(\sqrt[3]{27}\right)^2 = 3^2 = 9
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: generated
+        id: wurzel-als-potenz
+        given:
+          e:
+            pick: 1
+            from:
+              data: nwurzeln
+        task:
+          text: Berechne ${{e.a}}^{\frac{1}{{{e.n}}}}$.
+        answer:
+          value: e.w
+          compare:
+            number:
+              format: integer
+        mistakes:
+          - value: e.a / e.n
+            message: Der Bruch im Exponenten teilt nicht die Basis. Sein Nenner {{e.n}} gibt den Wurzelexponenten an.
+          - value: e.a * e.n
+            message: Der Exponent wird nicht mit der Basis malgenommen. Er sagt, welche Wurzel gemeint ist.
+        hint: Der Nenner des Exponenten ist der Wurzelexponent.
+        steps:
+          - "Der Exponent hat den Nenner {{e.n}}: gemeint ist die Wurzel mit Wurzelexponent {{e.n}} aus {{e.a}}."
+          - Das ist {{answer}}.
+      - type: generated
+        id: bruch-exponent-zaehler
+        given:
+          e:
+            pick: 1
+            from:
+              data: bruchexponenten
+        task:
+          text: Berechne ${{e.a}}^{\frac{{{e.m}}}{{{e.n}}}}$.
+        answer:
+          value: e.r
+          compare:
+            number:
+              format: integer
+        mistakes:
+          - value: pow(e.a, e.m) / e.n
+            message:
+              Der Bruch im Exponenten gehört ganz in den Exponenten. Erst die Wurzel mit Wurzelexponent {{e.n}} ziehen, dann
+              mit {{e.m}} potenzieren.
+        hint: "Nenner: Wurzel. Zähler: Potenz."
+        steps:
+          - Erst die Wurzel mit Wurzelexponent {{e.n}} aus {{e.a}}, dann hoch {{e.m}}.
+          - Das ist {{answer}}.
+      - type: single-choice
+        id: sqrt7-potenz
+        text: Welche Potenz gehört zu √7?
+        options:
+          - text: $7^{\frac{1}{2}}$
+            correct: true
+            info: Der Nenner 2 steht für die zweite Wurzel, die Quadratwurzel.
+          - text: $7^2$
+            correct: false
+            info: Das ist 49. Der Exponent 2 quadriert, er zieht nicht die Wurzel.
+          - text: $7^{-2}$
+            correct: false
+            info: Das ist der Kehrwert von 49, also eine kleine Zahl.
+          - text: $2^{\frac{1}{7}}$
+            correct: false
+            info: "Hier sind Basis und Wurzelexponent vertauscht: Das ist die siebte Wurzel aus 2."
+        explanation: Die Quadratwurzel ist die zweite Wurzel, also der Exponent ein Halb.
+      - type: true-false
+        id: halbe-basis
+        text: Es gilt $9^{\frac{1}{2}} = 4{,}5$.
+        answer: false
+        explanation:
+          "9 hoch ein Halb ist die Quadratwurzel aus 9, also 3. Probe: 3 · 3 = 9. Der Exponent ein Halb teilt die Basis
+          nicht durch 2."
+      - type: matching
+        id: wurzel-potenz
+        text: Ordne jeder Wurzel die passende Potenz zu.
+        pairs:
+          - left: die Wurzel √5
+            right: 5 hoch ein Halb
+          - left: die dritte Wurzel aus 5
+            right: 5 hoch ein Drittel
+          - left: die vierte Wurzel aus 5
+            right: 5 hoch ein Viertel
+          - left: die dritte Wurzel aus 5²
+            right: 5 hoch zwei Drittel
+        explanation: Der Nenner des Exponenten gibt die Wurzel an, der Zähler die Potenz.
+      - type: number
+        id: wuerfel-343
+        text: Ein Würfel hat 343 cm³. Seine Kante ist $343^{\frac{1}{3}}$ cm lang. Wie viele Zentimeter sind das?
+        answer: 7
+        tolerance: 0
+        unit: cm
+        mistakes:
+          - answer: 114.33
+            message: Du hast 343 durch 3 geteilt. Der Exponent ein Drittel bedeutet die dritte Wurzel.
+        hint: Der Exponent ein Drittel bedeutet die dritte Wurzel.
+        explanation: $343^{\frac{1}{3}}$ ist die dritte Wurzel aus 343, also 7, denn 7 · 7 · 7 = 343.
+      - type: text
+        text:
+          "Rückblick: Im Schulgarten hast du aus Flächen Seiten bestimmt, Wurzeln eingeschlossen und gesehen, dass die Zahlengerade
+          mit den reellen Zahlen keine Lücken mehr hat. Auf der Zehnerpotenz-Reise vom Proton bis zum Universum hast du Potenzgesetze,
+          negative Exponenten und die wissenschaftliche Schreibweise gebraucht. Zuletzt hast du gelernt, dass Wurzeln Potenzen
+          mit Bruch-Exponenten sind. Mit Potenzen und Wurzeln als Zahlen bist du bereit, sie später als Funktionen zu untersuchen."

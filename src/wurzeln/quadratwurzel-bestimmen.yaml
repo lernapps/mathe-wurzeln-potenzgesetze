@@ -1,0 +1,148 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Quadratwurzel bestimmen
+description: "Aus der Fläche eines Quadrats die Seitenlänge bestimmen: die Quadratwurzel als Umkehrung des Quadrierens."
+competencies: [quadratwurzeln]
+blocks:
+  - type: section
+    id: einstieg
+    title: Was du hier lernst
+    blocks:
+      - type: text
+        text: |
+          Im Schulgarten soll ein quadratisches Beet entstehen. Die Fläche steht fest, die Seitenlänge fehlt. Am Ende dieser Seite kannst du die Seitenlänge aus der Fläche bestimmen und kennst das Zeichen dafür.
+      - type: number
+        id: beet-25
+        text: Ein quadratisches Beet hat eine Fläche von 25 m². Wie lang ist eine Seite?
+        answer: 5
+        tolerance: 0
+        unit: m
+        mistakes:
+          - answer: 12.5
+            message: "Du hast die Fläche halbiert. Frage dich: Welche Zahl mal sich selbst ergibt 25?"
+          - answer: 10
+            message: "10 · 10 = 100 ist schon größer als 25. Probiere eine kleinere Zahl."
+          - answer: -5
+            message: "Eine Seitenlänge ist nie negativ, und das Wurzelzeichen steht nur für die nicht negative Zahl."
+          - answer: 20
+            message: "Das wäre der Umfang des Beets (4 · 5). Gesucht ist eine einzelne Seite."
+        hint: Probiere kleine Zahlen. Welche Zahl mal sich selbst ergibt 25?
+        explanation: Es sind 5 m, denn 5 m · 5 m = 25 m².
+  - type: section
+    id: idee
+    title: Von der Seite zur Fläche und zurück
+    blocks:
+      - type: text
+        text: Wenn du die Fläche eines Quadrats kennst und seine Seite suchst, musst du das Quadrieren rückwärts rechnen. Dafür schaust du erst, wie aus der Seite die Fläche entsteht.
+      - type: text
+        text: |
+          Ein Einheitsquadrat ist 1 m lang und 1 m breit, hat also 1 m² Fläche. Ein Quadrat mit der Seite 3 m besteht aus 3 mal 3 solchen Quadraten. Eine Zahl mit sich selbst malzunehmen heißt **Quadrieren**: $3^2 = 3 \cdot 3 = 9$ (gesprochen: 3 zum Quadrat). Das Ergebnis 9 ist eine **Quadratzahl**, und 9 ist das Quadrat von 3.
+      - type: figure
+        image: images/quadrat-seite-3.svg
+        alt: Ein Quadrat aus drei Reihen mit je drei Kästchen. Jede Seite ist mit 3 m beschriftet, darunter steht die Fläche 3 mal 3 gleich 9 Quadratmeter.
+        caption: Jedes Kästchen ist ein Einheitsquadrat mit 1 m² Fläche. Zähle die Kästchen in einer Reihe und die Reihen. Das Produkt ist die Fläche.
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: text
+        text: |
+          Beim Beet läuft es rückwärts: Die Fläche ist gegeben, die Seite gesucht. Diese Umkehrung des Quadrierens heißt **Wurzelziehen**. Du sagst: „Wurzel aus 9 ist 3“.
+  - type: section
+    id: regel
+    title: Die Quadratwurzel
+    blocks:
+      - type: text
+        text: Damit du das Rückwärtsrechnen kurz aufschreiben kannst, gibt es ein eigenes Zeichen und einen Namen dafür.
+      - type: definition
+        term: Quadrieren
+        explanation: Quadrieren heißt, eine Zahl mit sich selbst malzunehmen, zum Beispiel $5^2 = 5 \cdot 5 = 25$.
+      - type: definition
+        term: Quadratwurzel
+        explanation: "Die Quadratwurzel $\\sqrt{a}$ (gesprochen: Wurzel aus $a$) ist die nicht negative Zahl, deren Quadrat $a$ ist. Dabei gilt $a \\ge 0$. Das Zeichen vor dem $a$ heißt Wurzelzeichen."
+      - type: definition
+        term: Radikand
+        explanation: Der Radikand ist die Zahl unter dem Wurzelzeichen. In $\sqrt{25}$ ist 25 der Radikand.
+      - type: formula
+        formula: '\sqrt{25} = 5 \quad \text{denn} \quad 5^2 = 25'
+      - type: text
+        text: "Auch $(-5) \\cdot (-5) = 25$. Trotzdem ist $\\sqrt{25} = 5$ und nicht $-5$: Das Wurzelzeichen steht immer für die nicht negative Zahl."
+      - type: note
+        title: Kein negativer Radikand
+        blocks:
+          - type: text
+            text: "Jede Zahl mal sich selbst ist nicht negativ, denn minus mal minus ergibt plus. Darum gibt es $\\sqrt{-4}$ nicht: Keine Zahl ergibt mit sich selbst malgenommen −4."
+  - type: section
+    id: beispiel
+    title: Beispiel
+    blocks:
+      - type: example
+        title: Beet mit 144 m²
+        blocks:
+          - type: text
+            text: "Gesucht ist die Zahl $s$ mit $s \\cdot s = 144$. Schließe sie ein, das heißt: Finde zwei Zahlen, zwischen denen sie liegt. $10 \\cdot 10 = 100$ ist zu klein, $15 \\cdot 15 = 225$ ist zu groß. Probiere dazwischen: $12 \\cdot 12 = 144$. Die Seite ist 12 m lang. Ein Taschenrechner hat dafür eine Taste mit dem Wurzelzeichen (√)."
+          - type: formula
+            formula: '\sqrt{144} = 12'
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: true-false
+        id: wurzel-16
+        text: Es gilt $\sqrt{16} = 8$.
+        answer: false
+        explanation: Es ist 4, denn 4 · 4 = 16. Die Hälfte von 16 ist 8, aber 8 · 8 = 64.
+      - type: generated
+        id: seite-aus-flaeche
+        given:
+          A: { oneOf: [36, 49, 64, 100, 121, 169, 196, 225, 256, 400] }
+        task:
+          text: Ein quadratisches Beet hat eine Fläche von {{A}} m². Wie lang ist eine Seite?
+        answer: { value: "sqrt(A)", compare: { number: { format: integer, unit: m } } }
+        mistakes:
+          - {
+              value: "sqrt(A) + 1",
+              message: "Fast: Mache die Probe. Multipliziere deine Zahl mit sich selbst. Kommt {{A}} heraus?",
+            }
+          - {
+              value: "sqrt(A) - 1",
+              message: "Fast: Mache die Probe. Multipliziere deine Zahl mit sich selbst. Kommt {{A}} heraus?",
+            }
+          - { value: "A / 2", message: "Du hast die Fläche halbiert. Seite mal Seite muss die Fläche ergeben." }
+          - {
+              value: "A",
+              message: "Das ist die Fläche selbst. Gesucht ist die Seite: die Zahl, die mit sich selbst malgenommen {{A}} ergibt.",
+            }
+        hint: Probiere eine Zahl und multipliziere sie mit sich selbst. Vergleiche mit {{A}}. Ist das Ergebnis zu groß, nimm eine kleinere Zahl, sonst eine größere.
+        steps:
+          - 'Gesucht ist $s$ mit $s \cdot s = {{A}}$.'
+          - '$s = \sqrt{{{A}}} = {{answer}}$, also {{answer}} m.'
+      - type: generated
+        id: zaun
+        given:
+          A: { oneOf: [36, 49, 64, 100, 121, 169, 196, 225] }
+        task:
+          text: Ein quadratisches Beet hat eine Fläche von {{A}} m². Wie viel Meter Zaun brauchst du rund um das Beet (Umfang)?
+        answer: { value: "4 * sqrt(A)", compare: { number: { format: integer, unit: m } } }
+        mistakes:
+          - { value: "sqrt(A)", message: "Das ist eine Seite. Der Zaun geht um alle vier Seiten." }
+          - { value: "4 * A", message: "Du hast die Fläche mit 4 malgenommen. Du brauchst die Seitenlänge." }
+          - { value: "2 * sqrt(A)", message: "Ein Quadrat hat vier gleich lange Seiten, nicht zwei." }
+        hint: Bestimme zuerst die Seitenlänge. Der Umfang ist die Länge des ganzen Rands, also alle vier Seiten zusammen.
+        steps:
+          - 'Zuerst die Seite: $s = \sqrt{{{A}}}$.'
+          - 'Der Zaun geht um alle vier Seiten: $4 \cdot s = {{answer}}$, also {{answer}} m Zaun.'
+      - type: single-choice
+        id: wurzel-81
+        text: Was ist $\sqrt{81}$?
+        options:
+          - text: "9"
+            correct: true
+            info: 9 · 9 = 81, und 9 ist nicht negativ. Das passt zur Quadratwurzel.
+          - text: 40,5
+            correct: false
+            info: 40,5 ist die Hälfte von 81, aber 40,5 · 40,5 ist viel größer als 81. Wurzelziehen ist nicht Halbieren.
+          - text: 9 und −9
+            correct: false
+            info: "Zwar gilt $(-9)^2 = 81$, aber das Zeichen $\\sqrt{81}$ steht nur für die nicht negative Zahl, also 9."
+          - text: "6561"
+            correct: false
+            info: 81 · 81 = 6561. Das ist 81 quadriert. Wurzelziehen kehrt das Quadrieren um, es wiederholt es nicht.
+        explanation: Das Wurzelzeichen steht für die nicht negative Zahl, deren Quadrat 81 ist.

@@ -1,0 +1,207 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: "Potenzgesetze: Potenz einer Potenz"
+description: "Potenzen potenzieren und Produkte potenzieren: ein Exponent kann sich auf ein ganzes Produkt beziehen."
+competencies:
+  - potenzgesetze
+blocks:
+  - type: section
+    id: einstieg
+    title: Was du hier lernst
+    blocks:
+      - type: text
+        text:
+          "Auf der Reise rechnest du in größeren Einheiten: 1 km = $10^3$ m. Am Ende dieser Seite weißt du, wie eine Potenz
+          von einer Potenz und ein Produkt in der Klammer mit Exponent gerechnet werden."
+      - type: number
+        id: zweier-potenz
+        text: Schreibe (2³)² als Produkt aus lauter Zweien. Wie viele Zweien sind es?
+        answer: 6
+        tolerance: 0
+        mistakes:
+          - answer: 5
+            message: "Du hast 3 + 2 gerechnet. (2³)² heißt 2³ mal 2³: zwei Gruppen mit je 3 Zweien."
+        hint: "(2³)² heißt: 2³ wird zweimal als Faktor geschrieben."
+        explanation: (2³)² = 2³ · 2³ = (2 · 2 · 2) · (2 · 2 · 2). Das sind 6 Zweien.
+  - type: section
+    id: idee
+    title: Gruppen von Faktoren
+    blocks:
+      - type: text
+        text:
+          Wenn eine Potenz noch einmal potenziert wird, etwa beim Umrechnen von Metern in Quadratkilometer, brauchst du Regeln
+          für Klammern mit Exponent. Wieder hilft das Ausschreiben.
+      - type: formula
+        formula: (a^3)^2 = a^3 \cdot a^3 = a \cdot a \cdot a \cdot a \cdot a \cdot a = a^6
+      - type: formula
+        formula: (a \cdot b)^3 = (a \cdot b) \cdot (a \cdot b) \cdot (a \cdot b) = a^3 \cdot b^3
+      - type: text
+        text:
+          'Bei $(a^3)^2$ stehen zwei Gruppen mit je drei Faktoren: 3 · 2 = 6. Bei $(a \cdot b)^3$ steht das Paar $a \cdot
+          b$ dreimal da. Der Exponent gilt für beide Faktoren.'
+  - type: section
+    id: regel
+    title: Die Gesetze
+    blocks:
+      - type: text
+        text: "Daraus entstehen drei Regeln:"
+      - type: formula
+        formula: (a^m)^n = a^{m \cdot n}
+      - type: formula
+        formula: (a \cdot b)^n = a^n \cdot b^n
+      - type: formula
+        formula: "(a : b)^n = a^n : b^n"
+      - type: text
+        text: Beim Teilen ist $b$ ungleich 0.
+      - type: note
+        title: "Achtung: Bei Plus gilt das nicht"
+        blocks:
+          - type: text
+            text:
+              Es gilt $(3 + 4)^2 = 7^2 = 49$, aber $3^2 + 4^2 = 9 + 16 = 25$. Du darfst eine Summe in der Klammer nicht einfach
+              aufteilen.
+  - type: section
+    id: beispiel
+    title: Beispiel
+    blocks:
+      - type: example
+        title: Quadratkilometer und Kubikkilometer
+        blocks:
+          - type: text
+            text: "1 km = $10^3$ m. Ein Quadratkilometer ist ein Quadrat mit der Seite $10^3$ m:"
+          - type: formula
+            formula: (10^3)^2 = 10^{3 \cdot 2} = 10^6
+          - type: text
+            text: Ein Quadratkilometer hat also $10^6$ m². Ein Würfel mit der Kante $10^3$ m hat $(10^3)^3 = 10^9$ m³.
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: generated
+        id: potenz-potenz
+        given:
+          b:
+            oneOf:
+              - 2
+              - 3
+              - 5
+              - 10
+          m:
+            int:
+              - 2
+              - 6
+          n:
+            int:
+              - 2
+              - 6
+        where:
+          - m * n != m + n
+          - m * n != pow(m, n)
+        task:
+          text: Es gilt $({{b}}^{{{m}}})^{{{n}}} = {{b}}^k$. Wie groß ist k?
+        answer:
+          value: m * n
+          compare:
+            number:
+              format: integer
+        mistakes:
+          - value: m + n
+            message: Du hast addiert. Bei einer Potenz einer Potenz werden die Exponenten multipliziert.
+          - value: pow(m, n)
+            message: Du hast {{m}} hoch {{n}} gerechnet. Die Exponenten werden einfach malgenommen.
+        hint: "{{b}} hoch {{m}} steht {{n}}-mal als Faktor da."
+        steps:
+          - $({{b}}^{{{m}}})^{{{n}}} = {{b}}^{{{m}} \cdot {{n}}}$
+          - Also k = {{answer}}.
+      - type: generated
+        id: produkt-in-klammer
+        given:
+          a:
+            oneOf:
+              - 2
+              - 3
+              - 5
+          b:
+            oneOf:
+              - 2
+              - 3
+              - 5
+          n:
+            int:
+              - 2
+              - 4
+        where:
+          - a != b
+          - a * pow(b, n) != a * b * n
+          - pow(a * b, n) < 1000
+        task:
+          text: Berechne $({{a}} \cdot {{b}})^{{{n}}}$.
+        answer:
+          value: pow(a * b, n)
+          compare:
+            number:
+              format: integer
+        mistakes:
+          - value: a * pow(b, n)
+            message: Der Exponent gilt für beide Faktoren, nicht nur für den hinteren.
+          - value: a * b * n
+            message: Du hast mit dem Exponenten malgenommen. Der Exponent sagt, wie oft das Produkt als Faktor steht.
+        hint: Rechne erst die Klammer aus oder verteile den Exponenten auf beide Faktoren.
+        steps:
+          - $({{a}} \cdot {{b}})^{{{n}}} = {{a}}^{{{n}}} \cdot {{b}}^{{{n}}}$
+          - Das ist {{answer}}.
+      - type: single-choice
+        id: potenz-potenz-sc
+        text: Welche Umformung stimmt?
+        options:
+          - text: (x³)⁴ = x¹²
+            correct: true
+            info: Bei einer Potenz einer Potenz werden die Exponenten multipliziert, 3 · 4 = 12.
+          - text: (x³)⁴ = x⁷
+            correct: false
+            info: Du hast addiert. Das gilt beim Malnehmen gleicher Basen, nicht bei der Potenz einer Potenz.
+          - text: (x³)⁴ = x⁸¹
+            correct: false
+            info: Du hast 3 hoch 4 gerechnet. Die Exponenten werden einfach malgenommen.
+          - text: (x³)⁴ = x⁶⁴
+            correct: false
+            info: Du hast 4 hoch 3 gerechnet. Die Exponenten werden einfach malgenommen.
+        explanation: "(x³)⁴ heißt: x³ steht viermal als Faktor da, also 3 · 4 = 12 Faktoren x."
+      - type: matching
+        id: term-potenz
+        text: Ordne jedem Term die passende Potenz zu.
+        pairs:
+          - left: der Term (2³)²
+            right: 2⁶
+          - left: das Produkt 2³ · 2²
+            right: 2⁵
+          - left: "der Quotient 2⁶ : 2²"
+            right: 2⁴
+          - left: der Term (2 · 3)²
+            right: 2² · 3²
+        distractors:
+          - 2⁸
+        explanation: (2³)² = 2⁶, 2³·2² = 2⁵, 2⁶:2² = 2⁴ und (2 · 3)² = 2²·3².
+      - type: true-false
+        id: summe-klammer
+        text: Es gilt (a + b)² = a² + b².
+        answer: false
+        explanation: "Probe mit a = 3 und b = 4: (3 + 4)² = 49, aber 3² + 4² = 25. Für Plus gibt es kein Potenzgesetz."
+      - type: single-choice
+        id: kubikmeter
+        text: 1 m = 10² cm. Wie viele Kubikzentimeter hat 1 m³?
+        options:
+          - text: 10⁶ cm³
+            correct: true
+            info: 1 m³ = (10² cm)³ = 10⁶ cm³.
+          - text: 10⁵ cm³
+            correct: false
+            info: "Du hast 2 + 3 gerechnet. Bei (10²)³ werden die Exponenten multipliziert: 2 · 3 = 6."
+          - text: 10⁸ cm³
+            correct: false
+            info: Du hast 2 hoch 3 gerechnet. Die Exponenten werden einfach malgenommen.
+          - text: 3 · 10² cm³
+            correct: false
+            info: Du hast die Kante verdreifacht statt hoch 3 genommen.
+        explanation: Ein Würfel mit der Kante 10² cm hat das Volumen (10²)³ = 10⁶ cm³.
+      - type: text
+        text: "Als Nächstes geht die Reise ins Kleine: Dabei brauchst du Potenzen mit negativen Exponenten."
