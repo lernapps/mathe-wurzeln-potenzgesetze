@@ -56,7 +56,8 @@ Alle Aufgaben stehen im Abschnitt `uebung` der Seite; Zufallsaufgaben (`generate
 ## Figures
 
 - SVG im Ordner `src/images/` (eigene Zeichnung, CC-BY-4.0, weißer Hintergrund im Bild, Text und Rahmen dunkel, jede Information auch als Text): `quadrat-seite-3.svg` (3×3 Quadrat, Einheitsquadrat 1 m²), `rechteck-wurzeln.svg` (Rechteck √9 mal √4), `zahlengerade-reell.svg` (gefüllte Punkte rational, offene irrational, zusätzlich beschriftet), `wuerfel-kante-2.svg` (2×2×2 Würfel). Bilder zeigen nie die Lösung der Aufgabe auf derselben Seite.
-- Komponente `Lupe` (`src/components/Lupe.vue`, `.ts`, `.test.ts`) auf `src/wurzeln/wurzel-zwei-einfangen.yaml`: Regler für fünf Stufen der Intervallschachtelung für √2, Zahlengerade zoomt, Quadrate der Grenzen als Text; prüft nichts. Ohne JavaScript steht die Tabelle „Die Stufen der Lupe“ und der Text `nojs`.
+- Komponente `Lupe` (`src/components/Lupe.vue`, `.ts`, `.test.ts`) auf `src/wurzeln/wurzel-zwei-einfangen.yaml` (fünf Stufen für √2) und auf `src/wurzeln/wurzeln-abschaetzen.yaml` (drei Stufen für √20): Regler für fünf Stufen der Intervallschachtelung für √2, Zahlengerade zoomt, Quadrate der Grenzen als Text; prüft nichts. Ohne JavaScript steht die Tabelle „Die Stufen der Lupe“ und der Text `nojs`.
+- Zehnerpotenz-Reise: Komponente `Reise` (`src/components/Reise.vue`, `.ts`, `.test.ts`) auf `src/potenzen/wissenschaftliche-schreibweise.yaml`: Regler über zwölf Halte aus `src/data/groessen.yaml` (Prop `stops: { data: groessen }`), Skala der Zehnerpotenzen mit Marke, Länge des Halts und Sprung gegenüber dem Halt davor; prüft nichts, ohne JavaScript steht die Liste im Text `nojs`. Beide Komponenten haben nur einen Regler (kein Button ohne sichtbare Wirkung, Farben über Variablen der Laufzeit).
 - Tabellen mit drei Spalten höchstens, Formeln kurz (sonst Scroll-Bereich, der `accessible` verletzt).
 
 ## Sources
@@ -75,6 +76,10 @@ Alle Aufgaben stehen im Abschnitt `uebung` der Seite; Zufallsaufgaben (`generate
 7. `npx vp check --fix`, `npx vp build`, `npx --no -- lernapps check`, dann Commit.
 
 ## Rules learned from mistakes
+
+- Jeder Abschnitt (`idee`, `regel`, Recap-Abschnitt) beginnt mit dem Anlass in ein bis zwei Sätzen („Wenn du … willst, …“), erst danach kommt das Verfahren (regeln.md Abschnitt 9, Punkt 8).
+- Wiederholungen stehen nur auf den Recap-Seiten, dort höchstens zwei Übungen im Abschnitt `kannst-du-das`.
+- Keine `links:` an Fragen (der Build besteht ohne).
 
 - Kein `$\sqrt{\ }$` (leere Formel, der Check `explainer-readable-without-js` schlägt an): das Wurzelzeichen allein als Zeichen `√` in den Text schreiben.
 - Jeden Fachbegriff (Einheitsquadrat, Quadratzahl, Umfang, Wurzelziehen) auf der Seite erklären, bevor eine Aufgabe ihn benutzt; Hinweise nennen eine Strategie (Einschließen), nicht nur eine Frage.
