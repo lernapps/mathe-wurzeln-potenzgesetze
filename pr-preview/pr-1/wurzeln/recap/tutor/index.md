@@ -37,7 +37,7 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 
 ## Kontext: die Seite „Das brauchst du für Wurzeln und reelle Zahlen“
 
-Diese Seite ist eine Wiederholung: Sie wiederholt etwas, das das Kind schon können sollte, und hat keine Aufgabe. Erklär mit dem Inhalt der Seite und frag nach, ob das Kind ihn verstanden hat. Üben kann es das in anderen Apps; welche das sind, steht hier: https://lernapps.net/apps/map/mathematik/c/potenzen/, https://lernapps.net/apps/map/mathematik/c/zahlen-vergleichen-ordnen/, https://lernapps.net/apps/map/mathematik/c/dezimalbrueche-rechnen/, https://lernapps.net/apps/map/mathematik/c/rationale-zahlen-rechnen/
+Diese Seite ist eine Wiederholung: Sie wiederholt etwas, das das Kind schon können sollte, und hat höchstens zwei Aufgaben zur Kontrolle. Erklär mit dem Inhalt der Seite und frag nach, ob das Kind ihn verstanden hat. Üben kann es das in anderen Apps; welche das sind, steht hier: https://lernapps.net/apps/map/mathematik/c/potenzen/, https://lernapps.net/apps/map/mathematik/c/zahlen-vergleichen-ordnen/, https://lernapps.net/apps/map/mathematik/c/dezimalbrueche-rechnen/, https://lernapps.net/apps/map/mathematik/c/rationale-zahlen-rechnen/
 
 Vier Bausteine aus früheren Jahren, die du für Wurzeln und reelle Zahlen brauchst, mit Kurztests zum Prüfen.
 
