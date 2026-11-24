@@ -28,7 +28,7 @@ Kapitel `wurzeln` (Wurzeln und neue Zahlen), Kapitel `potenzen` (Potenzgesetze, 
 
 - Zwei Kapitel, Ordner `src/wurzeln/` (Wurzeln und neue Zahlen) und `src/potenzen/` (Potenzgesetze, kleine Zahlen und n-te Wurzeln), je mit `chapter.yaml` und der Seitenliste in Lesereihenfolge. Das Kapitel `wurzeln` hat 6 Inhaltsseiten (`quadratwurzel-bestimmen`, `wurzeln-abschaetzen`, `wurzel-zwei-einfangen`, `reelle-zahlen`, `wurzelgesetze`, `wurzeln-vereinfachen`), das Kapitel `potenzen` 6 (`potenzgesetze-produkt`, `potenzgesetze-potenz`, `negative-exponenten`, `wissenschaftliche-schreibweise`, `dritte-wurzel`, `wurzeln-als-potenzen`). Beide beginnen mit der Seite `recap`.
 - Abschnitts-Ids auf Inhaltsseiten, in dieser Reihenfolge: `einstieg` (Ziel in einem Satz und eine erste Aufgabe, die ohne die Seite lösbar ist), `idee` (Herleitung an Bild, Tabelle oder Komponente), `regel` (Definition, Formel), `beispiel` (Beispielkasten, ein Beispiel je Kasten), `uebung` (mindestens vier Aufgaben, vom Erkennen zum Anwenden zur neuen Situation). Die Seite endet mit einem Satz, was kommt.
-- Recap-Seite: `recap:` statt `competencies`, Abschnitte `kopf`, je Baustein eine Überschrift (Name der Karte), `bereit`. Je Baustein: Fachbegriffe als `definition` (Glossar), ein Beispielkasten, ein bis zwei Komponenten `Kurztest` (`src/components/Kurztest.*`, eine Frage, sofortige Rückmeldung mit Grund, nichts gezählt) und der Satz „Wenn du hier unsicher warst: …“ mit Kartenseite `https://lernapps.net/apps/map/mathematik/c/<id>/`. Kein Link in andere Apps. Die Kurztest-Fragen enthalten nur Text (keine Formeln), `nojs` nennt Frage, Optionen und Antwort.
+- Recap-Seite: `recap:` statt `competencies`, Abschnitte `kopf`, je Baustein eine Überschrift (Name der Karte), `bereit`. Je Baustein: Fachbegriffe als `definition` (Glossar), ein Beispielkasten und der Satz „Wenn du hier unsicher warst: …“ mit Kartenseite `https://lernapps.net/apps/map/mathematik/c/<id>/`. Kein Link in andere Apps. Danach ein Abschnitt `kannst-du-das` mit höchstens zwei normalen Übungen (zusammen über alle Bausteine, sofortige Rückmeldung mit Grund; mehr als zwei sind ein Buildfehler; sie zählen nicht zur Selbsteinschätzung). Wiederholungen stehen nur auf Recap-Seiten.
 - Länge: Inhaltsseiten höchstens 350 Wörter Lesetext (Hinweis `explainer-text-load` bei den Recaps und einer Seite bleibt, weil mehrere Bausteine auf einer Seite stehen).
 - Geschichte: realer Fall ohne erfundene Personen. Kapitel `wurzeln`: Schulgarten (Beet, Zaun, Pflaster). Kapitel `potenzen`: Zehnerpotenz-Reise (Erde, Sonne, Atom, Virus, Universum), am Ende der Rückblick auf beide Kapitel.
 
@@ -57,7 +57,6 @@ Alle Aufgaben stehen im Abschnitt `uebung` der Seite; Zufallsaufgaben (`generate
 
 - SVG im Ordner `src/images/` (eigene Zeichnung, CC-BY-4.0, weißer Hintergrund im Bild, Text und Rahmen dunkel, jede Information auch als Text): `quadrat-seite-3.svg` (3×3 Quadrat, Einheitsquadrat 1 m²), `rechteck-wurzeln.svg` (Rechteck √9 mal √4), `zahlengerade-reell.svg` (gefüllte Punkte rational, offene irrational, zusätzlich beschriftet), `wuerfel-kante-2.svg` (2×2×2 Würfel). Bilder zeigen nie die Lösung der Aufgabe auf derselben Seite.
 - Komponente `Lupe` (`src/components/Lupe.vue`, `.ts`, `.test.ts`) auf `src/wurzeln/wurzel-zwei-einfangen.yaml`: Regler für fünf Stufen der Intervallschachtelung für √2, Zahlengerade zoomt, Quadrate der Grenzen als Text; prüft nichts. Ohne JavaScript steht die Tabelle „Die Stufen der Lupe“ und der Text `nojs`.
-- Komponente `Kurztest` (`src/components/Kurztest.vue`): nur auf den `recap`-Seiten. Farben nur über Variablen der Laufzeit.
 - Tabellen mit drei Spalten höchstens, Formeln kurz (sonst Scroll-Bereich, der `accessible` verletzt).
 
 ## Sources
@@ -69,7 +68,7 @@ Alle Aufgaben stehen im Abschnitt `uebung` der Seite; Zufallsaufgaben (`generate
 
 1. Kompetenzen aus der Karte (`https://lernapps.net/apps/map/mathematik.json`) mit Id übernehmen; Reihenfolge nach `requires`.
 2. Ordner `src/<kapitel>/` mit `chapter.yaml` (`title`, `summary`, `pages`); Kapitel in `src/app.yaml` unter `chapters` eintragen, jede Seite genau einmal in `pages`.
-3. Erste Seite `recap`: eine Recap-Seite je Kapitel (Vorlage: `src/wurzeln/recap.yaml`), Kurztests mit `Kurztest`.
+3. Erste Seite `recap`: eine Recap-Seite je Kapitel (Vorlage: `src/wurzeln/recap.yaml`), höchstens zwei Übungen im Abschnitt `kannst-du-das`.
 4. Je Kompetenz eine oder zwei Seiten mit den Abschnitten `einstieg`, `idee`, `regel`, `beispiel`, `uebung`; Aufgaben nach den Mustern oben; Datensätze einmal in `src/data/<name>.yaml` (Name nur Kleinbuchstaben und Ziffern).
 5. 1 bis 3 ihrer Übungen in `selfAssessment` (in `chapter.yaml`) aufnehmen, wie Skill `lernapps-explainer-self-assessment` sagt. Bisher je Kapitel drei Schritte mit je vier Zufallsaufgaben (`generated`), jede Seite mit zwei; die Seite `wurzel-zwei-einfangen` mit der Lupe und die Recap-Seiten sind nicht oder nur mit Zufallsaufgaben beteiligt (Recap hat keine Aufgabe).
 6. Fachbegriffe als `definition` (jeder Begriff nur einmal im ganzen Explainer).

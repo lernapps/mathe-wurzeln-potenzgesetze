@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
 title: Das brauchst du für die Potenzgesetze
-description: "Zwei Bausteine, die du für die Potenzgesetze brauchst: Terme umformen und Potenzen, mit Kurztests zum Prüfen."
+description: "Zwei Bausteine, die du für die Potenzgesetze brauchst: Terme umformen und Potenzen, mit zwei Aufgaben zum Prüfen."
 recap:
   - mathematik/terme-umformen
   - mathematik/potenzen
@@ -12,10 +12,10 @@ blocks:
       - type: text
         text:
           "Für die Potenzgesetze brauchst du zwei Dinge: Terme umformen und Potenzen mit natürlichen Exponenten. Lies jeden
-          Abschnitt kurz und beantworte die Kurztests. Sie zählen nichts und speichern nichts. Unter jedem Abschnitt steht, was
-          du wiederholen kannst, wenn du unsicher warst. Hast du alle Kurztests richtig, bist du bereit. Die dritte Wurzel baut
-          auf der Quadratwurzel aus dem Kapitel „Wurzeln und neue Zahlen“ auf; lies dort zuerst „Quadratwurzel bestimmen“, falls
-          du sie noch nicht kennst."
+          Abschnitt kurz. Am Ende prüfen zwei Aufgaben, ob du es kannst. Sie zählen nichts und speichern nichts. Unter jedem Abschnitt
+          steht, was du wiederholen kannst, wenn du unsicher warst. Hast du beide Aufgaben richtig, bist du bereit. Die dritte
+          Wurzel baut auf der Quadratwurzel aus dem Kapitel „Wurzeln und neue Zahlen“ auf; lies dort zuerst „Quadratwurzel bestimmen“,
+          falls du sie noch nicht kennst."
   - type: section
     id: terme-umformen
     title: Terme umformen
@@ -35,73 +35,6 @@ blocks:
         blocks:
           - type: text
             text: Aus $4a + 7a - 2a$ wird $9a$. Aus $10b + 15$ wird $5 \cdot (2b + 3)$.
-      - type: vue-component
-        id: test-zusammenfassen
-        component: Kurztest
-        props:
-          question: Was ergibt 4x + 3 − x + 5?
-          options:
-            - text: 3x + 8
-              correct: true
-              info: 4x − x = 3x und 3 + 5 = 8.
-            - text: 8x
-              correct: false
-              info: Zahlen ohne x und Glieder mit x lassen sich nicht zusammenfassen.
-            - text: 5x + 8
-              correct: false
-              info: "Das Minus vor x gehört zum Glied: 4x − x = 3x, nicht 5x."
-            - text: 3x − 2
-              correct: false
-              info: Du hast 3 − 5 gerechnet. Die 5 wird addiert.
-          right: Richtig.
-          wrong: Nicht richtig.
-        nojs:
-          "Kurztest: Was ergibt 4x plus 3 minus x plus 5? Zur Wahl stehen 3x plus 8, 8x, 5x plus 8 und 3x minus 2. Richtig
-          ist 3x plus 8, denn 4x minus x ist 3x und 3 plus 5 ist 8."
-      - type: vue-component
-        id: test-ausklammern
-        component: Kurztest
-        props:
-          question: Klammere 12a + 18b so weit wie möglich aus.
-          options:
-            - text: 12 · (a + 18b)
-              correct: false
-              info: "Der Faktor 12 gehört auch zu 18b: Ausmultipliziert gäbe das 12a + 216b."
-            - text: 6 · (2a + 3b)
-              correct: true
-              info: 6 ist der größte gemeinsame Teiler von 12 und 18.
-            - text: 3 · (4a + 6b)
-              correct: false
-              info: "Das ist ausgeklammert, aber nicht so weit wie möglich: In der Klammer haben 4 und 6 noch den Teiler 2."
-            - text: 2 · (6a + 9b)
-              correct: false
-              info: "Das ist ausgeklammert, aber nicht so weit wie möglich: In der Klammer haben 6 und 9 noch den Teiler 3."
-          right: Richtig.
-          wrong: Nicht richtig.
-        nojs:
-          "Kurztest: Klammere 12a plus 18b so weit wie möglich aus. Richtig ist 6 mal (2a plus 3b), denn 6 ist der größte
-          gemeinsame Teiler von 12 und 18."
-      - type: vue-component
-        id: test-variable-mal
-        component: Kurztest
-        props:
-          question: Was ist a · a · a?
-          options:
-            - text: a + 3
-              correct: false
-              info: Das ist eine Summe. Hier wird malgenommen.
-            - text: 3 · a · a
-              correct: false
-              info: Dreimal dieselbe Variable heißt dreimal a als Faktor, nicht einmal 3.
-            - text: a³
-              correct: true
-              info: Drei gleiche Faktoren a schreibst du kurz als a³.
-            - text: 3a
-              correct: false
-              info: 3a ist a + a + a. Hier steht aber ein Produkt.
-          right: Richtig.
-          wrong: Nicht richtig.
-        nojs: "Kurztest: Was ist a mal a mal a? Zur Wahl stehen a hoch 3, 3a, a plus 3 und 3 mal a mal a. Richtig ist a hoch 3."
       - type: text
         text: "Wenn du hier unsicher warst: Wiederhole den Baustein „Terme umformen“ auf seiner Kartenseite: [Terme umformen](https://lernapps.net/apps/map/mathematik/c/terme-umformen/)."
   - type: section
@@ -113,58 +46,51 @@ blocks:
           'Eine **Potenz** schreibt ein Produkt aus gleichen Faktoren kurz: $2^5 = 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 = 32$.
           Die **Basis** ist 2, der **Exponent** ist 5. Eine **Zehnerpotenz** hat die Basis 10, der Exponent zählt die Nullen:
           $10^4$ = 10 000 hat vier Nullen.'
-      - type: vue-component
-        id: test-potenz-2
-        component: Kurztest
-        props:
-          question: Was ist 2⁵ − 5²?
-          options:
-            - text: −7
-              correct: false
-              info: Du hast 25 − 32 gerechnet. Die erste Zahl ist 2⁵.
-            - text: "3"
-              correct: false
-              info: Das wäre 5 − 2. Hier werden Potenzen abgezogen.
-            - text: "7"
-              correct: true
-              info: 2⁵ = 32 und 5² = 25, 32 − 25 = 7.
-            - text: "0"
-              correct: false
-              info:
-                "Du hast 2 · 5 und 5 · 2 gerechnet. Eine Potenz ist ein Produkt aus gleichen Faktoren: 2⁵ ist 2 · 2 · 2 · 2
-                · 2."
-          right: Richtig.
-          wrong: Nicht richtig.
-        nojs:
-          "Kurztest: Was ist 2 hoch 5 minus 5 hoch 2? Zur Wahl stehen 7, 0, minus 7 und 3. Richtig ist 7, denn 2 hoch 5 ist
-          32 und 5 hoch 2 ist 25."
-      - type: vue-component
-        id: test-zehnerpotenz
-        component: Kurztest
-        props:
-          question: Wie viele Nullen hat 10⁴ ausgeschrieben?
-          options:
-            - text: "5"
-              correct: false
-              info: 10⁵ hat fünf Nullen. Der Exponent ist 4.
-            - text: "40"
-              correct: false
-              info: Das wäre 10 · 4. Der Exponent zählt die Nullen, er wird nicht mit 10 malgenommen.
-            - text: "4"
-              correct: true
-              info: "10⁴ = 10 000: eine 1 mit vier Nullen."
-            - text: "3"
-              correct: false
-              info: 10³ = 1000 hat drei Nullen. Der Exponent 4 zählt vier Nullen.
-          right: Richtig.
-          wrong: Nicht richtig.
-        nojs:
-          "Kurztest: Wie viele Nullen hat 10 hoch 4 ausgeschrieben? Zur Wahl stehen 4, 3, 5 und 40. Richtig ist 4, denn 10
-          hoch 4 ist 10 000."
       - type: text
         text:
           "Wenn du hier unsicher warst: Wiederhole den Baustein „Potenzen und Zehnerpotenzen“ auf seiner Kartenseite: [Potenzen
           und Zehnerpotenzen](https://lernapps.net/apps/map/mathematik/c/potenzen/)."
+  - type: section
+    id: kannst-du-das
+    title: Kannst du das?
+    blocks:
+      - type: text
+        text:
+          Wenn du nicht sicher bist, ob du die beiden Bausteine kannst, prüfen zwei Aufgaben sie zusammen. Du bekommst sofort
+          eine Rückmeldung, und nichts wird gezählt.
+      - type: single-choice
+        id: terme-zusammenfassen
+        text: Was ergibt 4x + 3 − x + 5?
+        options:
+          - text: 3x + 8
+            correct: true
+            info: 4x − x = 3x und 3 + 5 = 8.
+          - text: 8x
+            correct: false
+            info: Zahlen ohne x und Glieder mit x lassen sich nicht zusammenfassen.
+          - text: 5x + 8
+            correct: false
+            info: "Das Minus vor x gehört zum Glied: 4x − x = 3x, nicht 5x."
+          - text: 3x − 2
+            correct: false
+            info: Du hast 3 − 5 gerechnet. Die 5 wird addiert.
+        explanation: "Du fasst die Glieder mit x und die Zahlen getrennt zusammen: 4x − x = 3x und 3 + 5 = 8."
+      - type: number
+        id: potenz-differenz
+        text: Was ist 2⁵ − 5²?
+        answer: 7
+        tolerance: 0
+        mistakes:
+          - answer: 0
+            message:
+              "Du hast 2 · 5 und 5 · 2 gerechnet. Eine Potenz ist ein Produkt aus gleichen Faktoren: 2⁵ ist 2 · 2 · 2 · 2
+              · 2."
+          - answer: -7
+            message: Du hast 25 − 32 gerechnet. Die erste Zahl ist 2⁵.
+          - answer: 3
+            message: Das wäre 5 − 2. Hier werden Potenzen abgezogen.
+        hint: Rechne erst beide Potenzen aus.
+        explanation: 2⁵ = 32 und 5² = 25, also 32 − 25 = 7.
   - type: section
     id: bereit
     title: Du bist bereit, wenn du …
@@ -175,5 +101,5 @@ blocks:
           - Potenzen mit natürlichen Exponenten berechnen und Zehnerpotenzen zum Schreiben großer Zahlen nutzen kannst.
 
 
-          Hattest du bei jedem Kurztest alles richtig, beginnt die Reise: vom Proton bis zum Universum, mit Zehnerpotenzen. Sonst
-          wiederhole zuerst den Baustein, bei dem du unsicher warst."
+          Hattest du beide Aufgaben richtig, beginnt die Reise: vom Proton bis zum Universum, mit Zehnerpotenzen. Sonst wiederhole
+          zuerst den Baustein, bei dem du unsicher warst."

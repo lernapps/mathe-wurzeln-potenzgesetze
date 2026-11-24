@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
 title: Das brauchst du für Wurzeln und reelle Zahlen
-description: Vier Bausteine aus früheren Jahren, die du für Wurzeln und reelle Zahlen brauchst, mit Kurztests zum Prüfen.
+description: Vier Bausteine aus früheren Jahren, die du für Wurzeln und reelle Zahlen brauchst, mit zwei Aufgaben zum Prüfen.
 recap:
   - mathematik/potenzen
   - mathematik/zahlen-vergleichen-ordnen
@@ -14,9 +14,9 @@ blocks:
       - type: text
         text:
           "Für Wurzeln und reelle Zahlen brauchst du vier Dinge aus früheren Jahren: Potenzen, Zahlen ordnen, Dezimalbrüche
-          und negative Zahlen. Lies jeden Abschnitt kurz und beantworte die Kurztests. Sie zählen nichts und speichern nichts,
-          sie zeigen dir nur, ob du es kannst. Unter jedem Abschnitt steht, was du wiederholen kannst, wenn du unsicher warst.
-          Hast du alle Kurztests richtig, bist du bereit."
+          und negative Zahlen. Lies jeden Abschnitt kurz. Am Ende prüfen zwei Aufgaben, ob du es kannst. Sie zählen nichts und
+          speichern nichts. Unter jedem Abschnitt steht, was du wiederholen kannst, wenn du unsicher warst. Hast du beide Aufgaben
+          richtig, bist du bereit."
   - type: section
     id: potenzen
     title: Potenzen und Zehnerpotenzen
@@ -47,49 +47,6 @@ blocks:
             text:
               Die Erde ist rund $15 \cdot 10^7$ Kilometer von der Sonne entfernt. $10^7$ ist eine 1 mit sieben Nullen, also
               10 000 000. Das Ergebnis ist 150 000 000 Kilometer.
-      - type: vue-component
-        id: test-potenz
-        component: Kurztest
-        props:
-          question: Was ist 2⁴ + 3³?
-          options:
-            - text: "125"
-              correct: false
-              info: Das wäre (2 + 3)³. Hier wird jede Potenz für sich berechnet und dann addiert.
-            - text: "43"
-              correct: true
-              info: 2⁴ = 16 und 3³ = 27, zusammen 43.
-            - text: "17"
-              correct: false
-              info: Du hast 2 · 4 = 8 und 3 · 3 = 9 gerechnet. Der Exponent sagt, wie oft die Basis als Faktor steht.
-          right: Richtig.
-          wrong: Nicht richtig.
-        nojs:
-          "Kurztest: Was ist 2 hoch 4 plus 3 hoch 3? Zur Wahl stehen 43, 17 und 125. Richtig ist 43, denn 2 hoch 4 ist 16
-          und 3 hoch 3 ist 27."
-      - type: vue-component
-        id: test-quadratzahl
-        component: Kurztest
-        props:
-          question: Was ist 15² − 14²?
-          options:
-            - text: "210"
-              correct: false
-              info: Das ist 15 · 14. Gefragt ist die Differenz der Quadrate.
-            - text: "29"
-              correct: true
-              info: 15² = 225 und 14² = 196, 225 − 196 = 29.
-            - text: "1"
-              correct: false
-              info: Das wäre (15 − 14)². Hier werden erst die Quadrate gebildet und dann abgezogen.
-            - text: "421"
-              correct: false
-              info: Das ist 225 + 196. Hier wird abgezogen.
-          right: Richtig.
-          wrong: Nicht richtig.
-        nojs:
-          "Kurztest: Was ist 15 zum Quadrat minus 14 zum Quadrat? Zur Wahl stehen 29, 1, 421 und 210. Richtig ist 29, denn
-          225 minus 196 ist 29."
       - type: text
         text:
           "Wenn du hier unsicher warst: Wiederhole den Baustein „Potenzen und Zehnerpotenzen“ auf seiner Kartenseite: [Potenzen
@@ -114,75 +71,6 @@ blocks:
             text:
               1250 und 1205 haben beide vier Stellen. Die Tausender und Hunderter sind gleich. Bei den Zehnern ist 5 größer
               als 0, also gilt $1250 > 1205$.
-      - type: vue-component
-        id: test-ordnen
-        component: Kurztest
-        props:
-          question: "Welche Zahl ist die kleinste: 0,3; 0,25; 0,125 oder 0,2?"
-          options:
-            - text: 0,125
-              correct: true
-              info:
-                Bei den Zehnteln steht bei 0,125 nur die 1, bei den anderen 2 oder 3. Mehr Stellen heißt bei Dezimalzahlen nicht
-                größer.
-            - text: 0,2
-              correct: false
-              info: 0,2 hat 2 Zehntel, 0,125 hat nur 1 Zehntel.
-            - text: 0,25
-              correct: false
-              info: 0,25 hat 2 Zehntel, 0,125 nur 1.
-            - text: 0,3
-              correct: false
-              info: 0,3 hat 3 Zehntel, 0,125 nur 1 Zehntel.
-          right: Richtig.
-          wrong: Nicht richtig.
-        nojs:
-          "Kurztest: Welche Zahl ist die kleinste: 0,3, 0,25, 0,125 oder 0,2? Richtig ist 0,125, denn bei den Zehnteln steht
-          dort nur die 1."
-      - type: vue-component
-        id: test-dezimal-ordnen
-        component: Kurztest
-        props:
-          question: "Welche Zahl ist größer: 1,41 oder 1,5?"
-          options:
-            - text: 1,41
-              correct: false
-              info: "Du hast 41 und 5 verglichen. Vergleiche Stelle für Stelle: Bei den Zehnteln steht 4 gegen 5."
-            - text: 1,5
-              correct: true
-              info: Bei den Zehnteln ist 5 größer als 4, also 1,5 > 1,41.
-            - text: beide sind gleich
-              correct: false
-              info: 1,5 ist 1,50, und 1,50 ist größer als 1,41.
-            - text: das lässt sich nicht sagen
-              correct: false
-              info: Du kannst Dezimalzahlen Stelle für Stelle vergleichen.
-          right: Richtig.
-          wrong: Nicht richtig.
-        nojs: "Kurztest: Welche Zahl ist größer, 1,41 oder 1,5? Richtig ist 1,5, denn bei den Zehnteln ist 5 größer als 4."
-      - type: vue-component
-        id: test-ordnen-negativ
-        component: Kurztest
-        props:
-          question: Welche Reihenfolge ist richtig, von klein nach groß?
-          options:
-            - text: −2; −0,5; 1
-              correct: true
-              info: Auf der Zahlengerade liegt −2 links von −0,5, und −0,5 liegt links von 1.
-            - text: −0,5; −2; 1
-              correct: false
-              info: −2 liegt weiter links als −0,5, ist also kleiner.
-            - text: 1; −0,5; −2
-              correct: false
-              info: Das ist die Reihenfolge von groß nach klein.
-            - text: −0,5; 1; −2
-              correct: false
-              info: −2 ist die kleinste der drei Zahlen und gehört nach vorn.
-          right: Richtig.
-          wrong: Nicht richtig.
-        nojs:
-          "Kurztest: Welche Reihenfolge ist richtig, von klein nach groß? Minus 2, minus 0,5, 1. Richtig ist: minus 2, minus
-          0,5, 1, denn auf der Zahlengerade liegen sie in dieser Reihenfolge von links nach rechts."
       - type: text
         text:
           "Wenn du hier unsicher warst: Wiederhole den Baustein „Zahlen vergleichen und ordnen“ auf seiner Kartenseite: [Zahlen
@@ -207,75 +95,6 @@ blocks:
             text:
               'Ohne Komma: $4 \cdot 15 = 60$. Die Faktoren haben zusammen zwei Stellen hinter dem Komma, also gilt $0{,}4 \cdot
               1{,}5 = 0{,}60 = 0{,}6$.'
-      - type: vue-component
-        id: test-dezimal
-        component: Kurztest
-        props:
-          question: Was ist 0,12 · 0,5?
-          options:
-            - text: 0,62
-              correct: false
-              info: Das wäre 0,12 + 0,5. Hier wird malgenommen.
-            - text: 0,06
-              correct: true
-              info: "12 · 5 = 60, drei Stellen hinter dem Komma: 0,060 = 0,06."
-            - text: 0,6
-              correct: false
-              info: Ohne Komma ist 12 · 5 = 60. Die Faktoren haben aber zusammen drei Stellen hinter dem Komma.
-            - text: 0,006
-              correct: false
-              info: Das wären vier Stellen. Die Faktoren haben zusammen drei.
-          right: Richtig.
-          wrong: Nicht richtig.
-        nojs:
-          "Kurztest: Was ist 0,12 mal 0,5? Zur Wahl stehen 0,06, 0,6, 0,006 und 0,62. Richtig ist 0,06, denn 12 mal 5 ist
-          60 und es gibt zusammen drei Stellen hinter dem Komma."
-      - type: vue-component
-        id: test-dezimal-quadrat
-        component: Kurztest
-        props:
-          question: Was ist 1,5 · 1,5?
-          options:
-            - text: 0,225
-              correct: false
-              info: Das wären drei Stellen. Die Faktoren haben zusammen zwei.
-            - text: 2,25
-              correct: true
-              info: "15 · 15 = 225, zwei Stellen hinter dem Komma: 2,25."
-            - text: 2,5
-              correct: false
-              info: Zwei Faktoren haben zusammen zwei Stellen hinter dem Komma, also 2,25 und nicht 2,5.
-            - text: "3"
-              correct: false
-              info: Das ist 1,5 + 1,5. Hier wird malgenommen.
-          right: Richtig.
-          wrong: Nicht richtig.
-        nojs:
-          "Kurztest: Was ist 1,5 mal 1,5? Zur Wahl stehen 2,25, 2,5, 3 und 0,225. Richtig ist 2,25, denn 15 mal 15 ist 225
-          und es gibt zusammen zwei Stellen hinter dem Komma."
-      - type: vue-component
-        id: test-bruch-dezimal
-        component: Kurztest
-        props:
-          question: Welcher Bruch ist 0,25?
-          options:
-            - text: ½
-              correct: false
-              info: Ein Halb ist 0,5.
-            - text: ⅕
-              correct: false
-              info: Ein Fünftel ist 0,2.
-            - text: ¾
-              correct: false
-              info: Drei Viertel sind 0,75.
-            - text: ¼
-              correct: true
-              info: "Ein Viertel ist 1 : 4 = 0,25."
-          right: Richtig.
-          wrong: Nicht richtig.
-        nojs:
-          "Kurztest: Welcher Bruch ist 0,25? Ein Viertel, ein Halb, ein Fünftel oder drei Viertel. Richtig ist ein Viertel,
-          denn 1 geteilt durch 4 ist 0,25."
       - type: text
         text:
           "Wenn du hier unsicher warst: Wiederhole den Baustein „Rechnen mit Dezimalbrüchen“ auf seiner Kartenseite: [Rechnen
@@ -302,79 +121,44 @@ blocks:
         blocks:
           - type: text
             text: "Du startest bei 5 und gehst 8 Schritte nach links: $5 + (-8) = -3$."
-      - type: vue-component
-        id: test-vorzeichen
-        component: Kurztest
-        props:
-          question: Was ist (−4) · (−3) − 5?
-          options:
-            - text: "7"
-              correct: true
-              info: (−4) · (−3) = 12, dann 12 − 5 = 7.
-            - text: "17"
-              correct: false
-              info: Du hast 12 + 5 gerechnet. Das Minus vor der 5 gehört zur Rechnung.
-            - text: −17
-              correct: false
-              info: "Minus mal minus ergibt plus: Das Produkt ist +12, nicht −12."
-            - text: −7
-              correct: false
-              info: Du hast −12 + 5 gerechnet. Minus mal minus ergibt aber +12.
-          right: Richtig.
-          wrong: Nicht richtig.
-        nojs:
-          "Kurztest: Was ist minus 4 mal minus 3 minus 5? Zur Wahl stehen 7, 17, minus 17 und minus 7. Richtig ist 7, denn
-          minus 4 mal minus 3 ist 12 und 12 minus 5 ist 7."
-      - type: vue-component
-        id: test-negativ-addieren
-        component: Kurztest
-        props:
-          question: Was ist 5 + (−8)?
-          options:
-            - text: "13"
-              correct: false
-              info: Du hast 5 + 8 gerechnet. Die Klammer (−8) bedeutet, dass du 8 abziehst.
-            - text: −13
-              correct: false
-              info: Das wäre −5 − 8. Hier startest du bei +5.
-            - text: −3
-              correct: true
-              info: "Du startest bei 5 und gehst 8 Schritte nach links: −3."
-            - text: "3"
-              correct: false
-              info: Das Ergebnis ist negativ, denn du gehst weiter nach links als bis 0.
-          right: Richtig.
-          wrong: Nicht richtig.
-        nojs:
-          "Kurztest: Was ist 5 plus minus 8? Zur Wahl stehen minus 3, 3, 13 und minus 13. Richtig ist minus 3, denn du startest
-          bei 5 und gehst 8 Schritte nach links."
-      - type: vue-component
-        id: test-negativ-subtrahieren
-        component: Kurztest
-        props:
-          question: Was ist 7 − (−10)?
-          options:
-            - text: −17
-              correct: false
-              info: Das Ergebnis ist größer als 7, nicht negativ.
-            - text: "3"
-              correct: false
-              info: Das wäre 10 − 7. Du startest bei 7 und gehst nach rechts.
-            - text: "17"
-              correct: true
-              info: "Minus eine negative Zahl ist plus: 7 + 10 = 17."
-            - text: −3
-              correct: false
-              info: Das wäre 7 + (−10). Hier wird aber (−10) abgezogen.
-          right: Richtig.
-          wrong: Nicht richtig.
-        nojs:
-          "Kurztest: Was ist 7 minus minus 10? Zur Wahl stehen 17, minus 3, minus 17 und 3. Richtig ist 17, denn minus eine
-          negative Zahl ist plus."
       - type: text
         text:
           "Wenn du hier unsicher warst: Wiederhole den Baustein „Rechnen mit negativen Zahlen“ auf seiner Kartenseite: [Rechnen
           mit negativen Zahlen](https://lernapps.net/apps/map/mathematik/c/rationale-zahlen-rechnen/)."
+  - type: section
+    id: kannst-du-das
+    title: Kannst du das?
+    blocks:
+      - type: text
+        text:
+          Wenn du nicht sicher bist, ob du die vier Bausteine kannst, prüfen zwei Aufgaben sie zusammen. Du bekommst sofort
+          eine Rückmeldung, und nichts wird gezählt.
+      - type: number
+        id: potenz-dezimal-negativ
+        text: Berechne 2⁴ + 0,5 · (−6).
+        answer: 13
+        tolerance: 0
+        mistakes:
+          - answer: 19
+            message: Du hast 0,5 · (−6) = +3 gerechnet. Plus mal minus ergibt minus.
+          - answer: 5
+            message: "2⁴ ist nicht 2 · 4. Der Exponent 4 sagt: Die 2 steht viermal als Faktor da, das sind 16."
+          - answer: -14
+            message: 0,5 · 6 ist 3, nicht 30. Ein Faktor mit einer Stelle hinter dem Komma macht das Ergebnis zehnmal kleiner.
+        hint: Rechne erst die Potenz und das Produkt, dann addiere.
+        explanation: 2⁴ = 16 und 0,5 · (−6) = −3, denn plus mal minus ergibt minus. Dann ist 16 + (−3) = 13.
+      - type: ordering
+        id: zahlen-ordnen-recap
+        text: Ordne die Zahlen von klein nach groß.
+        items:
+          - −2
+          - −0,5
+          - 0,125
+          - 1,41
+          - 3²
+        explanation:
+          −2 und −0,5 liegen links von der Null, −2 weiter links. Dann folgen 0,125 und 1,41, und 3² = 9 ist die größte
+          Zahl.
   - type: section
     id: bereit
     title: Du bist bereit, wenn du …
@@ -390,5 +174,5 @@ blocks:
           - mit negativen Zahlen rechnen und dabei Vorzeichen- und Klammerregeln beachten kannst.
 
 
-          Hattest du bei jedem Kurztest alles richtig, geht es weiter: Zur Fläche eines Quadrats ist die Seite gesucht. Sonst
-          wiederhole zuerst den Baustein, bei dem du unsicher warst."
+          Hattest du beide Aufgaben richtig, geht es weiter: Zur Fläche eines Quadrats ist die Seite gesucht. Sonst wiederhole
+          zuerst den Baustein, bei dem du unsicher warst."
