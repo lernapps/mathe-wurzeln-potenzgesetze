@@ -49,6 +49,8 @@ Aus dem Gartenbau bleiben viele Wurzeln übrig, mit denen du rechnen willst. Am 
 
 ### Das Rechteck aus zwei Wurzeln
 
+Wenn du Wurzeln multiplizieren oder dividieren musst, ohne sie auszurechnen, suchst du eine Regel. Du findest sie an einem Rechteck.
+
 Ein Rechteck hat die Seiten √9 = 3 und √4 = 2. Seine Fläche ist √9 · √4 = 6. Die Zahl 6 hat das Quadrat 6 · 6 = 36, und 36 ist dasselbe wie 9 · 4. Du suchst also eine nicht negative Zahl, deren Quadrat 9 · 4 ist.
 
 Bild: Ein Rechteck aus drei mal zwei Kästchen. Die Seiten sind mit Wurzel aus 9 gleich 3 und Wurzel aus 4 gleich 2 beschriftet, die Fläche mit 6. Bildunterschrift: Zähle die Kästchen: 3 mal 2. Die Seitenlängen sind Wurzeln, die Fläche ist ihr Produkt.
@@ -64,6 +66,8 @@ $= (\sqrt{a} \cdot \sqrt{a}) \cdot (\sqrt{b} \cdot \sqrt{b}) = a \cdot b$
 Das Produkt √a · √b ist nicht negativ und hat das Quadrat a · b. Also ist es die Wurzel aus a · b.
 
 ### Die Wurzelgesetze
+
+Mit diesen Regeln darfst du Wurzeln beim Malnehmen und Teilen zusammenfassen oder zerlegen.
 
 Das **Produktgesetz** und das **Quotientengesetz**:
 

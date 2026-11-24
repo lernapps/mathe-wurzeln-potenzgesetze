@@ -49,6 +49,8 @@ Auf der Reise vom Atom bis zum Universum stehen Zahlen mit vielen Nullen. Am End
 
 ### Zahl vor der Zehnerpotenz
 
+Wenn du sehr große und sehr kleine Zahlen vergleichen und verrechnen willst, brauchst du eine einheitliche, kurze Schreibweise.
+
 Die **wissenschaftliche Schreibweise** schreibt jede positive Zahl als $m \cdot 10^n$ mit $1 \le m < 10$ und ganzem $n$. Du verschiebst dazu das Komma:
 
 $45\,000 = 4{,}5 \cdot 10^4$
@@ -62,6 +64,8 @@ Das Komma wandert 4 Stellen nach rechts, der Exponent ist −4.
 Nach links verschoben wird der Exponent positiv, nach rechts negativ.
 
 ### Rechnen und Ordnen
+
+Wenn du mit solchen Zahlen rechnen willst, kommt es nur darauf an, wie Mantissen und Exponenten zusammenspielen.
 
 - **wissenschaftliche Schreibweise**: Die wissenschaftliche Schreibweise schreibt eine positive Zahl als Mantisse mal Zehnerpotenz, zum Beispiel $4{,}5 \cdot 10^4$ für 45 000.
 

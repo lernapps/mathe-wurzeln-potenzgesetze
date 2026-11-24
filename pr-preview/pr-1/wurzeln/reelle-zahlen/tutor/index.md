@@ -49,6 +49,8 @@ Auf der Lupe hast du gesehen, dass jede Stufe eine Stelle von √2 mehr liefert.
 
 ### Rational oder nicht?
 
+Wenn du wissen willst, ob sich eine Zahl wie √2 als Bruch schreiben lässt, schaust du auf ihre Dezimalzahl.
+
 Brüche haben immer eine Dezimalzahl, die abbricht oder sich wiederholt: $\frac{1}{4} = 0{,}25$, $\frac{1}{3}$ = 0,333…, $\frac{1}{7}$ = 0,142857142857… Bei √2 passiert das nicht: Die Stellen laufen unendlich weiter, und keine Gruppe von Ziffern wiederholt sich immer wieder (keine Periode).
 
 - **rationale Zahl**: Eine rationale Zahl lässt sich als Bruch $\frac{p}{q}$ mit ganzen Zahlen $p$ und $q \neq 0$ schreiben. Ihre Dezimalzahl bricht ab oder wiederholt sich.
@@ -58,6 +60,8 @@ Brüche haben immer eine Dezimalzahl, die abbricht oder sich wiederholt: $\frac{
 - **reelle Zahl**: Reelle Zahlen sind alle rationalen und alle irrationalen Zahlen zusammen. Jeder Punkt der Zahlengerade gehört zu genau einer reellen Zahl.
 
 ### Die Zahlenmengen und die Zahlengerade
+
+Wenn du Zahlen einordnen willst, hilft dir die Zahlengerade und eine Übersicht der Zahlenmengen.
 
 Bild: Eine Zahlengerade von minus 2 bis 3. Die Zahlen minus 0,5 und 0,75 sind gefüllte Punkte, die Zahlen Wurzel aus 2 und Pi sind offene Punkte mit rotem Rand. Bildunterschrift: Gefüllte Punkte sind rational, offene sind irrational. Beide liegen auf derselben Zahlengerade.
 

@@ -49,6 +49,8 @@ Auf der Reise rechnest du in größeren Einheiten: 1 km = $10^3$ m. Am Ende di
 
 ### Gruppen von Faktoren
 
+Wenn eine Potenz noch einmal potenziert wird, etwa beim Umrechnen von Metern in Quadratkilometer, brauchst du Regeln für Klammern mit Exponent. Wieder hilft das Ausschreiben.
+
 $(a^3)^2 = a^3 \cdot a^3 = a \cdot a \cdot a \cdot a \cdot a \cdot a = a^6$
 
 $(a \cdot b)^3 = (a \cdot b) \cdot (a \cdot b) \cdot (a \cdot b) = a^3 \cdot b^3$
@@ -56,6 +58,8 @@ $(a \cdot b)^3 = (a \cdot b) \cdot (a \cdot b) \cdot (a \cdot b) = a^3 \cdot b^3
 Bei $(a^3)^2$ stehen zwei Gruppen mit je drei Faktoren: 3 · 2 = 6. Bei $(a \cdot b)^3$ steht das Paar $a \cdot b$ dreimal da. Der Exponent gilt für beide Faktoren.
 
 ### Die Gesetze
+
+Daraus entstehen drei Regeln:
 
 $(a^m)^n = a^{m \cdot n}$
 

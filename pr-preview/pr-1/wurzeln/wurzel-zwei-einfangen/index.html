@@ -65,10 +65,13 @@
 </section>
 <section class="explainer-section">
 <h2 id="idee">Die Lupe</h2>
-<div class="explainer-block" data-block="idee/1" data-block-id="9ec278a1" data-block-type="text" data-block-order="3">
+<div class="explainer-block" data-block="idee/1" data-block-id="f70dd8f5" data-block-type="text" data-block-order="3">
+<div class="block-text"><p>Wenn du wissen willst, wie genau du die Seite des Beets mit 2 m² angeben kannst, schaust du die Zahlengerade vergrößert an.</p></div>
+</div>
+<div class="explainer-block" data-block="idee/2" data-block-id="9ec278a1" data-block-type="text" data-block-order="4">
 <div class="block-text"><p>Die Seite <math><mi>s</mi></math> des Beets erfüllt <math><mrow><mi>s</mi><mo>⋅</mo><mi>s</mi><mo>=</mo><mn>2</mn></mrow></math>. Du suchst also die Zahl <math><msqrt><mn>2</mn></msqrt></math>. Die Lupe zeigt einen Ausschnitt der Zahlengerade zwischen zwei Grenzen. Jeder der zehn Abschnitte zwischen den Strichen ist ein Zehntel davon, und der Punkt mit der Beschriftung √2 zeigt, wo √2 liegt. Mit dem Regler wählst du die Stufe: Stufe 0 ist der große Ausschnitt, jede höhere Stufe zoomt zehnmal weiter hinein. Das Quadrat der linken Grenze ist immer kleiner als 2, das Quadrat der rechten größer.</p></div>
 </div>
-<div class="explainer-block" data-block="idee/2" data-block-id="4f995b19" data-block-type="vue-component" data-block-order="4">
+<div class="explainer-block" data-block="idee/3" data-block-id="4f995b19" data-block-type="vue-component" data-block-order="5">
 <div class="explainer-component" id="lupe" data-component="Lupe">
 <div class="explainer-island" hidden><div class="lupe" data-v-2594bbdb><label for="lupe-stufe" class="lupe-label" data-v-2594bbdb><svg viewBox="0 0 24 24" width="20" height="20" class="lupe-icon" aria-hidden="true" focusable="false" data-v-2594bbdb><circle cx="10" cy="10" r="6" fill="none" stroke="currentColor" stroke-width="2" data-v-2594bbdb></circle><line x1="14.5" y1="14.5" x2="21" y2="21" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" data-v-2594bbdb></line></svg> Stufe der Lupe: 0</label><input id="lupe-stufe" value="0" type="range" min="0" max="4" step="1" class="lupe-slider" data-v-2594bbdb><svg viewBox="0 0 320 110" class="lupe-svg" role="img" aria-label="√2 liegt zwischen 1 und 2." data-v-2594bbdb><line x1="20" y1="50" x2="300" y2="50" stroke="currentColor" stroke-width="2" data-v-2594bbdb></line><!--[--><line x1="20" y1="38" x2="20" y2="62" stroke="currentColor" stroke-width="2" data-v-2594bbdb></line><line x1="48" y1="44" x2="48" y2="56" stroke="currentColor" stroke-width="2" data-v-2594bbdb></line><line x1="76" y1="44" x2="76" y2="56" stroke="currentColor" stroke-width="2" data-v-2594bbdb></line><line x1="104" y1="44" x2="104" y2="56" stroke="currentColor" stroke-width="2" data-v-2594bbdb></line><line x1="132" y1="44" x2="132" y2="56" stroke="currentColor" stroke-width="2" data-v-2594bbdb></line><line x1="160" y1="44" x2="160" y2="56" stroke="currentColor" stroke-width="2" data-v-2594bbdb></line><line x1="188" y1="44" x2="188" y2="56" stroke="currentColor" stroke-width="2" data-v-2594bbdb></line><line x1="216" y1="44" x2="216" y2="56" stroke="currentColor" stroke-width="2" data-v-2594bbdb></line><line x1="244" y1="44" x2="244" y2="56" stroke="currentColor" stroke-width="2" data-v-2594bbdb></line><line x1="272" y1="44" x2="272" y2="56" stroke="currentColor" stroke-width="2" data-v-2594bbdb></line><line x1="300" y1="38" x2="300" y2="62" stroke="currentColor" stroke-width="2" data-v-2594bbdb></line><!--]--><text x="20" y="82" text-anchor="middle" font-size="14" fill="currentColor" data-v-2594bbdb>1</text><text x="300" y="82" text-anchor="middle" font-size="14" fill="currentColor" data-v-2594bbdb>2</text><line x1="135.976" y1="22" x2="135.976" y2="50" stroke="currentColor" stroke-width="2" data-v-2594bbdb></line><circle cx="135.976" cy="50" r="6" fill="currentColor" data-v-2594bbdb></circle><text x="135.976" y="16" text-anchor="middle" font-size="16" font-weight="bold" fill="currentColor" data-v-2594bbdb>√2</text></svg><p class="lupe-text" aria-live="polite" data-v-2594bbdb>√2 liegt zwischen 1 und 2.</p><p class="lupe-text" data-v-2594bbdb>Quadrat der linken Grenze: 1² = 1 (kleiner als 2)<br data-v-2594bbdb> Quadrat der rechten Grenze: 2² = 4 (größer als 2) </p></div></div>
 <div class="explainer-nojs"><p>Lupe auf der Zahlengerade, fünf Stufen. Auf jeder Stufe liegt √2 zwischen zwei Grenzen, deren Quadrate links und rechts von 2 liegen:</p>
@@ -82,34 +85,37 @@
 <script type="application/json" class="explainer-component-props">{"stages":[{"lower":"1","upper":"2","lowerSquare":"1","upperSquare":"4","pos":0.4142},{"lower":"1,4","upper":"1,5","lowerSquare":"1,96","upperSquare":"2,25","pos":0.1421},{"lower":"1,41","upper":"1,42","lowerSquare":"1,9881","upperSquare":"2,0164","pos":0.4214},{"lower":"1,414","upper":"1,415","lowerSquare":"1,999396","upperSquare":"2,002225","pos":0.2136},{"lower":"1,4142","upper":"1,4143","lowerSquare":"1,99996164","upperSquare":"2,00024449","pos":0.1356}],"target":"√2","sliderLabel":"Stufe der Lupe","between":"liegt zwischen","and":"und","squareLeft":"Quadrat der linken Grenze:","squareRight":"Quadrat der rechten Grenze:","smaller":"kleiner als 2","larger":"größer als 2"}</script>
 </div>
 </div>
-<div class="explainer-block" data-block="idee/3" data-block-id="a31bdda2" data-block-type="table" data-block-order="5">
+<div class="explainer-block" data-block="idee/4" data-block-id="a31bdda2" data-block-type="table" data-block-order="6">
 <div class="block-table" role="region" aria-label="Die Stufen der Lupe" tabindex="0"><table><caption>Die Stufen der Lupe</caption><thead><tr><th scope="col">Stufe</th><th scope="col">√2 liegt zwischen</th><th scope="col">Quadrate der Grenzen</th></tr></thead><tbody><tr><td>0</td><td>1 und 2</td><td>1 und 4</td></tr><tr><td>1</td><td>1,4 und 1,5</td><td>1,96 und 2,25</td></tr><tr><td>2</td><td>1,41 und 1,42</td><td>1,9881 und 2,0164</td></tr><tr><td>3</td><td>1,414 und 1,415</td><td>1,999396 und 2,002225</td></tr><tr><td>4</td><td>1,4142 und 1,4143</td><td>1,99996164 und 2,00024449</td></tr></tbody></table></div>
 </div>
-<div class="explainer-block" data-block="idee/4" data-block-id="59419a9b" data-block-type="text" data-block-order="6">
+<div class="explainer-block" data-block="idee/5" data-block-id="59419a9b" data-block-type="text" data-block-order="7">
 <div class="block-text"><p>Jede Stufe liefert eine Dezimalstelle mehr: 1, dann 1,4, dann 1,41, dann 1,414. √2 liegt auf jeder Stufe im Bereich, aber auf keiner Stufe auf einer Grenze.</p></div>
 </div>
 </section>
 <section class="explainer-section">
 <h2 id="regel">Intervallschachtelung</h2>
-<div class="explainer-block" data-block="regel/1" data-block-id="c4932d2a" data-block-type="definition" data-block-order="7">
+<div class="explainer-block" data-block="regel/1" data-block-id="792c55e8" data-block-type="text" data-block-order="8">
+<div class="block-text"><p>Damit du über dieses Hineinzoomen sprechen kannst, brauchst du zwei Wörter.</p></div>
+</div>
+<div class="explainer-block" data-block="regel/2" data-block-id="c4932d2a" data-block-type="definition" data-block-order="9">
 <dl class="explainer-definition"><dt><dfn id="begriff-intervall"><a href="../../glossar/#intervall">Intervall</a></dfn></dt><dd><p>Ein Intervall ist der Bereich der Zahlengerade zwischen zwei Zahlen, zum Beispiel zwischen 1,41 und 1,42.</p></dd></dl>
 </div>
-<div class="explainer-block" data-block="regel/2" data-block-id="5fe6fd4b" data-block-type="definition" data-block-order="8">
+<div class="explainer-block" data-block="regel/3" data-block-id="5fe6fd4b" data-block-type="definition" data-block-order="10">
 <dl class="explainer-definition"><dt><dfn id="begriff-intervallschachtelung"><a href="../../glossar/#intervallschachtelung">Intervallschachtelung</a></dfn></dt><dd><p>Eine Intervallschachtelung ist eine Folge von Intervallen auf der Zahlengerade, die ineinander liegen und deren Länge beliebig klein wird. Jedes Intervall enthält die gesuchte Zahl.</p></dd></dl>
 </div>
-<div class="explainer-block" data-block="regel/3" data-block-id="d76375b5" data-block-type="text" data-block-order="9">
+<div class="explainer-block" data-block="regel/4" data-block-id="d76375b5" data-block-type="text" data-block-order="11">
 <div class="block-text"><p>Die Ziffern von √2 beginnen mit 1,41421356, und jede Stufe der Lupe liefert eine Ziffer mehr. Dass sie nie aufhören und √2 auch kein Bruch ist, zeigt die nächste Seite.</p></div>
 </div>
 </section>
 <section class="explainer-section">
 <h2 id="beispiel">Beispiel</h2>
-<div class="explainer-block" data-block="beispiel/1" data-block-id="15776b3b" data-block-type="example" data-block-order="10">
+<div class="explainer-block" data-block="beispiel/1" data-block-id="15776b3b" data-block-type="example" data-block-order="12">
 <div class="explainer-box explainer-example">
 <h3 class="explainer-box-title">√3 einschließen</h3>
-<div class="explainer-block" data-block="beispiel/1/1" data-block-id="50d1b2cc" data-block-type="text" data-block-order="11">
+<div class="explainer-block" data-block="beispiel/1/1" data-block-id="50d1b2cc" data-block-type="text" data-block-order="13">
 <div class="block-text"><p>Gesucht: ein Bereich für <math><msqrt><mn>3</mn></msqrt></math>. Mit <math><mrow><msup><mn>1,7</mn><mn>2</mn></msup><mo>=</mo><mn>2,89</mn><mo>&lt;</mo><mn>3</mn></mrow></math> und <math><mrow><msup><mn>1,8</mn><mn>2</mn></msup><mo>=</mo><mn>3,24</mn><mo>&gt;</mo><mn>3</mn></mrow></math> liegt <math><msqrt><mn>3</mn></msqrt></math> zwischen 1,7 und 1,8. Eine Stufe weiter: <math><mrow><msup><mn>1,73</mn><mn>2</mn></msup><mo>=</mo><mn>2,9929</mn><mo>&lt;</mo><mn>3</mn></mrow></math> und <math><mrow><msup><mn>1,74</mn><mn>2</mn></msup><mo>=</mo><mn>3,0276</mn><mo>&gt;</mo><mn>3</mn></mrow></math>.</p></div>
 </div>
-<div class="explainer-block" data-block="beispiel/1/2" data-block-id="05db3220" data-block-type="formula" data-block-order="12">
+<div class="explainer-block" data-block="beispiel/1/2" data-block-id="05db3220" data-block-type="formula" data-block-order="14">
 <div class="block-formula"><math display="block" class="tml-display" style="display:block math;"><mrow><mn>1,73</mn><mo>&lt;</mo><msqrt><mn>3</mn></msqrt><mo>&lt;</mo><mn>1,74</mn></mrow></math></div>
 </div>
 </div>
@@ -117,7 +123,7 @@
 </section>
 <section class="explainer-section">
 <h2 id="uebung">Übung</h2>
-<div class="explainer-block" data-block="uebung/1" data-block-id="67e57e8f" data-block-type="generated" data-block-order="13">
+<div class="explainer-block" data-block="uebung/1" data-block-id="67e57e8f" data-block-type="generated" data-block-order="15">
 <div class="explainer-exercise explainer-generated" id="quadrieren-lupe">
 <p class="explainer-exercise-label">Aufgabe</p>
 <div class="explainer-live" hidden></div>
@@ -128,7 +134,7 @@
 <script type="application/json" class="explainer-exercise-data">{"kind":"generated","lang":"de","spec":{"type":"generated","id":"quadrieren-lupe","given":{"x":{"oneOf":[1.1,1.2,1.3,1.4,1.6,1.7,1.8,1.9]}},"task":{"text":"Berechne {{x}}². Das Ergebnis zeigt dir, ob √2 links oder rechts von {{x}} liegt."},"answer":{"value":"x * x","compare":{"number":{"format":"decimal","decimals":2,"tolerance":0}}},"mistakes":[{"value":"x + x","message":"Quadrieren heißt mit sich selbst malnehmen, nicht verdoppeln."},{"value":"round(x * x, 1)","message":"Du hast zu früh gerundet. Rechne genau, mit zwei Stellen nach dem Komma."}],"hint":"Fläche eines Quadrats: Seite mal Seite.","steps":["{{x}} · {{x}} = {{answer}}"]},"templates":{"de":{"task":"Berechne ⟦x⟧². Das Ergebnis zeigt dir, ob √2 links oder rechts von ⟦x⟧ liegt.","steps":["⟦x⟧ · ⟦x⟧ = ⟦answer⟧"],"hint":"Fläche eines Quadrats: Seite mal Seite.","messages":["Quadrieren heißt mit sich selbst malnehmen, nicht verdoppeln.","Du hast zu früh gerundet. Rechne genau, mit zwei Stellen nach dem Komma."]}},"data":{},"seeds":[1,3,8,9,12,15,19,28],"texts":{"newTask":"Neue Aufgabe","practice":"Übe selbst, mit immer neuen Aufgaben:","hint":"Tipp","solution":"Lösung","taskNumber":"Aufgabe Nr. {n}"}}</script>
 </div>
 </div>
-<div class="explainer-block" data-block="uebung/2" data-block-id="898b9ae8" data-block-type="single-choice" data-block-order="14">
+<div class="explainer-block" data-block="uebung/2" data-block-id="898b9ae8" data-block-type="single-choice" data-block-order="16">
 <div class="explainer-exercise explainer-question" id="folgerung">
 <p class="explainer-exercise-label">Aufgabe</p>
 <div class="question" id="frage-folgerung" data-id="folgerung" data-type="single-choice">
@@ -165,7 +171,7 @@
 <script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"folgerung","text":"Du hast 2,6² = 6,76 und 2,7² = 7,29 gerechnet. Was folgt daraus für √7?","explanation":"Die Wurzel behält die Reihenfolge: Aus 6,76 \u003c 7 \u003c 7,29 folgt 2,6 \u003c √7 \u003c 2,7.","links":[],"type":"single-choice","options":[{"text":"√7 liegt zwischen 2,6 und 2,7.","correct":true,"info":"Das Quadrat von 2,6 ist kleiner als 7, das von 2,7 größer. Also liegt √7 dazwischen."},{"text":"√7 ist gleich 2,6.","correct":false,"info":"2,6² ist 6,76 und nicht 7."},{"text":"√7 ist gleich 2,65.","correct":false,"info":"2,65 ist nur die Mitte des Bereichs. Sein Quadrat ist 7,0225, also nicht 7."},{"text":"√7 liegt zwischen 6,76 und 7,29.","correct":false,"info":"Diese Zahlen sind die Quadrate der Grenzen, nicht die Grenzen selbst."}]},"rendered":{}}</script>
 </div>
 </div>
-<div class="explainer-block" data-block="uebung/3" data-block-id="0cec3b59" data-block-type="multiple-choice" data-block-order="15">
+<div class="explainer-block" data-block="uebung/3" data-block-id="0cec3b59" data-block-type="multiple-choice" data-block-order="17">
 <div class="explainer-exercise explainer-question" id="lupe-aussagen">
 <p class="explainer-exercise-label">Aufgabe</p>
 <div class="question" id="frage-lupe-aussagen" data-id="lupe-aussagen" data-type="multiple-choice">
@@ -202,7 +208,7 @@
 <script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"lupe-aussagen","text":"Welche Aussagen über die Lupe stimmen?","explanation":"Die Lupe zeigt: ein Bereich, der √2 enthält, die Quadrate der Grenzen links und rechts von 2.","links":[],"type":"multiple-choice","options":[{"text":"Auf jeder Stufe ist der Bereich zehnmal kleiner.","correct":true,"info":"Von 1 bis 2 geht es auf 1,4 bis 1,5 und weiter auf 1,41 bis 1,42."},{"text":"√2 liegt auf jeder Stufe im Bereich.","correct":true,"info":"Das ist die Idee der Schachtelung: Der Bereich enthält √2 immer."},{"text":"Auf einer Stufe liegt √2 genau auf einer Grenze.","correct":false,"info":"Das Quadrat der Grenze wäre dann genau 2. In der Tabelle ist das auf keiner Stufe so."},{"text":"Das Quadrat der linken Grenze ist größer als 2.","correct":false,"info":"Das Quadrat der linken Grenze ist kleiner als 2, das der rechten größer."}]},"rendered":{}}</script>
 </div>
 </div>
-<div class="explainer-block" data-block="uebung/4" data-block-id="cb71ad20" data-block-type="ordering" data-block-order="16">
+<div class="explainer-block" data-block="uebung/4" data-block-id="cb71ad20" data-block-type="ordering" data-block-order="18">
 <div class="explainer-exercise explainer-question" id="schachtelung-schritte">
 <p class="explainer-exercise-label">Aufgabe</p>
 <div class="question" id="frage-schachtelung-schritte" data-id="schachtelung-schritte" data-type="ordering">
@@ -232,7 +238,7 @@
 <script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"schachtelung-schritte","text":"Bringe die Schritte einer Intervallschachtelung für √5 in die richtige Reihenfolge.","explanation":"Erst der grobe Bereich, dann immer feiner: Zehntel, Hundertstel, und so weiter.","links":[],"type":"ordering","items":["Quadratzahlen finden: 4 \u003c 5 \u003c 9, also liegt √5 zwischen 2 und 3","Zehntel prüfen: 2,2² = 4,84 \u003c 5 \u003c 5,29 = 2,3²","Hundertstel prüfen: 2,23² = 4,9729 \u003c 5 \u003c 5,0176 = 2,24²","Weitermachen, so lange du willst: es hört nie auf"]},"rendered":{}}</script>
 </div>
 </div>
-<div class="explainer-block" data-block="uebung/5" data-block-id="26e126a6" data-block-type="true-false" data-block-order="17">
+<div class="explainer-block" data-block="uebung/5" data-block-id="26e126a6" data-block-type="true-false" data-block-order="19">
 <div class="explainer-exercise explainer-question" id="endlich">
 <p class="explainer-exercise-label">Aufgabe</p>
 <div class="question" id="frage-endlich" data-id="endlich" data-type="true-false">
@@ -257,7 +263,7 @@
 <script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"endlich","text":"Wenn du lange genug einschachtelst, hat √2 irgendwann genau eine endliche Dezimalzahl.","explanation":"Die Ziffern von √2 hören nie auf, das zeigt die nächste Seite. Jede Stufe liefert nur einen Näherungswert.","links":[],"type":"true-false","answer":false},"rendered":{}}</script>
 </div>
 </div>
-<div class="explainer-block" data-block="uebung/6" data-block-id="590ee022" data-block-type="number" data-block-order="18">
+<div class="explainer-block" data-block="uebung/6" data-block-id="590ee022" data-block-type="number" data-block-order="20">
 <div class="explainer-exercise explainer-question" id="sqrt5-stufe">
 <p class="explainer-exercise-label">Aufgabe</p>
 <div class="question" id="frage-sqrt5-stufe" data-id="sqrt5-stufe" data-type="number">
@@ -281,7 +287,7 @@
 <script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"sqrt5-stufe","text":"Schließe √5 ein. Welche Zahl der Form 2,x ist die größte, deren Quadrat noch kleiner als 5 ist?","explanation":"2,2² = 4,84 ist kleiner als 5, und 2,3² = 5,29 ist größer als 5. Also liegt √5 zwischen 2,2 und 2,3.","links":[],"hint":"Quadriere 2,1, 2,2, 2,3 und vergleiche mit 5.","type":"number","answer":2.2,"tolerance":0,"mistakes":[{"answer":2.3,"message":"2,3² = 5,29 ist schon größer als 5."}]},"rendered":{}}</script>
 </div>
 </div>
-<div class="explainer-block" data-block="uebung/7" data-block-id="3f5a1f1f" data-block-type="text" data-block-order="19">
+<div class="explainer-block" data-block="uebung/7" data-block-id="3f5a1f1f" data-block-type="text" data-block-order="21">
 <div class="block-text"><p>Eine Frage bleibt: Gibt es für √2 einen Bruch, der genau passt? Auf der nächsten Seite ordnest du Zahlen ein, die sich als Bruch schreiben lassen, und solche, bei denen es nicht geht.</p></div>
 </div>
 </section>
@@ -323,7 +329,7 @@
 <span class="explainer-feedback-local">Nur in diesem Browser gespeichert</span>
 <button type="button" class="explainer-feedback-off">Beenden</button>
 </div>
-<script type="application/json" class="explainer-feedback-data">{"storage":"mathe-wurzeln-potenzgesetze","app":"Wurzeln, reelle Zahlen und Potenzgesetze","root":"../../","repository":"lernapps/mathe-wurzeln-potenzgesetze","revision":"b11cd7b","page":{"title":"√2 mit der Lupe einfangen","order":3}}</script>
+<script type="application/json" class="explainer-feedback-data">{"storage":"mathe-wurzeln-potenzgesetze","app":"Wurzeln, reelle Zahlen und Potenzgesetze","root":"../../","repository":"lernapps/mathe-wurzeln-potenzgesetze","revision":"46589db","page":{"title":"√2 mit der Lupe einfangen","order":3}}</script>
 </aside>
 </template>
 <nav class="explainer-pager" aria-label="Weiterblättern"><a rel="prev" href="../../wurzeln/wurzeln-abschaetzen/">Zurück: Wurzeln abschätzen und Näherungswerte</a><a rel="next" href="../../wurzeln/reelle-zahlen/">Weiter: Rationale, irrationale und reelle Zahlen</a></nav>

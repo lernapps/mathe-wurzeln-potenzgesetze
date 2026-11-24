@@ -49,6 +49,8 @@ Für Wurzeln und reelle Zahlen brauchst du vier Dinge aus früheren Jahren: Pote
 
 ### Potenzen und Zehnerpotenzen
 
+Wenn du ein Produkt aus gleichen Faktoren oder eine sehr große Zahl kurz aufschreiben willst, nimmst du eine Potenz. Quadratzahlen brauchst du gleich für die Wurzeln.
+
 - **Potenz**: Eine Potenz schreibt ein Produkt aus gleichen Faktoren kurz auf: $2^3 = 2 \cdot 2 \cdot 2 = 8$.
 
 - **Basis**: Die Basis ist der Faktor, der wiederholt wird. In $2^3$ ist 2 die Basis.
@@ -67,6 +69,8 @@ Wenn du hier unsicher warst: Wiederhole den Baustein „Potenzen und Zehnerpoten
 
 ### Zahlen vergleichen und ordnen
 
+Wenn du Wurzeln abschätzen willst, musst du Zahlen vergleichen und ordnen können.
+
 - **Zahlengerade**: Auf der Zahlengerade hat jede Zahl ihren Platz. Rechts liegt immer die größere Zahl, links die kleinere. Links von der 0 liegen die negativen Zahlen.
 
 Zahlen vergleichst du Stelle für Stelle von links. Hat eine Zahl mehr Stellen, ist sie größer (bei natürlichen Zahlen). Du schreibst $a < b$, wenn $a$ links von $b$ liegt.
@@ -79,6 +83,8 @@ Wenn du hier unsicher warst: Wiederhole den Baustein „Zahlen vergleichen und o
 
 ### Rechnen mit Dezimalbrüchen
 
+Näherungswerte von Wurzeln sind Dezimalzahlen, mit denen du rechnest.
+
 - **Dezimalbruch**: Ein Dezimalbruch (eine Dezimalzahl) ist eine Zahl mit Komma, zum Beispiel 3,25. Hinter dem Komma stehen Zehntel, Hundertstel, Tausendstel und so weiter.
 
 Beim Malnehmen rechnest du erst ohne Komma. Dann setzt du im Ergebnis so viele Stellen hinter das Komma, wie beide Faktoren zusammen hatten.
@@ -90,6 +96,8 @@ Ohne Komma: $4 \cdot 15 = 60$. Die Faktoren haben zusammen zwei Stellen hinter d
 Wenn du hier unsicher warst: Wiederhole den Baustein „Rechnen mit Dezimalbrüchen“ auf seiner Kartenseite: [Rechnen mit Dezimalbrüchen](https://lernapps.net/apps/map/mathematik/c/dezimalbrueche-rechnen/).
 
 ### Rechnen mit negativen Zahlen
+
+Wenn du Zahlen auf der ganzen Zahlengerade einordnest, auch links von der Null, musst du sicher mit Vorzeichen rechnen.
 
 - **Vorzeichenregel**: Beim Malnehmen und Teilen gilt: gleiche Vorzeichen ergeben plus, verschiedene Vorzeichen ergeben minus. Zum Beispiel ist $(-3) \cdot (-4) = 12$ und $(-3) \cdot 4 = -12$.
 

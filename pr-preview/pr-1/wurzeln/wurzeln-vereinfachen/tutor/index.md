@@ -49,6 +49,8 @@ Das Pflaster im Schulgarten ist quadratisch und hat 50 m². Die Seite ist √50
 
 ### Quadratfaktor herausziehen
 
+Wenn eine Wurzel wie √50 keine glatte Zahl ist, willst du sie trotzdem so einfach wie möglich schreiben. Dazu ziehst du Faktoren vor die Wurzel.
+
 Du suchst unter der Wurzel einen Faktor, der eine Quadratzahl ist: 4, 9, 16, 25, 36, …. Probiere die Quadratzahlen 4, 9, 16, 25, … der Reihe nach: Geht eine von ihnen in der Zahl unter der Wurzel auf? Mit dem Produktgesetz von der letzten Seite ziehst du seine Wurzel vor die Wurzel.
 
 - **Quadratfaktor**: Ein Quadratfaktor ist ein Faktor unter der Wurzel, der eine Quadratzahl ist, zum Beispiel 16 in $\sqrt{16 \cdot 7}$.
@@ -60,6 +62,8 @@ $\sqrt{112} = \sqrt{16 \cdot 7} = \sqrt{16} \cdot \sqrt{7} = 4 \cdot \sqrt{7}$
 Schreibe $4 \cdot \sqrt{7}$ kurz als $4\sqrt{7}$. Unter der Wurzel soll am Ende keine Quadratzahl als Faktor mehr stecken.
 
 ### Gleichartige Wurzeln
+
+Wenn du Wurzeln addieren oder subtrahieren willst, musst du wissen, wann das geht.
 
 - **gleichartige Wurzeln**: Gleichartige Wurzeln haben denselben Radikanden, zum Beispiel $3\sqrt{2}$ und $5\sqrt{2}$. Du addierst die Faktoren vor der Wurzel.
 

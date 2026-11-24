@@ -49,6 +49,8 @@ Im Schulgarten soll ein quadratisches Beet entstehen. Die Fläche steht fest, di
 
 ### Von der Seite zur Fläche und zurück
 
+Wenn du die Fläche eines Quadrats kennst und seine Seite suchst, musst du das Quadrieren rückwärts rechnen. Dafür schaust du erst, wie aus der Seite die Fläche entsteht.
+
 Ein Einheitsquadrat ist 1 m lang und 1 m breit, hat also 1 m² Fläche. Ein Quadrat mit der Seite 3 m besteht aus 3 mal 3 solchen Quadraten. Eine Zahl mit sich selbst malzunehmen heißt **Quadrieren**: $3^2 = 3 \cdot 3 = 9$ (gesprochen: 3 zum Quadrat). Das Ergebnis 9 ist eine **Quadratzahl**, und 9 ist das Quadrat von 3.
 
 Bild: Ein Quadrat aus drei Reihen mit je drei Kästchen. Jede Seite ist mit 3 m beschriftet, darunter steht die Fläche 3 mal 3 gleich 9 Quadratmeter. Bildunterschrift: Jedes Kästchen ist ein Einheitsquadrat mit 1 m² Fläche. Zähle die Kästchen in einer Reihe und die Reihen. Das Produkt ist die Fläche.
@@ -56,6 +58,8 @@ Bild: Ein Quadrat aus drei Reihen mit je drei Kästchen. Jede Seite ist mit 3 m 
 Beim Beet läuft es rückwärts: Die Fläche ist gegeben, die Seite gesucht. Diese Umkehrung des Quadrierens heißt **Wurzelziehen**. Du sagst: „Wurzel aus 9 ist 3“.
 
 ### Die Quadratwurzel
+
+Damit du das Rückwärtsrechnen kurz aufschreiben kannst, gibt es ein eigenes Zeichen und einen Namen dafür.
 
 - **Quadrieren**: Quadrieren heißt, eine Zahl mit sich selbst malzunehmen, zum Beispiel $5^2 = 5 \cdot 5 = 25$.
 

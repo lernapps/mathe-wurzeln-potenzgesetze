@@ -49,6 +49,8 @@ Auf der letzten Seite waren alle Flächen Quadratzahlen. Der Schulgarten bekommt
 
 ### Einschließen
 
+Wenn die Fläche keine Quadratzahl ist, gibt es keine glatte Seite. Dann suchst du zwei Zahlen, zwischen denen die Seite liegt, und rückst sie immer näher zusammen.
+
 Weil 16 &lt; 20 &lt; 25 gilt, liegt $\sqrt{20}$ zwischen $\sqrt{16} = 4$ und $\sqrt{25} = 5$. Du **schließt** die Wurzel zwischen zwei ganzen Zahlen **ein**. Dann probierst du Zahlen dazwischen aus, quadrierst sie und vergleichst mit 20: erst in Zehnteln, dann in Hundertsteln.
 
 Die Lupe zeigt einen Ausschnitt der Zahlengerade zwischen zwei Grenzen. Stufe 0 ist der große Ausschnitt von 4 bis 5. Schiebe den Regler, um hineinzuzoomen: Jede Stufe macht den Ausschnitt zehnmal kleiner, und jeder Strich ist ein Zehntel des Ausschnitts. Stufe 2 liefert die Grenzen 4,47 und 4,48, die du unten in der Tabelle wiederfindest. Der Punkt mit der Beschriftung √20 zeigt, wo √20 liegt. Darunter siehst du, dass das Quadrat der linken Grenze kleiner als 20 ist und das der rechten größer.
@@ -69,6 +71,8 @@ Wie du √20 einschließt:
 Du suchst die Stelle, an der das Quadrat von zu klein zu zu groß wechselt: erst bei den Zehnteln (4,4 und 4,5), dann bei den Hundertsteln (4,47 und 4,48). Aus der Tabelle folgt: $4{,}47 < \sqrt{20} < 4{,}48$. Auf zwei Stellen nach dem Komma genau ist die Seite also etwa 4,47. Dein Taschenrechner kann das mit der Taste √ viel schneller.
 
 ### Näherungswert
+
+Wenn du ein Ergebnis wie 4,47 aufschreibst, sagst du: Das ist nicht der genaue Wert, sondern kommt ihm sehr nahe. Dafür gibt es ein Wort und ein Zeichen.
 
 - **Näherungswert**: Ein Näherungswert ist eine Zahl, die dem genauen Wert sehr nahe kommt, aber nicht gleich ihm ist. Du schreibst ihn mit dem Zeichen ≈, zum Beispiel $\sqrt{20} \approx 4{,}47$.
 

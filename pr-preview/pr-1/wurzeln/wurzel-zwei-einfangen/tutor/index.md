@@ -49,6 +49,8 @@ Das Beet mit 2 m² kennst du schon: Die Seite liegt zwischen 1 m und 2 m. Am 
 
 ### Die Lupe
 
+Wenn du wissen willst, wie genau du die Seite des Beets mit 2 m² angeben kannst, schaust du die Zahlengerade vergrößert an.
+
 Die Seite $s$ des Beets erfüllt $s \cdot s = 2$. Du suchst also die Zahl $\sqrt{2}$. Die Lupe zeigt einen Ausschnitt der Zahlengerade zwischen zwei Grenzen. Jeder der zehn Abschnitte zwischen den Strichen ist ein Zehntel davon, und der Punkt mit der Beschriftung √2 zeigt, wo √2 liegt. Mit dem Regler wählst du die Stufe: Stufe 0 ist der große Ausschnitt, jede höhere Stufe zoomt zehnmal weiter hinein. Das Quadrat der linken Grenze ist immer kleiner als 2, das Quadrat der rechten größer.
 
 Interaktiv: Lupe auf der Zahlengerade, fünf Stufen. Auf jeder Stufe liegt √2 zwischen zwei Grenzen, deren Quadrate links und rechts von 2 liegen: - Stufe 0: zwischen 1 und 2. 1² = 1 (kleiner als 2), 2² = 4 (größer als 2). - Stufe 1: zwischen 1,4 und 1,5. 1,4² = 1,96 (kleiner als 2), 1,5² = 2,25 (größer als 2). - Stufe 2: zwischen 1,41 und 1,42. 1,41² = 1,9881 (kleiner als 2), 1,42² = 2,0164 (größer als 2). - Stufe 3: zwischen 1,414 und 1,415. 1,414² = 1,999396 (kleiner als 2), 1,415² = 2,002225 (größer als 2). - Stufe 4: zwischen 1,4142 und 1,4143. 1,4142² = 1,99996164 (kleiner als 2), 1,4143² = 2,00024449 (größer als 2).
@@ -64,6 +66,8 @@ Die Stufen der Lupe:
 Jede Stufe liefert eine Dezimalstelle mehr: 1, dann 1,4, dann 1,41, dann 1,414. √2 liegt auf jeder Stufe im Bereich, aber auf keiner Stufe auf einer Grenze.
 
 ### Intervallschachtelung
+
+Damit du über dieses Hineinzoomen sprechen kannst, brauchst du zwei Wörter.
 
 - **Intervall**: Ein Intervall ist der Bereich der Zahlengerade zwischen zwei Zahlen, zum Beispiel zwischen 1,41 und 1,42.
 

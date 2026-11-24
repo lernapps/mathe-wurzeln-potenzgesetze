@@ -49,11 +49,15 @@ Du kennst Potenzen mit ganzen Exponenten. Am Ende dieser Seite weißt du, warum 
 
 ### Das Potenzgesetz verlangt es
 
+Wenn du Wurzeln mit den Potenzgesetzen verrechnen willst, musst du sie als Potenzen schreiben können. Die Gesetze selbst zeigen, wie.
+
 Aus der Aufgabe folgt: $3^{\frac{1}{2}} \cdot 3^{\frac{1}{2}} = 3^1 = 3$. Die Zahl $3^{\frac{1}{2}}$ ergibt also mit sich selbst malgenommen 3. Das tut auch die nicht negative Zahl $\sqrt{3}$. Damit die Potenzgesetze weiter gelten, setzt man $3^{\frac{1}{2}} = \sqrt{3}$.
 
 Genauso gilt $\left(8^{\frac{1}{3}}\right)^3 = 8^{\frac{1}{3} \cdot 3} = 8^1 = 8$. Die Zahl $8^{\frac{1}{3}}$ hat also die dritte Potenz 8. Das ist die dritte Wurzel aus 8, also 2.
 
 ### Bruch-Exponenten
+
+Daraus ergibt sich die Schreibweise mit Bruch-Exponenten.
 
 $a^{\frac{1}{n}} = \sqrt[n]{a}$
 

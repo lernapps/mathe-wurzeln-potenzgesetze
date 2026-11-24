@@ -49,6 +49,8 @@ Für die Potenzgesetze brauchst du zwei Dinge: Terme umformen und Potenzen mit n
 
 ### Terme umformen
 
+Wenn du später Potenzen mit Variablen verrechnest, fasst du Glieder zusammen und klammerst aus.
+
 - **gleichartige Glieder**: Gleichartige Glieder haben dieselbe Variable mit demselben Exponenten, zum Beispiel $3x$ und $5x$. Du fasst sie zusammen, indem du die Zahlen davor addierst: $3x + 5x = 8x$.
 
 - **Ausklammern**: Beim Ausklammern ziehst du einen gemeinsamen Faktor vor eine Klammer: $6x + 9 = 3 \cdot (2x + 3)$. Die Probe geht rückwärts: Du multiplizierst die Klammer aus.
@@ -60,6 +62,8 @@ Aus $4a + 7a - 2a$ wird $9a$. Aus $10b + 15$ wird $5 \cdot (2b + 3)$.
 Wenn du hier unsicher warst: Wiederhole den Baustein „Terme umformen“ auf seiner Kartenseite: [Terme umformen](https://lernapps.net/apps/map/mathematik/c/terme-umformen/).
 
 ### Potenzen und Zehnerpotenzen
+
+Die Potenzgesetze bauen darauf auf, dass du Potenzen und Zehnerpotenzen sicher schreibst.
 
 Eine **Potenz** schreibt ein Produkt aus gleichen Faktoren kurz: $2^5 = 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 = 32$. Die **Basis** ist 2, der **Exponent** ist 5. Eine **Zehnerpotenz** hat die Basis 10, der Exponent zählt die Nullen: $10^4$ = 10 000 hat vier Nullen.
 

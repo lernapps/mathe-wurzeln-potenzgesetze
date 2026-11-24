@@ -49,6 +49,8 @@ Die Reise führt vom Menschen zu den kleinen Dingen: zu Haaren, Zellen und Atome
 
 ### Die Reihe nach unten
 
+Wenn du Längen unter 1 m schreiben willst, reichen positive Exponenten nicht mehr. Die Reihe nach unten zeigt, wie es weitergeht.
+
 Du schreibst die Reihe als Potenzen von 10. Mit jedem Schritt nach unten sinkt der Exponent um 1, und der Wert wird durch 10 geteilt. Die Reihe darf unter null weitergehen:
 
 Zehnerpotenzen nach unten:
@@ -64,6 +66,8 @@ Zehnerpotenzen nach unten:
 So entsteht $10^0 = 1$. Und $10^{-1} = 0{,}1 = \frac{1}{10}$, $10^{-2} = \frac{1}{100}$. Eine Haardicke von rund 0,0001 m ist $10^{-4}$ m.
 
 ### Negativer Exponent
+
+Damit du mit kleinen Zahlen rechnen kannst, braucht der negative Exponent eine feste Bedeutung.
 
 - **negativer Exponent**: Ein negativer Exponent bedeutet: Du nimmst den Kehrwert der Potenz mit dem positiven Exponenten. Der Kehrwert von $x$ ist $\frac{1}{x}$, zum Beispiel ist der Kehrwert von 8 die Zahl $\frac{1}{8}$.
 

@@ -49,11 +49,15 @@ Die Reise ist zu Ende, aber eine Frage ist noch offen: Ein Würfel hat ein Volum
 
 ### Vom Quadrat zum Würfel
 
+Wenn du aus dem Volumen eines Würfels seine Kante bestimmen willst, brauchst du die Umkehrung des Hochnehmens mit 3.
+
 Bild: Ein Würfel aus zwei mal zwei mal zwei Einheitswürfeln. Die Kante ist mit 2 cm beschriftet, das Volumen mit 2 mal 2 mal 2 gleich 8 Kubikzentimeter. Bildunterschrift: Zähle die Würfelchen: 2 in der Länge, 2 in der Breite, 2 in der Höhe.
 
 Beim Quadrat gilt Seite · Seite = Fläche. Beim Würfel gilt Kante · Kante · Kante = Volumen, also $a^3 = V$. Die Kante ist die Zahl, die dreimal als Faktor das Volumen ergibt. Diese Umkehrung heißt **dritte Wurzel**.
 
 ### n-te Wurzeln
+
+Damit du das für jeden Wurzelexponenten sagen kannst, gibt es einen allgemeinen Namen.
 
 - **n-te Wurzel**: Die n-te Wurzel aus einer Zahl $a \ge 0$ ist die nicht negative Zahl, deren n-te Potenz $a$ ist. Die dritte Wurzel von 8 ist 2, weil $2^3 = 8$ gilt.
 
