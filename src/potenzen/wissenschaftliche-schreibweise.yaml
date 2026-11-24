@@ -56,7 +56,9 @@ blocks:
     title: Rechnen und Ordnen
     blocks:
       - type: text
-        text: Wenn du mit solchen Zahlen rechnen willst, kommt es nur darauf an, wie Mantissen und Exponenten zusammenspielen.
+        text:
+          Wenn du mit solchen Zahlen rechnen willst, kommt es darauf an, wie die Zahlen vor den Zehnerpotenzen und die Exponenten
+          zusammenspielen.
       - type: definition
         term: wissenschaftliche Schreibweise
         explanation:
@@ -72,12 +74,13 @@ blocks:
       - type: text
         text:
           Ist $a \cdot b$ mindestens 10, verschiebst du das Komma noch einmal und erhöhst den Exponenten um 1. Zum Umrechnen
-          brauchst du 1 m = 1000 mm = $10^3$ mm. Die Tabelle zeigt die Größen der Reise, die du in den Aufgaben brauchst.
+          brauchst du 1 m = 1000 mm = $10^3$ mm.
       - type: text
         text:
-          Auf der Zehnerpotenz-Reise machst du Halt bei zwölf Größen, vom Proton bis zum Universum. Mit dem Regler wählst
-          du den Halt. Die Skala zeigt, wo seine Länge zwischen $10^{-15}$ m und $10^{27}$ m liegt, und darunter steht, um wie
-          viele Zehnerpotenzen sie größer ist als beim Halt davor.
+          "Auf der Zehnerpotenz-Reise machst du Halt bei zwölf Größen, vom Proton bis zum Universum. Ein Halt ist eine Größe,
+          bei der die Reise stehen bleibt. Schiebe den Regler, um den Halt zu wechseln: Die schwarze Marke auf der Skala zeigt,
+          wo seine Länge zwischen $10^{-15}$ m und $10^{27}$ m liegt, und darunter steht, wie oft so lang er ungefähr ist wie
+          der Halt davor."
       - type: vue-component
         id: reise
         component: Reise
@@ -86,8 +89,8 @@ blocks:
             data: groessen
           sliderLabel: Halt der Reise
           startText: Das ist der Anfang der Reise.
-          jumpPrefix: Gegenüber dem Halt davor ist die Länge um
-          jumpSuffix: größer
+          jumpPrefix: Der Halt ist ungefähr
+          jumpSuffix: mal so lang wie der Halt davor
           beforeText: "davor:"
         nojs: "Zehnerpotenz-Reise, zwölf Halte von der kleinsten zur größten Länge:
 
@@ -257,6 +260,6 @@ blocks:
         explanation: "10⁷ : 10⁻¹⁰ = 10 hoch (7 − (−10)) = 10¹⁷. Das sind 17 Zehnerpotenzen."
       - type: text
         text:
-          "Du hast die Zehnerpotenz-Reise geschafft: vom Proton bei $10^{-15}$ m bis zum Universum bei $10^{26}$ m, mehr als
-          vierzig Zehnerpotenzen. Dein Werkzeug dafür waren die Potenzgesetze und die negativen Exponenten. Als Nächstes brauchst
+          "Du hast die Zehnerpotenz-Reise geschafft: vom Proton bei $10^{-15}$ m bis zum Universum bei rund $10^{27}$ m, mehr
+          als vierzig Zehnerpotenzen. Dein Werkzeug dafür waren die Potenzgesetze und die negativen Exponenten. Als Nächstes brauchst
           du Wurzeln mit beliebigem Wurzelexponenten."

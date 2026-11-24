@@ -36,9 +36,7 @@ blocks:
     title: Das Rechteck aus zwei Wurzeln
     blocks:
       - type: text
-        text:
-          Wenn du Wurzeln multiplizieren oder dividieren musst, ohne sie auszurechnen, suchst du eine Regel. Du findest sie
-          an einem Rechteck.
+        text: Eine Regel für Wurzeln lässt sich an einem Rechteck zeigen, dessen Seiten Wurzeln sind.
       - type: text
         text:
           Ein Rechteck hat die Seiten √9 = 3 und √4 = 2. Seine Fläche ist √9 · √4 = 6. Die Zahl 6 hat das Quadrat 6 · 6 =
@@ -68,7 +66,7 @@ blocks:
     title: Die Wurzelgesetze
     blocks:
       - type: text
-        text: Mit diesen Regeln darfst du Wurzeln beim Malnehmen und Teilen zusammenfassen oder zerlegen.
+        text: Wenn du Wurzeln beim Malnehmen und Teilen zusammenfassen oder zerlegen willst, brauchst du eine feste Regel.
       - type: text
         text: "Das **Produktgesetz** und das **Quotientengesetz**:"
       - type: formula

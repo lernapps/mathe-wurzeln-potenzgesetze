@@ -15,8 +15,7 @@ blocks:
         text:
           "Für Wurzeln und reelle Zahlen brauchst du vier Dinge aus früheren Jahren: Potenzen, Zahlen ordnen, Dezimalbrüche
           und negative Zahlen. Lies jeden Abschnitt kurz. Am Ende prüfen zwei Aufgaben, ob du es kannst. Sie zählen nichts und
-          speichern nichts. Unter jedem Abschnitt steht, was du wiederholen kannst, wenn du unsicher warst. Hast du beide Aufgaben
-          richtig, bist du bereit."
+          speichern nichts. Unter jedem Abschnitt steht, was du wiederholen kannst, wenn du unsicher warst."
   - type: section
     id: potenzen
     title: Potenzen und Zehnerpotenzen
@@ -86,7 +85,9 @@ blocks:
     title: Rechnen mit Dezimalbrüchen
     blocks:
       - type: text
-        text: Näherungswerte von Wurzeln sind Dezimalzahlen, mit denen du rechnest.
+        text:
+          'Wenn du Näherungswerte von Wurzeln berechnest, rechnest du mit Dezimalzahlen. Auch Brüche kommen vor: Ein Bruch
+          wie $\frac{1}{4}$ ist die Dezimalzahl 0,25, und $\frac{6}{8}$ lässt sich zu $\frac{3}{4}$ kürzen.'
       - type: definition
         term: Dezimalbruch
         explanation:
@@ -112,16 +113,14 @@ blocks:
     title: Rechnen mit negativen Zahlen
     blocks:
       - type: text
-        text: Wenn du Zahlen auf der ganzen Zahlengerade einordnest, auch links von der Null, musst du sicher mit Vorzeichen rechnen.
+        text:
+          "Wenn du Zahlen auf der ganzen Zahlengerade einordnest, auch links von der Null, musst du sicher mit Vorzeichen
+          rechnen. Dazu gehören Klammern: Eine negative Zahl in einer Rechnung steht in Klammern."
       - type: definition
         term: Vorzeichenregel
         explanation:
           'Beim Malnehmen und Teilen gilt: gleiche Vorzeichen ergeben plus, verschiedene Vorzeichen ergeben minus.
           Zum Beispiel ist $(-3) \cdot (-4) = 12$ und $(-3) \cdot 4 = -12$.'
-      - type: text
-        text:
-          'Auf der Seite zu den reellen Zahlen kommen Brüche vor: Ein Bruch wie $\frac{6}{8}$ lässt sich zu $\frac{3}{4}$
-          kürzen. Gerade Zahlen sind durch 2 teilbar, ungerade nicht.'
       - type: text
         text:
           Eine negative Zahl in einer Rechnung steht in Klammern. Beim Addieren einer negativen Zahl gehst du auf der Zahlengerade
@@ -140,9 +139,7 @@ blocks:
     title: Kannst du das?
     blocks:
       - type: text
-        text:
-          Wenn du nicht sicher bist, ob du die vier Bausteine kannst, prüfen zwei Aufgaben sie zusammen. Du bekommst sofort
-          eine Rückmeldung, und nichts wird gezählt.
+        text: Wenn du nicht sicher bist, ob du die vier Bausteine kannst, prüfen zwei Aufgaben sie zusammen.
       - type: number
         id: potenz-dezimal-negativ
         text: Berechne 2⁴ + 0,5 · (−6).
@@ -151,6 +148,12 @@ blocks:
         mistakes:
           - answer: 19
             message: Du hast 0,5 · (−6) = +3 gerechnet. Plus mal minus ergibt minus.
+          - answer: -3
+            message: Das ist nur 0,5 · (−6). Die Potenz 2⁴ = 16 gehört zur Summe.
+          - answer: 16
+            message: Das ist nur 2⁴. Das Produkt 0,5 · (−6) = −3 gehört dazu.
+          - answer: 10
+            message: Du hast 16 − 6 gerechnet. Das Produkt ist 0,5 · (−6) = −3, nicht −6.
           - answer: 5
             message: "2⁴ ist nicht 2 · 4. Der Exponent 4 sagt: Die 2 steht viermal als Faktor da, das sind 16."
           - answer: -14

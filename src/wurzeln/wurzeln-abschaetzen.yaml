@@ -130,8 +130,8 @@ blocks:
     blocks:
       - type: text
         text:
-          "Wenn du ein Ergebnis wie 4,47 aufschreibst, sagst du: Das ist nicht der genaue Wert, sondern kommt ihm sehr nahe.
-          Dafür gibt es ein Wort und ein Zeichen."
+          Wenn du ein Ergebnis wie 4,47 aufschreibst, ist es nicht der genaue Wert. Wie sagst du das richtig? Dafür gibt es
+          ein Wort und ein Zeichen.
       - type: definition
         term: Näherungswert
         explanation:
